@@ -1,0 +1,253 @@
+
+
+.easy_step_info {
+  background: var(--white);
+  border: 1px solid #747474;
+  transition: all .3s;
+}
+.easy_step_box {
+  transition: all .3s;
+}
+.easy_step_box:hover .step-no {
+  color: var(--theame-color)
+}
+
+.easy_step_box:hover .easy_step_info {
+  border: 1px solid var(--theame-color);
+  background: var(--theame-color);
+  color: var(--white);
+  box-shadow: 0 .125rem 1.25rem 0 rgb(107 134 177 / 50%);
+}
+
+.easy_step_box:hover .easy_step_info p {
+  color: var(--white);
+}
+
+.easy_step_wrapper .row .col-lg-4:nth-child(2n) .easy_step_box {
+  margin-top: 50px
+}
+
+.easy_step_wrapper .row .col-lg-4:nth-child(3n) .easy_step_box {
+  margin-top: 100px
+}
+
+.arrow-up-btm {
+  width: 108px;
+  height: 100px;
+  background: url('../../assets/Images/arrow-up.png') center/contain no-repeat;
+  margin-left: 64%;
+  margin-top: -32%;
+  transform: rotate(30deg)
+}
+
+
+.tag-lines {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 12px
+}
+
+.tag-lines span {
+  color: var(--theame-color);
+}
+
+.easy_step_box:hover .icon-Tell-Us-About-Your-Business3 span:before {color: #fff;}
+
+.easy_step_box:hover .icon-Tell-Us-About-Your-Business3 .path1:before {
+    color: #000;
+}
+.easy_step_box:hover .icon-circle-image span:before {color: #fff;}
+
+.easy_step_box:hover .icon-circle-image .path1:before {
+    color: #000;
+}
+
+
+
+.title-2 span .icon-HubSpot-Driven-Landing-Pages2 .path1:before {
+  content: "\eaa4";
+  color: var(--theame-color);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2:hover .path1:before {
+  color: #fff;
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path2:before {
+  content: "\eaa5";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path3:before {
+  content: "\eaa6";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path4:before {
+  content: "\eaa7";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path5:before {
+  content: "\eaa8";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path6:before {
+  content: "\eaa9";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path7:before {
+  content: "\eaaa";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path8:before {
+  content: "\eaab";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-HubSpot-Driven-Landing-Pages2 .path9:before {
+  content: "\eaac";
+  margin-left: -1.109375em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path1:before {
+  content: "\e91a";
+  color: var(--theame-color);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path2:before {
+  content: "\ea75";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path3:before {
+  content: "\ea76";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path4:before {
+  content: "\ea77";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path5:before {
+  content: "\ea78";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path6:before {
+  content: "\ea79";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path7:before {
+  content: "\ea7a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path8:before {
+  content: "\ea7b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path9:before {
+  content: "\ea7c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path10:before {
+  content: "\ea7d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path11:before {
+  content: "\ea7e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Tell-Us-About-Your-Business3 .path12:before {
+  content: "\ea7f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Consult-with-Our-Experts .path1:before {
+  content: "\ea80";
+  color: var(--theame-color);
+}
+
+.icon-Consult-with-Our-Experts .path2:before {
+  content: "\ea81";
+  margin-left: -1.1552734375em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Launch-Your-Customized-Solution .path1:before {
+  content: "\ea82";
+  color: var(--theame-color);
+}
+
+.icon-Launch-Your-Customized-Solution .path2:before {
+  content: "\ea83";
+  margin-left: -1.14453125em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Launch-Your-Customized-Solution .path3:before {
+  content: "\ea84";
+  margin-left: -1.14453125em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Launch-Your-Customized-Solution .path4:before {
+  content: "\ea85";
+  margin-left: -1.14453125em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Launch-Your-Customized-Solution .path5:before {
+  content: "\ea86";
+  margin-left: -1.14453125em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Launch-Your-Customized-Solution .path6:before {
+  content: "\ea87";
+  margin-left: -1.14453125em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-Launch-Your-Customized-Solution .path7:before {
+  content: "\ea88";
+  margin-left: -1.14453125em;
+  color: rgb(0, 0, 0);
+}
+
+.easy_step-txt h2 {  
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.easy_step-txt h2 span {    color: var(--theame-color)}
