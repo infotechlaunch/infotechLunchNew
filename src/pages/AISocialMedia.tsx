@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";

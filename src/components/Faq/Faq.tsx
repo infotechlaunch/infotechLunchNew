@@ -65,7 +65,7 @@ const FAQ: React.FC = () => {
                                         <line x1="12" y1="5" x2="12" y2="19"></line>
                                     </svg>
                                 </div>
-                                <div className={`px-6 text-black space-y-3 text-sm md:text-base duration-300 overflow-hidden ${openIndex === index ? "max-h-40 py-4" : "max-h-0"}`}>
+                                <div className={`px-6 text-black space-y-3 text-sm duration-300 overflow-hidden ${openIndex === index ? "max-h-40 py-4" : "max-h-0"}`}>
                                     <p>{faq.answer}</p>
                                 </div>
                             </div>

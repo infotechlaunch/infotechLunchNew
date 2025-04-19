@@ -5,12 +5,15 @@ import Services01 from '../../assets/Images/content_first_img.jpg';
 import Services02 from '../../assets/Images/content_first_img.png';
 import Services03 from '../../assets/Images/content_first_img02.jpg';
 import Services04 from '../../assets/Images/content_first_img03.jpg';
+
+// import ConnectExperts from "../../pages/ConnectExperts";
+
 const challengeData = [
     {
         id: "card01",
         img: Services01,
         title: "Inconsistent Lead Generation",
-        desc: "Struggling to generate a steady stream of quality leads? You’re missing out on sales opportunities and underutilizing your digital channels.",
+        desc: "Struggling to attract quality leads? We optimize your strategy with automation to drive consistent, high-converting leads.",
         icon: (
             <span className="text-white fs-4 icon-Inconsistent-Lead-Generation2"></span>
         )
@@ -19,8 +22,8 @@ const challengeData = [
     {
         id: "card02",
         img: Services02,
-        title: "Cloud Security Concerns",
-        desc: "Data breaches, lack of compliance, and privacy issues can turn cloud adoption into a risky move without the right security measures in place.",
+        title: "Cloud Security Risks",
+        desc: "Data breaches and compliance gaps can be costly. We implement robust cloud security to protect your data and ensure compliance.",
         icon: (
             <span className="text-white fs-4 icon-Cloud-Security-Concerns2"></span>
         )
@@ -29,7 +32,7 @@ const challengeData = [
         id: "card03",
         img: Services03,
         title: "Outdated User Experience",
-        desc: "An inefficient, outdated website or mobile interface drives users away, leading to high bounce rates, low engagement, and missed conversion opportunities.",
+        desc: "An old interface drives users away. We create fast, modern, and engaging experiences that boost user retention and conversions.",
         icon: (
             <span className="text-white fs-4 icon-Outdated-User-Experience"></span>
         )
@@ -37,8 +40,8 @@ const challengeData = [
     {
         id: "card04",
         img: Services04,
-        title: "Digital Infrastructure Scalability",
-        desc: "Managing increasingly complex IT environments without scalable solutions can slow down growth, increase costs, and lead to potential security vulnerabilities.",
+        title: "Scalability Challenges",
+        desc: "Legacy systems can’t keep up. We build scalable, cloud-based solutions that grow with your business.",
         icon: (
             <span className="text-white fs-4 icon-Digital-Infrastructure-Scalability2"></span>
         )
@@ -47,10 +50,6 @@ const challengeData = [
 const Services: React.FC = () => {
 
     return (
-
-
-
-
 
         <div className="challenges bg-[#F5F5F9] py-12 sticky w-full lg:py-16 py-10">
             <div className="container mx-auto px-6">
@@ -62,12 +61,15 @@ const Services: React.FC = () => {
                                 <h3 className="text-[#f13c3c] text-lg font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
                                     <span>Services</span>
                                 </h3>
-                                <h2 className="text-lg md:text-4xl lg:text-5xl font-bold leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
-                                    We Create New Solutions and Transform Existing Ones with{" "}
-                                    <span className="text-gray-600">
-                                        New Gen Technologies To Make Your Business Future-proof
-                                    </span>
+
+                                <h2 className="text-lg md:text-4xl lg:text-4xl font-bold leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
+                                Future-ready digital solutions to accelerate your growth.
+                                <br />
+                                <span className="text-gray-600 text-base md:text-xl font-medium">
+                                    Powered by next-gen technologies for a future-proof business.
+                                </span>
                                 </h2>
+
                                <div className="mt-6">
                                     <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                         <button className="btn btn-fix lazyloaded">Get Solution?

@@ -1,7 +1,9 @@
 import React from "react";
 import lunch from "../../assets/Images/infotech-web-dev-laptop.png";
-import health from "../../assets/Images/portfoli/5.png";
-import Careem from "../../assets/Images/portfoli/7.png";
+// import health from "../../assets/Images/portfoli/5.png";
+import health from "../../assets/Images/portfoli/ecom.png";
+// import Careem from "../../assets/Images/portfoli/7.png";
+import Careem from "../../assets/Images/adaptive-ai-development.jpg";
 import { Link } from 'react-router-dom';
 interface BlogPost {
     id: number;
@@ -26,11 +28,11 @@ const blogPosts: BlogPost[] = [
     },
     {
         id: 2,
-        title: "Blockchain in Healthcare: Benefits & Challenges",
+        title: "Seamless Shopping. Smarter Wellness.",
         category: "Blockchain",
         date: "10 Sep 2024",
         description:
-            "Blockchain technology is transforming the healthcare industry by improving security, interoperability, and accessibility of medical records. Learn how it enhances trust and data security.",
+            "Shop premium fitness products, track progress, and get personalized health insights—all in one app. Achieve your wellness goals with ease and convenience.",
         imageUrl: health,
         link: "/BlogDeatils",
     },
@@ -61,7 +63,7 @@ const Blog: React.FC = () => {
                 <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
                     {blogPosts.map((post) => (
                         <Link key={post.id} to={post.link} className="block">
-                            <div className="p-6 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+                            <div className="p-6 h-[520px] flex flex-col justify-between space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
                                 <div className="object-cover w-full overflow-hidden"  data-aos="fade-up">
                                     <img
                                         alt={post.title}
@@ -89,7 +91,7 @@ const Blog: React.FC = () => {
                                     <h3  data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                                         {post.title}
                                     </h3>
-                                    <p  data-aos="fade-up" className="text-base text-black line-clamp-3">{post.description}</p>
+                                    <p  data-aos="fade-up" className="text-black line-clamp-3">{post.description}</p>
                                     <button  data-aos="fade-up" className="text-lg text-[#000000] flex items-center group-hover:text-[#f13c3c]">
                                         Learn More
                                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -102,16 +104,18 @@ const Blog: React.FC = () => {
                         </Link>
                     ))}
                 </div>
+
+
                   <div className="mt-8 flex justify-center">
-                                    <Link to="/blog"  data-aos="fade-up" data-discover="true">
-                                        <button className="btn btn-fix lazyloaded">View More<svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
-                                            <path id="Path_1487529" data-name="Path 1487529"
-                                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
-                                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
-                                        </svg>
-                                        </button>
-                                    </Link>
-                                </div>
+                    <Link to="/blog"  data-aos="fade-up" data-discover="true">
+                        <button className="btn btn-fix lazyloaded">View More<svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
+                            <path id="Path_1487529" data-name="Path 1487529"
+                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                        </svg>
+                        </button>
+                    </Link>
+                </div>
             </section>
         </div>
     );

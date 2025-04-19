@@ -11,13 +11,14 @@ const StepJourney: React.FC = () => {
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                         <div className="lg:col-span-1 text-center lg:text-left">
+                                <h3 className="text-1xl font-bold">Start Your Success Journey</h3>
                             <div className="easy_step-txt">
                                 <div className="tag-lines mb-2 md:mb-4" data-aos="fade-right">
                                     <span className="text-lg font-semibold">Connect. Collaborate. Achieve.</span>
                                 </div>
-                                <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight" data-aos="fade-right">
+                                <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight" data-aos="fade-right">
                                     Begin<br /> Your<br /> Journey<br /> in Just<br />
-                                    <span className="text-blue-600 text-3xl md:text-4xl lg:text-6xl font-extrabold"> 3 </span>
+                                    <span className="text-blue-600 text-2xl md:text-3xl lg:text-4xl font-extrabold"> 3 </span>
                                      Simple <br /> Steps
                                 </h2>
                               <div data-aos="fade-right" className="arrow-up-btm"></div>
@@ -46,9 +47,9 @@ const StepJourney: React.FC = () => {
                                                 <span className="path12"></span>
                                             </span>
                                         </div>
-                                        <div className="text-lg font-semibold mb-3">Tell Us About Your Business</div>
+                                        <div className="text-lg font-semibold mb-3">Share Your Vision</div>
                                         <p className="text-gray-700 group-hover:text-white">
-                                            Fill out our quick form to share your current challenges and goals. We’ll use this information to craft the perfect strategy tailored to your needs.
+                                        Tell us your goals — we’ll use them to craft a tailored plan for your success.
                                         </p>
                                     </div>
                                 </div>
@@ -63,10 +64,10 @@ const StepJourney: React.FC = () => {
                                                 <span className="path2"></span>
                                             </span>
                                         </div>
-                                        <div className="text-lg font-semibold mb-3">Consult with Our Experts</div>
+                                        <div className="text-lg font-semibold mb-3">Talk to Our Experts</div>
                                         <p className="text-gray-700 group-hover:text-white">
-                                            Speak directly with one of our experienced professionals to refine your vision and explore how we can drive
-                                            results for your business.  </p>
+                                            Collaborate with our team to refine ideas and discover the best-fit solutions. 
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="easy_step_box  duration-300 mt-[20px] lg:mt-[100px]" data-aos="fade-up" data-aos-delay="300">
@@ -85,9 +86,10 @@ const StepJourney: React.FC = () => {
                                                 <span className="path7"></span>
                                             </span>
                                         </div>
-                                        <div className="text-lg font-semibold mb-3 ">Launch Your Customized Solution</div>
+                                        <div className="text-lg font-semibold mb-3 ">Launch & Grow</div>
                                         <p className="text-gray-700 group-hover:text-white">
-                                        We’ll develop and implement a solution designed specifically for you—ensuring an efficient, effective partnership that brings measurable success. </p>
+                                            Get your custom solution live and start seeing real, measurable results.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

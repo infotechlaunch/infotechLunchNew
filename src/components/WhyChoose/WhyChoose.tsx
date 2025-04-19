@@ -8,9 +8,7 @@ const WhyChoose: React.FC = () => {
                 <div className="lg:flex space-y-3 items-center justify-between gap-10">
                     <div>
                         <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-right" data-aos-delay="100">Why Choose Us?</h2>
-                        <p className="text-base text-[#212121] font-normal mt-2 w-full" data-aos="fade-right" data-aos-delay="100">Being the proficient IT Company, we promise
-                            to deliver innovative and custom IT Solutions. Know about our USPs that turn ideations into
-                            perfectly tailored solutions.</p>
+                        <p className="text-base text-[#212121] font-normal mt-2 w-full" data-aos="fade-right" data-aos-delay="100">We deliver innovative, custom solutions that drive results, earning trust by turning ideas into reality.</p>
                     </div>
                     <div>
                         <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
@@ -28,9 +26,8 @@ const WhyChoose: React.FC = () => {
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
                     <div className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  px-6 py-8 rounded-lg">
                         <div className="relative z-[1]" data-aos="fade-right" data-aos-delay="100">
-                            <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold">Optimum Outcome Focused</h2>
-                            <p className="text-base font-normal text-white">Our developers are focused to bring optimum outcomes
-                                through our competitive web and app.</p>
+                            <h2 className="xl:text-2xl text-xl mb-4 font-semibold">Outcome-Driven Excellence</h2>
+                            <p className="text-base font-normal text-white">Our developers are committed to delivering top-tier results through innovative web and app solutions that drive measurable success.</p>
                             <div className="mt-4">
                                 <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
                                     <button className="btn btn-fix lazyloaded">Get
@@ -49,54 +46,38 @@ const WhyChoose: React.FC = () => {
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="100">
                                 <div >
-                                    <h3 className="text-xl font-semibold">Optimum Outcome Focused</h3>
-                                    <p className="text-sm font-normal">Our developers are focused to bring optimum outcomes through
-                                        our competitive web and app development services. We create innovative IT Solutions that
-                                        stand out of the crowd.</p>
+                                    <h3 className="text-xl font-semibold mb-6">Optimum Outcome Focused</h3>
+                                    <p className="text-sm font-normal">We focus on delivering top results through cutting-edge web and app solutions that truly stand out.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="200">
                                 <div>
-                                    <h3 className="text-xl font-semibold">Experienced Techies</h3>
-                                    <p className="text-sm font-normal">Our experienced techies are the reason why we deliver the
-                                        prominent IT services to clients across various industries. Every team member is 10+
-                                        years experienced, mastered their domain and developed impeccable solutions.</p>
+                                    <h3 className="text-xl font-semibold mb-6">Experienced Techies</h3>
+                                    <p className="text-sm font-normal">Our expert team brings 10+ years of experience, delivering top-tier IT solutions across diverse industries with precision and excellence.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="300">
                                 <div>
-                                    <h3 className="text-xl font-semibold">Cutting Edge Technologies</h3>
-                                    <p className="text-sm font-normal">We are the leading web and mobile app development company
-                                        that use aced technologies to build the software and apps. We are more attentive in
-                                        building highly performing, secured, and robust solutions that cater to the needs of
-                                        businesses.</p>
+                                    <h3 className="text-xl font-semibold mb-6">Cutting Edge Technologies</h3>
+                                    <p className="text-sm font-normal">We leverage the latest technologies to build high-performance, secure, and scalable web and mobile solutions tailored to your business needs.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="400">
                                 <div >
-                                    <h3 className="text-xl font-semibold">Cost-Effective &amp; Deadline Oriented</h3>
-                                    <p className="text-sm font-normal">Our approach is to build the best software under competitive
-                                        cost. Our company quotes affordable web &amp; app development costs with high quality
-                                        maintenance. Along cost-efficiency, our agenda is to meet the defined deadline for
-                                        project completion.</p>
+                                    <h3 className="text-xl font-semibold mb-6">Cost-Effective &amp; Deadline Oriented</h3>
+                                    <p className="text-sm font-normal">We deliver high-quality web and app solutions at competitive costs, with a strong focus on meeting project deadlines.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="500">
                                 <div >
-                                    <h3 className="text-xl font-semibold">Transparency with Clients</h3>
-                                    <p className="text-sm font-normal">We prioritize transparency with clients. Whatever the status
-                                        of development, everything is informed to the clients in real time. Most importantly,
-                                        our customer support is available 24*7 for the clients to resolve their queries
-                                        immediately.</p>
+                                    <h3 className="text-xl font-semibold mb-6">Transparency with Clients</h3>
+                                    <p className="text-sm font-normal">We ensure real-time updates and 24/7 support, keeping clients fully informed and engaged throughout the development process.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="600">
                                 <div >
-                                    <h3 className="text-xl font-semibold">Modern IT Services</h3>
-                                    <p className="text-sm font-normal">We look towards building modern IT solutions that cater to
-                                        every demand of concurrent market standards. The developers use the latest tech trends
-                                        and innovative approaches to create futuristic software that fulfills the needs and
-                                        engages the targeted audience.</p>
+                                    <h3 className="text-xl font-semibold mb-6">Modern IT Services</h3>
+                                    <p className="text-sm font-normal">We craft future-ready IT solutions using the latest technologies and trends to meet market demands and engage your audience effectively.</p>
                                 </div>
                             </div>
                         </div>

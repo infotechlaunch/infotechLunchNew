@@ -15,8 +15,8 @@ const Partners: React.FC = () => {
         <section className="section section--partners py-16">
             <div className="text-center mb-10">
             <span className="text-[#f13c3c] text-lg font-semibold mb-3"  data-aos="fade-up">Clients &amp; Partners</span>
-                <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2"  data-aos="fade-up">From Startups To Enterprises, <br /> We Transform Digital Visions At Every Scale</h2>
-                <p className="text-gray-600 text-lg font-semibold mt-2"  data-aos="fade-up">Partner with experts who transform ideas into market-leading solutions, regardless of your business size or industry.</p>
+                <h2 className="text-3xl lg:text-3xl font-semibold leading-[47px] mb-2"  data-aos="fade-up">Empowering Startups to Enterprises, <br /> Turning Digital Dreams Into Reality</h2>
+                <p className="text-lg mt-2"  data-aos="fade-up">Join hands with a team that brings bold ideas to life—creating impactful digital solutions for every scale and sector.</p>
                 </div>
             <div className="section__body">
                 <div className="partners-wrapper">

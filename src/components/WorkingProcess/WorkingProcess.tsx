@@ -5,9 +5,8 @@ const WorkingProcess: React.FC = () => {
         <section className="bg-white lg:py-16 py-10">
         <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
-                <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2"  data-aos="fade-up">Our Working Process</h2>
-                <p className="text-gray-600 text-lg font-semibold mt-2"  data-aos="fade-up">To deliver custom mobile app development services, our web and mobile
-                    app development company incorporates a streamlined development lifecycle to meet the business needs.</p>
+                <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2"  data-aos="fade-up">Our Proven Working Process</h2>
+                <p className="text-lg mt-2"  data-aos="fade-up">Our mobile and web app development process is designed to deliver tailored solutions, ensuring seamless delivery and alignment with your business objectives.</p>
             </div>
             <div className="mt-10">
                 <div className="styles_processContent__LoFa5">
@@ -72,44 +71,31 @@ const WorkingProcess: React.FC = () => {
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2"  data-aos="fade-right" data-aos-delay="100">
                         <h3 className="styles_processStepTitle__YuNYr">Requirement Gathering</h3>
-                        <p className="styles_processStepText__F8KN8">We start with a detailed discussion to understand your
-                            needs, set goals, and create a roadmap. This phase includes cost evaluation, timelines, and
-                            defining project milestones for a clear direction.</p>
+                        <p className="styles_processStepText__F8KN8">We align on goals, define milestones, and set timelines to ensure a clear and efficient project start.</p>
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2" data-aos="fade-left" data-aos-delay="200">
                         <h3 className="styles_processStepTitle__YuNYr">UI/UX Design</h3>
-                        <p className="styles_processStepText__F8KN8">Our designers craft intuitive, visually engaging interfaces
-                            tailored to your users. By focusing on creativity and functionality, we ensure user-friendly
-                            designs that enhance the overall experience.</p>
+                        <p className="styles_processStepText__F8KN8">We craft user-friendly, visually engaging interfaces that balance creativity with seamless usability.</p>
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2" data-aos="fade-right" data-aos-delay="250">
                         <h3 className="styles_processStepTitle__YuNYr">Prototype</h3>
-                        <p className="styles_processStepText__F8KN8">We develop a prototype to simulate user interaction and
-                            workflows, allowing you to review and address design or functionality issues early in the
-                            development process.</p>
+                        <p className="styles_processStepText__F8KN8">We build interactive prototypes to test ideas early, refine usability, and reduce development risks.</p>
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2" data-aos="fade-left" data-aos-delay="300">
                         <h3 className="styles_processStepTitle__YuNYr">Development</h3>
-                        <p className="styles_processStepText__F8KN8">Our developers use advanced tools and technologies to
-                            create a robust backend and a seamless front end, ensuring high performance and easy navigation
-                            for your application.</p>
+                        <p className="styles_processStepText__F8KN8">We use advanced tools to build robust backends and seamless frontends for optimal performance and user experience.</p>
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2" data-aos="fade-right" data-aos-delay="350">
                         <h3 className="styles_processStepTitle__YuNYr">Quality Assurance</h3>
-                        <p className="styles_processStepText__F8KN8">Through rigorous manual and automated testing, we identify
-                            and resolve bugs, ensuring the application meets the highest standards for functionality,
-                            reliability, and performance.</p>
+                        <p className="styles_processStepText__F8KN8">We perform comprehensive testing to ensure your app is reliable, bug-free, and performs optimally.</p>
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2" data-aos="fade-left" data-aos-delay="400">
                         <h3 className="styles_processStepTitle__YuNYr">Deployment</h3>
-                        <p className="styles_processStepText__F8KN8">Once tested, we launch your app on the preferred platform,
-                            ensuring compliance with all requirements to make it accessible and ready for your target
-                            audience.</p>
+                        <p className="styles_processStepText__F8KN8">We deploy your app seamlessly, ensuring full compliance and smooth accessibility across platforms.</p>
                     </div>
                     <div className="styles_processStep__3cF6y space-y-2" data-aos="fade-up" data-aos-delay="450">
                         <h3 className="styles_processStepTitle__YuNYr">Support &amp; Maintenance</h3>
-                        <p className="styles_processStepText__F8KN8">Post-launch, we provide ongoing support and maintenance,
-                            monitoring performance, updating features, and keeping your app aligned with market trends.</p>
+                        <p className="styles_processStepText__F8KN8">We provide ongoing support to keep your app updated, optimized, and aligned with market trends.</p>
                     </div>
                 </div>
             </div>
