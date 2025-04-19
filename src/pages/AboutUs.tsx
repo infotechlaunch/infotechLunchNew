@@ -219,11 +219,11 @@ const AboutUs: React.FC = () => {
                     </div>
                 </section>
                 <CaseStudy />
-                <section className="lg:py-16 py-10 ">
+                <section className="bg-gradient-blue-red  lg:py-16 py-10 ">
                 <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                        <div className="text-center mb-12">
+                        <div className="text-white text-center mb-12">
                         <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2" data-aos="fade-up">Our Core Values</h2>
-                        <p className="text-gray-600 text-lg font-semibold mt-2" data-aos="fade-up">
+                        <p className="text-lg font-semibold mt-2" data-aos="fade-up">
                                 We’re enthusiastic learners and seasoned inventors. Together, we can{" "}
                                 <span className="block font-semibold">
                                     create solutions that serve not just technology but the humans behind it.

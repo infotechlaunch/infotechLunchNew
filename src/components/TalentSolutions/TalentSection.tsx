@@ -146,40 +146,6 @@ const TalentSolutions: React.FC = () => {
                 "DevOps Engineer"
             ]
         },
-        {
-            title: "Digital Transformation & Innovation",
-            image: icon10,
-            items: [
-                "Digital Transformation & Innovation",
-                "Digital Strategy Consultant",
-                "AI/ML Engineer",
-                "RPA Developer (UiPath / Blue Prism / AA)",
-                "IoT Solutions Architect",
-                "Blockchain Developer",
-                "AR/VR Application Developer",
-                "UX/UI Design Strategist",
-                "Data Science & Predictive Analytics Expert",
-                "NLP / Computer Vision Engineer",
-                "Digital Business Analyst",
-            ]
-        },
-        {
-            title: "Enterprise Platforms & ERP",
-            image: icon10,
-            items: [
-                "Enterprise Platforms & ERP",
-                "SAP Functional Consultant (FICO / MM / SD / HCM)",
-                "Oracle Fusion Applications Specialist",
-                "Salesforce Developer & Administrator",
-                "Microsoft Dynamics 365 Consultant",
-                "Workday Integration & Functional Analyst",
-                "ServiceNow Developer & ITSM Specialist",
-                "ERP Project Manager",
-                "Techno-Functional ERP Consultant",
-                "SAP ABAP Developer",
-                "Oracle DBA / Middleware Administrator",
-            ]
-        },
     ];
     // const Mobileservices = [
     //     {
@@ -267,7 +233,7 @@ const TalentSolutions: React.FC = () => {
                                 <div className="w-full relative capitalize space-y-10" data-aos="fade-left">
 
                                     <div className="bg-white lg:p-8 md:p-6 p-3 border border-[#5556D1]/10">
-                                        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                                        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                             {services.map((service, index) => (
                                                 <div key={index} className="border-2 p-6 space-y-2 bg-white border-[#f13c3c]/20 rounded-[12px] hover:bg-white hover:shadow-lg">
                                                     <div className="w-16 h-16 mx-auto">
