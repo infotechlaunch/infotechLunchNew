@@ -183,8 +183,8 @@ const HeaderNew: React.FC = () => {
                         <div>
 
                             <Link to="/" className="relative flex items-center flex-shrink-0 text-white">
-                                <span className="w-[60px] h-[60px] bg-[#297ea3] rounded-full mr-[15px] flex items-center justify-center">
-                                    <img src={Logo} alt="" className="w-[40px] h-auto" />
+                                <span className="w-[70px] h-[70px] bg-[#297ea3] rounded-full mr-[15px] flex items-center justify-center">
+                                    <img src={Logo} alt="" className="w-[70px] h-auto" />
                                 </span>
                                 <span className="flex flex-col leading-tight text-[#212121]">
                                     <span className="xl:text-1xl md:text-1xl text-1xl font-bold">InfoTech</span>

@@ -51,21 +51,21 @@ const Services: React.FC = () => {
 
     return (
 
-        <div className="challenges bg-[#F5F5F9] py-12 sticky w-full lg:py-16 py-10">
+        <div className="challenges bg-gradient-blue-red py-12 sticky w-full lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Left Section */}
                         <div className="chalnges-left">
-                            <div className="sticky top-32">
-                                <h3 className="text-[#f13c3c] text-lg font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
+                            <div className="sticky top-32 text-white">
+                                <h3 className="text-orange text-lg font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
                                     <span>Services</span>
                                 </h3>
 
                                 <h2 className="text-lg md:text-4xl lg:text-4xl font-bold leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
                                 Future-ready digital solutions to accelerate your growth.
                                 <br />
-                                <span className="text-gray-600 text-base md:text-xl font-medium">
+                                <span className="text-base md:text-xl font-medium">
                                     Powered by next-gen technologies for a future-proof business.
                                 </span>
                                 </h2>
