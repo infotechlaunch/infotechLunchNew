@@ -51,7 +51,7 @@ const SocialMedia: React.FC = () => {
 
                 <section className="hero-container bg-gradient-blue-red">
                     <div className="hero-content">
-                        <div className="hero-text text-white">
+                        <div className="hero-text text-white" data-aos="fade-right">
                             <h1>AI-Powered Social Media Management</h1>
                             <p>
                                 Unlock next-level growth with our AI-driven social media tools. Schedule, create, manage, and analyze—
@@ -67,7 +67,7 @@ const SocialMedia: React.FC = () => {
 
                             <ConnectExperts />
                         </div>
-                        <div className="hero-image">
+                        <div className="hero-image" data-aos="fade-left">
                             <img src={SocialMediaMgmtImg} alt="AI Social Media" />
                         </div>
                     </div>
@@ -96,24 +96,8 @@ const SocialMedia: React.FC = () => {
                         {/* Automate Workflow Section */}
                         <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto bg-white-rounded">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-                                <div className="md:w-1/2">
-                                    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-                                        Automate Your Entire Workflow
-                                    </h2>
-                                    <p className="text-lg text-gray-700 mb-4">
-                                        From content creation to publishing and performance tracking, our AI does the heavy lifting.
-                                    </p>
-                                    <p className="text-lg text-gray-700 mb-6">
-                                        Focus on strategy. Let automation take care of the rest.
-                                    </p>
-                                    {/* <button onClick={onOpen} className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
-                            Get Started
-                        </button> */}
 
-                                    <ConnectExperts />
-
-                                </div>
-                                <div className="md:w-1/2 flex justify-center">
+                                <div className="md:w-1/2 flex justify-center" data-aos="fade-right">
                                     <div className="relative">
                                         {/* Monitor with Chart */}
                                         <div className="bg-gradient-to-r from-red-400 to-blue-500 rounded-lg p-4 w-64 h-48 md:w-80 md:h-56">
@@ -156,12 +140,29 @@ const SocialMedia: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="md:w-1/2" data-aos="fade-left">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                                        Automate Your Entire Workflow
+                                    </h2>
+                                    <p className="text-lg text-gray-700 mb-4">
+                                        From content creation to publishing and performance tracking, our AI does the heavy lifting.
+                                    </p>
+                                    <p className="text-lg text-gray-700 mb-6">
+                                        Focus on strategy. Let automation take care of the rest.
+                                    </p>
+                                    {/* <button onClick={onOpen} className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                            Get Started
+                        </button> */}
+
+                                    <ConnectExperts />
+
+                                </div>
                             </div>
                         </section>
                         {/* Hero Section */}
                         <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-                            <div className="md:w-1/2 flex justify-center">
+                                <div className="md:w-1/2 flex justify-center" data-aos="fade-right">
                                     <div className="relative">
                                         <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-red-200 to-blue-200 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-xl opacity-50"></div>
                                         <div className="relative">
@@ -195,7 +196,7 @@ const SocialMedia: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="md:w-1/2">
+                                <div className="md:w-1/2" data-aos="fade-left">
                                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                                         Smarter Social Starts Here
                                     </h1>
@@ -211,13 +212,13 @@ const SocialMedia: React.FC = () => {
                                     <ConnectExperts />
 
                                 </div>
-                                
+
                             </div>
                         </section>
                         {/* Who It's For Section */}
                         <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto bg-white-rounded">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-                                <div className="md:w-1/2">
+                                <div className="md:w-1/2" data-aos="fade-right">
                                     <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
                                         Who It's For
                                     </h2>
@@ -300,13 +301,13 @@ const SocialMedia: React.FC = () => {
                         </section>
                         {/* Features Section */}
                         <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
-                            <h2 className="text-4xl md:text-4xl font-bold text-white text-center mb-12">
+                            <h2 className="text-4xl md:text-4xl font-bold text-white text-center mb-12" data-aos="fade-up">
                                 What You'll Love
                             </h2>
 
                             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-4 what-love-style text-center">
                                 {/* Feature 1 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Clock Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -320,7 +321,7 @@ const SocialMedia: React.FC = () => {
                                 </div>
 
                                 {/* Feature 2 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Bar Chart Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -334,7 +335,7 @@ const SocialMedia: React.FC = () => {
                                 </div>
 
                                 {/* Feature 3 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Users Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -348,7 +349,7 @@ const SocialMedia: React.FC = () => {
                                 </div>
 
                                 {/* Feature 4 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Line Chart Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -367,7 +368,7 @@ const SocialMedia: React.FC = () => {
 
                         {/* CTA Section */}
                         <section className="py-16 px-4 md:px-8 lg:px-16 bg-orange text-black">
-                            <div className="max-w-7xl mx-auto text-center">
+                            <div className="max-w-7xl mx-auto text-center" data-aos="fade-up">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                                     Ready to Transform Your Social Media Strategy?
                                 </h2>
@@ -411,8 +412,8 @@ const SocialMedia: React.FC = () => {
                     </div>
                 </section> */}
 
-                <section className="products-section bg-gradient-blue-red">
-                    <h2 className="products-heading text-white">Products We Offer</h2>
+                <section className="products-section bg-gradient-blue-red" >
+                    <h2 className="products-heading text-white" data-aos="fade-up">Products We Offer</h2>
                     <div className="products-container marquee2">
                         <div className="product-card">
                             <img src={whatappMarketingImg} alt="Logo" />
@@ -430,37 +431,37 @@ const SocialMedia: React.FC = () => {
                 </section>
 
                 <div className="bg-gradient-blue-red text-white font-sans">
-                    <section className="flex align-center  text-center p-10 text-white">
-                    <section>
-                        <h1 className="text-4xl font-bold mb-4">🌟 Smarter Social Starts Here</h1>
-                        <p className="text-lg max-w-2xl mx-auto">
-                            AI-Powered Social Media Management that saves time, boosts visibility, and drives results—without the hassle.
-                        </p>
+                    <section className="flex align-center  text-center p-10 text-white" data-aos="fade-up">
+                        <section>
+                            <h1 className="text-4xl font-bold mb-4">🌟 Smarter Social Starts Here</h1>
+                            <p className="text-lg max-w-2xl mx-auto">
+                                AI-Powered Social Media Management that saves time, boosts visibility, and drives results—without the hassle.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="text-4xl font-bold mb-4">Automate Your Entire Workflow</h2>
+                            <p className="text-lg max-w-2xl mx-auto">
+                                From content creation to publishing and performance tracking, our AI does the heavy lifting.
+                                Focus on strategy. Let automation take care of the rest.
+                            </p>
+                        </section>
                     </section>
-                    <section>
-                        <h2 className="text-4xl font-bold mb-4">Automate Your Entire Workflow</h2>
-                        <p className="text-lg max-w-2xl mx-auto">
-                            From content creation to publishing and performance tracking, our AI does the heavy lifting.
-                            Focus on strategy. Let automation take care of the rest.
-                        </p>
-                        </section>
-                        </section>
-                        <section className="workflow-section">
-                        <h3 className="products-heading text-white">🚀 What You’ll Love</h3>
+                    <section className="workflow-section">
+                        <h3 className="products-heading text-white"  data-aos="fade-up">🚀 What You’ll Love</h3>
 
-                        <div className="workflow-features">
+                        <div className="workflow-features"  data-aos="fade-up">
                             <div className="feature-card">Smart Scheduling<br /><span>Post at the perfect time, every time</span></div>
                             <div className="feature-card">Branded Content, At Scale<br /><span>AI crafts posts in your voice</span></div>
                             <div className="feature-card">Consistent Engagement<br /><span>Auto-responses that never miss a moment</span></div>
                         </div>
-                        <div className="workflow-features">
+                        <div className="workflow-features"  data-aos="fade-up">
                             <div className="feature-card">Multi-Platform Magic<br /><span>Manage all your channels from one dashboard</span></div>
                             <div className="feature-card">Real-Time Insights<br /><span>See what’s working and optimize</span></div>
                         </div>
                     </section>
 
                     <section className="callout-wrapper bg-gradient-blue-red flex flex-col md:flex-row justify-center items-stretch gap-4 p-6">
-                        <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6">
+                        <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6"  data-aos="fade-up">
                             <div className="callout-icon text-4xl mb-4">👥</div>
                             <h2 className="callout-heading text-3xl font-semibold mb-2">Who It’s For</h2>
                             <p className="callout-description text-gray-700">
@@ -468,7 +469,7 @@ const SocialMedia: React.FC = () => {
                             </p>
                         </div>
 
-                        <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6">
+                        <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6"  data-aos="fade-up">
                             <div className="callout-icon text-4xl mb-4">🎁</div>
                             <h2 className="callout-heading text-3xl font-semibold mb-2">Try It Free – 2 Weeks, On Us</h2>
                             <p className="callout-description text-gray-700">
@@ -555,7 +556,7 @@ const SocialMedia: React.FC = () => {
                     <PricingComparisonTable />
 
                     <section className="bg-gradient-blue-red py-14 px-6 md:px-20">
-                        <div className="itl-section max-w-5xl mx-auto text-center md:text-left">
+                        <div className="itl-section max-w-5xl mx-auto text-center md:text-left" data-aos="fade-up">
                             <h2 className="text-3xl itl-h2 md:text-4xl font-bold text-indigo-800 mb-8 flex items-center justify-center gap-3">
                                 <span role="img" aria-label="lightbulb">💡</span>
                                 What You Get With ITL (Every Plan Includes):

@@ -107,7 +107,7 @@ export default function PricingComparisonTable() {
   return (
     <div className="bg-gradient-blue-red min-h-screen p-4 md:p-8">
       <div className={`max-w-10xl mx-auto transition-all duration-700 ${animateIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="flex flex-col items-center mb-10">
+        <div className="flex flex-col items-center mb-10" data-aos="fade-up">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Service Pricing Comparison
           </h1>
