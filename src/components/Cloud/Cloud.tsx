@@ -10,14 +10,13 @@ const Cloud: React.FC = () => {
                         <div className="w-full flex items-end justify-start">
                             <div className="p-6 bg-[#f13c3c]/60 shadow-lg max-w-[500px] rounded-[36px]" data-aos="fade-right" data-aos-delay="100">
                                 <div className="relative">
-                                    <h3 className="text-2xl md:text-3xl lg:text-4xl  font-bold mb-2 text-white">
-                                        Ready to Take Your Business to Cloud 
-                                        <span className="text-[#f13c3c]  text-3xl md:text-4xl lg:text-5xl"> 9 </span> ?
+                                    <h3 className="text-1xl md:text-2xl lg:text-3xl  font-bold mb-2 text-white">
+                                        Ready to Elevate Your Business?
+                                        {/* <span className="text-[#f13c3c]  text-3xl md:text-4xl lg:text-5xl"> 9 </span> ? */}
                                     </h3>
                                     <div className="connect-with-us-arrow"></div>
                                     <p className="text-sm pl-6 text-white">
-                                        Unlock your business's full potential with our expert-driven
-                                        solutions for growth, innovation, and success today.
+                                        Experience powerful growth and innovation with tailored solutions from our expert team.
                                     </p>
                                     <div className="flex mt-3 w-full">
                                         <Link to="/contact-us">

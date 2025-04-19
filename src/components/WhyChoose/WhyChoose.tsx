@@ -8,9 +8,7 @@ const WhyChoose: React.FC = () => {
                 <div className="lg:flex space-y-3 items-center justify-between gap-10">
                     <div>
                         <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-right" data-aos-delay="100">Why Choose Us?</h2>
-                        <p className="text-base text-[#212121] font-normal mt-2 w-full" data-aos="fade-right" data-aos-delay="100">Being the proficient IT Company, we promise
-                            to deliver innovative and custom IT Solutions. Know about our USPs that turn ideations into
-                            perfectly tailored solutions.</p>
+                        <p className="text-base text-[#212121] font-normal mt-2 w-full" data-aos="fade-right" data-aos-delay="100">As a leading IT company, we specialize in delivering innovative, tailor-made solutions that drive results. Discover what sets us apart and why clients trust us to bring their ideas to life.</p>
                     </div>
                     <div>
                         <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
@@ -28,9 +26,8 @@ const WhyChoose: React.FC = () => {
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
                     <div className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  px-6 py-8 rounded-lg">
                         <div className="relative z-[1]" data-aos="fade-right" data-aos-delay="100">
-                            <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold">Optimum Outcome Focused</h2>
-                            <p className="text-base font-normal text-white">Our developers are focused to bring optimum outcomes
-                                through our competitive web and app.</p>
+                            <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold">Outcome-Driven Excellence</h2>
+                            <p className="text-base font-normal text-white">Our developers are committed to delivering top-tier results through innovative web and app solutions that drive measurable success.</p>
                             <div className="mt-4">
                                 <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
                                     <button className="btn btn-fix lazyloaded">Get
