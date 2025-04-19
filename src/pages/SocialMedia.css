@@ -11,6 +11,13 @@
     background: #ffb460;
     color: #000;
 }
+.icon-rounded-1 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 .text-orange{color: #ffb460;}
 .align-center{align-items: center;
   justify-content: space-around;}
