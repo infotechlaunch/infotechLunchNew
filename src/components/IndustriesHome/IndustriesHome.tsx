@@ -40,7 +40,7 @@ const Industries = [
 
 const IndustriesHome: React.FC = () => {
     return (
-        <div className="lg:py-16 py-10">
+        <div className="bg-gradient-blue-red lg:py-16 py-10">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 bg-[#F5F5F9] md:py-14 py-8 md:px-10 px-6 rounded-3xl">
                 <div className="flex items-center justify-between">
                     <div className="space-y-2">

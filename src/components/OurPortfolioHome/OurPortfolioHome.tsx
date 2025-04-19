@@ -13,7 +13,7 @@ import ecom from "../../assets/Images/portfoli/ecom.png";
 const OurPortfolioHome: React.FC = () => {
     return (
 
-        <div className="lg:py-16 py-10 bg-[#F3F4F6]">
+        <div className="bg-orange lg:py-16 py-10">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="text-center mb-10">
                     <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-up">Our Portfolio</h2>

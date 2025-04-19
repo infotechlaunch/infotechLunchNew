@@ -12,7 +12,7 @@ import logo10 from "../../assets/Images/cl10.png";
 import logo11 from "../../assets/Images/cl11.png";
 const Partners: React.FC = () => {
     return (
-        <section className="section section--partners py-16">
+        <section className="section section--partners py-16 bg-gradient-blue-red">
             <div className="text-center mb-10">
             <span className="text-[#f13c3c] text-lg font-semibold mb-3"  data-aos="fade-up">Clients &amp; Partners</span>
                 <h2 className="text-3xl lg:text-3xl font-semibold leading-[47px] mb-2"  data-aos="fade-up">Empowering Startups to Enterprises, <br /> Turning Digital Dreams Into Reality</h2>

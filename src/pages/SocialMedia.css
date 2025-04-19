@@ -3,7 +3,16 @@
     background-color: #f8f9fb;
     text-align: center;
   }
-  
+
+  .bg-gradient-blue-red {background: linear-gradient(90deg, rgb(27 87 112) 0%, rgb(199 10 14) 50%, rgb(27 87 112) 100%);
+  }
+  .bg-white-rounded{padding: 40px;background: #fff;border-radius: 16px;}
+  .bg-orange {
+    background: #ffb460;
+    color: #000;
+}
+.align-center{align-items: center;
+  justify-content: space-around;}
   .products-heading {
     font-size: 2rem;
     font-weight: bold;
@@ -44,11 +53,12 @@
     /* object-fit: contain; */
   }
 
-  
+  ul.itl-mobile-style-ul {
+    column-count: 2;
+}
  /* new section start  */
   .workflow-section {
     padding: 60px 30px;
-    background: linear-gradient(to right, #9ec4f5, #eef3f9);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -88,14 +98,14 @@
   
   .feature-card {
     /* background: rgb(245, 236, 236); */
-    background: rgb(251, 252, 253);
+    background: #fff;
     padding: 20px;
-    width: 260px;
+    width: 300px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1f1f1f;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #d53232;
     transition: transform 0.2s ease;
   }
   
@@ -107,14 +117,14 @@
   .feature-card span {
     display: block;
     font-weight: 400;
-    font-size: 0.95rem;
-    color: #666;
-    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 10px;
   }
 
   /* ai powered  */
   .hero-container {
-    background: linear-gradient(to right, #f9f9fb, #edf3f8);
+    /* background: linear-gradient(to right, #f9f9fb, #edf3f8); */
     padding: 80px 40px;
     display: flex;
     justify-content: center;
@@ -138,7 +148,7 @@
   
   .hero-text h1 {
     font-size: 3rem;
-    color: #0c2d57;
+    /* color: #0c2d57; */
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -146,7 +156,7 @@
   
   .hero-text p {
     font-size: 1.2rem;
-    color: #444;
+    /* color: #444; */
     margin-bottom: 30px;
     line-height: 1.6;
   }
@@ -222,8 +232,8 @@
   }
   
   .callout-highlight {
-    background-color: #eaf5ff;
-    border-left: 6px solid #0077cc;
+    background-color: #fff;
+    /* border-left: 6px solid #0077cc; */
   }
   
   .callout-icon {

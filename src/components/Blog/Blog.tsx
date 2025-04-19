@@ -50,7 +50,7 @@ const blogPosts: BlogPost[] = [
 
 const Blog: React.FC = () => {
     return (
-        <div className="w-full bg-gradient-to-b from-pink-100 to-blue-100 py-16">
+        <div className="w-full bg-gradient-blue-red py-16">
             <section className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="flex items-center justify-center">
                     <div className="space-y-3">

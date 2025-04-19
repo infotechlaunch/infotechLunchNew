@@ -4,7 +4,7 @@ import technology from '../../assets/Images/future-of-technology.webp';
 const HireDeveloper: React.FC = () => {
     return (
         <div className="GetStarted_sect">
-            <section className="lg:py-16 py-10 bg-[#fff]">
+            <section className="bg-gradient-blue-red lg:py-16 py-10 bg-[#fff]">
                 <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 action-sec relative bg-[#0C0F18] rounded-[24px]">
                     <div className="lg:py-12 py-6 lg:px-14 px-8 lg:flex gap-8 items-center">
                         <div className="space-y-3 lg:w-[70%] w-full">

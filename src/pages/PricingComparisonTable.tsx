@@ -105,10 +105,10 @@ export default function PricingComparisonTable() {
   // );
 
   return (
-    <div className="bg-gradient-to-r from-red-100 via-purple-100 to-blue-100 min-h-screen p-4 md:p-8">
-      <div className={`max-w-7xl mx-auto transition-all duration-700 ${animateIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <div className="bg-gradient-blue-red min-h-screen p-4 md:p-8">
+      <div className={`max-w-10xl mx-auto transition-all duration-700 ${animateIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="flex flex-col items-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Service Pricing Comparison
           </h1>
           {/* <div className={`items-center p-1 rounded-lg ${(activeTab === '!monthly' || '!features' || '!onetime') ? 'bg-gray-400' : 'bg-white'}`} style={{
@@ -146,7 +146,7 @@ export default function PricingComparisonTable() {
 
         {/* {activeTab === 'monthly' && ( */}
           <div className="mt-4 overflow-x-auto bg-white rounded-xl shadow-lg">
-            <table className="w-full">
+            <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
                   <th className="px-4 py-3 text-left border-b border-gray-300">Services</th>
@@ -225,7 +225,7 @@ export default function PricingComparisonTable() {
 
         {/* {activeTab === 'features' && ( */}
           <div className="mt-4 overflow-x-auto bg-white rounded-xl shadow-lg">
-            <table className="w-full">
+            <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
                   <th className="px-4 py-3 text-left border-b border-gray-300">Additional Features, Only with ITL</th>
@@ -265,7 +265,7 @@ export default function PricingComparisonTable() {
 
         {/* {activeTab === 'onetime' && ( */}
           <div className="mt-4 overflow-x-auto bg-white rounded-xl shadow-lg">
-            <table className="w-full">
+            <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
                   <th className="px-4 py-3 text-left border-b border-gray-300">One Time Services</th>

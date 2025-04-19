@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
     };
 
     return (
-        <section className="bg-white lg:py-16 py-10">
+        <section className="bg-gradient-blue-red lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="md:space-y-10 space-y-6 w-full">
                     <div className="text-center">
