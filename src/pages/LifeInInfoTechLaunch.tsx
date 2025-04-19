@@ -62,7 +62,7 @@ const LifeInInfoTechLaunch: React.FC = () => {
                             <a className="gallery-item wide ">
                                 <img className="img-responsive" src={Srishti} />
                             </a>
-                            {/* <a className="gallery-item small">
+                            <a className="gallery-item small">
                                 <img className="img-responsive" src={Srishti} />
                             </a>
                             <a className="gallery-item small">
@@ -112,7 +112,7 @@ const LifeInInfoTechLaunch: React.FC = () => {
                             </a>
                             <a className="gallery-item wide">
                                 <img className="img-responsive" src={Srishti} />
-                            </a> */}
+                            </a>
                         </div>
                     </div>
                 </section>

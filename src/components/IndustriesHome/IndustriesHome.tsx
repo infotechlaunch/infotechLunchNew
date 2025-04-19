@@ -45,7 +45,7 @@ const IndustriesHome: React.FC = () => {
                 <div className="flex items-center justify-between">
                     <div className="space-y-2">
                         <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold"  data-aos="fade-up">Industries We Serve</h2>
-                        <p className="text-black py-3"  data-aos="fade-up">
+                        <p className="xl:text-lg text-base text-[#212121] font-normal"  data-aos="fade-up">
                             We provide innovative and tailored solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations.
                         </p>
                     </div>
@@ -89,8 +89,8 @@ const IndustriesHome: React.FC = () => {
                                     <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[300px] hover:shadow-lg transition-shadow">
                                         <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full" src={service.img} />
                                         <div>
-                                            <h3 data-aos="fade-up" className="text-[#212121] text-lg font-semibold">{service.title}</h3>
-                                            <p data-aos="fade-up" className="text-[#212121] text-sm">{service.sorttitle}</p>
+                                            <h3  data-aos="fade-up" className="text-[#212121] text-lg font-semibold">{service.title}</h3>
+                                            <p  data-aos="fade-up" className="text-[#212121] text-sm">{service.sorttitle}</p>
                                         </div>
                                     </div>
                                 </Link>

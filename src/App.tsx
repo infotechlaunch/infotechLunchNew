@@ -14,30 +14,11 @@ import ScrollToTop from "./pages/ScrollToTop";
 import HireMobileAppDeveloper from "./pages/HireMobileAppDeveloper";
 import TalentSolutions from "./pages/TalentSolutions";
 import FoodBeverageeos from "./pages/FoodBeverageeos";
-// import AISocialMedia from "./pages/AISocialMedia";
-import AIConsulting from "./pages/AIConsulting";
-import AIAgentDevelopmentNew from "./pages/AIAgentDevelopmentNew";
-import AdaptiveAiDevelopment from "./pages/AdaptiveAiDevelopment";
-import AiChatbotDevelopment from "./pages/AiChatbotDevelopment";
-import Healthcare from "./pages/Healthcare";
-import ECommerce from "./pages/ECommerce";
-import CaseStudy from "./pages/CaseStudy";
-import GrowthMarketing from "./pages/GrowthMarketing";
-import UiUxDesign from "./pages/UiUxDesign";
-import SocialMedia from "./pages/SocialMedia";
-
-
-
-
-
-
-
-
+import AISocialMedia from "./pages/AISocialMedia";
 function App() {
 
   return (
     <>
-      {/* <Router basename="/infotech"> */}
       <Router>
       <ScrollToTop />
         <Routes>
@@ -56,21 +37,8 @@ function App() {
           <Route path="/hire-mobile-app-developer" element={<HireMobileAppDeveloper/>} />
           <Route path="/talent-solutions" element={<TalentSolutions/>} />
           <Route path="/food-beverageeos/" element={<FoodBeverageeos/>} />
-          {/* <Route path="/ai-social-media/" element={<AISocialMedia/>} /> */}
-          <Route path="/ai-consulting" element={<AIConsulting/>} />
-          <Route path="/ai-agent-development-new" element={<AIAgentDevelopmentNew/>} />
-          <Route path="/adaptive-ai-development" element={<AdaptiveAiDevelopment/>} />
-          <Route path="/ai-chatbot-development" element={<AiChatbotDevelopment/>} />
-          <Route path="/health-care" element={<Healthcare/>} />
-          <Route path="/e-commerce" element={<ECommerce/>} />
-          <Route path="/case-study" element={<CaseStudy/>} />
-          <Route path="/growth-and-marketing" element={<GrowthMarketing/>} />
-          <Route path="/ui-ux-design" element={<UiUxDesign/>} />
-          <Route path="/ai-social-media" element={<SocialMedia/>} />
+          <Route path="/ai-social-media/" element={<AISocialMedia/>} />
           
-          
-          
-
 
           {/* Fallback for invalid routes */}
           <Route path="*" element={<Navigate to="/" replace />} />

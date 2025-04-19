@@ -10,11 +10,11 @@ import icon7 from "../../assets/Images/icon/ic07.svg"
 import icon8 from "../../assets/Images/icon/ic08.svg"
 import icon9 from "../../assets/Images/icon/ic10.svg"
 import icon10 from "../../assets/Images/icon/ic10.svg"
-// import icon11 from "../../assets/Images/icon/ic11.svg"
-// import icon12 from "../../assets/Images/icon/ic12.svg"
-// import icon13 from "../../assets/Images/icon/ic13.svg"
-// import icon14 from "../../assets/Images/icon/ic14.svg"
-// import icon15 from "../../assets/Images/icon/ic15.svg"
+import icon11 from "../../assets/Images/icon/ic11.svg"
+import icon12 from "../../assets/Images/icon/ic12.svg"
+import icon13 from "../../assets/Images/icon/ic13.svg"
+import icon14 from "../../assets/Images/icon/ic14.svg"
+import icon15 from "../../assets/Images/icon/ic15.svg"
 
 const TalentSolutions: React.FC = () => {
     const [activeTab, setActiveTab] = useState("All Positions");
@@ -147,70 +147,70 @@ const TalentSolutions: React.FC = () => {
             ]
         },
     ];
-    // const Mobileservices = [
-    //     {
-    //         title: "Art & Animation",
-    //         image: icon11,
-    //         items: [
-    //             "Technical Artist",
-    //             "Game Artist",
-    //             "3D Game Artist",
-    //             "2D Game Artist",
-    //             "Environment Artist",
-    //             "Concept Artist",
-    //             "VFX Artist",
-    //             "Gamply Animator",
-    //             "Technical Animator"
-    //         ]
-    //     },
-    //     {
-    //         title: "Design",
-    //         image: icon12,
-    //         items: [
-    //             "Game Designer",
-    //             "Technical Designer",
-    //             "UI Designer",
-    //             "UX Designer",
-    //             "Level Designer",
-    //             "Product Designer"
-    //         ]
-    //     },
-    //     {
-    //         title: "Production",
-    //         image: icon13,
-    //         items: [
-    //             "Games Producer",
-    //             "Product Management",
-    //             "Project Management",
-    //             "Storyboarding",
-    //             "Prototyping"
-    //         ]
-    //     },
-    //     {
-    //         title: "Development & Testing",
-    //         image: icon14,
-    //         items: [
-    //             "Unity Developer",
-    //             "Unreal Developer",
-    //             "Gameplay Programmer",
-    //             "Animation Programmer",
-    //             "AI Programmer",
-    //             "UI Programmer",
-    //             "QA Tester",
-    //             "Design Developer"
-    //         ]
-    //     },
-    //     {
-    //         title: "Engineering",
-    //         image: icon15,
-    //         items: [
-    //             "Build Engineer",
-    //             "Automation Enginner",
-    //             "QA Engineer",
-    //             "Gameplay Engineer",
-    //         ]
-    //     },
-    // ];
+    const Mobileservices = [
+        {
+            title: "Art & Animation",
+            image: icon11,
+            items: [
+                "Technical Artist",
+                "Game Artist",
+                "3D Game Artist",
+                "2D Game Artist",
+                "Environment Artist",
+                "Concept Artist",
+                "VFX Artist",
+                "Gamply Animator",
+                "Technical Animator"
+            ]
+        },
+        {
+            title: "Design",
+            image: icon12,
+            items: [
+                "Game Designer",
+                "Technical Designer",
+                "UI Designer",
+                "UX Designer",
+                "Level Designer",
+                "Product Designer"
+            ]
+        },
+        {
+            title: "Production",
+            image: icon13,
+            items: [
+                "Games Producer",
+                "Product Management",
+                "Project Management",
+                "Storyboarding",
+                "Prototyping"
+            ]
+        },
+        {
+            title: "Development & Testing",
+            image: icon14,
+            items: [
+                "Unity Developer",
+                "Unreal Developer",
+                "Gameplay Programmer",
+                "Animation Programmer",
+                "AI Programmer",
+                "UI Programmer",
+                "QA Tester",
+                "Design Developer"
+            ]
+        },
+        {
+            title: "Engineering",
+            image: icon15,
+            items: [
+                "Build Engineer",
+                "Automation Enginner",
+                "QA Engineer",
+                "Gameplay Engineer",
+            ]
+        },
+    ];
 
 
     return (

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/Images/logo.png';
 import iconsev from '../../assets/Images/icon/mobile-app-development-header-icon.svg';
-// import iconsev01 from '../../assets/Images/icon/ai-development-icon.svg';
+import iconsev01 from '../../assets/Images/icon/ai-development-icon.svg';
 import iconsev02 from '../../assets/Images/icon/blockchain-app-dev-header-icon.svg';
 import iconsev03 from '../../assets/Images/icon/coin-and-tokens-dev-header-icon.svg';
 import iconsev04 from '../../assets/Images/icon/healthcare-app-dev-header-icon.svg';
@@ -17,19 +17,64 @@ import iconsev10 from '../../assets/Images/icon/career-at-comfygen-header-icon.s
 import iconsev11 from '../../assets/Images/icon/life-at-comfygen-header-icon.svg';
 import iconsev12 from '../../assets/Images/icon/contact-us-img.svg';
 import iconsev13 from '../../assets/Images/icon/our-blog-img.svg';
-import aiConsultingIcon from '../../assets/Images/icon/ai-conulting.png';
-
 
 import bg from '../../assets/Images/mobile-app-development-services-img.webp';
 
 const tabs = [
+    // {
+    //     id: "ai-development",
+    //     title: "AI Development",
+    //     description: "Best AI Development Service",
+    //     icon: iconsev01,
+    //     links: [
+    //         { name: "AI Development", path: "/ai-development" },
+    //         { name: "AI Agent Development", path: "/ai-agent-development" },
+    //     ]
+
+    // },
     {
         id: "mobile-app",
         title: "Mobile App Development",
         description: "Innovative Solutions for Every Platform",
         icon: iconsev, // Replace with actual path
         links: [
-            { name: "UI/UX Design", path: "/ui-ux-design" },
+            { name: "Android App Development", path: "/mobile-app-development" },
+            { name: "Ios App Development", path: "/application-consulting" },
+            { name: "Flutter App Development", path: "/application-consulting" },
+            { name: "Cross Platform App Development", path: "/application-consulting" },
+        ],
+    },
+ 
+    {
+        id: "blockchain",
+        title: "Blockchain Services",
+        description: "Secure Blockchain-Based App Solutions",
+        icon: iconsev02,
+        links: [
+            { name: "ICO Development", path: "/mobile-app-development" },
+            { name: "Wallet Development", path: "/application-consulting" },
+            { name: "Smart Contract", path: "/application-consulting" },
+            { name: "NFT Development", path: "/application-consulting" },
+            { name: "DEFI Development", path: "/application-consulting" },
+            { name: "Telegram Mini Apps", path: "/application-consulting" },
+            { name: "Asset Tokenization", path: "/application-consulting" },
+            { name: "Real Estate Tokenization", path: "/application-consulting" },
+        ]
+    },
+    {
+        id: "crypto",
+        title: "Coin And Tokens Development",
+        description: "Custom Cryptocurrency Creation Made Easy",
+        icon: iconsev03,
+        links: [
+            { name: "Crypto Token Development", path: "/crypto-token-development-company" },
+            { name: "ERC-20 Token Development", path: "/erc20-token-development" },
+            { name: "Ethereum Token Development", path: "/ethereum-token-development" },
+            { name: "Solana Token Development", path: "/solana-token-development" },
+            { name: "Tron Token Development", path: "/tron-token-development" },
+            { name: "NFT Token Development", path: "/nft-token-development-company" },
+            { name: "Altcoin Development Services", path: "/altcoin-development-services" },
+
         ],
     },
     {
@@ -38,7 +83,13 @@ const tabs = [
         description: "Transforming Healthcare with Smart Apps",
         icon: iconsev04,
         links: [
-            { name: "Healthcare", path: "/health-care" },
+            { name: "Doctor Appointment App Development", path: "/doctor-appointment-app-development" },
+            { name: "Medicine Delivery App Development", path: "/medicine-delivery-app-development" },
+            { name: "Medicine Ordering App Development", path: "/medicine-ordering-app-development" },
+            { name: "Clinical App Development", path: "/clinical-app-development" },
+            { name: "Pharmacy App Development", path: "/pharmacy-app-development" },
+            { name: "Telemedicine App Development", path: "/telemedicine-app-development" },
+            { name: "Laboratory App Development", path: "/laboratory-app-development" },
         ],
     },
 
@@ -50,7 +101,14 @@ const tabs = [
         description: "In-depth End-to-End Development Services",
         icon: iconsev05,
         links: [
-            { name: "AI Development", path: "/ai-development" },
+            { name: "ICO Development", path: "/mobile-app-development" },
+            { name: "Wallet Development", path: "/application-consulting" },
+            { name: "Smart Contract", path: "/application-consulting" },
+            { name: "NFT Development", path: "/application-consulting" },
+            { name: "DEFI Development", path: "/application-consulting" },
+            { name: "Telegram Mini Apps", path: "/application-consulting" },
+            { name: "Asset Tokenization", path: "/application-consulting" },
+            { name: "Real Estate Tokenization", path: "/application-consulting" },
         ],
     },
     {
@@ -60,10 +118,11 @@ const tabs = [
         icon: iconsev06,
         links: [
             { name: "Hire Mobile App Developer", path: "/hire-mobile-app-developer" },
+            // { name: "Hire .Net Developer", path: "/hire-dot-net-developer" },
+            // { name: "Hire Blockchain Developer", path: "/hire-blockchain-developer" },
         ],
     },
 ];
-
 const companies = [
     {
         id: "about-us",
@@ -124,43 +183,146 @@ const companies = [
 
 
 ];
+// const Resources = [
+//     {
+//         id: "Videos",
+//         title: "Videos",
+//         description: "Visual stories that inspire and educate.",
+//         icon: iconsev07,
+//         path: "/Videos",
 
-const aiDevelopment = [
+//     },
+//     {
+//         id: "Infographics",
+//         title: "Infographics",
+//         description: "Simplifying data with stunning visuals.",
+//         icon: iconsev08,
+//         path: "/infographics",
 
+//     },
+//     {
+//         id: "industry",
+//         title: "Industry Reports",
+//         description: "Insights for smarter business decisions.",
+//         icon: iconsev09,
+//         path: "/portfolio",
+
+//     },
+//     {
+//         id: "books",
+//         title: "Feature books",
+//         description: "Discover ideas through expert books.",
+//         icon: iconsev10,
+//         path: "/feature-books",
+
+//     },
+//     {
+//         id: "books",
+//         title: "Talent Solutions",
+//         description: "Dive into a world of limitless possibilities",
+//         icon: iconsev10,
+//         path: "/talent-solutions",
+
+//     },
+// ];
+const Industries = [
     {
-        id: "mobile-app",
-        title: "AI Consulting",
-        description: "Smart AI solutions for business growth.",
-        icon: aiConsultingIcon,
-        path: "/ai-consulting"
-    },
- 
-    {
-        id: "blockchain",
-        title: "AI Agent Development",
-        description: "Building smart agents for automated tasks.",
-        icon: iconsev02,
-        path: "/ai-agent-development-new"
-    },
+        id: "food",
+        title: "Food & Beverage",
+        description: "Food Delivery & Grocery Delivery",
+        icon: iconsev07,
+        path: "/food-beverageeos",
 
-    {
-        id: "crypto",
-        title: "Adaptive AI Development",
-        description: "Creating AI that learns and evolves.",
-        icon: iconsev03,
-        path: "/adaptive-ai-development"
     },
-
     {
-        id: "healthcare",
-        title: "AI Chatbot Development",
-        description: "Building chatbots that talk smart.",
-        icon: iconsev04,
-        path: "/ai-chatbot-development"
-    },
+        id: "InfoLogistics",
+        title: "Logistics & Delivery",
+        description: "Pickup & Delivery & On Demand Delivery",
+        icon: iconsev08,
+        path: "/infographics",
 
+    },
+    {
+        id: "Entertainment",
+        title: "Entertainment",
+        description: "OTT & Video Streaming ",
+        icon: iconsev09,
+        path: "/entertainment",
+
+    },
+    {
+        id: "Enterprise",
+        title: "Enterprise",
+        description: "CRM & ERP",
+        icon: iconsev10,
+        path: "/enterprise",
+
+    },
+    {
+        id: "Travel",
+        title: "Travel & Transport",
+        description: "Travel & Transport",
+        icon: iconsev10,
+        path: "/travel-transport",
+
+    },
+    {
+        id: "E-commerce",
+        title: "E-commerce",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/ecommerce",
+
+    },
+    {
+        id: "Education",
+        title: "Education",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/education",
+
+    },
+    {
+        id: "RealEstate",
+        title: "Real Estate",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/real-estate",
+
+    },
+    {
+        id: "Fantasy",
+        title: "Fantasy & Betting",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/fantasy",
+
+    },
+    {
+        id: "Healthcare",
+        title: "Healthcare",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/healthcare",
+
+    },
+    {
+        id: "On-Demand",
+        title: "On-Demand",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/on-demand",
+
+    },
+    {
+        id: "FinTech",
+        title: "FinTech",
+        description: "Fitness App & Nutrition app & Yoga",
+        icon: iconsev10,
+        path: "/fintech",
+
+    },
 ];
-
 const HeaderNew: React.FC = () => {
     const [activeTab, setActiveTab] = useState(tabs[0].id);
     const [isOpen, setIsOpen] = useState(false);
@@ -169,11 +331,11 @@ const HeaderNew: React.FC = () => {
         setIsOpen(!isOpen);
     };
 
-    const [openSection, setOpenSection] = useState<string | number | null>(null);
+  const [openSection, setOpenSection] = useState<string | number | null>(null);
 
-    const toggleSection = (sectionId: string | number) => {
-        setOpenSection(openSection === sectionId ? null : sectionId);
-    };
+const toggleSection = (sectionId: string | number) => {
+    setOpenSection(openSection === sectionId ? null : sectionId);
+};
 
     return (
         <div className="h-[60px] md:h-[80px]">
@@ -181,16 +343,11 @@ const HeaderNew: React.FC = () => {
                 <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <nav className="flex items-center justify-between py-0 w-full mx-auto  md:px-0 relative  mx-auto">
                         <div>
+                         <Link to="/" className="relative flex items-center flex-shrink-0 text-white">
+                                <span className="w-[60px] h-[60px] bg-[#297ea3] rounded-full mr-[15px]"> <img src={Logo} alt="" width="100" height="51" /></span>
+                                <span className="xl:text-3xl md:text-2xl text-2xl text-xl font-bold text-[#212121]">InfoTech Launch</span>                                 {/* <span className="xl:text-3xl md:text-2xl text-2xl text-xl font-bold text-[#212121]">Vivek Gupta</span> */}
+                            </Link> 
 
-                            <Link to="/" className="relative flex items-center flex-shrink-0 text-white">
-                                <span className="w-[60px] h-[60px] bg-[#297ea3] rounded-full mr-[15px] flex items-center justify-center">
-                                    <img src={Logo} alt="" className="w-[40px] h-auto" />
-                                </span>
-                                <span className="flex flex-col leading-tight text-[#212121]">
-                                    <span className="xl:text-1xl md:text-1xl text-1xl font-bold">InfoTech</span>
-                                    <span className="xl:text-1xl md:text-1xl text-1xl font-bold">Launch</span>
-                                </span>
-                            </Link>
 
                         </div>
                         <div>
@@ -211,68 +368,11 @@ const HeaderNew: React.FC = () => {
                                             className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">Home</span>
                                     </Link>
                                 </div>
-
                                 <div>
-                                    <Link to="/ai-social-media/">
+                                    <Link to="/ai-development">
                                         <span
-                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Social Media</span>
+                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Development</span>
                                     </Link>
-                                </div>
-                                
-                                <div>
-                                <div className="group">
-                                    <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"><span
-                                        className=" font-medium ">AI Development</span>
-                                        <svg stroke="currentColor"
-                                            fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                            className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                                        </svg>
-                                    </button>
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[8px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
-                                        <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
-                                            <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
-                                                <div className="">
-                                                    <ul className="tab_list">
-                                                        {aiDevelopment.map((tab) => (
-                                                            <li
-                                                                key={tab.id}
-                                                                onClick={() => setActiveTab(tab.id)}
-                                                                className={`flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer ${activeTab === tab.id ? "bg-[#f13c3c]/10" : "hover:bg-[#f13c3c]/10"
-                                                                    }`}
-                                                            >
-                                                                <Link to={tab.path}>
-                                                                <div>
-                                                                    <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
-                                                                    <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span>
-                                                                </div>
-                                                                </Link>
-                                                            </li>
-                                                        ))}
-
-                                                    </ul>
-                                                </div>
-                                                <div className="space-y-10">
-                                                    
-                                                </div>
-
-                                                <div>
-                                                    <Link to="/contact-us" className="relative">
-                                                        <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
-                                                        <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
-                                                            <button className="flex items-center gap-2 bg-[#f13c3c] py-3 px-6 font-semibold rounded-full text-base text-white">Connect
-                                                                to expert
-                                                            </button>
-                                                        </span>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 </div>
                                 <div>
                                     <Link to="/talent-solutions">
@@ -280,13 +380,12 @@ const HeaderNew: React.FC = () => {
                                             className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Talent Solutions</span>
                                     </Link>
                                 </div>
-                                {/* <div>
+                                <div>
                                     <Link to="/ai-social-media/">
                                         <span
                                             className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Social Media </span>
                                     </Link>
-                                </div> */}
-                                
+                                </div>
                                 <div className="group">
                                     <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"><span
                                         className=" font-medium ">Services</span>
@@ -298,7 +397,7 @@ const HeaderNew: React.FC = () => {
                                             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                                         </svg>
                                     </button>
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[8px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                                                 <div className="">
@@ -357,6 +456,89 @@ const HeaderNew: React.FC = () => {
 
                                 <div className="group">
                                     <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80">
+                                        <span className="font-medium">Industries</span>
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                            className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
+                                        <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
+                                            <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+
+                                                <div className="col-span-3">
+                                                    <ul className="tab_list grid grid-cols-3 2xl:gap-[15px] gap-[20px]">
+                                                        {Industries.map((Industrie) => (
+                                                            <Link to={Industrie.path} className="flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer hover:bg-[#f13c3c]/10">
+                                                                <img alt={Industrie.title} loading="lazy" width="40" height="40" src={Industrie.icon} />
+                                                                <div>
+                                                                    <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">
+                                                                        {Industrie.title}
+                                                                    </p>
+                                                                    <span className="text-[#212121]/80 text-sm font-normal">{Industrie.description}</span>
+                                                                </div>
+                                                            </Link>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               {/* <div className="group">
+                                    <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80">
+                                        <span className="font-medium">Resources</span>
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                            className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
+                                        <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
+                                            <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+
+                                                <div>
+                                                    <ul className="tab_list">
+                                                        {Resources.map((Resource) => (
+                                                            <Link to={Resource.path} className="flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer hover:bg-[#f13c3c]/10">
+                                                                <img alt={Resource.title} loading="lazy" width="40" height="40" src={Resource.icon} />
+                                                                <div>
+                                                                    <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">
+                                                                        {Resource.title}
+                                                                    </p>
+                                                                    <span className="text-[#212121]/80 text-sm font-normal">{Resource.description}</span>
+                                                                </div>
+                                                            </Link>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                                <div></div>
+                                                <div>
+                                                    <Link to="/contact-us" className="relative">
+                                                        <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
+                                                        <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
+                                                            <button className="flex items-center gap-2 bg-[#f13c3c] py-3 px-6 font-semibold rounded-full text-base text-white">
+                                                                Connect to expert
+                                                            </button>
+                                                        </span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>*/}
+                                <div className="group">
+                                    <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80">
                                         <span className="font-medium">Company</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
@@ -367,7 +549,7 @@ const HeaderNew: React.FC = () => {
                                         </svg>
                                     </button>
 
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[8px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[10px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
 
@@ -403,7 +585,18 @@ const HeaderNew: React.FC = () => {
 
                             </div>
                         </div>
-                        
+                        {/* <div className="xl:block hidden">
+                            <Link to='/Contact-us' className="btn-comn">
+                                <div className="btn-left-sec">
+                                    <span>Get a Quote</span>
+                                </div>
+                                <div className="btn-rund-sec">
+                                    <svg className="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="#fff" d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"></path>
+                                    </svg>
+                                </div>
+                            </Link>
+                        </div> */}
                         <div id="slideover-container" className={`fixed inset-0 w-full h-full ${isOpen ? "visible" : "invisible"}`}>
                             <span
                                 id="slideover-bg"
@@ -506,12 +699,10 @@ const HeaderNew: React.FC = () => {
                                             <div className="p-3 space-y-2 text-sm font-medium">
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                    <Link to="/ai-agent-development">AI Agent Development</Link>
-                                                </li>
+                                                    <Link to="/ai-development">Ai Development</Link></li>
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                    <Link to="/ai-chatbot-development">AI Chatbot Development</Link>
-                                                </li>
+                                                    <Link to="/ai-agent-development">AI Agent Development</Link></li>
                                             </div>
                                         </ul>
                                     </div>
@@ -549,7 +740,82 @@ const HeaderNew: React.FC = () => {
                                                     </span>Mobile App Development
                                                 </p>
                                                 <div className="p-2 space-y-2 text-sm font-medium">
-                                                    
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/mobile-app-development"> Mobile app Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/ca/application-consulting-services"> Application Consulting Service</Link>
+                                                    </li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/hybrid-mobile-app-development"> Hybrid Mobile App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/ios-app-development"> iOS App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/android-app-development"> Android App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/flutter-development-company"> Flutter Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/news-application-development"> News &amp; Web App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/live-line-cricket-mobile-app-development"> Cricket Fast Line App
+                                                            Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/e-commerce-app-development"> E-Commerce App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/taxi-app-development-company"> Taxi App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/food-delivery-app-development"> Food Delivery App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/ca/startup-app-development"> Startup App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/dating-app-development"> Dating App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/doctor-appointment-app-development"> Doctor Appointment App Development
+                                                        </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/clinical-application-development"> Clinical App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/pharmacy-app-development"> Pharmacy App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/telemedicine-app-development"> Telemedicine App Development </Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/medicine-delivery-app-development"> Medicine Delivery App Development</Link>
+                                                    </li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/medicine-app-development"> Medicine Ordering App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/laboratory-app-development"> Laboratory App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/news-application-development"> News Application Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/ca/education-app-development-company"> Education App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/ca/magazine-app-development-company"> Magazine App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/e-learning-app-development"> E-Learning App Development</Link></li>
                                                 </div>
                                                 <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
                                                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
@@ -559,7 +825,24 @@ const HeaderNew: React.FC = () => {
                                                 </svg></span>Web Development
                                                 </p>
                                                 <div className="space-y-2 text-sm font-medium">
-                                                    
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/web-development"> Website Development</Link></li>
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/web-design"> Website Design</Link></li>
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/mern-stack-development"> MERN stack development</Link></li>
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/node-js-development"> Node JS Development</Link></li>
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/react-js-development"> React JS Development</Link></li>
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/next-js-development"> Next JS Development</Link></li>
                                                 </div>
                                                 <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
                                                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
@@ -568,17 +851,188 @@ const HeaderNew: React.FC = () => {
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
                                                 </svg></span>Stack Development</p>
                                                 <div className="space-y-2 text-sm font-medium">
-                                                    
                                                     <li
                                                         className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/hire-mobile-app-developer"> Hire Mobile App Developer</Link>
-                                                    </li>
-                                                    
+                                                        <Link to="/react-native-development"> React Native Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/python-development"> Python Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/iot-development-company"> IoT Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/hire-mobile-app-developer"> Hire Mobile App Developer</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/social-media-app-development"> Social Media App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/finance-app-development"> Finance App Developer</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/healthcare-app-development"> Healthcare App Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/mobile-game-development-company"> Mobile game Development</Link></li>
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/hire-dot-net-developer"> Hire .Net Developer</Link></li>
                                                 </div>
                                             </ul>
                                         </div>
                                     </div>
-                                    
+                                    {/* <div className="flex justify-between p-3 items-center px-6 bg-transparent" onClick={() => toggleSection('blockchain')}>
+                                        <div className="flex items-center space-x-2">
+                                            <svg stroke="currentColor" fill="currentColor"
+                                                stroke-width="0" viewBox="0 0 24 24" className="text-[#212121]" height="22" width="22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0049 22.0029C6.48204 22.0029 2.00488 17.5258 2.00488 12.0029C2.00488 6.48008 6.48204 2.00293 12.0049 2.00293C17.5277 2.00293 22.0049 6.48008 22.0049 12.0029C22.0049 17.5258 17.5277 22.0029 12.0049 22.0029ZM12.0049 20.0029C16.4232 20.0029 20.0049 16.4212 20.0049 12.0029C20.0049 7.58465 16.4232 4.00293 12.0049 4.00293C7.5866 4.00293 4.00488 7.58465 4.00488 12.0029C4.00488 16.4212 7.5866 20.0029 12.0049 20.0029ZM11.0049 16.0029H8.00488V8.00293H11.0049V6.00293H13.0049V8.00293H14.0049C15.3856 8.00293 16.5049 9.12222 16.5049 10.5029C16.5049 11.0657 16.3189 11.5851 16.0051 12.0029C16.3189 12.4208 16.5049 12.9401 16.5049 13.5029C16.5049 14.8836 15.3856 16.0029 14.0049 16.0029H13.0049V18.0029H11.0049V16.0029ZM10.0049 13.0029V14.0029H14.0049C14.281 14.0029 14.5049 13.7791 14.5049 13.5029C14.5049 13.2268 14.281 13.0029 14.0049 13.0029H10.0049ZM10.0049 10.0029V11.0029H14.0049C14.281 11.0029 14.5049 10.7791 14.5049 10.5029C14.5049 10.2268 14.281 10.0029 14.0049 10.0029H10.0049Z">
+                                                </path>
+                                            </svg>
+                                            <span> Blockchain </span>
+                                        </div>
+                                        <svg stroke="currentColor" fill="currentColor"
+                                            stroke-width="0" viewBox="0 0 24 24" className={`rotate-0 ${openSection === 'blockchain' ? 'rotate-180' : ''}`} height="30" width="30"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                        </svg>
+                                    </div>
+                                    <div className="bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-[max-height] duration-300 ease-in" style={{ maxHeight: openSection === 'blockchain' ? 'none' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease-in-out', }}>
+                                        <ul className="grid grid-cols-1 gap-2 p-4">
+                                            <p className="flex items-center text-base font-medium text-[#212121]">
+                                                <span className="pr-1">
+                                                    <svg
+                                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                                        className="text-[#212121]" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                                    </svg>
+                                                </span>Blockchain Development
+                                            </p>
+                                            <div className="p-3 space-y-2 text-sm font-medium">
+                                                <li className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/blockchain-development">Blockchain Development company</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/blockchain-consulting-services">Blockchain Consulting Service</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/substrate-development-company">Substrate Development Company</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/polygon-blockchain-development">polygon Blockchain development</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/hyperledger-blockchain-development">Hyperledger Blockchain Development</Link>
+                                                </li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/multichain-blockchain-development">Multichain Blockchain</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/solana-blockchain-development-company">Solana Blockchain Development</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/stellar-blockchain-development-company">Stellar Blockchain Development</Link>
+                                                </li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/cardano-blockchain-development-company">Cardano Blockchain Development</Link>
+                                                </li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/ethereum-blockchain-development-company">Ethereum Blockchain Development</Link>
+                                                </li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/hire-blockchain-developer">Hire Blockchain Developer</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/pow-blockchain-development-company">POW Blockchain Development</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/poa-blockchain-development-company">POA Blockchain Development</Link></li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/ca/dpos-blockchain-development-company">DPOS Blockchain Development</Link></li>
+                                            </div>
+                                            <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                                className="text-[#212121]" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                            </svg></span>Token Development</p>
+                                            <div className="p-3 space-y-2 text-sm font-medium">
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/crypto-token-development-company">Crypto Token Development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/erc20-token-development">ERC-20 Token Development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/ethereum-token-development">Ethereum token development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/solana-token-development">Solana token development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/tron-token-development">Tron token development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/nft-token-development-company">NFT token development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/altcoin-development-services">Altcoin Development services</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/nft-marketplace-development-company">NFT Marketplace Development</Link></li>
+                                            </div>
+                                            <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                                className="text-[#212121]" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                            </svg></span>Other Development</p>
+                                            <div className="p-3 space-y-2 text-sm font-medium">
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/crypto-wallet-development">Crypto wallet development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/cryptocurrency-exchange-development">Crypto exchange services</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/cryptocurrency-mlm-software-development">Crypto MLM Software development</Link>
+                                                </li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/crypto-white-paper-development">Crypto White Paper Development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/metaverse-development">Metaverse Development Company</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/decentralized-exchange-development">Decentralized Exchange Development</Link>
+                                                </li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/dapp-development-company">dApp Development Company</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/defi-development-company">DeFi Development Company</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/defi-smart-contract-development">DeFi Smart Contract Development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/smart-contract-development">Smart Contract Development</Link></li>
+                                                <li
+                                                    className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/smart-contract-mlm-software">Smart Contract MLM Software</Link></li>
+                                            </div>
+                                        </ul>
+                                    </div> */}
                                   
                                     <div>
                                         <div className="flex justify-between p-3 items-center px-6 bg-transparent " onClick={() => toggleSection('OurCompany')}>
@@ -611,25 +1065,25 @@ const HeaderNew: React.FC = () => {
                                                 </svg></span>Our Company</p>
                                                 <div className="p-3 space-y-2 text-sm font-medium ">
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/about-us">About us</Link></li>
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/portfolio">Our Portfolio</Link></li>
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/Career-at-infotechlaunch">Career at InfoTech Launch</Link></li>
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/career">Career at InfoTech Launch</Link></li>
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/life-at-infotechlaunch">Life at InfoTech Launch</Link></li>
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="//life-at-infotechlaunch">Life at InfoTech Launch</Link></li>
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/client-testimonial">Client testimonial</Link></li>
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/client-testimonials">Client testimonial</Link></li>
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/contact-us">Contact us</Link></li>
                                                     <li
-                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/blog">Our Blog</Link></li>
                                                 </div>
                                             </ul>

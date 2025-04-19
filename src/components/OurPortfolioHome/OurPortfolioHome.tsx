@@ -17,7 +17,9 @@ const OurPortfolioHome: React.FC = () => {
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="text-center mb-10">
                     <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-up">Our Portfolio</h2>
-                    <p className="text-base font-normal mt-2" data-aos="fade-up">Dive into our portfolio showcasing impactful digital products and tailored solutions. From sleek websites to powerful mobile apps, each project reflects our passion for innovation, quality, and client success.</p>
+                    <p className="text-base font-normal mt-2" data-aos="fade-up">Explore our selection of accomplished projects that highlight our
+                        proficiency in online solutions and app development. Every project demonstrates our dedication to
+                        excellence, creativity, and client fulfilment.</p>
                 </div>
                 <div className="space-y-10">
                     <div className="rounded-[40px] bg-[#F5F5F9] border border-[#000000]/10 space-x-3 px-8 md:py-10 py-6">
@@ -31,7 +33,7 @@ const OurPortfolioHome: React.FC = () => {
                             <div className="flex items-center">
                                 <div className="space-y-4">
                                     <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">Healthcare Services App in India</h3>
-                                    <p data-aos="fade-up" className="text-black py-3">A cutting-edge telemedicine platform designed to bridge the gap between patients and healthcare providers. With features like virtual consultations, seamless appointment scheduling, and secure health record management, we are transforming the way healthcare is accessed and delivered across India.</p>
+                                    <p data-aos="fade-up" className="text-black py-3">A comprehensive telemedicine and healthcare management solution for patients and providers. It facilitates virtual consultations, appointment scheduling, and health record management, improving access to healthcare.</p>
                                     <div>
                                         <p className="text-black py-3"></p>
                                         <ul className="list-disc list-inside space-y-2"></ul>
@@ -85,7 +87,7 @@ const OurPortfolioHome: React.FC = () => {
                             <div className="flex items-center">
                                 <div className="space-y-4">
                                     <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">E Commerce</h3>
-                                    <p data-aos="fade-up" className="text-black py-3">Discover FitClub, a game-changing e-commerce platform designed to elevate your fitness journey. With our all-in-one mobile app, you can easily shop for fitness products, track your progress, and access personalized health insights, all from the convenience of your device. Join the future of fitness and experience the ultimate blend of shopping and wellness.</p>
+                                    <p data-aos="fade-up" className="text-black py-3">Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before.</p>
                                     <div>
                                         <p className="text-black py-3"></p>
                                         <ul className="list-disc list-inside space-y-2"></ul>

@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
                                     </Link>
 
 
-                                    {/* <Link target="_blank" to="#" className="flex items-start gap-2">
+                                    <Link target="_blank" to="#" className="flex items-start gap-2">
                                         <img alt="" loading="lazy" width="36" height="37" src={location} />
                                         <div>
                                             <span className="text-white lg:text-base text-sm">
@@ -138,14 +138,14 @@ const ContactForm: React.FC = () => {
                                                 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar, Jaipur,
                                                 Rajasthan 302006</p>
                                         </div>
-                                    </Link> */}
+                                    </Link>
                                     <Link target="_blank" to="#" className="flex items-start gap-2">
                                         <img alt="" loading="lazy" width="36" height="37" src={location} />
                                         <div>
                                             <span className="text-white lg:text-base text-sm">
                                                 Office  Location</span>
                                             <p className="text-white lg:text-lg text-base font-semibold">
-                                            174 A/1, Regent Colony, Tollygunge, Kolkata, West Bengal, 700040, India</p>
+                                            T14 501, Phase 1, Hinjawadi Rajiv Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057, India</p>
                                         </div>
                                     </Link> 
                                 </div>
