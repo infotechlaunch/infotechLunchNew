@@ -101,11 +101,11 @@ const Solutions: React.FC = () => {
 
 
     return (
-        <div className="Solutions_sec w-full bg-white lg:py-16 py-10">
+        <div className="Solutions_sec w-full bg-gradient-blue-red lg:py-16 py-10">
             <div className="container mx-auto  px-6">
                 <div className="w-full  mx-auto">
-                    <div className="text-center mb-12">
-                        <h3 className="text-[#f13c3c] text-lg font-semibold mb-3"  data-aos="fade-up" >Solutions</h3>
+                    <div className="text-center mb-12 text-white">
+                        <h3 className="text-orange text-lg font-semibold mb-3"  data-aos="fade-up" >Solutions</h3>
                         {/* <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px]" data-aos="fade-up" >
                             Full-Spectrum Of <span className="bg-red-500/10 px-2 inline-block">AI-Powered Solutions</span>
                             <br /> Engineered For Global Impact
@@ -174,7 +174,7 @@ const Solutions: React.FC = () => {
                             <div className="w-full md:w-[66%]">
                                 <div id="solutions-wrapper">
 
-                                <section className="panel panel-solutions" id="solution13">
+                                <section className="panel panel-solutions bg-white" id="solution13">
                                         <div className="panel-head">
                                             <Link to="#">
                                                 <div className="solution-content" data-aos="fade-up" >
@@ -263,7 +263,7 @@ const Solutions: React.FC = () => {
                                         </div>
                                     </section>
 
-                                    <section className="panel panel-solutions" id="solution1">
+                                    <section className="panel panel-solutions bg-white" id="solution1">
                                         <div className="panel-head">
                                             <Link to="#">
                                                 <div className="solution-content" data-aos="fade-up">
@@ -445,7 +445,7 @@ const Solutions: React.FC = () => {
                                     </section> */}
                                     
                                     
-                                    <section className="panel panel-solutions" id="solution5">
+                                    <section className="panel panel-solutions bg-white" id="solution5">
                                         <div className="panel-head">
                                             <Link to="#">
                                                 <div className="solution-content" data-aos="fade-up" >
@@ -538,7 +538,7 @@ const Solutions: React.FC = () => {
                                         </div>
                                     </section>
 
-                                    <section className="panel panel-solutions" id="solution4">
+                                    <section className="panel panel-solutions bg-white" id="solution4">
                                         <div className="panel-head">
                                             <Link to="#">
                                                 <div className="solution-content" data-aos="fade-up" >

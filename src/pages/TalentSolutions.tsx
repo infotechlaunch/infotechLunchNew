@@ -163,60 +163,7 @@ const TalentSolutions: React.FC = () => {
                         </div>
                     </section>
                  <TalentSection/>
-                    <section className="lg:py-16 py-10 bg-[#F7F9FC]">
-                        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                            <div className="text-center mb-[40px]">
-                                <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2" data-aos="fade-up">Meet Our Leaders</h2>
-                                <p className="text-gray-600 text-lg font-semibold mt-2" data-aos="fade-up">A collective of innovative minds and spirited individuals, committed to bringing their best in a dynamic and supportive digital workspace.</p>
-                            </div>
-                            <div className="leadership_list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                                <div className="lead_card" data-aos="fade-up" >
-                                    <div className="lead_inner">
-                                        <div className="media">
-                                            <img src={vani} alt="" data-wpmeteor-wheel="true" />
-                                        </div>
-                                        <div data-aos="fade-up" className="lead_cnt">
-                                            <h3>Vani Mahobia</h3>
-                                            <p>Founder & CEO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="lead_card" data-aos="fade-up">
-                                    <div className="lead_inner">
-                                        <div className="media">
-                                            <img src={Srishti} alt="" data-wpmeteor-wheel="true" />
-                                        </div>
-                                        <div data-aos="fade-up" className="lead_cnt">
-                                            <h3>Srishti Soni</h3>
-                                            <p>Sr Digital Marketing Manager</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="lead_card" data-aos="fade-up">
-                                    <div className="lead_inner">
-                                        <div className="media">
-                                            <img src={Ruchi} alt="" />
-                                        </div>
-                                        <div data-aos="fade-up" className="lead_cnt">
-                                            <h3>Ruchi Chourasia</h3>
-                                            <p>Chief Technical Officer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="lead_card" data-aos="fade-up">
-                                    <div className="lead_inner">
-                                        <div className="media">
-                                            <img src={Ayush} alt="" />
-                                        </div>
-                                        <div data-aos="fade-up" className="lead_cnt">
-                                            <h3>Ayush Tamboli</h3>
-                                            <p>Business Analyst</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                   
                 </div>
                 <Blog />
                 <ContactForm />

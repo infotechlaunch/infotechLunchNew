@@ -20,11 +20,11 @@ const projects = [
         link: "#",
     },
     {
-        title: "careem clone app",
+        title: "Careem Clone app",
         description:
             "The Careem Clone App is a feature-rich ride-hailing and delivery platform that connects users with drivers for seamless transportation. It offers real-time tracking, secure payments, and an intuitive interface for a smooth user experience. .",
         image: Careem,
-        alt: "careem clone app",
+        alt: "Careem Clone app",
         link: "#",
     },
     {

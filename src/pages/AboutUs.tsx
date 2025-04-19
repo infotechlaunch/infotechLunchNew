@@ -159,7 +159,7 @@ const AboutUs: React.FC = () => {
                                     </div>
                                     <div className="lead_cnt">
                                         <h3>Ayush Tamboli</h3>
-                                        <p>Business Analyst</p>
+                                        <p>Digital Analyst</p>
                                     </div>
                                 </div>
                             </div>
@@ -170,18 +170,18 @@ const AboutUs: React.FC = () => {
                                     </div>
                                     <div className="lead_cnt">
                                         <h3>Ansh Sharma</h3>
-                                        <p>Sr HR and Recruitment Mgr</p>
+                                        <p>Sr Delivery Manager</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="lead_card" data-aos="fade-up">
                                 <div className="lead_inner">
                                     <div className="media">
-                                        <img src={vivek} alt="" />
+                                        <img src={bydef} alt="" />
                                     </div>
                                     <div className="lead_cnt">
-                                        <h3>Vivek Gupta</h3>
-                                        <p>Sr. Web Developer</p>
+                                        <h3>Dhanjit</h3>
+                                        <p>Full Stack Backend Enginner</p>
                                     </div>
                                 </div>
                             </div>

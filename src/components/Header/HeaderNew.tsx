@@ -97,14 +97,14 @@ const companies = [
         path: "/Career-at-infotechlaunch",
 
     },
-    {
-        id: "Life",
-        title: "Life at InInfoTech Launch",
-        description: "Experience Our Collaborative Work Culture",
-        icon: iconsev11,
-        path: "/life-at-infotechlaunch",
+    // {
+    //     id: "Life",
+    //     title: "Life at InInfoTech Launch",
+    //     description: "Experience Our Collaborative Work Culture",
+    //     icon: iconsev11,
+    //     path: "/life-at-infotechlaunch",
 
-    },
+    // },
     {
         id: "Contact",
         title: "Contact us",
@@ -626,9 +626,9 @@ const HeaderNew: React.FC = () => {
                                                     <li
                                                         className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/Career-at-infotechlaunch">Career at InfoTech Launch</Link></li>
-                                                    <li
+                                                    {/* <li
                                                         className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/life-at-infotechlaunch">Life at InfoTech Launch</Link></li>
+                                                        <Link to="/life-at-infotechlaunch">Life at InfoTech Launch</Link></li> */}
                                                     <li
                                                         className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/client-testimonial">Client testimonial</Link></li>

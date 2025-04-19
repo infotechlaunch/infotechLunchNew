@@ -54,8 +54,8 @@ const Blog: React.FC = () => {
             <section className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="flex items-center justify-center">
                     <div className="space-y-3">
-                        <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold"  data-aos="fade-up">Our Latest Blog</h2>
-                        <p className="text-base text-[#212121] font-normal text-center"  data-aos="fade-up">
+                        <h2 className="xl:text-4xl text-3xl text-white text-center font-bold"  data-aos="fade-up">Our Latest Blog</h2>
+                        <p className="text-base text-white font-normal text-center"  data-aos="fade-up">
                             Get insights about the tech revolutions and their significance through our updated blogs.
                         </p>
                     </div>

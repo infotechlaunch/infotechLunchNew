@@ -39,12 +39,12 @@ const FAQ: React.FC = () => {
         <section className="bg-gradient-blue-red lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="md:space-y-10 space-y-6 w-full">
-                    <div className="text-center">
-                        <span className="text-[#f13c3c] text-center text-lg font-semibold mb-3" data-aos="fade-up">FAQ</span>
-                        <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" data-aos="fade-up" data-aos-delay="100">
+                    <div className="text-center text-white">
+                        <span className="text-orange text-center text-lg font-semibold mb-3" data-aos="fade-up">FAQ</span>
+                        <h2 className="xl:text-4xl text-3xl text-center font-bold" data-aos="fade-up" data-aos-delay="100">
                             Frequently Asked Questions
                         </h2>
-                        <p className="text-base text-[#212121] font-normal mt-2 text-center" data-aos="fade-up">
+                        <p className="text-base font-normal mt-2 text-center" data-aos="fade-up">
                             Some answers to common queries during web and mobile app development.
                         </p>
                     </div>

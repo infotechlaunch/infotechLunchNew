@@ -97,7 +97,7 @@ const blogPosts: BlogPost[] = [
 const BlogPage: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>("All");
 
-    const tabs = ["All", "Mobile App", "Games Development", "Blockchain"];
+    const tabs = ["All", "Mobile App", "Games Development"];
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
