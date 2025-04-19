@@ -17,8 +17,8 @@ const ContactForm: React.FC = () => {
     return (
         <>
 
-            <section className="pb-8 bg-white lg:pb-20">
-                <div className="bg-[#000] relative bg-fixed">
+            <section className="bg-white">
+                <div className="bg-[#081e3d] relative bg-fixed">
                     <div className=" lg:py-16 py-10 relative z-40 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                         <div className="grid lg:grid-cols-3 lg:gap-16 gap-8 items-start">
                             <div className="" data-aos="fade-right" data-aos-delay="100">

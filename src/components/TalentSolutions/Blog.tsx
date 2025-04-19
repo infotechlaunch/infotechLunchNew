@@ -46,12 +46,12 @@ const blogPosts: BlogPost[] = [
 
 const Blog: React.FC = () => {
     return (
-        <div className="w-full bg-gradient-to-b from-pink-100 to-blue-100 py-16">
+        <div className="w-full bg-gradient-blue-red py-16">
             <section className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="flex items-center justify-center">
                     <div className="space-y-3">
-                        <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold"  data-aos="fade-up">Our Delivery Models</h2>
-                        <p className="text-base text-[#212121] font-normal text-center"  data-aos="fade-up">
+                        <h2 className="xl:text-4xl text-3xl text-[#fff] text-center font-bold"  data-aos="fade-up">Our Delivery Models</h2>
+                        <p className="text-base text-[#fff] font-normal text-center"  data-aos="fade-up">
                         Our delivery models offer flexible engagement options, including on-site, offshore, and hybrid approaches, tailored to meet unique business needs efficiently.
                         </p>
                     </div>

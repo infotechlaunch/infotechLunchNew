@@ -20,7 +20,7 @@ const OurPortfolioHome: React.FC = () => {
                     <p className="text-base font-normal mt-2" data-aos="fade-up">Dive into our portfolio showcasing impactful digital products and tailored solutions. From sleek websites to powerful mobile apps, each project reflects our passion for innovation, quality, and client success.</p>
                 </div>
                 <div className="space-y-10">
-                    <div className="rounded-[40px] bg-[#F5F5F9] border border-[#000000]/10 space-x-3 px-8 md:py-10 py-6">
+                    <div className="rounded-[40px] bg-[#FFF] border border-[#000000]/10 space-x-3 px-8 md:py-10 py-6">
                         <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
                             <div className="flex items-center">
                                 <img alt="Fitclub Mobile App" loading="lazy" width="500" data-aos="fade-up"

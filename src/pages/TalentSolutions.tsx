@@ -93,20 +93,20 @@ const TalentSolutions: React.FC = () => {
             <AOSProvider>
                 <HeaderNew />
                 <div className="overflow-hidden">
-                    <div className="bg-gradient-to-r from-[#f13c3c]/40 via-[#FFFFFF] to-[#f13c3c]/40">
+                    <div className="bg-gradient-blue-red">
                         <section className=" ">
                             <div className="flex flex-col lg:flex-row  lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                                 <div className="w-full lg:py-16 py-10">
                                     <div className="space-y-4">
                                         <div className="mt-10">
                                             <h1 data-aos="fade-right"
-                                                className="text-[#212121] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
+                                                className="text-[#fff] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
                                                 Talent Solutions</h1>
                                             <p data-aos="fade-right"
-                                                className="w-full mx-auto text-2xl font-bold text-[#212121] lg:text-base mt-2 lg:text-start text-center">
+                                                className="text-[#fff] w-full mx-auto text-2xl font-bold  lg:text-base mt-2 lg:text-start text-center">
                                             </p>
                                             <p data-aos="fade-right"
-                                                className="w-full mx-auto text-sm font-light text-[#212121] lg:text-base mt-2 lg:text-start text-center">
+                                                className="w-full mx-auto text-sm font-light text-[#fff] lg:text-base mt-2 lg:text-start text-center">
                                                 InfoTech Launch partners with more than 1100 small, mid-size, and Fortune 500 companies across various industries to understand their talent challenges and needs. Our team of dedicated recruiters can help you find the best talent to help ful fill your company’s business goals and objectives.</p>
 
                                         </div>
@@ -120,12 +120,12 @@ const TalentSolutions: React.FC = () => {
                             </div>
                         </section>
                     </div>
-                    <section className="lg:py-16 py-10 bg-[#F7F9FC]">
+                    <section className="lg:py-16 py-10 bg-[#297ea3]">
                         <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
 
                             <div className="space-y-4 ">
                                 <div className="space-y-4 text-center">
-                                    <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#212121] font-bold"> Helping You Mobilize Talent Based
+                                    <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold"> Helping You Mobilize Talent Based
                                         on Your Hiring Needs</h2>
 
                                 </div>
@@ -145,11 +145,11 @@ const TalentSolutions: React.FC = () => {
                             </div>
                         </div>
                     </section>
-                    <section className="w-full lg:py-16 py-10 bg-white">
+                    <section className="w-full lg:py-16 py-10 bg-gradient-blue-red">
                         <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                             <div className="space-y-4 ">
                                 <div className="space-y-4 text-center">
-                                    <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#212121] font-bold">InfoTech Launch Edge </h2>
+                                    <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold">InfoTech Launch Edge </h2>
                                 </div>
                                 <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-6">
                                     {EdgeData.map((item, index) => (

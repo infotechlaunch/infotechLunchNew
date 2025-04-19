@@ -6,7 +6,7 @@ import './StepJourney.scss';
 const StepJourney: React.FC = () => {
 
     return (
-        <div className="w-full bg-gradient-blue-red py-10 md:py-16 text-white">
+        <div className="w-full bg-orange py-10 md:py-16">
             <div className="container mx-auto px-6 px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
