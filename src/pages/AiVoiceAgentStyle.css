@@ -19,13 +19,13 @@
 
   .ai-section {
     display: flex;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: linear-gradient(to right, #fca5a5, #e9d5ff, #93c5fd); /* from-red-300 via-purple-200 to-blue-300 */
     flex-wrap: nowrap;
   }
   
   .ai-panel {
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
   }
   

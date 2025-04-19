@@ -100,10 +100,10 @@ const AiVoiceAgent: React.FC = () => {
             <AOSProvider>
                 <HeaderNew />
 
-                <section className="hero-container bg-gradient-to-r from-red-300 via-purple-200 to-blue-300 flex items-center justify-center">
-                    <div className="hero-content text-center max-w-2xl">
-                        <p className="border border-black bg-rose-300 rounded-[20px] text-center m-auto px-4 py-2" style={{
-                            fontSize: "10px",
+                <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
+                    <div className="hero-content text-center justify-center max-w-5xl text-white">
+                        <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
+                            fontSize: "16px",
                             marginBottom: "-20px"
                             }}>
                             Reimagining Business, One Call at a Time.
@@ -112,7 +112,7 @@ const AiVoiceAgent: React.FC = () => {
                         <h1 className="text-5xl font-bold">
                             AI Voice Facilitators That Sell, Book, and Handle Business — <span className="text-red-500">So You Don't Have To</span>
                         </h1>
-                        <p className="text-sm">
+                        <p className="text-lg">
                             Our custom-trained AI Voice Facilitators answer calls, qualify leads, and book appointments — 24/7, with perfect memory and zero burnout. Trusted by growth-focused businesses who want real results, not hype.
                         </p>
 
@@ -182,10 +182,9 @@ const AiVoiceAgent: React.FC = () => {
                                     >
                                 <p
                                     style={{
-                                    fontFamily: '"Instrument Sans", sans-serif',
                                     fontWeight: 500,
                                     lineHeight: "24px",
-                                    color: "black",
+                                    color: "#fff",
                                     margin: 0,
                                     }}
                                     >
@@ -226,8 +225,8 @@ const AiVoiceAgent: React.FC = () => {
                                         width: "16px",
                                         height: "16px",
                                         display: "inline-block",
-                                        fill: "black",
-                                        color: "black",
+                                        fill: "#fff",
+                                        color: "#fff",
                                         flexShrink: 0,
                                     }}
                                     >
@@ -246,17 +245,16 @@ const AiVoiceAgent: React.FC = () => {
                                     flexDirection: "column",
                                     justifyContent: "flex-start",
                                     flexShrink: 0,
-                                    color: "black",
+                                    color: "#fff",
                                     transform: "none",
                                     opacity: 1,
                                 }}
                                     >
                                 <p
                                     style={{
-                                    fontFamily: '"Instrument Sans", sans-serif',
                                     fontWeight: 500,
                                     lineHeight: "24px",
-                                    color: "black",
+                                    color: "#fff",
                                     margin: 0,
                                     }}
                                 >
@@ -277,12 +275,12 @@ const AiVoiceAgent: React.FC = () => {
                 </div> */}
 
 
-                <section className="hero-container bg-gradient-to-r from-red-300 via-purple-200 to-blue-300 flex items-center justify-center" style={{
-                        marginTop: "-100px"
+                <section className="hero-container bg-gradient-blue-red flex items-center justify-center" style={{
+                        marginTop: "0px"
                     }}>
-                    <div className="hero-content text-center max-w-2xl">
-                        <p className="border border-black bg-rose-300 rounded-[20px] text-center m-auto px-4 py-2" style={{
-                            fontSize: "10px",
+                    <div className="hero-content text-center max-w-4xl text-white justify-center">
+                        <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center" style={{
+                            fontSize: "16px",
                             marginBottom: "-20px"
                             }}>
                             Our Process
@@ -291,14 +289,13 @@ const AiVoiceAgent: React.FC = () => {
                         <h1 className="text-5xl font-bold">
                             HorizonTechAI as Your Revolutionary Secret To Success
                         </h1>
-                        <p className="text-sm">
+                        <p className="text-lg">
                             Experience the Future where no more bounds are met and no limitations are placed. You are free.
                         </p>
                         
                         <div className="workflow-features" style={{
                                 flexWrap: "nowrap",
                                 justifyContent: "center",
-                                marginLeft: "-130px"
                             }}>
                             <div className="feature-card">Step 1: Strategy<br/><span>Strategy session commences in which we go top to bottom about how to actually enhance your business.</span></div>
                             <div className="feature-card">Step 2: Acceleration<br/><span>A proven plan is engineered as to how we will enhance your business and how we can guarantee you acceleration.</span></div>
@@ -309,7 +306,7 @@ const AiVoiceAgent: React.FC = () => {
 
 
                 {/* <div className="flex bg-black text-white min-h-screen"></div> */}
-                <div className="bg-gradient-to-r from-red-300 via-purple-200 to-blue-300">
+                <div className="bg-orange p-10">
                     <div
                         className="hero-content text-center max-w-2xl"
                         style={{
@@ -330,12 +327,12 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="ai-section flex bg-gradient-to-r from-red-300 via-purple-200 to-blue-300 text-black min-h-screen" style={{
-                        marginTop: "-100px"
+                <div className="ai-section flex bg-orange text-black" style={{
+                        marginTop: "0px"
                     }}>
 
                     {/* Left panel - Chat interface */}
-                    <div className="ai-panel ai-left w-1/2 p-8 flex items-center justify-center">
+                    <div className="bg-orange ai-panel ai-left pb-20">
                         <div className="border border-gray-800 rounded-lg p-6 w-full max-w-md">
                         {/* Action buttons */}
                         <div className="flex justify-between mb-8">
@@ -389,7 +386,7 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
                     
                     {/* Right panel - Content */}
-                    <div className="ai-panel ai-right w-1/2 p-8 flex flex-col justify-center">
+                    <div className="bg-orange ai-panel ai-right  pb-20">
                         <p className="text-sm mb-2">AI Discovery Frontiers</p>
                         <h1 className="text-4xl font-bold mb-6">Emerging Frontiers in AI Exploration</h1>
                         
@@ -408,12 +405,12 @@ const AiVoiceAgent: React.FC = () => {
   
 
                 {/* <div className="bg-black text-white min-h-screen p-8"></div> */}
-                <div className="bg-gradient-to-r from-red-300 via-purple-200 to-blue-300 text-black min-h-screen p-8" style={{
-                        marginTop: "-70px"
+                <div className="bg-gradient-blue-red text-black min-h-screen p-8" style={{
+                        marginTop: "0px"
                     }}>
                     {/* Demo CTA Button */}
                     <div
-                        className="hero-content text-center max-w-2xl"
+                        className="hero-content text-center max-w-3xl text-white"
                         style={{
                             display: "flex",
                             flexDirection: "column",
@@ -445,7 +442,7 @@ const AiVoiceAgent: React.FC = () => {
                     {/* Pricing Plans */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {/* Cadet Plan */}
-                        <div className="border border-gray-800 rounded-lg overflow-hidden">
+                        <div className="border border-gray-800 rounded-lg overflow-hidden bg-white">
                         <div className="p-6">
                             <h2 className="text-lg font-semibold mb-2">Cadet - Your Perfect Start</h2>
                             <p className="mb-6">Built Custom For Your Business.</p>
@@ -514,7 +511,7 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
 
                         {/* Hero Plan - Best Seller */}
-                        <div className="border border-rose-900 bg-rose-950/20 rounded-lg overflow-hidden relative">
+                        <div className="border border-rose-900 rounded-lg overflow-hidden relative bg-white">
                         <div className="absolute top-0 right-0 bg-rose-600 text-white text-xs px-3 py-1 rounded-bl-lg">
                             (Best Seller)
                         </div>
@@ -587,7 +584,7 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
 
                         {/* Enterprise Plan */}
-                        <div className="border border-gray-800 rounded-lg overflow-hidden">
+                        <div className="border border-gray-800 rounded-lg overflow-hidden bg-white">
                         <div className="p-6">
                             <h2 className="text-lg font-semibold mb-2">Enterprise - Your Way To Surpass</h2>
                             <p className="mb-6">Built Custom For Your Business.</p>
@@ -660,23 +657,23 @@ const AiVoiceAgent: React.FC = () => {
 
   
                 {/* <div className="bg-black text-white min-h-screen p-8"></div> */}
-                <div className="bg-gradient-to-r from-red-300 via-purple-200 to-blue-300 text-black p-8">
-                    <div className="max-w-4xl mx-auto border border-gray-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+                <div className="bg-gradient-blue-red text-black p-8">
+                    <div className="max-w-7xl mx-auto  border border-white-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
                         {/* Left column - Title */}
                         <div className="md:w-1/3">
-                        <h1 className="text-4xl font-bold">Frequently Asked Questions</h1>
+                        <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
                         </div>
 
                         {/* Right column - FAQ items */}
                         <div className="md:w-2/3 space-y-4">
                         {/* FAQ Item 1 */}
-                        <div className="bg-gray-400 rounded">
+                        <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
                             <h3 className="font-medium">How do I get started with HorizonTechAI?</h3>
                             {openItems['get-started'] ? (
                                 <button 
                                     onClick={() => closeItem('get-started')}>
-                                    ×
+                                    -
                                 </button>
                             ) : (
                                 <button 
@@ -691,15 +688,14 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             )}
                         </div>
-
                         {/* FAQ Item 2 */}
-                        <div className="bg-gray-400 rounded">
+                        <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
                             <h3 className="font-medium">What are HorizonTechAI's Operational Voice-Driven Intelligence Facilitators?</h3>
                             {openItems['operational-facilitators'] ? (
                                 <button 
                                 onClick={() => closeItem('operational-facilitators')}>
-                                    ×
+                                    -
                                 </button>
                             ) : (
                                 <button 
@@ -714,15 +710,14 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             )}
                         </div>
-
                         {/* FAQ Item 3 */}
-                        <div className="bg-gray-400 rounded">
+                        <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
                             <h3 className="font-medium">What types of Operational Voice-Driven Intelligence Facilitators can you develop?</h3>
                             {openItems['types-of-facilitators'] ? (
                                 <button 
                                 onClick={() => closeItem('types-of-facilitators')}>
-                                    ×
+                                    -
                                 </button>
                             ) : (
                                 <button 
@@ -738,15 +733,14 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             )}
                         </div>
-
                         {/* FAQ Item 4 */}
-                        <div className="bg-gray-400 rounded">
+                        <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
                             <h3 className="font-medium">Are you HIPAA and SOC 2 compliant?</h3>
                             {openItems['hipaa-compliance'] ? (
                                 <button 
                                 onClick={() => closeItem('hipaa-compliance')}>
-                                    ×
+                                    -
                                 </button>
                             ) : (
                                 <button 
@@ -761,15 +755,14 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             )}
                         </div>
-
                         {/* FAQ Item 5 */}
-                        <div className="bg-gray-400 rounded">
+                        <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
                             <h3 className="font-medium">Is there a limit on Calls?</h3>
                             {openItems['call-limits'] ? (
                                 <button 
                                 onClick={() => closeItem('call-limits')}>
-                                    ×
+                                    -
                                 </button>
                             ) : (
                                 <button 
@@ -784,15 +777,14 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             )}
                         </div>
-
                         {/* FAQ Item 6 */}
-                        <div className="bg-gray-400 rounded">
+                        <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
                             <h3 className="font-medium">How does HorizonTechAI ensure the security of my data?</h3>
                             {openItems['data-security'] ? (
                                 <button 
                                 onClick={() => closeItem('data-security')}>
-                                    ×
+                                    -
                                 </button>
                             ) : (
                                 <button 
