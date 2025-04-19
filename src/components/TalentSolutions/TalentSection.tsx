@@ -146,6 +146,40 @@ const TalentSolutions: React.FC = () => {
                 "DevOps Engineer"
             ]
         },
+        {
+            title: "Digital Transformation & Innovation",
+            image: icon10,
+            items: [
+                "Digital Transformation & Innovation",
+                "Digital Strategy Consultant",
+                "AI/ML Engineer",
+                "RPA Developer (UiPath / Blue Prism / AA)",
+                "IoT Solutions Architect",
+                "Blockchain Developer",
+                "AR/VR Application Developer",
+                "UX/UI Design Strategist",
+                "Data Science & Predictive Analytics Expert",
+                "NLP / Computer Vision Engineer",
+                "Digital Business Analyst",
+            ]
+        },
+        {
+            title: "Enterprise Platforms & ERP",
+            image: icon10,
+            items: [
+                "Enterprise Platforms & ERP",
+                "SAP Functional Consultant (FICO / MM / SD / HCM)",
+                "Oracle Fusion Applications Specialist",
+                "Salesforce Developer & Administrator",
+                "Microsoft Dynamics 365 Consultant",
+                "Workday Integration & Functional Analyst",
+                "ServiceNow Developer & ITSM Specialist",
+                "ERP Project Manager",
+                "Techno-Functional ERP Consultant",
+                "SAP ABAP Developer",
+                "Oracle DBA / Middleware Administrator",
+            ]
+        },
     ];
     // const Mobileservices = [
     //     {
