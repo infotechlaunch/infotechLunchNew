@@ -6,7 +6,7 @@ import './StepJourney.scss';
 const StepJourney: React.FC = () => {
 
     return (
-        <div className="w-full bg-gradient-to-b from-pink-100 to-blue-100 py-10 md:py-16">
+        <div className="w-full bg-gradient-blue-red py-10 md:py-16 text-white">
             <div className="container mx-auto px-6 px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -27,7 +27,7 @@ const StepJourney: React.FC = () => {
                         <div className="lg:col-span-3">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 ">
                                 <div className="easy_step_box  duration-300" data-aos="fade-up" data-aos-delay="100">
-                                    <div className="step-no mb-3 text-3xl md:text-4xl font-bold text-gray-800  duration-300 group-hover:text-blue-600">
+                                    <div className="step-no mb-3 text-3xl md:text-4xl font-bold text-white  duration-300 group-hover:text-blue-600">
                                         01
                                     </div>
                                     <div className="easy_step_info text-center p-6 border border-gray-400 rounded-xl  duration-300 group-hover:bg-blue-600 group-hover:border-blue-600 group-hover:text-white group-hover:shadow-lg">
@@ -47,14 +47,14 @@ const StepJourney: React.FC = () => {
                                                 <span className="path12"></span>
                                             </span>
                                         </div>
-                                        <div className="text-lg font-semibold mb-3">Share Your Vision</div>
+                                        <div className="text-lg font-semibold mb-3 text-orange">Share Your Vision</div>
                                         <p className="text-gray-700 group-hover:text-white">
                                         Tell us your goals — we’ll use them to craft a tailored plan for your success.
                                         </p>
                                     </div>
                                 </div>
                                 <div className="easy_step_box  duration-300 mt-[20px] lg:mt-[50px]" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="step-no mb-3 text-3xl md:text-4xl font-bold text-gray-800  duration-300 group-hover:text-blue-600">
+                                    <div className="step-no mb-3 text-3xl md:text-4xl font-bold text-white  duration-300 group-hover:text-blue-600">
                                         02
                                     </div>
                                     <div className="easy_step_info text-center p-6 border border-gray-400 rounded-xl  duration-300 group-hover:bg-blue-600 group-hover:border-blue-600 group-hover:text-white group-hover:shadow-lg">
@@ -64,14 +64,14 @@ const StepJourney: React.FC = () => {
                                                 <span className="path2"></span>
                                             </span>
                                         </div>
-                                        <div className="text-lg font-semibold mb-3">Talk to Our Experts</div>
+                                        <div className="text-lg font-semibold mb-3 text-orange">Talk to Our Experts</div>
                                         <p className="text-gray-700 group-hover:text-white">
                                             Collaborate with our team to refine ideas and discover the best-fit solutions. 
                                         </p>
                                     </div>
                                 </div>
                                 <div className="easy_step_box  duration-300 mt-[20px] lg:mt-[100px]" data-aos="fade-up" data-aos-delay="300">
-                                    <div className="step-no mb-3 text-3xl md:text-4xl font-bold text-gray-800  duration-300 group-hover:text-blue-600">
+                                    <div className="step-no mb-3 text-3xl md:text-4xl font-bold text-white  duration-300 group-hover:text-blue-600">
                                         03
                                     </div>
                                     <div className="easy_step_info text-center p-6 border border-gray-400 rounded-xl  duration-300 group-hover:bg-blue-600 group-hover:border-blue-600 group-hover:text-white group-hover:shadow-lg">
@@ -86,7 +86,7 @@ const StepJourney: React.FC = () => {
                                                 <span className="path7"></span>
                                             </span>
                                         </div>
-                                        <div className="text-lg font-semibold mb-3 ">Launch & Grow</div>
+                                        <div className="text-lg font-semibold mb-3 text-orange ">Launch & Grow</div>
                                         <p className="text-gray-700 group-hover:text-white">
                                             Get your custom solution live and start seeing real, measurable results.
                                         </p>
