@@ -256,6 +256,7 @@ const AboutUs: React.FC = () => {
                 <GetStarted />
                 <FAQ />
                 <ContactForm />
+                {/*Testing */}
                 <Footer />
             </AOSProvider>
         </>
