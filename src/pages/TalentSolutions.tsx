@@ -5,10 +5,10 @@ import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
 import career from "../assets/Images/career-hero-image.webp"
 import AOSProvider from "../components/AOSProvider";
-import Ayush from "../assets/Images/ayush.png";
-import Srishti from "../assets/Images/Srishti-Soni.png"
-import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
-import vani from "../assets/Images/Vani_Mahobia.png"
+// import Ayush from "../assets/Images/ayush.png";
+// import Srishti from "../assets/Images/Srishti-Soni.png"
+// import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
+// import vani from "../assets/Images/Vani_Mahobia.png"
 import Edge1 from "../assets/Images/We-build-dedicated-delivery-info.svg"
 import Edge2 from "../assets/Images/We-thoroughly-vet-professionals-info.svg"
 import Edge3 from "../assets/Images/We-invest-in-significant-resources-info.svg"

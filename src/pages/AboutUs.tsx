@@ -16,7 +16,7 @@ import GetStarted from "../components/GetStarted/GetStarted";
 import FAQ from "../components/Faq/Faq";
 import AOSProvider from "../components/AOSProvider";
 import Ayush from "../assets/Images/ayush.png";
-import vivek from "../assets/Images/vivek.png";
+// import vivek from "../assets/Images/vivek.png";
 import bydef from "../assets/Images/bydef.png";
 
 import wrk01 from "../assets/Images/wrk01.png"

@@ -14,7 +14,7 @@ import iconsev07 from '../../assets/Images/icon/about-us-header-icon.svg';
 import iconsev08 from '../../assets/Images/icon/hire-dedicated-dev-header-icon.svg';
 import iconsev09 from '../../assets/Images/icon/our-portfolio-header-icon.svg';
 import iconsev10 from '../../assets/Images/icon/career-at-comfygen-header-icon.svg';
-import iconsev11 from '../../assets/Images/icon/life-at-comfygen-header-icon.svg';
+// import iconsev11 from '../../assets/Images/icon/life-at-comfygen-header-icon.svg';
 import iconsev12 from '../../assets/Images/icon/contact-us-img.svg';
 import iconsev13 from '../../assets/Images/icon/our-blog-img.svg';
 import aiConsultingIcon from '../../assets/Images/icon/ai-conulting.png';
