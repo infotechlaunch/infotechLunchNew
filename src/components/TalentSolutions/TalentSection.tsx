@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import icon1 from "../../assets/Images/icon/ic01.svg"
 import icon2 from "../../assets/Images/icon/ic02.svg"
@@ -18,6 +18,10 @@ import icon10 from "../../assets/Images/icon/ic10.svg"
 
 const TalentSolutions: React.FC = () => {
     const [activeTab, setActiveTab] = useState("All Positions");
+    useEffect(() => {
+        // Dummy usage just to prevent TS error
+        void setActiveTab;
+    }, []);
     const services = [
         {
             title: "Application Development",
