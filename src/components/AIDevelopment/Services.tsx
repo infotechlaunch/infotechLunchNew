@@ -69,17 +69,17 @@ const Services: React.FC = () => {
 
 
 
-        <div className="challenges w-full bg-gradient-to-b from-pink-100 to-blue-100 py-16 py-12 sticky">
+        <div className="challenges w-full bg-gradient-blue-red py-16 py-12 sticky">
             <div className="container mx-auto px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                  
-                        <div className="chalnges-left">
+                        <div className="chalnges-left text-orange">
                             <div className="sticky top-32">
                                 <h3 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-3" data-aos="fade-right">
                                     <span>Comprehensive AI Chatbot Development Services</span>
                                 </h3>
-                             <p className="text-gray-600 text-lg font-semibold mt-2" data-aos="fade-right">Our suite of AI chatbot development services is crafted to revolutionize customer interaction, streamline operations, and drive innovation in every aspect of your business.</p>
+                             <p className="text-white text-lg font-semibold mt-2" data-aos="fade-right">Our suite of AI chatbot development services is crafted to revolutionize customer interaction, streamline operations, and drive innovation in every aspect of your business.</p>
                                <div className="mt-6" data-aos="fade-right">
                                     <Link to="/contact-us">
                                         <button className="btn btn-fix lazyloaded">Get Solution?

@@ -8,7 +8,7 @@
   }
   .bg-white-rounded{padding: 40px;background: #fff;border-radius: 16px;}
   .bg-orange {
-    background: #ffb460;
+    background: #ffaf46;
     color: #000;
 }
 .icon-rounded-1 {
@@ -18,7 +18,7 @@
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.text-orange{color: #ffb460;}
+.text-orange{color: #ffaf46;}
 .align-center{align-items: center;
   justify-content: space-around;}
   .products-heading {

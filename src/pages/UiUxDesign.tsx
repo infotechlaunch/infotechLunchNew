@@ -14,15 +14,15 @@ const UiUxDesign: React.FC = () => {
         <>
             <AOSProvider>
                 <HeaderNew />
-                <div className="bg-white py-20 px-6 lg:px-20">
+                <div className="bg-gradient-blue-red py-20 px-6 lg:px-20">
   <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
     
     {/* Left - Text Content */}
     <div className="w-full lg:w-1/2 space-y-6">
-      <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+      <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
         Crafting Intuitive Designs That Delight and Convert
       </h1>
-      <p className="text-lg text-gray-600 leading-relaxed">
+      <p className="text-lg text-white leading-relaxed">
         We blend creativity with usability to design seamless user experiences that drive engagement and elevate your brand identity. 
       </p>
       <div>

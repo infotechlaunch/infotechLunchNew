@@ -14,14 +14,14 @@ const Healthcare: React.FC = () => {
         <>
             <AOSProvider>
                 <HeaderNew />
-                <div className="w-full bg-white py-20 px-6">
+                <div className="w-full bg-gradient-blue-red py-20 px-6">
   <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
     {/* Text Content */}
     <div className="w-full lg:w-1/2 space-y-6">
-      <h1 className="text-4xl xl:text-5xl font-extrabold text-gray-900 leading-tight">
-        Empowering Healthcare With <span className="text-blue-600">Next-Gen</span> Digital Solutions
+      <h1 className="text-4xl xl:text-5xl font-extrabold text-white leading-tight">
+        Empowering Healthcare With <span className="text-orange">Next-Gen</span> Digital Solutions
       </h1>
-      <p className="text-lg text-gray-700">
+      <p className="text-lg text-white">
         Custom healthcare apps powered by clinical expertise — from telemedicine to patient portals.
       </p>
       <Link
