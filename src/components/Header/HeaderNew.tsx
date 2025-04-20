@@ -22,6 +22,9 @@ import aiConsultingIcon from '../../assets/Images/icon/ai-conulting.png';
 
 import bg from '../../assets/Images/mobile-app-development-services-img.webp';
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {aiVoiceIcon} from "@fortawesome/fa-solid fa-microphone-lines";
+
 const tabs = [
     {
         id: "mobile-app",
@@ -180,8 +183,8 @@ const HeaderNew: React.FC = () => {
             <div className='headerMain fixed top-0 w-full bg-white z-50'>
                 <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <nav className="flex items-center justify-between py-0 w-full mx-auto  md:px-0 relative  mx-auto">
+                        
                         <div>
-
                             <Link to="/" className="relative flex items-center flex-shrink-0 text-white">
                                 <span className="w-[70px] h-[70px] bg-[#297ea3] rounded-full mr-[15px] flex items-center justify-center">
                                     <img src={Logo} alt="" className="w-[70px] h-auto" />
@@ -191,8 +194,8 @@ const HeaderNew: React.FC = () => {
                                     <span className="xl:text-1xl md:text-1xl text-1xl font-bold">Launch</span>
                                 </span>
                             </Link>
-
                         </div>
+
                         <div>
                             <button onClick={toggleSlideOver} className="bg-[#fff] menu-bar flex items-center my-2 rounded cursor-pointer text-slate-600 xl:hidden">
                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="45"
@@ -444,45 +447,59 @@ const HeaderNew: React.FC = () => {
                                                 </svg>
                                                 <span>Home</span></div>
                                         </Link>
-                                        </div>
+                                    </div>
+
+                                        {/* <div>
+                                            <Link to="/ai-development">
+                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                                <svg stroke="currentColor" fill="currentColor"
+                                                    stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
+                                                    </path>
+                                                </svg>
+                                                    <span>AI Development</span></div>
+                                            </Link>
+                                        </div> */}
+
                                         <div>
-                                        <Link to="/ai-development">
-                                            <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
-                                            <svg stroke="currentColor" fill="currentColor"
-                                                stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
-                                                </path>
-                                            </svg>
-                                                <span>AI Development</span></div>
-                                        </Link>
+                                            <Link to="/talent-solutions">
+                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                                <svg stroke="currentColor" fill="currentColor"
+                                                    stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
+                                                    </path>
+                                                </svg>
+                                                    <span>AI Talent Solutions</span></div>
+                                            </Link>
                                         </div>
+                                        
                                         <div>
-                                        <Link to="/talent-solutions">
-                                            <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
-                                            <svg stroke="currentColor" fill="currentColor"
-                                                stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
-                                                </path>
-                                            </svg>
-                                                <span>AI Talent Solutions</span></div>
-                                        </Link>
+                                            <Link to="/ai-social-media">
+                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                                <svg stroke="currentColor" fill="currentColor"
+                                                    stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
+                                                    </path>
+                                                </svg>
+                                                    <span>AI Social Media</span></div>
+                                            </Link>
                                         </div>
+
                                         <div>
-                                        <Link to="/ai-social-media/">
-                                            <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
-                                            <svg stroke="currentColor" fill="currentColor"
-                                                stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
-                                                </path>
-                                            </svg>
-                                                <span>AI Social Media</span></div>
-                                        </Link>
+                                            <Link to="/ai-voice-agent">
+                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M96 96l0 160c0 53 43 96 96 96s96-43 96-96l-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0c0-53-43-96-96-96S96 43 96 96zM320 240l0 16c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24z"/>
+                                                    </svg>
+                                                    <span>AI Voice Agent</span>
+                                                </div>
+                                            </Link>
                                         </div>
 
                                         <div className="flex justify-between p-3 items-center px-6 bg-transparent" onClick={() => toggleSection('aiDevelopment')}>
@@ -509,16 +526,28 @@ const HeaderNew: React.FC = () => {
                                             overflow: 'hidden',
                                             transition: 'max-height 0.3s ease-in-out',
                                         }}>
-                                        <ul className="grid grid-cols-1 gap-2 p-4">
+                                        <ul className="grid grid-cols-1 gap-2">
                                             <div className="p-3 space-y-2 text-sm font-medium">
+
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/ai-consulting">AI Consulting</Link>
+                                                </li>
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                     <Link to="/ai-agent-development">AI Agent Development</Link>
                                                 </li>
+
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/adaptive-ai-development">Adaptive AI Development</Link>
+                                                </li>
+
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                     <Link to="/ai-chatbot-development">AI Chatbot Development</Link>
                                                 </li>
+
                                             </div>
                                         </ul>
                                     </div>

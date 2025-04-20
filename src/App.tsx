@@ -26,6 +26,9 @@ import GrowthMarketing from "./pages/GrowthMarketing";
 import UiUxDesign from "./pages/UiUxDesign";
 import SocialMedia from "./pages/SocialMedia";
 import AiVoiceAgent from "./pages/AiVoiceAgent";
+// import VoiceSelector from "./pages/VoiceSelector";
+import AiDemoCall from "./pages/AiDemoCall";
+
 
 
 
@@ -69,6 +72,8 @@ function App() {
           <Route path="/ui-ux-design" element={<UiUxDesign/>} />
           <Route path="/ai-social-media" element={<SocialMedia/>} />
           <Route path="/ai-voice-agent" element={<AiVoiceAgent/>} />
+          {/* <Route path="/ai-voice-selector" element={<VoiceSelector/>} /> */}
+          <Route path="/ai-demo-call" element={<AiDemoCall/>} />
           
           
           

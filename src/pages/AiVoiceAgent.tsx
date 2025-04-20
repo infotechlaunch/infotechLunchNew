@@ -1,12 +1,14 @@
-import React, {useState,useRef, useEffect} from "react";
+import React, {useState} from "react";
 import Footer from "../components/Footer/Footer";
 
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
 // import SocialMediaMgmtImg from "../assets/Images/aiSocialMedia/New_AI PoweredSocialMediaMgmt2.png";
-import getStartedImg from "../assets/Images/aiSocialMedia/get-started3.avif";
+// import getStartedImg from "../assets/Images/aiSocialMedia/get-started3.avif";
 import "./AiVoiceAgentStyle.css";
 // import ConnectExperts from "../pages/ConnectExperts";
+import VoiceSelector from "../pages/VoiceSelector";
+import { Link } from "react-router-dom";
 
 const AiVoiceAgent: React.FC = () => {
 
@@ -34,65 +36,7 @@ const AiVoiceAgent: React.FC = () => {
         }));
     };
 
-    const [isOpen, setIsOpen] = useState(false);
-    
-    // const overlayRef = useRef(null);
-    // const popupBoxRef = useRef(null);
 
-    const overlayRef = useRef<HTMLDivElement>(null);
-    const popupBoxRef = useRef<HTMLDivElement>(null);
-
-    // Open popup
-    const onOpen = () => setIsOpen(true);
-
-    // Close popup
-    const onClose = () => setIsOpen(false);
-
-    // Close on outside click
-    useEffect(() => {
-    const handleClickOutside = (event:any) => {
-        if (
-        overlayRef.current &&
-        popupBoxRef.current &&
-        overlayRef.current.contains(event.target) &&
-        !popupBoxRef.current.contains(event.target)
-        ) {
-        onClose();
-        }
-    };
-
-    if (isOpen) {
-        document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-    };
-
-    }, [isOpen]);
-
-
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        about: ''
-    });
-    
-    const handleChange = (e: { target: { name: any; value: any; }; }) => {
-        const { name, value } = e.target;
-        setFormData(prevData => ({
-            ...prevData,
-            [name]: value
-        }));
-    };
-    
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
-        e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Add your form submission logic here
-        // onClose();
-    };
 
     return (
         <>
@@ -105,14 +49,14 @@ const AiVoiceAgent: React.FC = () => {
                             fontSize: "16px",
                             marginBottom: "-20px"
                             }}>
-                            Reimagining Business, One Call at a Time.
+                            One Call. Endless Possibilities for Business.
                         </p>
 
                         <h1 className="text-5xl font-bold">
-                            AI Voice Facilitators That Sell, Book, and Handle Business — <span className="text-red-500">So You Don't Have To</span>
+                            AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
                         </h1>
                         <p className="text-lg">
-                            Our custom-trained AI Voice Facilitators answer calls, qualify leads, and book appointments — 24/7, with perfect memory and zero burnout. Trusted by growth-focused businesses who want real results, not hype.
+                            Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
                         </p>
 
                         <div
@@ -125,8 +69,9 @@ const AiVoiceAgent: React.FC = () => {
                             }}
                             >
                             {/* Button 1: Initiate Your Journey */}
-                            <a
-                                href="./contact-us"
+                            <Link
+                                // href="./contact-us"
+                                to="/contact-us"
                                 className="framer-1N5PT framer-ibvdus framer-v-nj2zz1 framer-l3ha2z"
                                 data-highlight="true"
                                 data-border="true"
@@ -190,12 +135,12 @@ const AiVoiceAgent: React.FC = () => {
                                     Initiate Your Journey
                                 </p>
                                 </div>
-                            </a>
+                            </Link>
 
                             {/* Button 2: Test The Future */}
-                            <a
-                                    // href="./aidemocall"
-                                    href="#"
+                            <Link
+                                    // href="/ai-demo-call"
+                                    to="/ai-demo-call"
                                     className="framer-1N5PT framer-ibvdus framer-v-bv2xb3 framer-l3ha2z"
                                     data-highlight="true"
                                     data-framer-name="md | ghost"
@@ -211,7 +156,7 @@ const AiVoiceAgent: React.FC = () => {
                                     textDecoration: "none",
                                     padding: "0.75rem 1.25rem"
                                 }}
-                                onClick={onOpen}
+                                // onClick={onOpen}
                                 >
                                 <div className="framer-1cl6w9d-container" style={{ opacity: 1 }}>
                                 <div style={{ display: "contents" }}>
@@ -260,7 +205,7 @@ const AiVoiceAgent: React.FC = () => {
                                     Test The Future
                                 </p>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -289,20 +234,22 @@ const AiVoiceAgent: React.FC = () => {
                             InfoTechAI as Your Revolutionary Secret To Success
                         </h1>
                         <p className="text-lg">
-                            Experience the Future where no more bounds are met and no limitations are placed. You are free.
+                            Welcome to a future with no boundaries, no limits — just pure freedom to create, grow, and lead.
                         </p>
                         
                         <div className="workflow-features" style={{
                                 flexWrap: "nowrap",
                                 justifyContent: "center",
                             }}>
-                            <div className="feature-card">Step 1: Strategy<br/><span>Strategy session commences in which we go top to bottom about how to actually enhance your business.</span></div>
-                            <div className="feature-card">Step 2: Acceleration<br/><span>A proven plan is engineered as to how we will enhance your business and how we can guarantee you acceleration.</span></div>
-                            <div className="feature-card">Step 3: Initialization<br/><span>The Future is implemented, in extraordinary fast time. Then You beat all others.</span></div>
+                            <div className="feature-card">Step 1: Strategy<br/><span>A focused strategy session where we map out exactly how to elevate your business — with clarity, intent, and results in mind.</span></div>
+                            <div className="feature-card">Step 2: Acceleration<br/><span>We craft a proven, high-impact plan tailored to your goals — built to drive momentum, boost performance, and ensure measurable acceleration.</span></div>
+                            <div className="feature-card">Step 3: Initialization<br/><span>Execution begins instantly. Your business is transformed, your systems are smarter — and you're officially ahead of the curve.</span></div>
                         </div>
                     </div>
                 </section>
 
+                <VoiceSelector />
+                
 
                 {/* <div className="flex bg-black text-white min-h-screen"></div> */}
                 <div className="bg-orange p-10">
@@ -428,14 +375,15 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
 
                     <div className="flex justify-center mb-8 mt-4">
-                        <button className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center"
-                            onClick={onOpen}
+                        <Link className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center"
+                            // onClick={onOpen}
+                            to="/ai-demo-call"
                             >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd" />
                             </svg>
                             Experience AI Demo Call First
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Pricing Plans */}
@@ -802,115 +750,6 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
                 </div>
  
-
-                {isOpen && (
-                    <div ref={overlayRef} className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-                        <div ref={popupBoxRef} className="bg-gradient-to-r from-red-500 to-blue-500 rounded-lg shadow-xl overflow-hidden w-full max-w-4xl">
-                            <div className="bg-white m-1 rounded-lg overflow-hidden flex flex-col md:flex-row">
-                                {/* Left side - Image */}
-                                <div className="md:w-1/2 bg-gray-100 flex items-center justify-center p-6">
-                                    <div className="relative w-full h-full min-h-64">
-                                    <img 
-                                        src={getStartedImg}
-                                        alt="Contact us" 
-                                        className="w-full h-full object-cover rounded-lg"
-                                    />
-                                    </div>
-                                </div>
-                                
-                                {/* Right side - Form */}
-                                <div className="md:w-1/2 p-8 relative">
-                                    <button 
-                                        onClick={onClose}
-                                        className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
-                                        aria-label="Close popup"
-                                    >
-                                        {/* Simple X icon using SVG */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
-                                    
-                                    <div className="mb-6">
-                                        <h2 className="text-3xl font-bold text-gray-800 mb-2">Get Started</h2>
-                                        <p className="text-gray-600">Fill out the form below and we'll get back to you soon.</p>
-                                    </div>
-                                    
-                                    <form onSubmit={handleSubmit} className="space-y-4">
-                                    <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            value={formData.name}
-                                            placeholder="Enter name"
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                            required
-                                        />
-                                    </div>
-                                    
-                                    <div>
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            name="email"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                            placeholder="Enter Email Id"
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                            required
-                                        />
-                                    </div>
-                                    
-                                    <div>
-                                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                                        <input
-                                            type="tel"
-                                            id="phone"
-                                            name="phone"
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            placeholder="Enter phone number"
-                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                        />
-                                    </div>
-                                    
-                                    <div>
-                                        <label htmlFor="about" className="block text-sm font-medium text-gray-700 mb-1">Tell us about yourself</label>
-                                        <textarea
-                                            id="about"
-                                            name="about"
-                                            value={formData.about}
-                                            onChange={handleChange}
-                                            placeholder="Tell us about yourself"
-                                            className="w-full px-4 py-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                        >
-
-                                        </textarea>
-                                    </div>
-
-                                    <div style={{ display: "flex", alignItems: "center", gap: "8px", margin: "5px" }}>
-                                        <input type="checkbox" id="about" />
-                                        <label htmlFor="about" className="block text-sm font-medium text-gray-700">
-                                            I Agree To Receive SMS & Connect On WhatsApp
-                                        </label>
-                                    </div>
-                                    
-                                    <button
-                                        type="submit"
-                                        className="w-full py-3 px-6 rounded-md text-white font-medium text-lg mt-6 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 hover:opacity-90 transition-opacity shadow-lg"
-                                    >
-                                        Submit
-                                    </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
 
 
                 <Footer />
