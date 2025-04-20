@@ -78,12 +78,12 @@ const Portfolio: React.FC = () => {
                         </section>
                     </div>
 
-                    <div className="py-8 bg-white lg:py-20">
+                    <div className="py-8 bg-gradient-blue-red lg:py-20">
                         <section className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
                             <div className="space-y-4 flex flex-col justify-center text-center mx-auto lg:w-4/6">
-                                <h2 className="text-[29px] lg:text-[35px] font-bold capitalize text-[#000]">Our Excellent
+                                <h2 className="text-[29px] lg:text-[35px] font-bold capitalize text-[#fff]">Our Excellent
                                     Portfolio</h2>
-                                <p className="text-base text-slate-800">Driving growth and success through creative design
+                                <p className="text-base  text-[#fff]">Driving growth and success through creative design
                                     and development. Showcasing our passion for design and creativity</p>
                             </div>
                             <div className="container grid gap-8 py-10 text-left lg:grid-cols-1 lg:gap-14">

@@ -68,20 +68,18 @@ const ClientTestimonials: React.FC = () => {
             <AOSProvider>
                 <HeaderNew />
                 <div className="overflow-hidden">
-                    <div className="bg-gradient-to-r from-[#f13c3c]/40 via-[#FFFFFF] to-[#f13c3c]/40">
+                    <div className="bg-gradient-blue-red">
                         <section className=" ">
                             <div className="flex flex-col lg:flex-row  lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                                 <div className="w-full lg:py-16 py-10">
                                     <div className="space-y-4">
                                         <div className="mt-10">
                                             <h1 data-aos="fade-right"
-                                                className="text-[#212121] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
+                                                className="text-[#fff] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
                                                 Client Testimonials</h1>
+                                            
                                             <p data-aos="fade-right"
-                                                className="w-full mx-auto text-2xl font-bold text-[#212121] lg:text-base mt-2 lg:text-start text-center">
-                                            </p>
-                                            <p data-aos="fade-right"
-                                                className="w-full mx-auto text-sm font-light text-[#212121] lg:text-base mt-2 lg:text-start text-center">
+                                                className="w-full mx-auto text-sm font-light text-[#fff] lg:text-base mt-2 lg:text-start text-center">
                                                 Empowering Innovators to Shape the Future of IT.</p>
 
                                         </div>

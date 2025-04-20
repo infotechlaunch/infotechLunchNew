@@ -2,11 +2,11 @@ import React from "react";
 const WorkingProcess: React.FC = () => {
 
     return (
-        <section className="bg-white lg:py-16 py-10">
+        <section className="bg-orange lg:py-16 py-10">
         <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
            <div className="text-center">
-              <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2" data-aos="fade-up" data-aos-delay="100">Our Generative AI Software Development Roadmap</h2>
-              <p className="text-gray-600 text-lg font-semibold mt-2" data-aos="fade-up" data-aos-delay="100">
+              <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-5" data-aos="fade-up" data-aos-delay="100">Our Generative AI Software Development Roadmap</h2>
+              <p className="text-black text-lg font-semibold mt-2" data-aos="fade-up" data-aos-delay="100">
                  InfoTech Launch adheres to a structured process that ensures the success of any Gen AI development project. Our comprehensive approach consists of 7 main components Processes:
               </p>
            </div>

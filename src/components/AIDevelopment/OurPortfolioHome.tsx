@@ -13,11 +13,11 @@ import retail from "../../assets/Images/ai-powered-retail-solutions.webp";
 const OurPortfolioHome: React.FC = () => {
     return (
 
-        <div className="lg:py-16 py-10 bg-[#F3F4F6]">
+        <div className="lg:py-16 py-10 bg-gradient-blue-red">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="text-center mb-10">
-                    <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-up">Our Artificial Intelligence Success Stories</h2>
-                    <p className="text-base font-normal mt-2" data-aos="fade-up">At
+                    <h2 className="xl:text-4xl text-3xl text-orange font-bold mb-4" data-aos="fade-up">Our Artificial Intelligence Success Stories</h2>
+                    <p className="text-base font-normal mt-2 text-white" data-aos="fade-up">At
                         InfoTech Launch, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals</p>
                 </div>
                 <div className="space-y-10">

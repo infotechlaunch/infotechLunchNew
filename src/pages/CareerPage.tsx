@@ -17,20 +17,18 @@ const CareerPage: React.FC = () => {
          <AOSProvider>
             <HeaderNew />
             <div className="overflow-hidden">
-                <div className="bg-gradient-to-r from-[#f13c3c]/40 via-[#FFFFFF] to-[#f13c3c]/40">
+                <div className="bg-gradient-blue-red">
                     <section className=" ">
                         <div className="flex flex-col lg:flex-row  lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                             <div className="w-full lg:py-16 py-10">
                                 <div className="space-y-4">
                                     <div className="mt-10">
                                         <h1 data-aos="fade-right"
-                                            className="text-[#212121] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
+                                            className="text-[#fff] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
                                             Join Our Tech Revolution</h1>
+                                    
                                         <p data-aos="fade-right"
-                                            className="w-full mx-auto text-2xl font-bold text-[#212121] lg:text-base mt-2 lg:text-start text-center">
-                                        </p>
-                                        <p data-aos="fade-right"
-                                            className="w-full mx-auto text-sm font-light text-[#212121] lg:text-base mt-2 lg:text-start text-center">
+                                            className="w-full mx-auto text-sm font-light text-[#fff] lg:text-base mt-2 lg:text-start text-center">
                                             Empowering Innovators to Shape the Future of IT.</p>
                                         <p data-aos="fade-right"
                                             className="w-full mx-auto text-sm font-light text-[#212121] lg:text-base mt-2 lg:text-start text-center">
@@ -636,17 +634,17 @@ const CareerPage: React.FC = () => {
                         </div>
                     </div>
                 </section>
-                <section className="w-full lg:py-16 py-10 bg-white">
+                <section className="w-full lg:py-16 py-10 bg-gradient-blue-red">
                     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                         <div className="space-y-4 ">
                             <div className="space-y-4 text-center">
-                                <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#212121] font-bold">What are we looking for?</h2>
-                                <p data-aos="fade-up" className="text-base text-[#212121] font-normal w-full">We’re not just developing websites and apps
+                                <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold">What are we looking for?</h2>
+                                <p data-aos="fade-up" className="text-base text-[#fff] font-normal w-full">We’re not just developing websites and apps
                                     here, we’re making values and the foundation of our company.</p>
                             </div>
                             <div className="grid lg:gap-10 gap-6 pt-8 lg:grid-cols-3 md:grid-cols-2">
                                 <div
-                                    className="space-y-4 career-card-item relative overflow-hidden text-left border text-white rounded-md bg-gradient-to-r from-[#f13c3c] to-[#000] duration-200 transition cursor-pointer">
+                                    className="space-y-4 career-card-item relative overflow-hidden text-center border text-black rounded-md bg-white duration-200 transition cursor-pointer">
                                     <div className="p-10 space-y-3">
                                         <h2 data-aos="fade-up" className="lg:text-3xl text-xl font-bold ">Courage and Audacity</h2>
                                         <p data-aos="fade-up" className="text-base  ">Winning in a competitive environment needs the person to be
@@ -656,7 +654,7 @@ const CareerPage: React.FC = () => {
                                     </div>
                                 </div>
                                 <div
-                                    className="space-y-4 career-card-item relative overflow-hidden text-left border text-white rounded-md bg-gradient-to-r from-[#f13c3c] to-[#000] duration-200 transition cursor-pointer">
+                                    className="space-y-4 career-card-item relative overflow-hidden text-center border text-black rounded-md bg-white duration-200 transition cursor-pointer">
                                     <div className="p-10 space-y-3">
                                         <h2 data-aos="fade-up" className="lg:text-3xl text-xl font-bold ">Curiosity</h2>
                                         <p data-aos="fade-up" className="text-base  ">When a person is curious, they look for things very differently.
@@ -665,7 +663,7 @@ const CareerPage: React.FC = () => {
                                     </div>
                                 </div>
                                 <div
-                                    className="space-y-4 career-card-item relative overflow-hidden text-left border text-white rounded-md bg-gradient-to-r from-[#f13c3c] to-[#000] duration-200 transition cursor-pointer">
+                                    className="space-y-4 career-card-item relative overflow-hidden text-center border text-black rounded-md bg-white duration-200 transition cursor-pointer">
                                     <div className="p-10 space-y-3">
                                         <h2 data-aos="fade-up" className="lg:text-3xl text-xl font-bold ">Solidarity and Integrity</h2>
                                         <p data-aos="fade-up" className="text-base  ">Many jobs require teamwork, the ability to work efficiently and in

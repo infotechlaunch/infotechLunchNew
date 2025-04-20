@@ -106,13 +106,13 @@ const BlogPage: React.FC = () => {
         <>
             <AOSProvider>
                 <HeaderNew />
-                <section className="bg-gradient-to-r from-[#f13c3c]/40 via-[#FFFFFF] to-[#f13c3c]/40">
+                <section className="bg-gradient-blue-red">
                     <div className="flex items-end justify-between  py-0  relative xl:container 2xl:px-0 md:px-6 px-4 w-full mx-auto flex lg:flex-row flex-col lg:gap-8 gap-0">
                         <div className="w-full space-y-4 lg:py-16 py-10 flex flex-col lg:items-start items-center lg:text-left text-center">
-                            <h1 data-aos="fade-right" data-aos-delay="100" className="text-4xl font-semibold text-black leading-[3rem]">
+                            <h1 data-aos="fade-right" data-aos-delay="100" className="text-4xl font-semibold text-white leading-[3rem]">
                                 Insights, Ideas, and Innovations
                             </h1>
-                            <p data-aos="fade-right" data-aos-delay="100" className="text-base text-black lg:text-left text-center">Explore expert opinions, industry trends, and
+                            <p data-aos="fade-right" data-aos-delay="100" className="text-base text-white lg:text-left text-center">Explore expert opinions, industry trends, and
                                 inspiring stories that fuel your journey in the
                                 ever-evolving tech world.</p>
                             <div data-aos="fade-right" data-aos-delay="100" className="mt-2">
@@ -130,7 +130,7 @@ const BlogPage: React.FC = () => {
 
                     </div>
                 </section>
-                <div className="w-full py-16">
+                <div className="bg-orange w-full py-16">
                     <section className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                         <div className="flex items-center justify-center">
                             <div className="space-y-3">
@@ -142,7 +142,7 @@ const BlogPage: React.FC = () => {
                         </div>
                         <div className="mt-[30px]">
                             <form method="get" action="#">
-                                <div className="border max-w-4xl min-w-4xl mx-auto flex items-center justify-between divide-x divide-gray-400 px-6 shadow-xl ">
+                                <div className="bg-white border max-w-4xl min-w-4xl mx-auto flex items-center justify-between divide-x divide-gray-400 px-6 shadow-xl ">
                                     <div className="flex items-center space-x-2 clearable">
                                         <button aria-label="search button" type="submit">
                                             <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
