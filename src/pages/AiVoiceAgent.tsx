@@ -287,7 +287,7 @@ const AiVoiceAgent: React.FC = () => {
                         </p>
 
                         <h1 className="text-5xl font-bold">
-                            HorizonTechAI as Your Revolutionary Secret To Success
+                            InfoTechAI as Your Revolutionary Secret To Success
                         </h1>
                         <p className="text-lg">
                             Experience the Future where no more bounds are met and no limitations are placed. You are free.
@@ -424,7 +424,7 @@ const AiVoiceAgent: React.FC = () => {
                             Easy ROI Based Investment
                         </h1>
                         <p>
-                            Have you incorporated HorizonTechAI yet? Well, your competitors might!
+                            Have you incorporated InfoTechAI yet? Well, your competitors might!
                         </p>
                     </div>
 
@@ -669,7 +669,7 @@ const AiVoiceAgent: React.FC = () => {
                         {/* FAQ Item 1 */}
                         <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
-                            <h3 className="font-medium">How do I get started with HorizonTechAI?</h3>
+                            <h3 className="font-medium">How do I get started with InfoTechAI?</h3>
                             {openItems['get-started'] ? (
                                 <button 
                                     onClick={() => closeItem('get-started')}>
@@ -691,7 +691,7 @@ const AiVoiceAgent: React.FC = () => {
                         {/* FAQ Item 2 */}
                         <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
-                            <h3 className="font-medium">What are HorizonTechAI's Operational Voice-Driven Intelligence Facilitators?</h3>
+                            <h3 className="font-medium">What are InfoTechAI's Operational Voice-Driven Intelligence Facilitators?</h3>
                             {openItems['operational-facilitators'] ? (
                                 <button 
                                 onClick={() => closeItem('operational-facilitators')}>
@@ -706,7 +706,7 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             {openItems['operational-facilitators'] && (
                             <div className="p-4 pt-0">
-                                <p>HorizonTechAI has developed revolutionary breathtaking AI that can integrate with all of your software to finally solve all your problems. AI that uses humanlike voices and tonality to achieve certain tasks.</p>
+                                <p>InfoTechAI has developed revolutionary breathtaking AI that can integrate with all of your software to finally solve all your problems. AI that uses humanlike voices and tonality to achieve certain tasks.</p>
                             </div>
                             )}
                         </div>
@@ -780,7 +780,7 @@ const AiVoiceAgent: React.FC = () => {
                         {/* FAQ Item 6 */}
                         <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
-                            <h3 className="font-medium">How does HorizonTechAI ensure the security of my data?</h3>
+                            <h3 className="font-medium">How does InfoTechAI ensure the security of my data?</h3>
                             {openItems['data-security'] ? (
                                 <button 
                                 onClick={() => closeItem('data-security')}>
@@ -795,7 +795,7 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             {openItems['data-security'] && (
                             <div className="p-4 pt-0">
-                                <p>HorizonTechAI employs robust encryption, secure data storage, and strict access controls to ensure your data remains protected. We follow industry best practices to maintain confidentiality and prevent unauthorized access, ensuring complete data security at every level.</p>
+                                <p>InfoTechAI employs robust encryption, secure data storage, and strict access controls to ensure your data remains protected. We follow industry best practices to maintain confidentiality and prevent unauthorized access, ensuring complete data security at every level.</p>
                             </div>
                             )}
                         </div>
