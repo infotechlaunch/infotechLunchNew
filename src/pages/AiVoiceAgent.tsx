@@ -10,7 +10,6 @@ import "./AiVoiceAgentStyle.css";
 
 const AiVoiceAgent: React.FC = () => {
 
-    const [message, setMessage] = useState("Hey I would like to book an appointment. I am not feeling well. I have a headache.");
 
     const [openItems, setOpenItems] = useState<Record<string, boolean>>({
         'get-started': true,
@@ -375,7 +374,7 @@ const AiVoiceAgent: React.FC = () => {
                         
                         {/* Message input */}
                         <div className="border border-gray-700 rounded-lg bg-black p-4 relative mb-4">
-                            <p className="text-white">{message}</p>
+                            <p className="text-white">Hey I would like to book an appointment. I am not feeling well. I have a headache.</p>
                             <div className="absolute right-4 bottom-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
