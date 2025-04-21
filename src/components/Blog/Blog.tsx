@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
     {
         id: 2,
         title: "Seamless Shopping. Smarter Wellness.",
-        category: "Blockchain",
+        category: "AI Voice Agent",
         date: "10 Sep 2024",
         description:
             "Shop premium fitness products, track progress, and get personalized health insights—all in one app. Achieve your wellness goals with ease and convenience.",
@@ -39,7 +39,7 @@ const blogPosts: BlogPost[] = [
     {
         id: 3,
         title: "Future of AI in Web Development: Trends & Innovations",
-        category: "Artificial Intelligence",
+        category: "AI",
         date: "15 Oct 2024",
         description:
             "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
