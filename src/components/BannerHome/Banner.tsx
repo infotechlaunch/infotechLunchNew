@@ -3,7 +3,7 @@ import experi from "../../assets/Images/icon/hero-experience-icon.svg";
 import delive from "../../assets/Images/icon/heroproject-delivered-icon.svg";
 import happy from "../../assets/Images/icon/happy-client-hero-icon.svg";
 // import bannerVideo from "../../assets/videos/Home_page_video2.mp4";
-import bannerVideo1 from "../../assets/videos/ai-video-1.mp4";
+import bannerVideo1 from "../../assets/videos/ai-video-2.mp4";
 
 import ConnectExperts from "../../pages/ConnectExperts";
 
