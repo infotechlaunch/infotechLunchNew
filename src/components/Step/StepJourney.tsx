@@ -11,15 +11,13 @@ const StepJourney: React.FC = () => {
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                         <div className="lg:col-span-1 text-center lg:text-left">
-                                <h3 className="text-1xl font-bold">Start Your Success Journey</h3>
+                                <h3 className="text-2xl font-bold mb-3">Start Your Success Journey</h3>
                             <div className="easy_step-txt">
                                 <div className="tag-lines mb-2 md:mb-4" data-aos="fade-right">
-                                    <span className="text-lg font-semibold">Connect. Collaborate. Achieve.</span>
+                                    <span className="text-2xl font-semibold">Connect. Collaborate. Achieve.</span>
                                 </div>
-                                <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight" data-aos="fade-right">
-                                    Begin<br /> Your<br /> Journey<br /> in Just<br />
-                                    <span className="text-blue-600 text-2xl md:text-3xl lg:text-4xl font-extrabold"> 3 </span>
-                                     Simple <br /> Steps
+                                <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold leading-tight" data-aos="fade-right">
+                                    Begin Your<br /> Journey<br />
                                 </h2>
                               <div data-aos="fade-right" className="arrow-up-btm"></div>
                             </div>

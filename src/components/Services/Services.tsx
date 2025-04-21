@@ -58,7 +58,7 @@ const Services: React.FC = () => {
                         {/* Left Section */}
                         <div className="chalnges-left">
                             <div className="sticky top-32 text-white">
-                                <h3 className="text-orange text-lg font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
+                                <h3 className="text-orange text-3xl font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
                                     <span>Services</span>
                                 </h3>
 
@@ -96,7 +96,7 @@ const Services: React.FC = () => {
                                         <div className="md_challenges_right bg-white flex items-center justify-center max-w-xs w-full rounded-r-2xl p-4">
                                             <div className="md_challenges_col">
                                                 <div className="flex items-center mb-4">
-                                                    <div className="flex items-center justify-center text-[24px] bg-black text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
+                                                    <div className="flex items-center justify-center text-[24px] bg-orange text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
                                                     {challenge.icon}
                                                     </div>
                                                     <div className="text-lg font-semibold">{challenge.title}</div>

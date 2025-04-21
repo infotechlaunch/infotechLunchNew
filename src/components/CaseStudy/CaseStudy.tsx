@@ -64,7 +64,7 @@ const CaseStudy: React.FC = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-8">
-          <span className="text-orange text-lg font-semibold mb-3" data-aos="fade-up" >Case Studies</span>
+          <span className="text-orange text-3xl font-semibold mb-3" data-aos="fade-up" >Case Studies</span>
           <h2 className="text-3xl lg:text-4xl font-semibold text-[#fff] mb-2" data-aos="fade-up" >Experience Innovation in Action</h2>
           <p className="text-lg mt-2 text-[#fff]" data-aos="fade-up" >
             Dive into the future with our groundbreaking projects that are shaping and revolutionizing industries.
