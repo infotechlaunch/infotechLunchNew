@@ -297,7 +297,7 @@ type Voice = {
       <div style={{
             textAlign: 'center',
             marginBottom: '2rem'
-        }}>
+        }} data-aos="fade-up">
         <div style={badgeStyle}>
           <span style={{ marginRight: '0.5rem' }}>🎙️</span>
           <span style={{ fontSize: '1rem' }}>Our Voices</span>

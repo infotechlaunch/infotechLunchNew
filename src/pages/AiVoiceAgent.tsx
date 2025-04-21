@@ -44,7 +44,7 @@ const AiVoiceAgent: React.FC = () => {
                 <HeaderNew />
 
                 <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
-                    <div className="hero-content text-center justify-center max-w-5xl text-white">
+                    <div className="hero-content text-center justify-center max-w-5xl text-white" data-aos="fade-up">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
                             fontSize: "16px",
                             marginBottom: "-20px"
@@ -222,7 +222,7 @@ const AiVoiceAgent: React.FC = () => {
                 <section className="hero-container bg-gradient-blue-red flex items-center justify-center" style={{
                         marginTop: "0px"
                     }}>
-                    <div className="hero-content text-center max-w-4xl text-white justify-center">
+                    <div className="hero-content text-center max-w-4xl text-white justify-center" data-aos="fade-up">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center" style={{
                             fontSize: "16px",
                             marginBottom: "-20px"
@@ -263,7 +263,7 @@ const AiVoiceAgent: React.FC = () => {
                             margin: "auto",
                             gap: "1rem",
                         }}
-                        >
+                        data-aos="fade-up">
                         <h1 className="text-5xl font-bold">
                             Emerging AI
                         </h1>
@@ -278,8 +278,8 @@ const AiVoiceAgent: React.FC = () => {
                     }}>
 
                     {/* Left panel - Chat interface */}
-                    <div className="bg-orange ai-panel ai-left pb-20">
-                        <div className="border border-gray-800 rounded-lg p-6 w-full max-w-md">
+                    <div className="bg-orange ai-panel ai-left pb-20" >
+                        <div className="border border-gray-800 rounded-lg p-6 w-full max-w-md" data-aos="fade-right" >
                         {/* Action buttons */}
                         <div className="flex justify-between mb-8">
                             <div className="flex flex-col items-center">
@@ -332,7 +332,8 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
                     
                     {/* Right panel - Content */}
-                    <div className="bg-orange ai-panel ai-right  pb-20">
+                    <div className="bg-orange ai-panel ai-right  pb-20" >
+                        <div data-aos="fade-left">
                         <p className="text-sm mb-2">AI Discovery Frontiers</p>
                         <h1 className="text-4xl font-bold mb-6">Emerging Frontiers in AI Exploration</h1>
                         
@@ -346,6 +347,7 @@ const AiVoiceAgent: React.FC = () => {
                         Fun Fact: Did you know apple has enhanced their customer support using
                         100% Voice-Driven Intelligence Facilitators
                         </p>
+                        </div>
                     </div>
                 </div>
   
@@ -356,7 +358,7 @@ const AiVoiceAgent: React.FC = () => {
                     }}>
                     {/* Demo CTA Button */}
                     <div
-                        className="hero-content text-center max-w-3xl text-white"
+                        className="hero-content text-center max-w-3xl text-white" data-aos="fade-up"
                         style={{
                             display: "flex",
                             flexDirection: "column",
@@ -374,7 +376,7 @@ const AiVoiceAgent: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="flex justify-center mb-8 mt-4">
+                    <div className="flex justify-center mb-8 mt-4" data-aos="fade-up">
                         <Link className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center"
                             // onClick={onOpen}
                             to="/ai-demo-call"
@@ -387,7 +389,7 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
 
                     {/* Pricing Plans */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-aos="fade-up">
                         {/* Cadet Plan */}
                         <div className="border border-gray-800 rounded-lg overflow-hidden bg-white">
                         <div className="p-6">
@@ -607,12 +609,12 @@ const AiVoiceAgent: React.FC = () => {
                 <div className="bg-gradient-blue-red text-black p-8">
                     <div className="max-w-7xl mx-auto  border border-white-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
                         {/* Left column - Title */}
-                        <div className="md:w-1/3">
+                        <div className="md:w-1/3" data-aos="fade-right">
                         <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
                         </div>
 
                         {/* Right column - FAQ items */}
-                        <div className="md:w-2/3 space-y-4">
+                        <div className="md:w-2/3 space-y-4" data-aos="fade-left">
                         {/* FAQ Item 1 */}
                         <div className="bg-white rounded">
                             <div className="flex justify-between items-center p-4">
