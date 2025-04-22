@@ -28,6 +28,8 @@ import SocialMedia from "./pages/SocialMedia";
 import AiVoiceAgent from "./pages/AiVoiceAgent";
 // import VoiceSelector from "./pages/VoiceSelector";
 import AiDemoCall from "./pages/AiDemoCall";
+import AiContactUs from "./pages/AiContactUs";
+
 
 
 
@@ -74,6 +76,7 @@ function App() {
           <Route path="/ai-voice-agent" element={<AiVoiceAgent/>} />
           {/* <Route path="/ai-voice-selector" element={<VoiceSelector/>} /> */}
           <Route path="/ai-demo-call" element={<AiDemoCall/>} />
+          <Route path="/ai-contact-us" element={<AiContactUs/>} />
           
           
           

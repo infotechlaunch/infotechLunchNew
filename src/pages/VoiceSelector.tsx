@@ -29,14 +29,23 @@ const voices: Voice[] = [
     { id: 10, name: 'Jean-Luc Charpentier', gender: 'Male', accent: 'French', avatar: '👨🏻', sample: "Bonjour, je m'appelle Jean-Luc avec un accent français." },
 ];
 
-type Voice = {
+  type Voice = {
     id: number;
     name: string;
     gender: 'Male' | 'Female';
-    accent: string;
+    // accent: string;
+    accent: Accent;
     avatar: string;
     sample: string;
   };
+
+  type Accent = 
+  | 'British English'
+  | 'Indian English'
+  | 'American English'
+  | 'Spanish'
+  | 'Polish'
+  | 'French';
 
   type VoiceCardProps = {
     voice: Voice;
@@ -67,19 +76,37 @@ type Voice = {
       const voices = window.speechSynthesis.getVoices();
       let voiceMatch;
       
+      // if (voice.accent.includes('Spanish')) {
+      //   voiceMatch = voices.find(v => v.lang.includes('es'));
+      // } else if (voice.accent.includes('Polish')) {
+      //   voiceMatch = voices.find(v => v.lang.includes('pl'));
+      // } else if (voice.accent.includes('French')) {
+      //   voiceMatch = voices.find(v => v.lang.includes('fr'));
+      // } else if (voice.accent.includes('Indian')) {
+      //   voiceMatch = voices.find(v => v.lang.includes('en'));
+      // } else if (voice.accent.includes('British')) {
+      //   voiceMatch = voices.find(v => v.lang.includes('en-GB'));
+      // } else {
+      //   voiceMatch = voices.find(v => v.lang.includes('en-US'));
+      // }
+
       if (voice.accent.includes('Spanish')) {
         voiceMatch = voices.find(v => v.lang.includes('es'));
       } else if (voice.accent.includes('Polish')) {
         voiceMatch = voices.find(v => v.lang.includes('pl'));
       } else if (voice.accent.includes('French')) {
         voiceMatch = voices.find(v => v.lang.includes('fr'));
-      } else if (voice.accent.includes('Indian')) {
-        voiceMatch = voices.find(v => v.lang.includes('en'));
-      } else if (voice.accent.includes('British')) {
+      } else if (voice.accent.includes('Indian English')) {
+        voiceMatch = voices.find(v => v.lang.includes('hi-IN'));
+      } else if (voice.accent.includes('British English')) {
         voiceMatch = voices.find(v => v.lang.includes('en-GB'));
-      } else {
+      } else if (voice.accent.includes('American English')) {
         voiceMatch = voices.find(v => v.lang.includes('en-US'));
+      } else {
+        // fallback to any English voice
+        voiceMatch = voices.find(v => v.lang.includes('en'));
       }
+      
       
       if (voiceMatch) {
         utterance.voice = voiceMatch;
@@ -87,9 +114,10 @@ type Voice = {
       
       // Set gender-appropriate pitch
       if (voice.gender === 'Female') {
-        utterance.pitch = 1.2;
+        utterance.pitch = 1.1;
       } else {
-        utterance.pitch = 0.8;
+        // utterance.pitch = 0.8;
+        utterance.pitch = 0.5;
       }
       
       // Handle playback events
