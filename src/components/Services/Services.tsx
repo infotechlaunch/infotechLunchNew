@@ -58,7 +58,7 @@ const Services: React.FC = () => {
                         {/* Left Section */}
                         <div className="chalnges-left">
                             <div className="sticky top-32 text-white">
-                                <h3 className="text-orange text-3xl font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
+                                <h3 className="text-gradient-red text-3xl font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
                                     <span>Services</span>
                                 </h3>
 

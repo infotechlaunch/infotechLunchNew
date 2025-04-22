@@ -12,26 +12,31 @@ import logo from "../../assets/Images/logo.gif";
 // import logo5 from "../../assets/Images/cl06.png";
 
 // import web from "../../assets/Images/portfoli/1.png";
-import web from "../../assets/Images/food-and-beverage.jpeg";
-import web1 from "../../assets/Images/travel-and-transport.jpeg";
+import web from "../../assets/Images/case-studies/food-and-beverage.jpeg";
+import weblogo from "../../assets/Images/case-studies/food-and-beverage-logo.png";
+import web1 from "../../assets/Images/case-studies/travel-and-transport.jpeg";
+import web1logo from "../../assets/Images/case-studies/travel-and-transport-logo.jpg";
 // import web1 from "../../assets/Images/portfoli/3.png";
-import web2 from "../../assets/Images/logistics-and-delivery.jpeg";
+import web2 from "../../assets/Images/case-studies/logistics-and-delivery.jpeg";
+import web2logo from "../../assets/Images/case-studies/logistics-and-delivery-logo.png";
 // import web2 from "../../assets/Images/portfoli/5.png";
 // import web3 from "../../assets/Images/portfoli/8.png";
 // import web4 from "../../assets/Images/portfoli/ecom.png";
-import web4 from "../../assets/Images/artificial-and-inteligence.jpeg";
-import web5 from "../../assets/Images/e-commerce1.jpeg";
+import web4 from "../../assets/Images/case-studies/artificial-and-inteligence.jpeg";
+import web4logo from "../../assets/Images/case-studies/artificial-and-inteligence-logo.png";
+import web5 from "../../assets/Images/case-studies/e-commerce1.jpeg";
+import web5logo from "../../assets/Images/case-studies/e-commerce1-logo.png";
 
 
 
 const caseStudies = [
-  { title: "Food & Beverage", downloadLink: "#", mainImage: web, sorttitle: "for Food Delivery", p1: "85%", p1desc: "Customer Retention Rate", p2: "30K+", p2desc: "Meals Delivered Globally", desc: "Boost food delivery with AI-driven meals, smart logistics, and personalized customer experiences.", img: logo, },
+  { title: "Food & Beverage", downloadLink: "#", mainImage: web, sorttitle: "for Food Delivery", p1: "85%", p1desc: "Customer Retention Rate", p2: "30K+", p2desc: "Meals Delivered Globally", desc: "Boost food delivery with AI-driven meals, smart logistics, and personalized customer experiences.", img: weblogo, },
   // { title: "Food & Beverage",downloadLink:"#", mainImage:web, sorttitle:"for Food Delivery",  p1: "80%", p1desc: "User Retention Rate", p2: "20K+", p2desc: "Meal Plans Generated", desc: "Personalized nutrition and workout recommendations, backed by advanced AI algorithms, machine learning, and predictive analytics.", img: logo, },
-  { title: "Travel & Transport",downloadLink:"#", mainImage:web1, sorttitle:"for Travel & Transport",  p1: "20%", p1desc: "Cryptocurrencies Supported", p2: "$100 K+", p2desc: "Daily Transaction Volume", desc: "Optimizing travel and transport with AI-driven routing, real-time tracking, and seamless booking solutions.", img: logo, },
-  { title: "Logistics & Delivery",downloadLink:"#", mainImage:web2, sorttitle:"for any kind of delivery",  p1: "1000+", p1desc: "Cryptocurrencies Supported", p2: "45%", p2desc: "Increase in Property Views", desc: "Streamlined logistics and delivery with real-time tracking, route optimization, and automated workflows powered by AI and IoT.", img: logo, },
+  { title: "Travel & Transport",downloadLink:"#", mainImage:web1, sorttitle:"for Travel & Transport",  p1: "20%", p1desc: "Cryptocurrencies Supported", p2: "$100 K+", p2desc: "Daily Transaction Volume", desc: "Optimizing travel and transport with AI-driven routing, real-time tracking, and seamless booking solutions.", img: web1logo, },
+  { title: "Logistics & Delivery",downloadLink:"#", mainImage:web2, sorttitle:"for any kind of delivery",  p1: "1000+", p1desc: "Cryptocurrencies Supported", p2: "45%", p2desc: "Increase in Property Views", desc: "Streamlined logistics and delivery with real-time tracking, route optimization, and automated workflows powered by AI and IoT.", img: web2logo, },
   // { title: "Gaming",mainImage:web3,downloadLink:"#", sorttitle:"for Gaming",  p1: "1000+", p1desc: "Dishefs revolutionizes the food industry by seamlessly connecting food establishments with idle kitchen hours to chefs, food trucks, and entrepreneurs through our innovative two-way marketplace for kitchen rental solutions.", img: logo3, },
-  { title: "Artificial Intelligence",mainImage:web4,downloadLink:"#", sorttitle:"for Artificial Intelligence",  p1: "85%", p1desc: "Faster Analysis Time", p2: "60%",p2desc:"Faster Decision Making", desc: "Transforming industries with intelligent automation, predictive analytics, and real-time decision-making powered by AI.", img: logo, },
-  { title: "E-commerce",mainImage:web5,downloadLink:"#", sorttitle:"for E-commerce",  p1: "1M+", p1desc: "User Downloads", p2: "90%", p2desc: "User Engagement", desc: "Elevating online retail with personalized shopping, smart recommendations, and seamless checkout experiences powered by AI and analytics.", img: logo, },
+  { title: "Artificial Intelligence",mainImage:web4,downloadLink:"#", sorttitle:"for Artificial Intelligence",  p1: "85%", p1desc: "Faster Analysis Time", p2: "60%",p2desc:"Faster Decision Making", desc: "Transforming industries with intelligent automation, predictive analytics, and real-time decision-making powered by AI.", img: web4logo, },
+  { title: "E-commerce",mainImage:web5,downloadLink:"#", sorttitle:"for E-commerce",  p1: "1M+", p1desc: "User Downloads", p2: "90%", p2desc: "User Engagement", desc: "Elevating online retail with personalized shopping, smart recommendations, and seamless checkout experiences powered by AI and analytics.", img: web5logo, },
 ];
 
 const CaseStudy: React.FC = () => {

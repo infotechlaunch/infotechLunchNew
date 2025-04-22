@@ -161,12 +161,17 @@
   
   .hero-text h1 {
     font-size: 3rem;
-    /* color: #0c2d57; */
+   
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
   }
-  
+  .text-gradient{ background: linear-gradient(to right, #97d3ff 0%, #ffa245 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+    .text-gradient-red{background: linear-gradient(to right, #ffe1cc 0%, #f23d3d 50%, #ffffff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;}
   .hero-text p {
     font-size: 1.2rem;
     /* color: #444; */

@@ -120,7 +120,7 @@ const Solutions: React.FC = () => {
                         <div className="md:flex gap-8">
                             <div className="w-full md:w-[33%]">
                                 <div className="desk-block">
-                                    <div className="solution-list flex flex-col space-y-4" id="services-list">
+                                    <div className="solution-list flex flex-col space-y-3" id="services-list">
 
                                         <a href="#solution13" className="solu-item flex flex-col p-6 bg-white transition">
                                             <h3 className="text-2xl text-gray-300 font-bold">AI Development</h3>
