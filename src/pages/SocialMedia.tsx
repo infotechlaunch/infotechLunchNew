@@ -211,7 +211,7 @@ const SocialMedia: React.FC = () => {
                         </div>
                         </div> */}
                                 <div className="md:w-1/2 flex justify-center">
-                                    <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full p-4 w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
+                                    <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
 
                                         <img src={whoItForImg} alt="" style={{
                                             height: "350px",
@@ -471,7 +471,7 @@ const SocialMedia: React.FC = () => {
                                 What You Get With ITL (Every Plan Includes):
                             </h2>
 
-                            <ul className="space-y-4 text-lg text-gray-800 itl-mobile-style-ul">
+                            <ul className="space-y-4 text-lg text-gray-800 itl-mobile-style-ul mt-4">
                                 {features.map((feature, index) => (
                                     <li key={index} className="flex gap-3" style={{ marginLeft: "20%" }}>
                                         <span role="img" aria-label="check">✅</span>
