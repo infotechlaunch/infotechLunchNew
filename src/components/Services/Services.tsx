@@ -1,10 +1,10 @@
 import React from "react";
 import './Services.scss';
 import { Link } from "react-router-dom";
-import Services01 from '../../assets/Images/content_first_img.jpg';
-import Services02 from '../../assets/Images/content_first_img.png';
-import Services03 from '../../assets/Images/content_first_img02.jpg';
-import Services04 from '../../assets/Images/content_first_img03.jpg';
+import Services01 from '../../assets/Images/services/Inconsistent-Lead-Generation.jpg';
+import Services02 from '../../assets/Images/services/Cloud-Security-Risks.jpg';
+import Services03 from '../../assets/Images/services/Outdated-User-Experience.jpg';
+import Services04 from '../../assets/Images/services/Scalability-Challenges.jpg';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 
