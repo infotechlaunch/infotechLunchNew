@@ -26,8 +26,8 @@ const Partners: React.FC = () => {
     return (
         <section className="section section--partners py-16 bg-gradient-blue-red">
             <div className="text-center mb-10 text-white">
-            <span className="text-lg font-semibold mb-3"  data-aos="fade-up">Clients &amp; Partners</span>
-                <h2 className="text-3xl lg:text-3xl text-orange font-semibold leading-[47px] mb-2"  data-aos="fade-up">Empowering Startups to Enterprises, <br /> Turning Digital Dreams Into Reality</h2>
+            <span className="text-3xl font-semibold mb-6 text-gradient"  data-aos="fade-up">Clients &amp; Partners</span>
+                <h2 className="text-3xl lg:text-3xl text-orange font-semibold leading-[47px] mb-2 mt-3"  data-aos="fade-up">Empowering Startups to Enterprises, <br /> Turning Digital Dreams Into Reality</h2>
                 <p className="text-lg mt-2"  data-aos="fade-up">Join hands with a team that brings bold ideas to life—creating impactful digital solutions for every scale and sector.</p>
                 </div>
             <div className="section__body">

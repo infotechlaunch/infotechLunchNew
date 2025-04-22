@@ -52,7 +52,7 @@ const SocialMedia: React.FC = () => {
                
                 <section className="hero-container bg-gradient-blue-red">
                     <div className="hero-content">
-                        <div className="hero-text text-white" data-aos="fade-right">
+                        <div className="hero-text text-gradient" data-aos="fade-right">
                             <h1>AI-Powered Social Media Management</h1>
                             <p>
                                 Unlock next-level growth with our AI-driven social media tools. Schedule, create, manage, and analyze—
@@ -70,7 +70,7 @@ const SocialMedia: React.FC = () => {
                         </div>
                         <div className="hero-image" data-aos="fade-left">
                         <video
-                    className="z-0"
+                    className="z-0" style={{ borderRadius: "12px"}}
                     autoPlay
                     loop
                     muted
@@ -142,7 +142,7 @@ const SocialMedia: React.FC = () => {
                         <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto bg-gradient-blue-red">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                                 <div className="md:w-1/2" data-aos="fade-right">
-                                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-gradient-red mb-6">
                                         Who It's For
                                     </h2>
                                     <p className="text-lg text-white mb-8">

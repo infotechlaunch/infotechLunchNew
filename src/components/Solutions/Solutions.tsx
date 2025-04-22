@@ -105,13 +105,13 @@ const Solutions: React.FC = () => {
             <div className="container mx-auto  px-6">
                 <div className="w-full  mx-auto">
                     <div className="text-center mb-12 text-white">
-                        <h3 className="text-orange text-3xl font-semibold mb-3"  data-aos="fade-up" >Solutions</h3>
+                        <h3 className="text-gradient text-3xl font-semibold mb-3"  data-aos="fade-up" >Solutions</h3>
                         {/* <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px]" data-aos="fade-up" >
                             Full-Spectrum Of <span className="bg-red-500/10 px-2 inline-block">AI-Powered Solutions</span>
                             <br /> Engineered For Global Impact
                         </h2> */}
 
-                        <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px]" data-aos="fade-up" >
+                        <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px] mt-3" data-aos="fade-up" >
                             AI-Driven Digital Solutions
                         </h2>
                         <p>Crafted to Accelerate Innovation and Deliver Global Impact</p>
@@ -120,7 +120,7 @@ const Solutions: React.FC = () => {
                         <div className="md:flex gap-8">
                             <div className="w-full md:w-[33%]">
                                 <div className="desk-block">
-                                    <div className="solution-list flex flex-col space-y-4" id="services-list">
+                                    <div className="solution-list flex flex-col space-y-3" id="services-list">
 
                                         <a href="#solution13" className="solu-item flex flex-col p-6 bg-white transition">
                                             <h3 className="text-2xl text-gray-300 font-bold">AI Development</h3>

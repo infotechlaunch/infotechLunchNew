@@ -40,7 +40,7 @@ const FAQ: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="md:space-y-10 space-y-6 w-full">
                     <div className="text-center text-white">
-                        <span className="text-orange text-3xl text-center font-semibold mb-6" data-aos="fade-up">FAQ</span>
+                        <span className="text-gradient text-3xl text-center font-semibold mb-6" data-aos="fade-up">FAQ</span>
                         <h2 className="xl:text-4xl text-3xl text-center font-bold" data-aos="fade-up" data-aos-delay="100">
                             Frequently Asked Questions
                         </h2>
