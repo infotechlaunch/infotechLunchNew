@@ -105,13 +105,13 @@ const Solutions: React.FC = () => {
             <div className="container mx-auto  px-6">
                 <div className="w-full  mx-auto">
                     <div className="text-center mb-12 text-white">
-                        <h3 className="text-orange text-3xl font-semibold mb-3"  data-aos="fade-up" >Solutions</h3>
+                        <h3 className="text-gradient text-3xl font-semibold mb-3"  data-aos="fade-up" >Solutions</h3>
                         {/* <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px]" data-aos="fade-up" >
                             Full-Spectrum Of <span className="bg-red-500/10 px-2 inline-block">AI-Powered Solutions</span>
                             <br /> Engineered For Global Impact
                         </h2> */}
 
-                        <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px]" data-aos="fade-up" >
+                        <h2 className="text-3xl lg:text-4xl font-semibold md:leading-[47px] mt-3" data-aos="fade-up" >
                             AI-Driven Digital Solutions
                         </h2>
                         <p>Crafted to Accelerate Innovation and Deliver Global Impact</p>
