@@ -9,6 +9,11 @@ import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
 import SocialMediaMgmtImg from "../assets/Images/aiSocialMedia/Ai-social-media.mp4";
 import SmarterSocialVideo from "../assets/Images/aiSocialMedia/Smarter-Social.mp4";
+import SmartScheduling from "../assets/Images/aiSocialMedia/icons/Smart-Scheduling.png";
+import BrandedContent from "../assets/Images/aiSocialMedia/icons/Branded-Content.png";
+import ConsistentEngagement from "../assets/Images/aiSocialMedia/icons/Consistent-Engagement.png";
+import MultiPlatformMagic from "../assets/Images/aiSocialMedia/icons/Multi-Platform-Magic.png";
+import RealTimeInsights from "../assets/Images/aiSocialMedia/icons/Real-Time-Insights.png";
 // import SocialMediaImg from "../assets/Images/aiSocialMedia/social-media.png";
 // import automateWorkflowImg from "../assets/Images/aiSocialMedia/automate-workflow.png";
 // import youLoveImg from "../assets/Images/aiSocialMedia/you-love.png";
@@ -49,7 +54,7 @@ const SocialMedia: React.FC = () => {
         <>
             <AOSProvider>
                 <HeaderNew />
-               
+
                 <section className="hero-container bg-gradient-blue-red">
                     <div className="hero-content">
                         <div className="hero-text text-gradient" data-aos="fade-right">
@@ -69,16 +74,16 @@ const SocialMedia: React.FC = () => {
                             <ConnectExperts />
                         </div>
                         <div className="hero-image" data-aos="fade-left">
-                        <video
-                    className="z-0" style={{ borderRadius: "12px"}}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                >
-                    <source src={SocialMediaMgmtImg} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                            <video
+                                className="z-0" style={{ borderRadius: "12px" }}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            >
+                                <source src={SocialMediaMgmtImg} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
 
                     </div>
@@ -95,16 +100,16 @@ const SocialMedia: React.FC = () => {
                             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
 
                                 <div className="md:w-1/2 flex justify-center" data-aos="fade-right">
-                                <video
-                    className="z-0"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                >
-                    <source src={SmarterSocialVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                                    <video
+                                        className="z-0"
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                    >
+                                        <source src={SmarterSocialVideo} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                                 <div className="md:w-1/2" data-aos="fade-left">
                                     <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
@@ -142,7 +147,7 @@ const SocialMedia: React.FC = () => {
                                     <ConnectExperts />
 
                                 </div>
-                                
+
                                 <div className="md:w-1/2 flex justify-center">
                                     <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
 
@@ -156,16 +161,16 @@ const SocialMedia: React.FC = () => {
                             </div>
                         </section>
                         {/* Features Section */}
-                        <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+                        {/* <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
                             <h2 className="text-4xl md:text-4xl font-bold text-white text-center mb-12" data-aos="fade-up">
                                 What You'll Love
                             </h2>
 
                             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-4 what-love-style text-center">
-                                {/* Feature 1 */}
+                          
                                 <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
-                                        {/* Clock Icon */}
+                                     
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
@@ -176,10 +181,9 @@ const SocialMedia: React.FC = () => {
                                     </div>
                                 </div>
 
-                                {/* Feature 2 */}
                                 <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
-                                        {/* Bar Chart Icon */}
+                                    
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                                         </svg>
@@ -190,10 +194,10 @@ const SocialMedia: React.FC = () => {
                                     </div>
                                 </div>
 
-                                {/* Feature 3 */}
+                              
                                 <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
-                                        {/* Users Icon */}
+                                     
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                         </svg>
@@ -204,10 +208,9 @@ const SocialMedia: React.FC = () => {
                                     </div>
                                 </div>
 
-                                {/* Feature 4 */}
                                 <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
-                                        {/* Line Chart Icon */}
+                                       
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                                         </svg>
@@ -218,7 +221,7 @@ const SocialMedia: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> */}
 
 
 
@@ -292,13 +295,22 @@ const SocialMedia: React.FC = () => {
                         <h3 className="products-heading text-white" data-aos="fade-up">🚀 What You’ll Love</h3>
 
                         <div className="workflow-features" data-aos="fade-up">
-                            <div className="feature-card">Smart Scheduling<br /><span>Post at the perfect time, every time</span></div>
-                            <div className="feature-card">Branded Content, At Scale<br /><span>AI crafts posts in your voice</span></div>
-                            <div className="feature-card">Consistent Engagement<br /><span>Auto-responses that never miss a moment</span></div>
+                            <div className="feature-card">
+                                <div className="feature-icon"> <img src={SmartScheduling} alt="Logo" /></div>
+                                Smart Scheduling<br /><span>Post at the perfect time, every time</span></div>
+                            <div className="feature-card">
+                                <div className="feature-icon"> <img src={BrandedContent} alt="Logo" /></div>
+                                Branded Content, At Scale<br /><span>AI crafts posts in your voice</span></div>
+                            <div className="feature-card"> <div className="feature-icon"> <img src={ConsistentEngagement} alt="Logo" /></div>
+                                Consistent Engagement<br /><span>Auto-responses that never miss a moment</span></div>
                         </div>
                         <div className="workflow-features" data-aos="fade-up">
-                            <div className="feature-card">Multi-Platform Magic<br /><span>Manage all your channels from one dashboard</span></div>
-                            <div className="feature-card">Real-Time Insights<br /><span>See what’s working and optimize</span></div>
+                            <div className="feature-card">
+                                <div className="feature-icon"> <img src={MultiPlatformMagic} alt="Logo" /></div>
+                                Multi-Platform Magic<br /><span>Manage all your channels from one dashboard</span></div>
+                            <div className="feature-card">
+                                <div className="feature-icon"> <img src={RealTimeInsights} alt="Logo" /></div>
+                                Real-Time Insights<br /><span>See what’s working and optimize</span></div>
                         </div>
                     </section>
 
@@ -315,8 +327,10 @@ const SocialMedia: React.FC = () => {
                             <div className="callout-icon text-4xl mb-4">🎁</div>
                             <h2 className="callout-heading text-3xl font-semibold mb-2">Try It Free – 2 Weeks, On Us</h2>
                             <p className="callout-description text-gray-700">
-                                No contracts. No credit card. Just results.
+                            Our approach is straightforward: no contracts, no credit card required & a relentless focus on achieving the results you need.
+                               
                             </p>
+                            {/* <p> No contracts. No credit card. Just results.</p> */}
                         </div>
                     </section>
 

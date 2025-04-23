@@ -31,16 +31,7 @@ const blogPosts: BlogPost[] = [
         imageUrl: lunch,
         link: "/BlogDeatils",
     },
-    {
-        id: 2,
-        title: "Blockchain in Healthcare: Benefits & Challenges",
-        category: "Blockchain",
-        date: "10 Sep 2024",
-        description:
-            "Blockchain technology is transforming the healthcare industry by improving security, interoperability, and accessibility of medical records. Learn how it enhances trust and data security.",
-        imageUrl: health,
-        link: "/BlogDeatils",
-    },
+    
     {
         id: 3,
         title: "Future of AI in Web Development: Trends & Innovations",
