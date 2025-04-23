@@ -230,7 +230,7 @@ const SocialMedia: React.FC = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-4 what-love-style text-center">
                                 {/* Feature 1 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Clock Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -244,7 +244,7 @@ const SocialMedia: React.FC = () => {
                                 </div>
 
                                 {/* Feature 2 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Bar Chart Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -258,7 +258,7 @@ const SocialMedia: React.FC = () => {
                                 </div>
 
                                 {/* Feature 3 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Users Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -272,7 +272,7 @@ const SocialMedia: React.FC = () => {
                                 </div>
 
                                 {/* Feature 4 */}
-                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300" data-aos="fade-up">
+                                <div className="bg-white p-6 rounded-xl hover:shadow-xl transition duration-300 rounded-box-white" data-aos="fade-up">
                                     <div className="bg-gradient-to-r from-red-400 to-blue-400 p-3 icon-rounded-1">
                                         {/* Line Chart Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

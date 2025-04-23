@@ -44,7 +44,7 @@ const blogPosts: BlogPost[] = [
     {
         id: 3,
         title: "Future of AI in Web Development: Trends & Innovations",
-        category: "Artificial Intelligence",
+        category: "AI",
         date: "15 Oct 2024",
         description:
             "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
@@ -54,7 +54,7 @@ const blogPosts: BlogPost[] = [
     {
         id: 4,
         title: "Future of AI in Web Development: Trends & Innovations",
-        category: "Artificial Intelligence",
+        category: "AI",
         date: "15 Oct 2024",
         description:
             "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
@@ -97,7 +97,7 @@ const blogPosts: BlogPost[] = [
 const BlogPage: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>("All");
 
-    const tabs = ["All", "Mobile App", "Games Development"];
+    const tabs = ["All", "Mobile App", "AI Development"];
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
@@ -327,7 +327,7 @@ const BlogPage: React.FC = () => {
                                         ))}
                                     </div>
                                 </div>}
-                                {activeTab === "Games Development" && <div className="tab-content">
+                                {activeTab === "AI Development" && <div className="tab-content">
                                     <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
                                         {blogPosts.map((post) => (
                                             <Link key={post.id} to={post.link} className="block">

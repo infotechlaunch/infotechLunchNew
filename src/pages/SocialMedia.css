@@ -11,13 +11,17 @@
     background: #ffaf46;
     color: #000;
 }
+.rounded-box-white{  position: relative;  transition: transform 0.3s ease;}
 .icon-rounded-1 {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   margin: 0 auto;
   margin-bottom: 10px;
+  position: relative;
+ 
 }
+.rounded-box-white:hover {transform: scale(1.05) !important;}
 .bg-overshadow-red{position: relative;}
 .bg-overshadow-red:before {
   background: linear-gradient(95deg, rgba(255, 0, 111, 1) 0%, rgba(0, 0, 0, 1) 100%);
