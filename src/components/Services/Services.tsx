@@ -1,6 +1,7 @@
 import React from "react";
 import './Services.scss';
 import { Link } from "react-router-dom";
+import ConnectExperts from "../../pages/ConnectExperts";
 import Services01 from '../../assets/Images/services/Inconsistent-Lead-Generation.jpg';
 import Services02 from '../../assets/Images/services/Cloud-Security-Risks.jpg';
 import Services03 from '../../assets/Images/services/Outdated-User-Experience.jpg';
@@ -70,7 +71,7 @@ const Services: React.FC = () => {
                                 </span>
                                 </h2>
 
-                               <div className="mt-6">
+                               {/* <div className="mt-6">
                                     <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                         <button className="btn btn-fix lazyloaded">Get Solution?
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
@@ -81,7 +82,8 @@ const Services: React.FC = () => {
                                             </svg>
                                         </button>
                                     </Link>
-                                </div>
+                                </div> */}
+                                <ConnectExperts />
                             </div>
                         </div>
 

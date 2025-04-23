@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import './Solutions.scss';
-import app01 from "../../assets/Images/iOS_App.webp";
-import app02 from "../../assets/Images/Android_App.webp";
-import app03 from "../../assets/Images/Flutter_App.webp";
-import app04 from "../../assets/Images/React_Native_App.webp";
-import app05 from "../../assets/Images/PWA_App.webp";
+import app01 from "../../assets/Images/icon/solution/iOS_App.webp";
+import app02 from "../../assets/Images/icon/solution/Android_App.webp";
+import app03 from "../../assets/Images/icon/solution/Flutter_App.webp";
+import app04 from "../../assets/Images/icon/solution/React_Native_App.webp";
+import app05 from "../../assets/Images/icon/solution/PWA_App.webp";
+import app06 from "../../assets/Images/icon/solution/xamarin.png";
 
 // import Smart from "../../assets/Images/Smart.svg";
 // import Scalability from "../../assets/Images/Scalability.svg";
-import Chatbot from "../../assets/Images/pngtree.png";
-import Machine from "../../assets/Images/Machine.png";
-import Generative from "../../assets/Images/Generative.png";
-import Consulting from "../../assets/Images/Consulting.png";
+import aivoice from "../../assets/Images/icon/solution/ai-voice.png";
+import Chatbot from "../../assets/Images/icon/solution/pngtree.png";
+import Machine from "../../assets/Images/icon/solution/Machine.png";
+import Generative from "../../assets/Images/icon/solution/Generative.png";
+import Consulting from "../../assets/Images/icon/solution/Consulting.png";
+import AIsoftware from "../../assets/Images/icon/solution/ai-software.png";
 
 const Solutions: React.FC = () => {
     useEffect(() => {
@@ -221,7 +224,7 @@ const Solutions: React.FC = () => {
                                                 <Link to="#">
                                                     <div className="commonbs5form">
                                                         <div className="icn">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-automation w-12 h-12"><path d="M13 20.693c-.905 .628 -2.36 .292 -2.675 -1.01a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.492 .362 1.716 2.219 .674 3.03"></path><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path d="M17 22l5 -3l-5 -3z"></path></svg>
+                                                        <img src={AIsoftware} alt="" />
                                                         </div>
                                                         <p>AI Software Development</p>
                                                         <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
@@ -254,6 +257,16 @@ const Solutions: React.FC = () => {
                                                             <img src={Chatbot} alt="" />
                                                         </div>
                                                         <p>AI Agents & Chatbots</p>
+                                                        <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+                                                <Link to="#">
+                                                    <div className="commonbs5form">
+                                                        <div className="icn">
+                                                            <img src={aivoice} alt="" />
+                                                        </div>
+                                                        <p>AI Voice</p>
                                                         <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
                                                         </div>
                                                     </div>
@@ -345,6 +358,16 @@ const Solutions: React.FC = () => {
                                                             <img src={app05} alt="" />
                                                         </div>
                                                         <p>PWA App</p>
+                                                        <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+                                                <Link to="#">
+                                                    <div className="commonbs5form">
+                                                        <div className="icn">
+                                                            <img src={app06} alt="" />
+                                                        </div>
+                                                        <p>Xamarin</p>
                                                         <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
                                                         </div>
                                                     </div>
@@ -533,6 +556,16 @@ const Solutions: React.FC = () => {
                                                         </div>
                                                     </div>
                                                 </Link>
+                                                <Link to="#">
+                                                    <div className="commonbs5form">
+                                                        <div className="icn">
+                                                            <span className="icon-website-development2"></span>
+                                                        </div>
+                                                        <p>Website Revamp</p>
+                                                        <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                             </div>
                                         </div>
@@ -610,7 +643,17 @@ const Solutions: React.FC = () => {
                                                         </div>
                                                         <p>
                                                             Online Doctor Consultation-Software</p>
-                                                        <div className="icn-arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-apps w-12 h-12"><path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path><path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path><path d="M14 7l6 0"></path><path d="M17 4l0 6"></path></svg>
+                                                            <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
+                                                            </div>
+                                                    </div>
+                                                </Link>
+                                                <Link to="#">
+                                                    <div className="commonbs5form">
+                                                        <div className="icn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-shield w-12 h-12"><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3"></path></svg>
+                                                        </div>
+                                                        <p>Laboratory Information Management Software</p>
+                                                        <div className="icn-arrow"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path></g></svg>
                                                         </div>
                                                     </div>
                                                 </Link>

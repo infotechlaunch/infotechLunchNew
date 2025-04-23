@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import icon1 from "../../assets/Images/icon/why-choose/Optimum-Outcome-Focused.png";
+import icon2 from "../../assets/Images/icon/why-choose/Experienced-Techies.png";
+import icon3 from "../../assets/Images/icon/why-choose/Cutting-Edge-Technologies.png";
+import icon4 from "../../assets/Images/icon/why-choose/Cost-Effective-Deadline-Oriented.png";
+import icon5 from "../../assets/Images/icon/why-choose/Transparency-with-Clients.png";
+import icon6 from "../../assets/Images/icon/why-choose/Modern-IT-Services.png";
 const WhyChoose: React.FC = () => {
 
     return (
@@ -46,36 +52,42 @@ const WhyChoose: React.FC = () => {
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="100">
                                 <div >
-                                    <h3 className="text-xl font-semibold mb-6">Optimum Outcome Focused</h3>
+                                <img src={icon1} alt="" className="why-choose-icon" />
+                                        <h3 className="text-xl font-semibold mb-6">Optimum Outcome Focused</h3>
                                     <p className="text-sm font-normal">We focus on delivering top results through cutting-edge web and app solutions that truly stand out.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="200">
                                 <div>
+                                <img src={icon2} alt="" className="why-choose-icon" />
                                     <h3 className="text-xl font-semibold mb-6">Experienced Techies</h3>
                                     <p className="text-sm font-normal">Our expert team brings 10+ years of experience, delivering top-tier IT solutions across diverse industries with precision and excellence.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="300">
                                 <div>
+                                <img src={icon3} alt="" className="why-choose-icon" />
                                     <h3 className="text-xl font-semibold mb-6">Cutting Edge Technologies</h3>
                                     <p className="text-sm font-normal">We leverage the latest technologies to build high-performance, secure, and scalable web and mobile solutions tailored to your business needs.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="400">
                                 <div >
+                                <img src={icon4} alt="" className="why-choose-icon" />
                                     <h3 className="text-xl font-semibold mb-6">Cost-Effective &amp; Deadline Oriented</h3>
                                     <p className="text-sm font-normal">We deliver high-quality web and app solutions at competitive costs, with a strong focus on meeting project deadlines.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="500">
                                 <div >
+                                <img src={icon5} alt="" className="why-choose-icon" />
                                     <h3 className="text-xl font-semibold mb-6">Transparency with Clients</h3>
                                     <p className="text-sm font-normal">We ensure real-time updates and 24/7 support, keeping clients fully informed and engaged throughout the development process.</p>
                                 </div>
                             </div>
                             <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up" data-aos-delay="600">
                                 <div >
+                                <img src={icon6} alt="" className="why-choose-icon" />
                                     <h3 className="text-xl font-semibold mb-6">Modern IT Services</h3>
                                     <p className="text-sm font-normal">We craft future-ready IT solutions using the latest technologies and trends to meet market demands and engage your audience effectively.</p>
                                 </div>

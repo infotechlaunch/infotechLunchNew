@@ -126,31 +126,31 @@ export default function PricingComparisonTable() {
                 </tr>
                 <tr className="bg-gray-100">
                   <th className="px-4 py-2 text-left"></th>
-                  <th className="px-4 py-2 text-center">Lite</th>
-                  <th className="px-4 py-2 text-center">Standard</th>
-                  <th className="px-4 py-2 text-center">Plus</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Lite</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Standard</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Plus</th>
                   <th className="px-4 py-2 text-center">Small Business</th>
                   <th className="px-4 py-2 text-center">Agency</th>
-                  <th className="px-4 py-2 text-center">Basic</th>
-                  <th className="px-4 py-2 text-center">Standard</th>
-                  <th className="px-4 py-2 text-center">Plus</th>
-                  <th className="px-4 py-2 text-center">Enterprise</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Basic</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Standard</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Plus</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Enterprise</th>
                 </tr>
               </thead>
               <tbody>
                 {monthlyServices.map((item, index) => (
                   <tr key={index} className={`hover:bg-blue-50 transition-colors ${item.service === 'Total' ? 'bg-gray-100 font-bold' : 'bg-white'}`}>
                     <td className="px-4 py-3 border-b">{item.service}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.socialbee.lite}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.socialbee.standard}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.socialbee.plus}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.lite}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.standard}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.plus}</td>
                     <td className="px-4 py-3 border-b text-center">
                       {item.itl.small ? item.itl.small : <XMark />}
                     </td>
                     <td className="px-4 py-3 border-b text-center">
                       {item.itl.agency ? item.itl.agency : <XMark />}
                     </td>
-                    <td className="px-4 py-3 border-b text-center">
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
                       {item.itl.basic === true ? (
                         <CheckMark />
                       ) : item.itl.basic === false ? (
@@ -159,7 +159,7 @@ export default function PricingComparisonTable() {
                         item.itl.basic
                       )}
                     </td>
-                    <td className="px-4 py-3 border-b text-center">
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
                       {item.itl.standard === true ? (
                         <CheckMark />
                       ) : item.itl.standard === false ? (
@@ -168,7 +168,7 @@ export default function PricingComparisonTable() {
                         item.itl.standard
                       )}
                     </td>
-                    <td className="px-4 py-3 border-b text-center">
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
                       {item.itl.plus === true ? (
                         <CheckMark />
                       ) : item.itl.plus === false ? (
@@ -177,7 +177,7 @@ export default function PricingComparisonTable() {
                         item.itl.plus
                       )}
                     </td>
-                    <td className="px-4 py-3 border-b text-center">
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
                       {item.itl.enterprise === true ? (
                         <CheckMark />
                       ) : item.itl.enterprise === false ? (
@@ -194,28 +194,28 @@ export default function PricingComparisonTable() {
         {/* )} */}
 
         {/* {activeTab === 'features' && ( */}
-          <div className="mt-4 overflow-x-auto bg-white rounded-xl shadow-lg">
+          <div className="mt-4 overflow-x-auto bg-white  shadow-lg">
             <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
                   <th className="px-4 py-3 text-left border-b border-gray-300">Additional Features, Only with InfoTech Launch</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300">Basic</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300">Standard</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300">Plus</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300">Enterprise</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-blue-700">Basic</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-green-700">Standard</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-purple-700">Plus</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-orange">Enterprise</th>
                 </tr>
               </thead>
               <tbody>
                 {additionalFeatures.map((item, index) => (
                   <tr key={index} className="hover:bg-blue-50 transition-colors">
                     <td className="px-4 py-3 border-b">{item.service}</td>
-                    <td className="px-4 py-3 border-b text-center">
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
                       {item.itl.basic ? <CheckMark /> : <XMark />}
                     </td>
                     <td className="px-4 py-3 border-b text-center">
                       {item.itl.standard ? <CheckMark /> : <XMark />}
                     </td>
-                    <td className="px-4 py-3 border-b text-center">
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
                       {item.itl.plus ? <CheckMark /> : <XMark />}
                     </td>
                     <td className="px-4 py-3 border-b text-center">
@@ -234,7 +234,7 @@ export default function PricingComparisonTable() {
         {/* )} */}
 
         {/* {activeTab === 'onetime' && ( */}
-          <div className="mt-4 overflow-x-auto bg-white rounded-xl shadow-lg">
+          <div className="mt-4 overflow-x-auto bg-white  shadow-lg">
             <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
@@ -245,28 +245,28 @@ export default function PricingComparisonTable() {
                 </tr>
                 <tr className="bg-gray-100">
                   <th className="px-4 py-2 text-left"></th>
-                  <th className="px-4 py-2 text-center">Lite</th>
-                  <th className="px-4 py-2 text-center">Standard</th>
-                  <th className="px-4 py-2 text-center">Plus</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Lite</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Standard</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Plus</th>
                   <th className="px-4 py-2 text-center">Small Business</th>
                   <th className="px-4 py-2 text-center">Agency</th>
-                  <th className="px-4 py-2 text-center">Basic</th>
-                  <th className="px-4 py-2 text-center">Standard</th>
-                  <th className="px-4 py-2 text-center">Plus</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Basic</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Standard</th>
+                  <th className="px-4 py-2 text-center bg-blue-fade">Plus</th>
                 </tr>
               </thead>
               <tbody>
                 {onetimeServices.map((item, index) => (
                   <tr key={index} className={`hover:bg-blue-50 transition-colors ${item.service === 'Total' ? 'bg-gray-100 font-bold' : 'bg-white'}`}>
                     <td className="px-4 py-3 border-b">{item.service}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.socialbee.lite}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.socialbee.standard}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.socialbee.plus}</td>
-                    <td className="px-4 py-3 border-b text-center">❌</td>
-                    <td className="px-4 py-3 border-b text-center">❌</td>
-                    <td className="px-4 py-3 border-b text-center">{item.itl.basic}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.itl.standard}</td>
-                    <td className="px-4 py-3 border-b text-center">{item.itl.plus}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.lite}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.standard}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.plus}</td>
+                    <td className="px-4 py-3 border-b text-center"><span className="text-red-500 font-bold text-xl">✗</span></td>
+                    <td className="px-4 py-3 border-b text-center"><span className="text-red-500 font-bold text-xl">✗</span></td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.basic}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.standard}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.plus}</td>
                   </tr>
                 ))}
               </tbody>

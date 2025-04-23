@@ -14,6 +14,9 @@ import callSummaryImg from "../assets/Images/call-summary2.png";
 import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
 import considerItDoneImg from "../assets/Images/considerItDone.png";
 import personalizedExpImg from "../assets/Images/personalizedExperience.png";
+import processicon1 from "../assets/Images/icon/process/Strategy.png";
+import processicon2 from "../assets/Images/icon/process/Acceleration.png";
+import processicon3 from "../assets/Images/icon/process/intilaization.png";
 
 
 
@@ -447,9 +450,11 @@ const AiVoiceAgent: React.FC = () => {
                                 flexWrap: "nowrap",
                                 justifyContent: "center",
                             }}>
-                            <div className="feature-card">Step 1: Strategy<br/><span>A focused strategy session where we map out exactly how to elevate your business — with clarity, intent, and results in mind.</span></div>
-                            <div className="feature-card">Step 2: Acceleration<br/><span>We craft a proven, high-impact plan tailored to your goals — built to drive momentum, boost performance, and ensure measurable acceleration.</span></div>
-                            <div className="feature-card">Step 3: Initialization<br/><span>Execution begins instantly. Your business is transformed, your systems are smarter — and you're officially ahead of the curve.</span></div>
+                            <div className="feature-card"> 
+                                <img src={processicon1} alt="" className="why-choose-icon mx-auto" />
+                            Step 1: Strategy<br/><span>A focused strategy session where we map out exactly how to elevate your business — with clarity, intent, and results in mind.</span></div>
+                            <div className="feature-card"><img src={processicon2} alt="" className="why-choose-icon mx-auto" />Step 2: Acceleration<br/><span>We craft a proven, high-impact plan tailored to your goals — built to drive momentum, boost performance, and ensure measurable acceleration.</span></div>
+                            <div className="feature-card"><img src={processicon3} alt="" className="why-choose-icon mx-auto" />Step 3: Initialization<br/><span>Execution begins instantly. Your business is transformed, your systems are smarter — and you're officially ahead of the curve.</span></div>
                         </div>
                     </div>
                 </section>
@@ -1227,7 +1232,7 @@ const AiVoiceAgent: React.FC = () => {
                                 <svg className="h-4 w-4 text-black-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
-                                Model: Horizon A1
+                                Model: ITL A1
                             </li>
                             <li className="flex items-center">
                                 <svg className="h-4 w-4 text-black-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -1296,7 +1301,7 @@ const AiVoiceAgent: React.FC = () => {
                                 <svg className="h-4 w-4 text-black-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
-                                Model: Horizon A2
+                                Model: InfoTech Launch A2
                             </li>
                             <li className="flex items-center">
                                 <svg className="h-4 w-4 text-black-500 mr-2" fill="currentColor" viewBox="0 0 20 20">

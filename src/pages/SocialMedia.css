@@ -21,6 +21,10 @@
   position: relative;
  
 }
+.bg-blue-fade {
+  background-color: #e5f7ff;
+}
+.why-choose-icon{width:80px;margin-bottom: 10px;}
 .rounded-box-white:hover {transform: scale(1.05) !important;}
 .bg-overshadow-red{position: relative;}
 .bg-overshadow-red:before {

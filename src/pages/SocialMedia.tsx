@@ -1,7 +1,8 @@
 import React from "react";
 // import { Clock, BarChart3, Users, LineChart } from 'lucide-react';
 import Footer from "../components/Footer/Footer";
-// import { Link } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 // import { Link } from 'react-router-dom';
 // import ContactForm from "../components/ContactUs/ContactForm";
@@ -57,9 +58,9 @@ const SocialMedia: React.FC = () => {
 
                 <section className="hero-container bg-gradient-blue-red">
                     <div className="hero-content">
-                        <div className="hero-text text-gradient" data-aos="fade-right">
-                            <h1>AI-Powered Social Media Management</h1>
-                            <p>
+                        <div className="hero-text " data-aos="fade-right">
+                            <h1 className="text-gradient">AI-Powered Social Media Management</h1>
+                            <p className="text-white">
                                 Unlock next-level growth with our AI-driven social media tools. Schedule, create, manage, and analyze—
                                 all in one sleek platform.
                             </p>
@@ -70,8 +71,21 @@ const SocialMedia: React.FC = () => {
                         >
                             Get Started
                         </button> */}
+                            <div className="mt-6">
+                                <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
+                                    <button className="btn btn-fix lazyloaded">Get Solution?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
+                                            height="11.738" viewBox="0 0 24.231 11.738">
+                                            <path id="Path_1487529" data-name="Path 1487529"
+                                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                        </svg>
+                                    </button>
+                                </Link>
+                            </div>
 
-                            <ConnectExperts />
+
+
                         </div>
                         <div className="hero-image" data-aos="fade-left">
                             <video
@@ -88,6 +102,7 @@ const SocialMedia: React.FC = () => {
 
                     </div>
                 </section>
+
 
                 {/* one page image start  */}
 
@@ -124,7 +139,18 @@ const SocialMedia: React.FC = () => {
                                         Get Started
                                     </button> */}
 
-                                    <ConnectExperts />
+<div className="mt-6">
+                                <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
+                                    <button className="btn btn-fix lazyloaded">Get Solution?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
+                                            height="11.738" viewBox="0 0 24.231 11.738">
+                                            <path id="Path_1487529" data-name="Path 1487529"
+                                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                        </svg>
+                                    </button>
+                                </Link>
+                            </div>
 
                                 </div>
                             </div>
@@ -144,7 +170,18 @@ const SocialMedia: React.FC = () => {
                                         Get Started
                                     </button> */}
 
-                                    <ConnectExperts />
+<div className="mt-6">
+                                <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
+                                    <button className="btn btn-fix lazyloaded">Get Solution?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
+                                            height="11.738" viewBox="0 0 24.231 11.738">
+                                            <path id="Path_1487529" data-name="Path 1487529"
+                                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                        </svg>
+                                    </button>
+                                </Link>
+                            </div>
 
                                 </div>
 
@@ -239,13 +276,15 @@ const SocialMedia: React.FC = () => {
                             Get Started
                         </button> */}
 
-                                    <ConnectExperts />
+
 
                                     {/* <button className="bg-transparent hover:bg-white hover:bg-opacity-10 border-2 border-white font-medium py-3 px-8 rounded-lg transition duration-300">
                             Schedule a Demo
                         </button> */}
                                 </div>
+
                             </div>
+                            <div className="flex flex-col sm:flex-row justify-center"><ConnectExperts /></div>
                         </section>
                     </div>
                 </div>
@@ -321,14 +360,27 @@ const SocialMedia: React.FC = () => {
                             <p className="callout-description text-gray-700">
                                 Solo founders, marketing teams, local businesses, restaurants, and anyone ready to scale without burnout.
                             </p>
+
+                        </div>
+                        <div className="">
+                            <script async
+                                src="https://js.stripe.com/v3/buy-button.js">
+                            </script>
+
+                            <stripe-buy-button
+                                buy-button-id="buy_btn_1RDwIODWwMsgxWLEVxGvfizm"
+                                publishable-key="pk_live_51J3G3JDWwMsgxWLESOed3CwJjZvF2mCFetECHJ07MXwPBFR4NOumeEkKSD1LibyTzLoZ43kKpnseEe61W2wh2wTP00p6kf5A0g"
+                            >
+                            </stripe-buy-button>
+
                         </div>
 
                         <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
                             <div className="callout-icon text-4xl mb-4">🎁</div>
                             <h2 className="callout-heading text-3xl font-semibold mb-2">Try It Free – 2 Weeks, On Us</h2>
                             <p className="callout-description text-gray-700">
-                            Our approach is straightforward: no contracts, no credit card required & a relentless focus on achieving the results you need.
-                               
+                                Our approach is straightforward: no contracts, no credit card required & a relentless focus on achieving the results you need.
+
                             </p>
                             {/* <p> No contracts. No credit card. Just results.</p> */}
                         </div>
@@ -338,15 +390,14 @@ const SocialMedia: React.FC = () => {
                     <PricingComparisonTable />
 
                     <section className="bg-gradient-blue-red py-14 px-6 md:px-20">
-                        <div className="itl-section max-w-5xl mx-auto text-center md:text-left" data-aos="fade-up">
+                        <div className="itl-section max-w-4xl mx-auto text-center md:text-left" data-aos="fade-up">
                             <h2 className="text-3xl itl-h2 md:text-4xl font-bold text-black mb-8 flex items-center justify-center gap-3">
                                 <span role="img" aria-label="lightbulb">💡</span>
-                                What You Get With InfoTech Launch (Every Plan Includes):
-                            </h2>
+                                What You Get With InfoTech Launch</h2>
 
                             <ul className="space-y-4 text-lg text-gray-800 itl-mobile-style-ul mt-4">
                                 {features.map((feature, index) => (
-                                    <li key={index} className="flex gap-3" style={{ marginLeft: "20%" }}>
+                                    <li key={index} className="flex gap-3" style={{ marginLeft: "5%" }}>
                                         <span role="img" aria-label="check">✅</span>
                                         <span>{feature}</span>
                                     </li>

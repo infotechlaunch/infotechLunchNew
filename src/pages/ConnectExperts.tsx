@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect}  from "react";
 // import { Link } from 'react-router-dom';
-import getStartedImg from "../assets/Images/aiSocialMedia/get-started3.avif";
+import getStartedImg from "../assets/Images/aiSocialMedia/get-started.png";
 
 
 
@@ -69,7 +69,7 @@ const ConnectExperts: React.FC = () => {
     return (
         <>
 
-            <div className="mt-2">
+           
                 <button className="btn btn-fix" onClick={onOpen}>
                 Talk to an expert!
                 <svg
@@ -85,7 +85,6 @@ const ConnectExperts: React.FC = () => {
                     />
                 </svg>
                 </button>
-            </div>
 
 
             {isOpen && (
