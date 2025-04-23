@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Thumbs } from "swiper/modules";
 import { Link } from 'react-router-dom';
 
-import logo from "../../assets/Images/logo.gif";
+// import logo from "../../assets/Images/logo.gif";
 // import logo from "../../assets/Images/cl01.png";
 // import logo1 from "../../assets/Images/cl02.png";
 // import logo2 from "../../assets/Images/cl03.png";

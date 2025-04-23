@@ -84,20 +84,6 @@ const SocialMedia: React.FC = () => {
                     </div>
                 </section>
 
-
-
-                {/* <div style={{ width: "100%", height: "auto", overflow: "hidden" }}>
-                    <img
-                        src={smarterSocialImg}
-                        alt="AI Powered Social Media"
-                        style={{
-                        width: "100%",
-                        height: "auto",
-                        objectFit: "cover"
-                        }}
-                    />
-                </div> */}
-
                 {/* one page image start  */}
 
 
@@ -130,8 +116,8 @@ const SocialMedia: React.FC = () => {
                                         Focus on strategy. Let automation take care of the rest.
                                     </p>
                                     {/* <button onClick={onOpen} className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
-                            Get Started
-                        </button> */}
+                                        Get Started
+                                    </button> */}
 
                                     <ConnectExperts />
 
@@ -150,66 +136,13 @@ const SocialMedia: React.FC = () => {
                                         and anyone ready to scale without burnout.
                                     </p>
                                     {/* <button onClick={onOpen} className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md">
-                            Get Started
-                        </button> */}
+                                        Get Started
+                                    </button> */}
 
                                     <ConnectExperts />
 
                                 </div>
-                                {/* <div className="md:w-1/2 flex justify-center">
-                        <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full p-4 w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
-                            <div className="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-full"></div>
-                            <div className="absolute w-full h-full opacity-20">
-                                <div className="absolute top-0 left-0 w-20 h-20 bg-blue-300 rounded-full blur-md"></div>
-                                <div className="absolute bottom-0 right-0 w-24 h-24 bg-pink-300 rounded-full blur-md"></div>
-                                <div className="absolute top-1/3 right-10 w-12 h-12 bg-purple-300 rounded-full blur-sm"></div>
-                            </div>
-                            
-                            <div className="relative w-56 h-56 md:w-64 md:h-64 flex items-center justify-center">
-                                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
-                                    <div className="w-20 h-20 bg-gradient-to-b from-blue-700 to-blue-900 rounded-full shadow-lg border-2 border-white"></div>
-                                    <div className="w-10 h-14 bg-gradient-to-b from-blue-700 to-blue-900 -mt-2 rounded-b-xl"></div>
-                                </div>
                                 
-                                <div className="absolute top-12 left-1/4 transform -translate-x-1/2 flex flex-col items-center">
-                                    <div className="w-16 h-16 bg-gradient-to-b from-red-400 to-red-600 rounded-full shadow-md border-2 border-white"></div>
-                                    <div className="w-8 h-10 bg-gradient-to-b from-red-400 to-red-600 -mt-1 rounded-b-xl"></div>
-                                </div>
-                                
-                                <div className="absolute top-12 right-1/4 transform translate-x-1/2 flex flex-col items-center">
-                                    <div className="w-16 h-16 bg-gradient-to-b from-blue-500 to-blue-700 rounded-full shadow-md border-2 border-white"></div>
-                                    <div className="w-8 h-10 bg-gradient-to-b from-blue-500 to-blue-700 -mt-1 rounded-b-xl"></div>
-                                </div>
-                                
-                                <div className="absolute bottom-4 left-1/3 transform -translate-x-1/2 flex flex-col items-center">
-                                    <div className="w-16 h-16 bg-gradient-to-b from-pink-300 to-pink-500 rounded-full shadow-md border-2 border-white"></div>
-                                    <div className="w-8 h-10 bg-gradient-to-b from-pink-300 to-pink-500 -mt-1 rounded-b-xl"></div>
-                                </div>
-                                
-                                <div className="absolute bottom-4 right-1/3 transform translate-x-1/2 flex flex-col items-center">
-                                    <div className="w-16 h-16 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full shadow-md border-2 border-white"></div>
-                                    <div className="w-8 h-10 bg-gradient-to-b from-blue-400 to-blue-600 -mt-1 rounded-b-xl"></div>
-                                </div>
-                                
-                                <div className="absolute inset-0 w-full h-full">
-                                    <div className="w-full h-full border-4 border-white/30 rounded-full"></div>
-                                    <div className="absolute top-1/2 left-1/2 w-px h-px">
-                                        <div className="absolute top-0 left-0 w-20 h-0.5 bg-white/50 transform -rotate-45 origin-left"></div>
-                                        <div className="absolute top-0 left-0 w-20 h-0.5 bg-white/50 transform rotate-45 origin-left"></div>
-                                        <div className="absolute top-0 left-0 w-0.5 h-20 bg-white/50 transform -translate-x-1/2"></div>
-                                        <div className="absolute top-0 left-0 w-20 h-0.5 bg-white/50 transform -rotate-120 origin-left"></div>
-                                        <div className="absolute top-0 left-0 w-20 h-0.5 bg-white/50 transform rotate-120 origin-left"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="absolute w-full h-full">
-                                <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
-                                <div className="absolute top-3/4 left-2/3 w-2 h-2 bg-green-300 rounded-full animate-pulse delay-150"></div>
-                                <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-purple-300 rounded-full animate-pulse delay-300"></div>
-                            </div>
-                        </div>
-                        </div> */}
                                 <div className="md:w-1/2 flex justify-center">
                                     <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
 
@@ -387,80 +320,6 @@ const SocialMedia: React.FC = () => {
                         </div>
                     </section>
 
-                    {/* <section className="table-wrapper bg-gradient-to-r from-red-100 via-purple-100 to-blue-100" style={{marginTop: "-50px"}}>
-                        <h2 className="table-title text-center">🚀 What Others Don’t Want You to Know</h2>
-                        <div className="table-scroll">
-                            <table className="comparison-table">
-                            <thead>
-                                <tr>
-                                <th>Features</th>
-                                <th>SocialBee</th>
-                                <th>ConciergeBee</th>
-                                <th>Combined Total</th>
-                                <th>ITL – All Packages</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>Branding Specialist</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>$0</td>
-                                <td>✅ Included</td>
-                                </tr>
-                                <tr>
-                                <td>Review Management</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>✅ Yes, Actively Managed</td>
-                                </tr>
-                                <tr>
-                                <td>WhatsApp Group Marketing</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>✅ Built-in</td>
-                                </tr>
-                                <tr>
-                                <td>Video Content Creation</td>
-                                <td>❌</td>
-                                <td>✅</td>
-                                <td>$449/mo</td>
-                                <td>✅ Built-in</td>
-                                </tr>
-                                <tr>
-                                <td>Social Media Posting</td>
-                                <td>✅ (1–3/week)</td>
-                                <td>✅ (2/week)</td>
-                                <td>$299–$499/mo</td>
-                                <td>✅ Built-in</td>
-                                </tr>
-                                <tr>
-                                <td>Web Optimization & SEO</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>❌</td>
-                                <td>✅ Built-in</td>
-                                </tr>
-                                <tr>
-                                <td>Ad Management Strategy</td>
-                                <td>❌</td>
-                                <td>✅</td>
-                                <td>+$449/mo</td>
-                                <td>✅ Built-in</td>
-                                </tr>
-                                <tr>
-                                <td>Total Aggregated Cost</td>
-                                <td>$847–$1347/mo</td>
-                                <td>$349/mo</td>
-                                <td></td>
-                                <td>✅</td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>
-                    </section> */}
 
                     <PricingComparisonTable />
 
