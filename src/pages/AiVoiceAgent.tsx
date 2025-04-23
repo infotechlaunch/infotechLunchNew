@@ -22,8 +22,8 @@ const AiVoiceAgent: React.FC = () => {
 
 
     const [openItems, setOpenItems] = useState<Record<string, boolean>>({
-        'get-started': true,
-        'operational-facilitators': true,
+        'get-started': false,
+        'operational-facilitators': false,
         'types-of-facilitators': false,
         'hipaa-compliance': false,
         'call-limits': false,

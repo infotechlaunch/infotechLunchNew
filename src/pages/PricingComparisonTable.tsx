@@ -111,37 +111,7 @@ export default function PricingComparisonTable() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Service Pricing Comparison
           </h1>
-          {/* <div className={`items-center p-1 rounded-lg ${(activeTab === '!monthly' || '!features' || '!onetime') ? 'bg-gray-400' : 'bg-white'}`} style={{
-            padding: "0.25rem",
-            width: "33%",
-            justifyContent: "center",
-            gap: "40px",
-          }}>
-            <button
-              onClick={() => setActiveTab('monthly')}
-              className={`rounded-md text-sm font-medium transition-all ${
-                activeTab === 'monthly' ? 'bg-gray-200 shadow-md' : 'text-gray-600'
-              }`}
-            >
-              Monthly Services
-            </button>
-            <button
-              onClick={() => setActiveTab('features')}
-              className={`rounded-md text-sm font-medium transition-all ${
-                activeTab === 'features' ? 'bg-gray-200 shadow-md' : 'text-gray-600'
-              }`}
-            >
-              Additional Features
-            </button>
-            <button
-              onClick={() => setActiveTab('onetime')}
-              className={`rounded-md text-sm font-medium transition-all ${
-                activeTab === 'onetime' ? 'bg-gray-200 shadow-md' : 'text-gray-600'
-              }`}
-            >
-              One Time Services
-            </button>
-          </div> */}
+          
         </div>
 
         {/* {activeTab === 'monthly' && ( */}
@@ -228,7 +198,7 @@ export default function PricingComparisonTable() {
             <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
-                  <th className="px-4 py-3 text-left border-b border-gray-300">Additional Features, Only with ITL</th>
+                  <th className="px-4 py-3 text-left border-b border-gray-300">Additional Features, Only with InfoTech Launch</th>
                   <th className="px-4 py-3 text-center border-b border-gray-300">Basic</th>
                   <th className="px-4 py-3 text-center border-b border-gray-300">Standard</th>
                   <th className="px-4 py-3 text-center border-b border-gray-300">Plus</th>

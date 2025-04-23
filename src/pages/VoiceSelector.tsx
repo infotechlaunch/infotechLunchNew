@@ -17,16 +17,17 @@ const VoiceSelector = () => {
 //   ];
 
 const voices: Voice[] = [
-    { id: 1, name: 'Isabella West', gender: 'Female', accent: 'British English', avatar: '👩🏻', sample: "Greetings, I'm Isabella with a British accent." },
-    { id: 2, name: 'Ananya Sharma', gender: 'Female', accent: 'Indian English', avatar: '👩🏽', sample: "Hello, I'm Ananya with an Indian accent." },
-    { id: 3, name: 'Elzbieta Kowalski', gender: 'Female', accent: 'Polish', avatar: '👩🏼', sample: "Cześć, jestem Elzbieta z polskim akcentem." },
-    { id: 4, name: 'Lucia Fernandez', gender: 'Female', accent: 'Spanish', avatar: '👩🏽', sample: "Hola, soy Lucia con acento español." },
-    { id: 5, name: 'Madeline Hayes', gender: 'Female', accent: 'American English', avatar: '👩🏻', sample: "Hi, I'm Madeline with an American accent." },
-    { id: 6, name: 'Pierre Dubois', gender: 'Male', accent: 'French', avatar: '👨🏻', sample: "Bonjour, je suis Pierre avec un accent français." },
-    { id: 7, name: 'Ethan Brooks', gender: 'Male', accent: 'American English', avatar: '👨🏽', sample: "Hey, I'm Ethan with an American accent." },
-    { id: 8, name: 'Oliver Clarke', gender: 'Male', accent: 'British English', avatar: '👨🏻', sample: "Hello, I'm Oliver with a British accent." },
-    { id: 9, name: 'Ravi Patel', gender: 'Male', accent: 'Indian English', avatar: '👨🏽', sample: "Hi, I'm Ravi with an Indian accent." },
-    { id: 10, name: 'Jean-Luc Charpentier', gender: 'Male', accent: 'French', avatar: '👨🏻', sample: "Bonjour, je m'appelle Jean-Luc avec un accent français." },
+    { id: 1, name: 'Isabella West', gender: 'Female', accent: 'British English', avatar: '👩🏻', sample: "Hello, This is Isabella from Infotech Launch. How can I help you today?" },
+    { id: 2, name: 'Ananya Sharma', gender: 'Female', accent: 'Indian English', avatar: '👩🏽', sample: "Hello, This is Ananya from Infotech Launch. How can I help you today?" },
+    // { id: 2, name: 'Ananya Sharma', gender: 'Female', accent: 'Indian English', avatar: '👩🏽', sample: "Hello, I'm Ananya with an Indian accent." },
+    { id: 3, name: 'Elzbieta Kowalski', gender: 'Female', accent: 'Polish', avatar: '👩🏼', sample: "Cześć, nazywam się Elzbieta z Infotech Launch. W czym mogę dziś pomóc?" },
+    { id: 4, name: 'Lucia Fernandez', gender: 'Female', accent: 'Spanish', avatar: '👩🏽', sample: "Hola, soy Lucia de Infotech Launch. ¿En qué puedo ayudarle?" },
+    { id: 5, name: 'Madeline Hayes', gender: 'Female', accent: 'American English', avatar: '👩🏻', sample: "Hello, This is Madeline from Infotech Launch. How can I help you today?" },
+    { id: 6, name: 'Pierre Dubois', gender: 'Male', accent: 'French', avatar: '👨🏻', sample: "Bonjour, c'est Pierre d'Infotech Launch. Comment puis-je vous aider aujourd'hui ?" },
+    { id: 7, name: 'Ethan Brooks', gender: 'Male', accent: 'American English', avatar: '👨🏽', sample: "Hello, This is Ethan from Infotech Launch. How can I help you today?" },
+    { id: 8, name: 'Oliver Clarke', gender: 'Male', accent: 'British English', avatar: '👨🏻', sample: "Hello, This is Oliver from Infotech Launch. How can I help you today?" },
+    { id: 9, name: 'Ravi Patel', gender: 'Male', accent: 'Indian English', avatar: '👨🏽', sample: "Hello, This is Ravi from Infotech Launch. How can I help you today?" },
+    { id: 10, name: 'Jean-Luc Charpentier', gender: 'Male', accent: 'French', avatar: '👨🏻', sample: "Bonjour, c'est Jean-Luc d'Infotech Launch. Comment puis-je vous aider aujourd'hui ?" },
 ];
 
   type Voice = {
