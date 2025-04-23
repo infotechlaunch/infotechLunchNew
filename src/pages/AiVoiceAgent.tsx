@@ -173,8 +173,9 @@ const AiVoiceAgent: React.FC = () => {
                                     data-framer-name="md | ghost"
                                     tabIndex={0}
                                     style={{
-                                    border: "none",
-                                    background: "transparent",
+                                    border: "1px solid rgba(255, 255, 255, 0.1)",
+                                    backdropFilter: "blur(2px)",
+                                    background: "linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%) rgba(255, 255, 255, 0.03)",
                                     borderRadius: "999px",
                                     opacity: 1,
                                     display: "flex",
@@ -819,6 +820,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 <div className="min-h-screen bg-gradient-blue-red text-white p-6">
                     {/* Features Section */}
+                    <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                         {/* Feature 1 */}
                         <div className="relative">
@@ -858,6 +860,7 @@ const AiVoiceAgent: React.FC = () => {
                             Through established neural networks, we've designed AI personalities in various tones — from witty to assertive to professional. There's something for everyone!
                         </p>
                         </div>
+                    </div>
                     </div>
                     
                     {/* Main Heading */}
