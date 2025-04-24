@@ -391,7 +391,7 @@ const SocialMedia: React.FC = () => {
 
                     <section className="bg-gradient-blue-red py-14 px-6 md:px-20">
                         <div className="itl-section max-w-4xl mx-auto text-center md:text-left" data-aos="fade-up">
-                            <h2 className="text-3xl itl-h2 md:text-4xl font-bold text-black mb-8 flex items-center justify-center gap-3">
+                            <h2 className="text-3xl itl-h2 md:text-4xl font-bold text-gradient-red mb-8 flex items-center justify-center gap-3">
                                 <span role="img" aria-label="lightbulb">💡</span>
                                 What You Get With InfoTech Launch</h2>
 

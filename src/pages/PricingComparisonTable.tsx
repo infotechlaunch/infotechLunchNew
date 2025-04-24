@@ -115,7 +115,7 @@ export default function PricingComparisonTable() {
         </div>
 
         {/* {activeTab === 'monthly' && ( */}
-          <div className="mt-4 overflow-x-auto bg-white rounded-xl shadow-lg">
+          <div className="mt-4 overflow-x-auto bg-white shadow-lg">
             <table className="w-full text-black">
               <thead>
                 <tr className="bg-gray-800 text-white">
