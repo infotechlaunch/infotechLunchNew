@@ -10,6 +10,7 @@ import "./AiVoiceAgentStyle.css";
 import VoiceSelector from "../pages/VoiceSelector";
 import { Link } from "react-router-dom";
 import callUsageImg from "../assets/Images/call-usage1.png";
+import faqImg from "../assets/Images/faq-voice.png";
 import callSummaryImg from "../assets/Images/call-summary2.png";
 import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
 import considerItDoneImg from "../assets/Images/considerItDone.png";
@@ -1324,6 +1325,7 @@ const AiVoiceAgent: React.FC = () => {
                         {/* Left column - Title */}
                         <div className="md:w-1/3" data-aos="fade-right">
                         <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
+                        <img src={faqImg} alt="" />
                         </div>
 
                         {/* Right column - FAQ items */}
