@@ -3,7 +3,7 @@ import experi from "../../assets/Images/icon/hero-experience-icon.svg";
 import delive from "../../assets/Images/icon/heroproject-delivered-icon.svg";
 import happy from "../../assets/Images/icon/happy-client-hero-icon.svg";
 // import bannerVideo from "../../assets/videos/Home_page_video2.mp4";
-import bannerVideo1 from "../../assets/videos/ai-video-2.mp4";
+import bannerVideo1 from "../../assets/videos/home-hero-banner.gif";
 
 import ConnectExperts from "../../pages/ConnectExperts";
 
@@ -15,7 +15,7 @@ const Banner: React.FC = () => {
   
     <div className="relative w-full h-screen overflow-hidden bannerhome">
       {/* ✅ Background Video */}
-      <video
+      {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         autoPlay
         loop
@@ -24,7 +24,8 @@ const Banner: React.FC = () => {
       >
         <source src={bannerVideo1} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
+      <img className="absolute top-0 left-0 w-full h-full object-cover z-0" src={bannerVideo1}  alt="Tech Challenge" />
 
       {/* ✅ Content */}
       <div className="relative z-10 w-full h-full flex items-center">
