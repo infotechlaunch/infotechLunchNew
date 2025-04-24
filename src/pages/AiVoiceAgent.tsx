@@ -250,7 +250,7 @@ const AiVoiceAgent: React.FC = () => {
                 </div> */}
 
                 {/* section 2  */}
-                <div className="min-h-screen bg-gradient-blue-red text-white flex items-center justify-center p-4">
+                <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
                     <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
                         {/* Top bar */}
                         <div className="bg-black p-2 flex items-center">
@@ -548,16 +548,16 @@ const AiVoiceAgent: React.FC = () => {
                     {/* Right panel - Content */}
                     <div className="bg-orange ai-panel ai-right  pb-20" >
                         <div data-aos="fade-left">
-                        <p className="text-sm mb-2">AI Discovery Frontiers</p>
+                        <p className="text-lg mb-2">AI Discovery Frontiers</p>
                         <h1 className="text-4xl font-bold mb-6">Emerging Frontiers in AI Exploration</h1>
                         
-                        <p className="mb-8">
+                        <p className="mb-2">
                         Embark on a journey into the ever-expanding world of artificial intelligence
                         exploration. Discover the latest advancements and breakthroughs shaping
                         the future.
                         </p>
                         
-                        <p className="italic">
+                        <p>
                         Fun Fact: Did you know apple has enhanced their customer support using
                         100% Voice-Driven Intelligence Facilitators
                         </p>
@@ -566,25 +566,25 @@ const AiVoiceAgent: React.FC = () => {
                 </div>
   
                 {/* section 6  */}
-                <div className="min-h-screen bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="flex w-full max-w-6xl gap-8">
+                <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
+                    <div className="flex w-full max-w-6xl gap-8 items-center">
                         {/* Left panel content */}
-                        <div className="flex-1">
-                            <p className="text-gray-300 mb-2">AI’s Creative Brilliance Unleashed</p>
+                        <div className="flex-1"  data-aos="fade-right">
+                            <p className="text-orange text-lg mb-3">AI’s Creative Brilliance Unleashed</p>
                             <h1 className="text-4xl font-bold mb-6">
                                 Crafted by <span className="text-amber-400">AI</span> Inspired by Brilliance.
                             </h1>
-                            <p className="mb-8 text-gray-300">
+                            <p className="mb-3 text-gray-300">
                                 Enhance your Voice Intelligence by customizing its personality. Choose from thousands of pre-set personas tailored to your needs.
                             </p>
-                            <p className="text-sm italic text-gray-400">
-                                Fun Fact: Walmart uses voice-enabled AI assistants to streamline order placement, tracking, and customer support.
+                            <p className="text-sm text-white">
+                               <b> Fun Fact:</b> Walmart uses voice-enabled AI assistants to streamline order placement, tracking, and customer support.
                             </p>
                         </div>
                         
                         {/* Right panel content */}
-                        <div className="flex-1">
-                        <div className="bg-gray-900/60 rounded-xl p-6 backdrop-blur-sm border border-gray-800">
+                        <div className="flex-1" data-aos="fade-left">
+                        <div className="bg-white rounded-xl p-6 backdrop-blur-sm border border-gray-800">
                             <div className="flex justify-end mb-4">
                             <button className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
                                 Update Your AI Voice Agent
@@ -630,7 +630,7 @@ const AiVoiceAgent: React.FC = () => {
                 <div className="bg-gradient-blue-red text-white p-8 flex items-center">
                     <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Left side - Dashboard interface */}
-                        <div className="relative">
+                        <div className="relative" data-aos="fade-right">
                         <div className="border border-gray-800 rounded-lg p-6 bg-black/60 relative">
                             {/* Glow effect */}
                             <div className="absolute -inset-1 bg-teal-500/20 blur-md rounded-lg -z-10"></div>
@@ -686,35 +686,36 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Right side - Text content */}
-                        <div className="flex flex-col justify-center">
-                        <div className="text-teal-400 mb-2">Creativity, Unleashed</div>
+                        <div className="flex flex-col justify-center" data-aos="fade-left">
+                        <div className="text-orange text-lg mb-4">Creativity, Unleashed</div>
                         <h1 className="text-4xl font-bold mb-4">
                             Streamline Your Search Experience <span className="text-teal-400">InfoTech</span> Dashboard
                         </h1>
-                        <p className="text-gray-300 mb-6">
+                        <p className="text-white mb-3">
                             InfoTech's Voice Intelligence Dashboard delivers complete visibility into customer interactions with call history, recordings, analytics, and more.
                         </p>
-                        <p className="text-sm italic text-teal-400/80">
+                        <p className="text-sm text-white">
                             Did You Know? CVS Health uses AI-driven voice assistants for scheduling appointments, providing customer support, and managing prescription renewals.
                         </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="min-h-screen bg-gradient-blue-red text-white p-8 flex flex-col items-center">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <h1 className="text-3xl font-bold mb-2">
+                <div className="bg-gradient-blue-red text-white p-8 flex flex-col items-center">
+                    <div className="text-center max-w-3xl mx-auto mb-16 mt-16" data-aos="fade-up">
+                    <p className="text-lg text-orange mb-4">Get Started with a Demo Today</p>
+                    <h1 className="text-3xl font-bold mb-2">
                             Bespoke Victory Solutions, Tailored Just for You
                         </h1>
-                        <p className="text-sm text-gray-300 mb-4">
+                        <p className="text-sm text-white mb-4">
                             Join the AI Renaissance. Harness customized Voice Intelligence Facilitators to handle tasks with precision, tailored perfectly for your business.
                         </p>
-                        <p className="text-xs text-gray-400">Get Started with a Demo Today.</p>
+                        
                     </div>
                     
                     <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Left Panel */}
-                        <div className="bg-black/20 border border-gray-500 rounded-lg p-4">
+                        <div className="bg-black/40 border border-white-500 rounded-lg p-4" data-aos="fade-right">
                             <img src={personalizedExpImg} alt="" />
                         </div>
                         {/* <div className="bg-black/70 border border-gray-800 rounded-lg p-4">
@@ -779,7 +780,7 @@ const AiVoiceAgent: React.FC = () => {
                         </div> */}
                         
                         {/* Right Panel */}
-                        <div className="bg-black/20 border border-gray-500 rounded-lg p-4">
+                        <div className="bg-black/40 border border-white-500 rounded-lg p-4" data-aos="fade-left">
                             <img src={considerItDoneImg} alt="" />
                         </div>
 
@@ -823,45 +824,45 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="min-h-screen bg-gradient-blue-red text-white p-6">
+                <div className="bg-gradient-blue-red text-white p-6 flex flex-col items-center">
                     {/* Features Section */}
                     <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 mt-16 mb-16">
                         {/* Feature 1 */}
-                        <div className="relative">
-                        <div className="absolute -top-1 -left-1">
-                            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <div className="relative bg-white-rounded text-center">
+                        <div className="flex justify-center">
+                            <svg className="w-12 h-12 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
                         </div>
-                        <h3 className="text-lg font-semibold mb-2 mt-4">Unlimited Call Capabilities</h3>
-                        <p className="text-sm text-gray-400">
+                        <h3 className="text-lg font-bold mb-2 mt-4 text-black">Unlimited Call Capabilities</h3>
+                        <p className="text-sm text-black">
                             Our AI-powered Voice Assistants are pre-trained for fluid conversations and unlimited calls. The future of communication is here!
                         </p>
                         </div>
 
                         {/* Feature 2 */}
-                        <div className="relative">
-                        <div className="absolute -top-1 -left-1">
-                            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <div className="relative bg-white-rounded text-center">
+                        <div className="flex justify-center">
+                            <svg className="w-12 h-12 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
-                        <h3 className="text-lg font-semibold mb-2 mt-4">Highly Compliant and Fully Adherent</h3>
-                        <p className="text-sm text-gray-400">
+                        <h3 className="text-lg text-black font-semibold mb-2 mt-4">Highly Compliant and Fully Adherent</h3>
+                        <p className="text-sm text-black">
                             Our Voice Assistants offer an exceptional level of compliance, fully adhering to regulatory laws. Check the FAQs for more information.
                         </p>
                         </div>
 
                         {/* Feature 3 */}
-                        <div className="relative">
-                        <div className="absolute -top-1 -left-1">
-                            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <div className="relative bg-white-rounded text-center">
+                        <div className="flex justify-center">
+                            <svg className="w-12 h-12 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
                         </div>
-                        <h3 className="text-lg font-semibold mb-2 mt-4">Personalized Profiles</h3>
-                        <p className="text-sm text-gray-400">
+                        <h3 className="text-lg text-black font-semibold mb-2 mt-4">Personalized Profiles</h3>
+                        <p className="text-sm text-black">
                             Through established neural networks, we've designed AI personalities in various tones — from witty to assertive to professional. There's something for everyone!
                         </p>
                         </div>
@@ -869,20 +870,20 @@ const AiVoiceAgent: React.FC = () => {
                     </div>
                     
                     {/* Main Heading */}
-                    <div className="text-center mb-8">
-                        <div className="inline-flex items-center mb-4">
-                        <svg className="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <div className="text-center mb-8" data-aos="fade-up">
+                        <div className="inline-flex items-center mb-4 mt-8">
+                        <svg className="w-4 h-4 mr-2 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
-                        <span className="text-xs uppercase tracking-wider text-gray-400">Flexible Employee Solution</span>
+                        <span className="text-lg uppercase tracking-wider text-orange">Flexible Employee Solution</span>
                         </div>
-                        <h1 className="text-3xl font-bold mb-2">Fully Scalable AI-Powered Super Employee</h1>
-                        <p className="text-sm text-gray-400 max-w-2xl mx-auto">
+                        <h1 className="text-3xl font-bold mb-3">Fully Scalable AI-Powered Super Employee</h1>
+                        <p className="text-lg text-white max-w-3xl mx-auto">
                             Release yourself from the limits of employees. Welcome the AI Renaissance, where a boundless and secure digital future awaits, free from data breaches.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" data-aos="fade-up">
                         {/* First Card: Update Manually */}
                         <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
                         <div className="flex items-center justify-between mb-6">
@@ -987,7 +988,7 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Fourth Card: Multiple Languages */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
+                        {/* <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
                         <div className="flex items-center space-x-2 mb-6">
                             <svg className="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.578a18.87 18.87 0 01-1.724 4.78c.29.354.596.696.914 1.026a1 1 0 11-1.44 1.389 16.86 16.86 0 01-.8-.8c-.753.802-1.612 1.419-2.476 1.819a1 1 0 11-.66-1.888c.645-.299 1.318-.784 1.963-1.387.473-.499.934-1.064 1.377-1.682a11.266 11.266 0 01-2.56-2.586A1 1 0 114.42 5.83c1.178 1.404 2.243 2.087 2.917 2.401a33.506 33.506 0 01-.516-1.795 1 1 0 01.796-1.188L7 5.178V4H6a1 1 0 110-2h1V1a1 1 0 011-1zM3.388 16.834a1 1 0 01.782-1.182l.058-.01a1 1 0 011.113.783 1 1 0 01-.783 1.182l-.058.01a1 1 0 01-1.112-.783z" clipRule="evenodd" />
@@ -1014,7 +1015,7 @@ const AiVoiceAgent: React.FC = () => {
                         <p className="text-sm text-gray-400">
                             InfoTech supports all major languages, including English, French, Portuguese, Spanish, and more, with a variety of accent options.
                         </p>
-                        </div>
+                        </div> */}
                         
                         {/* Fifth Card: Clone Your Own Voice */}
                         <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
