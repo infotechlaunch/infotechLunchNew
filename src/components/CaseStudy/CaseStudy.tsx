@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Thumbs } from "swiper/modules";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 // import logo from "../../assets/Images/logo.gif";
 // import logo from "../../assets/Images/cl01.png";
@@ -26,6 +26,9 @@ import web4 from "../../assets/Images/case-studies/artificial-and-inteligence.jp
 import web4logo from "../../assets/Images/case-studies/artificial-and-inteligence-logo.png";
 import web5 from "../../assets/Images/case-studies/e-commerce1.jpeg";
 import web5logo from "../../assets/Images/case-studies/e-commerce1-logo.png";
+
+import ConnectExperts from "../../pages/ConnectExperts";
+
 
 
 
@@ -146,7 +149,7 @@ const CaseStudy: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="mt-6" data-aos="fade-right" data-aos-delay="100">
+                        {/* <div className="mt-6" data-aos="fade-right" data-aos-delay="100">
                           <Link to={study.downloadLink} data-discover="true">
                           <button className="btn btn-fix lazyloaded !bg-[#f13c3c] !text-[#fff]" >Download Case Study
                             <svg xmlns="http://www.w3.org/2000/svg" className="!bg-[#fff]"  width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
@@ -156,7 +159,11 @@ const CaseStudy: React.FC = () => {
                           </svg>
                           </button>
                           </Link>
+                        </div> */}
+                        <div>
+                          <ConnectExperts />
                         </div>
+
                       </div>
                       <div className="md:w-6/12 w-full mt-[30px] md:mt-0 md:ml-auto">
                         <div

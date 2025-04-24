@@ -1,6 +1,9 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import technology from '../../assets/Images/future-of-technology.webp';
+import ConnectExperts from "../../pages/ConnectExperts";
+
+
 const HireDeveloper: React.FC = () => {
     return (
         <div className="GetStarted_sect">
@@ -11,8 +14,10 @@ const HireDeveloper: React.FC = () => {
                             <h2 className="xl:text-4xl text-3xl text-[#fff] mt-3 font-semibold" data-aos="fade-right">Let’s hear what you have to say?
                             </h2>
                             <p data-aos="fade-right" className="text-base text-white">Get in touch with us and discuss your needs and requirements with
-                                our experts.</p>
-                            <div data-aos="fade-right" className="mt-7 z-10 relative">
+                                our experts.
+                            </p>
+                            
+                            {/* <div data-aos="fade-right" className="mt-7 z-10 relative">
                                 <Link to="/contact-us" className="btn btn-fix lazyloaded">Get Started
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
                                         <path id="Path_1487529" data-name="Path 1487529"
@@ -20,7 +25,12 @@ const HireDeveloper: React.FC = () => {
                                             transform="translate(-521.511 -1346.214)" fill="#fff"></path>
                                     </svg>
                                 </Link>
+                            </div> */}
+
+                            <div className="mt-7 z-10 relative">
+                                <ConnectExperts />
                             </div>
+
                         </div>
                         <div data-aos="fade-left" className="lg:w-[30%] w-full mx-auto flex justify-center lg:mt-0 mt-5">
                             <div className="LazyLoad is-visible">

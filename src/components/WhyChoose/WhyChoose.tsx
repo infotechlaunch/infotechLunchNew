@@ -6,6 +6,10 @@ import icon3 from "../../assets/Images/icon/why-choose/Cutting-Edge-Technologies
 import icon4 from "../../assets/Images/icon/why-choose/Cost-Effective-Deadline-Oriented.png";
 import icon5 from "../../assets/Images/icon/why-choose/Transparency-with-Clients.png";
 import icon6 from "../../assets/Images/icon/why-choose/Modern-IT-Services.png";
+
+import ConnectExperts from "../../pages/ConnectExperts";
+
+
 const WhyChoose: React.FC = () => {
 
     return (
@@ -16,7 +20,7 @@ const WhyChoose: React.FC = () => {
                         <h2 className="xl:text-4xl text-3xl text-white font-bold" data-aos="fade-right" data-aos-delay="100">Why Choose Us?</h2>
                         <p className="text-base text-white font-normal mt-2 w-full" data-aos="fade-right" data-aos-delay="100">We deliver innovative, custom solutions that drive results, earning trust by turning ideas into reality.</p>
                     </div>
-                    <div>
+                    {/* <div>
                         <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
                             <button className="btn btn-fix lazyloaded">Connect
                                 to expert<svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
@@ -26,7 +30,9 @@ const WhyChoose: React.FC = () => {
                                 </svg>
                             </button>
                         </Link>
-                    </div>
+                    </div> */}
+
+                    <ConnectExperts />
 
                 </div>
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
@@ -34,7 +40,8 @@ const WhyChoose: React.FC = () => {
                         <div className="relative z-[1]" data-aos="fade-right" data-aos-delay="100">
                             <h2 className="xl:text-2xl text-xl mb-4 font-semibold">Outcome-Driven Excellence</h2>
                             <p className="text-base font-normal text-white">Our developers are committed to delivering top-tier results through innovative web and app solutions that drive measurable success.</p>
-                            <div className="mt-4">
+                            
+                            {/* <div className="mt-4">
                                 <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
                                     <button className="btn btn-fix lazyloaded">Get
                                         in Touch<svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
@@ -44,8 +51,11 @@ const WhyChoose: React.FC = () => {
                                         </svg>
                                     </button>
                                 </Link>
+                            </div> */}
 
-                            </div>
+                        </div>
+                        <div className="mt-7 z-10 relative">
+                            <ConnectExperts />
                         </div>
                     </div>
                     <div className="col-span-3">
