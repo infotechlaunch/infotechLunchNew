@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import lunch from "../assets/Images/infotech-web-dev-laptop.png";
 import health from "../assets/Images/portfoli/5.png";
+import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
+
 import Careem from "../assets/Images/portfoli/7.png";
 import Project from "../assets/Images/Project.png";
 import Manage from "../assets/Images/ManagedSolutions.png";
@@ -116,7 +118,7 @@ const BlogPage: React.FC = () => {
                             </div>
                         </div>
                         <div data-aos="fade-left" data-aos-delay="100" className="flex flex-col justify-end w-full">
-                            <img decoding="async" className="wp-image-5662" width="1002px" height="304px" src="https://www.comfygen.com/blog/wp-content/uploads/2024/12/hero-img.webp" alt="hero section" />
+                        <img alt="[object Object]" loading="lazy" width="754" height="382" decoding="async" data-nimg="1" src={heroimg} />
                         </div>
 
                     </div>
@@ -243,10 +245,10 @@ const BlogPage: React.FC = () => {
                                                         />
                                                     </div>
                                                     <div className="flex justify-between items-center">
-                                                        <button data-aos="fade-right" className="text-[#000] text-base rounded-full border border-[#000] py-1.5 px-5">
+                                                        <button data-aos="fade-right" className="text-[#000] text-sm rounded-full border border-[#000] py-1.5 px-5">
                                                             {post.category}
                                                         </button>
-                                                        <button data-aos="fade-left" className="text-[#000] text-base flex items-center gap-2">
+                                                        <button data-aos="fade-left" className="text-[#000] text-sm flex items-center gap-2">
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
                                                             </svg>{" "}
@@ -254,11 +256,11 @@ const BlogPage: React.FC = () => {
                                                         </button>
                                                     </div>
                                                     <div className="flex flex-col justify-between space-y-3">
-                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
+                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-xl">
                                                             {post.title}
                                                         </h3>
-                                                        <p data-aos="fade-up" className="text-base text-black line-clamp-3">{post.description}</p>
-                                                        <button className="text-lg text-[#000000] flex items-center group-hover:text-[#f13c3c]">
+                                                        <p data-aos="fade-up" className="text-sm text-black line-clamp-3">{post.description}</p>
+                                                        <button data-aos="fade-up" className="text-sm text-blue-400 flex items-center group-hover:text-[#f13c3c]">
                                                             Learn More
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill="none" d="M0 0h24v24H0V0z"></path>

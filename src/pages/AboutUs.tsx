@@ -177,7 +177,7 @@ const AboutUs: React.FC = () => {
                                         <img src={bydef} alt="" />
                                     </div>
                                     <div className="lead_cnt">
-                                        <h3>Dhanjit</h3>
+                                        <h3>Dhanjit Singh</h3>
                                         <p>Full Stack Backend Enginner</p>
                                     </div>
                                 </div>

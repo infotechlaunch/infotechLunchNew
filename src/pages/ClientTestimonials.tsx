@@ -135,7 +135,7 @@ const ClientTestimonials: React.FC = () => {
 
                                         {/* Testimonial Content */}
                                         <div className="flex-1 mt-5 md:mt-0">
-                                            <p className="text-[#212121] text-lg font-medium text-start">{testimonial.review}</p>
+                                            <p className="text-[#212121] text-sm font-medium text-start">{testimonial.review}</p>
                                             <div className="flex justify-between items-center mt-3 md:mt-0">
                                                 <div className="flex items-center">
                                                     <img className="w-12 h-12 rounded-full" src={testimonial.image} alt={testimonial.name} />

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
-import career from "../assets/Images/career-hero-image.webp"
+import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.png"
 import AOSProvider from "../components/AOSProvider";
 // import Ayush from "../assets/Images/ayush.png";
 // import Srishti from "../assets/Images/Srishti-Soni.png"
@@ -16,7 +17,7 @@ import Edge4 from "../assets/Images/With-a-growing-database-of-nearly-info.svg"
 import Blog from "../components/TalentSolutions/Blog";
 import TalentSection from "../components/TalentSolutions/TalentSection";
 const TalentSolutions: React.FC = () => {
- 
+
     const statsData = [
         {
             number: "15",
@@ -69,24 +70,24 @@ const TalentSolutions: React.FC = () => {
     const sanitizedStatsData = statsData.map(stat => ({
         ...stat,
         number: Number(stat.number) // Convert to number
-      }));
-    
-      const [counters, setCounters] = useState(sanitizedStatsData.map(() => 0));
-    
-      useEffect(() => {
+    }));
+
+    const [counters, setCounters] = useState(sanitizedStatsData.map(() => 0));
+
+    useEffect(() => {
         const intervals = sanitizedStatsData.map((stat, index) => {
-          const step = Math.ceil(stat.number / 50); // Now guaranteed to be a number
-          return setInterval(() => {
-            setCounters(prevCounters => {
-              const newCounters = [...prevCounters];
-              newCounters[index] = Math.min(newCounters[index] + step, stat.number);
-              return newCounters;
-            });
-          }, 50);
+            const step = Math.ceil(stat.number / 50); // Now guaranteed to be a number
+            return setInterval(() => {
+                setCounters(prevCounters => {
+                    const newCounters = [...prevCounters];
+                    newCounters[index] = Math.min(newCounters[index] + step, stat.number);
+                    return newCounters;
+                });
+            }, 50);
         });
-    
+
         setTimeout(() => intervals.forEach(clearInterval), 3000);
-      }, []);
+    }, []);
 
     return (
         <>
@@ -100,7 +101,7 @@ const TalentSolutions: React.FC = () => {
                                     <div className="space-y-4">
                                         <div className="mt-10">
                                             <h1 data-aos="fade-right"
-                                                className="text-[#fff] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
+                                                className="text-gradient xl:text-4xl text-4xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
                                                 Talent Solutions</h1>
                                             <p data-aos="fade-right"
                                                 className="text-[#fff] w-full mx-auto text-2xl font-bold  lg:text-base mt-2 lg:text-start text-center">
@@ -110,12 +111,23 @@ const TalentSolutions: React.FC = () => {
                                                 InfoTech Launch partners with more than 1100 small, mid-size, and Fortune 500 companies across various industries to understand their talent challenges and needs. Our team of dedicated recruiters can help you find the best talent to help ful fill your company’s business goals and objectives.</p>
 
                                         </div>
-                                        <ul className="text-white grid md:grid-cols-1 gap-2 text-base font-normal"></ul>
+                                        <div className="mt-6">
+                                            <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
+                                                <button className="btn btn-fix lazyloaded">Get Solution?
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
+                                                        height="11.738" viewBox="0 0 24.231 11.738">
+                                                        <path id="Path_1487529" data-name="Path 1487529"
+                                                            d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                            transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                                    </svg>
+                                                </button>
+                                            </Link>
+                                        </div>
                                     </div>
 
                                 </div>
                                 <div className="w-full lg:flex justify-end items-end " data-aos="fade-left">
-                                    <img alt="[object Object]" loading="lazy" width="754" height="382" decoding="async" data-nimg="1" src={career} />
+                                    <img alt="[object Object]" loading="lazy" width="754" height="382" decoding="async" data-nimg="1" src={heroimg} />
                                 </div>
                             </div>
                         </section>
@@ -131,8 +143,8 @@ const TalentSolutions: React.FC = () => {
                                 </div>
                                 <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-4 text-center">
                                     {statsData.map((stat, index) => (
-                                        <div data-aos="fade-up" key={index} className="p-4 bg-white shadow-lg rounded-lg">
-                                            <div className="text-4xl font-bold flex justify-center items-center">
+                                        <div key={index} className="p-4 bg-white shadow-lg rounded-lg  feature-card-1">
+                                            <div className="text-4xl font-bold flex justify-center items-center text-purple-400">
                                                 {stat.prefix && <span>{stat.prefix}</span>}
                                                 <span>{counters[index]}</span>
                                                 <span className="ml-1">{stat.unit}</span>
@@ -153,7 +165,7 @@ const TalentSolutions: React.FC = () => {
                                 </div>
                                 <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-6">
                                     {EdgeData.map((item, index) => (
-                                        <div data-aos="fade-up" key={index} className="border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
+                                        <div  key={index} className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
                                             <img src={item.imgSrc} alt={item.altText} className="mx-auto w-20 h-20 mb-4" />
                                             <p>{item.title}</p>
                                         </div>
@@ -162,8 +174,8 @@ const TalentSolutions: React.FC = () => {
                             </div>
                         </div>
                     </section>
-                 <TalentSection/>
-                   
+                    <TalentSection />
+
                 </div>
                 <Blog />
                 <ContactForm />

@@ -25,7 +25,7 @@
 .feature-card-1{
 transition: transform 0.2s ease;}
 .feature-card-1:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 .bg-blue-fade {
