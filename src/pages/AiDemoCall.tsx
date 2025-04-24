@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const AiDemoCall = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +16,8 @@ const AiDemoCall = () => {
     findUs: '',
     whatsappNumber: '',
     phoneNumber: '',
-    consent: false
+    consent: false,
+    captchaToken: ""
   });
 
   const handleChange = (e:any) => {
@@ -26,9 +28,21 @@ const AiDemoCall = () => {
     }));
   };
 
+  const handleCaptchaChange = (token:string | null) => {
+    setFormData((prev) => ({
+      ...prev,
+      consent: !!token,     // bool: user ticked “I’m not a robot”
+      captchaToken: token || ""
+    }));
+  };
+
   const handleSubmit = (e:any) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    if (!formData.captchaToken) {
+      alert("Please verify you’re not a robot");
+      return;
+    }
     // Handle form submission logic here
   };
   
@@ -55,15 +69,6 @@ const AiDemoCall = () => {
     marginBottom: '1rem'
   };
 
-//   const selectStyle = {
-//     ...inputStyle,
-//     appearance: 'none',
-//     // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
-//     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
-//     backgroundRepeat: 'no-repeat',
-//     backgroundPosition: 'right 1rem center',
-//     backgroundSize: '1em'
-//   };
 
   const checkboxContainerStyle = {
     display: 'flex',
@@ -88,6 +93,9 @@ const AiDemoCall = () => {
     marginBottom: '1rem'
   };
 
+  const recaptchaRef = useRef(null);
+  // const [captchaToken, setCaptchaToken] = useState("");
+
   return (
     <>
     
@@ -102,29 +110,30 @@ const AiDemoCall = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center'
-        }}>
-        <div style={formContainerStyle}>
+          }}>
+          <div style={formContainerStyle}>
+            
             <div style={{
                 textAlign: 'center',
                 marginBottom: '1.5rem'
-            }}>
-            <div style={{ marginBottom: '0.5rem', display: 'flex', justifyContent: 'center' }}>
-                <span>✨ InstantCall</span>
-            </div>
-            <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.75rem' }}>
-            Turn every call into revenue — no missed opportunities.
-            </h1>
-            <p style={{ color: '#aaaaaa', fontSize: '0.875rem' }}>
+              }}>
+              <div style={{ marginBottom: '0.5rem', display: 'flex', justifyContent: 'center' }}>
+                  <span>✨ InstantCall</span>
+              </div>
+              <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.75rem' }}>
+                Turn every call into revenue — no missed opportunities.
+              </h1>
+              <p style={{ color: '#aaaaaa', fontSize: '0.875rem' }}>
                 Manage your call center, incoming calls, and texts seamlessly from one AI-powered dashboard with predictive call handling and more.
-            </p>
+              </p>
             </div>
 
             <form onSubmit={handleSubmit}>
             <div>
-                <label style={labelStyle} htmlFor="name">
+              <label style={labelStyle} htmlFor="name">
                 Name *
-                </label>
-                <input
+              </label>
+              <input
                 style={inputStyle}
                 type="text"
                 id="name"
@@ -133,14 +142,14 @@ const AiDemoCall = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                />
+              />
             </div>
 
             <div>
-                <label style={labelStyle} htmlFor="email">
+              <label style={labelStyle} htmlFor="email">
                 Email *
-                </label>
-                <input
+              </label>
+              <input
                 style={inputStyle}
                 type="email"
                 id="email"
@@ -149,14 +158,14 @@ const AiDemoCall = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                />
+              />
             </div>
 
             <div>
-                <label style={labelStyle} htmlFor="companyName">
+              <label style={labelStyle} htmlFor="companyName">
                 Company Name *
-                </label>
-                <input
+              </label>
+              <input
                 style={inputStyle}
                 type="text"
                 id="companyName"
@@ -165,23 +174,23 @@ const AiDemoCall = () => {
                 value={formData.companyName}
                 onChange={handleChange}
                 required
-                />
+              />
             </div>
 
             <div>
-                <label style={labelStyle} htmlFor="voiceHandler">
-                AI Voice FacilIitator? *
-                </label>
-                <select
-                style={{
-                    ...inputStyle,
-                    appearance: 'none',
-                    // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'right 1rem center',
-                    backgroundSize: '1em'
-                }}
+              <label style={labelStyle} htmlFor="voiceHandler">
+              AI Voice FacilIitator? *
+              </label>
+              <select
+              style={{
+                ...inputStyle,
+                appearance: 'none',
+                // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
+                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right 1rem center',
+                backgroundSize: '1em'
+              }}
                 id="voiceHandler"
                 name="voiceHandler"
                 value={formData.voiceHandler}
@@ -191,22 +200,22 @@ const AiDemoCall = () => {
                 <option value="">Select an option</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
-                </select>
+              </select>
             </div>
 
             <div>
-                <label style={labelStyle} htmlFor="industry">
-                Business Industry? *
-                </label>
-                <select
+              <label style={labelStyle} htmlFor="industry">
+              Business Industry? *
+              </label>
+              <select
                 style={{
-                    ...inputStyle,
-                    appearance: 'none',
-                    // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'right 1rem center',
-                    backgroundSize: '1em'
+                  ...inputStyle,
+                  appearance: 'none',
+                  // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'right 1rem center',
+                  backgroundSize: '1em'
                 }}
                 id="industry"
                 name="industry"
@@ -215,12 +224,12 @@ const AiDemoCall = () => {
                 required
                 >
                 <option value="">Select industry</option>
-                <option value="tech">Technology</option>
+                <option value="technology">Technology</option>
                 <option value="healthcare">Healthcare</option>
                 <option value="retail">Retail</option>
                 <option value="finance">Finance</option>
                 <option value="other">Other</option>
-                </select>
+              </select>
             </div>
 
             <div>
@@ -244,10 +253,10 @@ const AiDemoCall = () => {
                 required
                 >
                 <option value="">Select an option</option>
-                <option value="search">Search Engine</option>
-                <option value="social">Social Media</option>
+                <option value="search-engine">Search Engine</option>
+                <option value="social-media">Social Media</option>
                 <option value="referral">Referral</option>
-                <option value="ad">Advertisement</option>
+                <option value="advertisement">Advertisement</option>
                 <option value="other">Other</option>
                 </select>
             </div>
@@ -297,29 +306,21 @@ const AiDemoCall = () => {
             </p>
 
             <div style={checkboxContainerStyle}>
-                <input
-                type="checkbox"
-                id="consent"
-                name="consent"
-                checked={formData.consent}
-                onChange={handleChange}
-                style={{ marginRight: '0.5rem', marginTop: '0.25rem' }}
-                />
-                <label htmlFor="consent" style={{ fontSize: '0.875rem' }}>
-                I'm not a robot
-                </label>
-                <div style={{ marginLeft: 'auto' }}>
-                <img src="/api/placeholder/50/50" alt="CAPTCHA" style={{ borderRadius: '4px' }} />
-                </div>
+              <ReCAPTCHA
+                sitekey="6Leb8wErAAAAAK5cpMG6VAupj72TZTuCPSWmQe6c"
+                ref={recaptchaRef}
+                onChange={handleCaptchaChange}   // token comes in here
+                theme="light"             // light or "dark"
+              />
             </div>
 
             <motion.button
-                type="submit"
-                style={buttonStyle}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              type="submit"
+              style={buttonStyle}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-                Guarantee Your Future →
+              Guarantee Your Future →
             </motion.button>
             </form>
         </div>
