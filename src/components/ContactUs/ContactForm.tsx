@@ -168,7 +168,7 @@ const ContactForm: React.FC = () => {
                                         <div>
                                             <span className="text-white lg:text-base text-sm">
                                                 Office  Location</span>
-                                            <p className="text-white lg:text-lg text-base font-semibold"> A-20
+                                            <p className="text-white lg:text-lg text-base font-semibold"> 
                                                 100 Waxhaw Pkwy, Waxhaw, NC, 28173 USA</p>
                                         </div>
                                     </Link>

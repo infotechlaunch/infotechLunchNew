@@ -182,7 +182,7 @@ transition: transform 0.2s ease;}
     line-height: 1.2;
   }
   .text-gradient{ background: linear-gradient(to right, #97d3ff 0%, #ffa245 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;}
     .text-gradient-red{background: linear-gradient(to right, #ffe1cc 0%, #f23d3d 50%, #ffffff 100%);
       -webkit-background-clip: text;

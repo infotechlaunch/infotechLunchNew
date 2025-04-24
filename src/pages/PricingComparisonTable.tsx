@@ -193,45 +193,7 @@ export default function PricingComparisonTable() {
           </div>
         {/* )} */}
 
-        {/* {activeTab === 'features' && ( */}
-          <div className="mt-4 overflow-x-auto bg-white  shadow-lg">
-            <table className="w-full text-black">
-              <thead>
-                <tr className="bg-gray-800 text-white">
-                  <th className="px-4 py-3 text-left border-b border-gray-300">Additional Features, Only with InfoTech Launch</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-blue-700">Basic</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-green-700">Standard</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-purple-700">Plus</th>
-                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-orange">Enterprise</th>
-                </tr>
-              </thead>
-              <tbody>
-                {additionalFeatures.map((item, index) => (
-                  <tr key={index} className="hover:bg-blue-50 transition-colors">
-                    <td className="px-4 py-3 border-b">{item.service}</td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
-                      {item.itl.basic ? <CheckMark /> : <XMark />}
-                    </td>
-                    <td className="px-4 py-3 border-b text-center">
-                      {item.itl.standard ? <CheckMark /> : <XMark />}
-                    </td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
-                      {item.itl.plus ? <CheckMark /> : <XMark />}
-                    </td>
-                    <td className="px-4 py-3 border-b text-center">
-                      {item.itl.enterprise ? <CheckMark /> : <XMark />}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            {/* <div className="p-4 text-center bg-gradient-to-r from-purple-100 to-blue-100">
-              <p className="font-medium text-gray-800">
-                ITL offers software development—both hybrid and from scratch. <span className="text-blue-600 font-bold">Contact us today</span> to build your AI-powered products.
-              </p>
-            </div> */}
-          </div>
-        {/* )} */}
+       
 
         {/* {activeTab === 'onetime' && ( */}
           <div className="mt-4 overflow-x-auto bg-white  shadow-lg">
@@ -271,6 +233,46 @@ export default function PricingComparisonTable() {
                 ))}
               </tbody>
             </table>
+          </div>
+        {/* )} */}
+
+         {/* {activeTab === 'features' && ( */}
+         <div className="mt-4 overflow-x-auto bg-white  shadow-lg">
+            <table className="w-full text-black">
+              <thead>
+                <tr className="bg-gray-800 text-white">
+                  <th className="px-4 py-3 text-left border-b border-gray-300">Additional Features, Only with InfoTech Launch</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-blue-700">Basic</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-green-700">Standard</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-purple-700">Plus</th>
+                  <th className="px-4 py-3 text-center border-b border-gray-300 bg-orange">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                {additionalFeatures.map((item, index) => (
+                  <tr key={index} className="hover:bg-blue-50 transition-colors">
+                    <td className="px-4 py-3 border-b">{item.service}</td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
+                      {item.itl.basic ? <CheckMark /> : <XMark />}
+                    </td>
+                    <td className="px-4 py-3 border-b text-center">
+                      {item.itl.standard ? <CheckMark /> : <XMark />}
+                    </td>
+                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
+                      {item.itl.plus ? <CheckMark /> : <XMark />}
+                    </td>
+                    <td className="px-4 py-3 border-b text-center">
+                      {item.itl.enterprise ? <CheckMark /> : <XMark />}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {/* <div className="p-4 text-center bg-gradient-to-r from-purple-100 to-blue-100">
+              <p className="font-medium text-gray-800">
+                ITL offers software development—both hybrid and from scratch. <span className="text-blue-600 font-bold">Contact us today</span> to build your AI-powered products.
+              </p>
+            </div> */}
           </div>
         {/* )} */}
 

@@ -30,7 +30,7 @@ const OurPortfolioHome: React.FC = () => {
                             </div>
                             <div className="flex items-center">
                                 <div className="space-y-4">
-                                    <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">Healthcare Services App in India</h3>
+                                    <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">Healthcare Services App</h3>
                                     <p data-aos="fade-up" className="text-black py-3">A modern telemedicine app enabling virtual consultations, easy appointment booking, and secure health records—redefining healthcare access across India.</p>
                                     <div>
                                         <p className="text-black py-3"></p>
@@ -84,7 +84,7 @@ const OurPortfolioHome: React.FC = () => {
                             </div>
                             <div className="flex items-center">
                                 <div className="space-y-4">
-                                    <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">E Commerce</h3>
+                                    <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">Fitness</h3>
                                     <p data-aos="fade-up" className="text-black py-3">Introducing FitClub — an all-in-one e-commerce app for fitness enthusiasts. Shop gear, track progress, and get personalized health insights, all in one seamless experience.</p>
                                     <div>
                                         <p className="text-black py-3"></p>
