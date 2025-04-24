@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Thumbs } from "swiper/modules";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // import logo from "../../assets/Images/logo.gif";
 // import logo from "../../assets/Images/cl01.png";
@@ -35,11 +35,11 @@ import ConnectExperts from "../../pages/ConnectExperts";
 const caseStudies = [
   { title: "Food & Beverage", downloadLink: "#", mainImage: web, sorttitle: "for Food Delivery", p1: "85%", p1desc: "Customer Retention Rate", p2: "30K+", p2desc: "Meals Delivered Globally", desc: "Boost food delivery with AI-driven meals, smart logistics, and personalized customer experiences.", img: weblogo, },
   // { title: "Food & Beverage",downloadLink:"#", mainImage:web, sorttitle:"for Food Delivery",  p1: "80%", p1desc: "User Retention Rate", p2: "20K+", p2desc: "Meal Plans Generated", desc: "Personalized nutrition and workout recommendations, backed by advanced AI algorithms, machine learning, and predictive analytics.", img: logo, },
-  { title: "Travel & Transport",downloadLink:"#", mainImage:web1, sorttitle:"for Travel & Transport",  p1: "20%", p1desc: "Cryptocurrencies Supported", p2: "$100 K+", p2desc: "Daily Transaction Volume", desc: "Optimizing travel and transport with AI-driven routing, real-time tracking, and seamless booking solutions.", img: web1logo, },
-  { title: "Logistics & Delivery",downloadLink:"#", mainImage:web2, sorttitle:"for any kind of delivery",  p1: "1000+", p1desc: "Cryptocurrencies Supported", p2: "45%", p2desc: "Increase in Property Views", desc: "Streamlined logistics and delivery with real-time tracking, route optimization, and automated workflows powered by AI and IoT.", img: web2logo, },
+  { title: "Travel & Transport", downloadLink: "#", mainImage: web1, sorttitle: "for Travel & Transport", p1: "20%", p1desc: "Cryptocurrencies Supported", p2: "$100 K+", p2desc: "Daily Transaction Volume", desc: "Optimizing travel and transport with AI-driven routing, real-time tracking, and seamless booking solutions.", img: web1logo, },
+  { title: "Logistics & Delivery", downloadLink: "#", mainImage: web2, sorttitle: "for any kind of delivery", p1: "1000+", p1desc: "Cryptocurrencies Supported", p2: "45%", p2desc: "Increase in Property Views", desc: "Streamlined logistics and delivery with real-time tracking, route optimization, and automated workflows powered by AI and IoT.", img: web2logo, },
   // { title: "Gaming",mainImage:web3,downloadLink:"#", sorttitle:"for Gaming",  p1: "1000+", p1desc: "Dishefs revolutionizes the food industry by seamlessly connecting food establishments with idle kitchen hours to chefs, food trucks, and entrepreneurs through our innovative two-way marketplace for kitchen rental solutions.", img: logo3, },
-  { title: "Artificial Intelligence",mainImage:web4,downloadLink:"#", sorttitle:"for Artificial Intelligence",  p1: "85%", p1desc: "Faster Analysis Time", p2: "60%",p2desc:"Faster Decision Making", desc: "Transforming industries with intelligent automation, predictive analytics, and real-time decision-making powered by AI.", img: web4logo, },
-  { title: "E-commerce",mainImage:web5,downloadLink:"#", sorttitle:"for E-commerce",  p1: "1M+", p1desc: "User Downloads", p2: "90%", p2desc: "User Engagement", desc: "Elevating online retail with personalized shopping, smart recommendations, and seamless checkout experiences powered by AI and analytics.", img: web5logo, },
+  { title: "Artificial Intelligence", mainImage: web4, downloadLink: "#", sorttitle: "for Artificial Intelligence", p1: "85%", p1desc: "Faster Analysis Time", p2: "60%", p2desc: "Faster Decision Making", desc: "Transforming industries with intelligent automation, predictive analytics, and real-time decision-making powered by AI.", img: web4logo, },
+  { title: "E-commerce", mainImage: web5, downloadLink: "#", sorttitle: "for E-commerce", p1: "1M+", p1desc: "User Downloads", p2: "90%", p2desc: "User Engagement", desc: "Elevating online retail with personalized shopping, smart recommendations, and seamless checkout experiences powered by AI and analytics.", img: web5logo, },
 ];
 
 const CaseStudy: React.FC = () => {
@@ -64,7 +64,7 @@ const CaseStudy: React.FC = () => {
     handleResize();
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  
+
   return (
     <div className="challenges bg-gradient-blue-red py-16" style={{
       marginBottom: "-100px"
@@ -84,7 +84,7 @@ const CaseStudy: React.FC = () => {
           <div className="w-full  md:w-[20%]">
             <Swiper
               direction={isMobile ? "horizontal" : "vertical"}
-              
+
               spaceBetween={10}
               freeMode={true}
               watchSlidesProgress
@@ -92,8 +92,8 @@ const CaseStudy: React.FC = () => {
               breakpoints={{
                 0: { slidesPerView: 2 },
                 900: { slidesPerView: 3 },
-                1024: { slidesPerView: 6},
-            }}
+                1024: { slidesPerView: 6 },
+              }}
               className="thumb-slider md:h-[600px]"
             >
               {caseStudies.map((study, index) => (
@@ -160,11 +160,24 @@ const CaseStudy: React.FC = () => {
                           </button>
                           </Link>
                         </div> */}
-                        <div>
+                        <div className="mt-4">
+                                                        <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
+                                                            <button className="btn btn-fix lazyloaded">Get
+                                                                in Touch<svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
+                                                                    <path id="Path_1487529" data-name="Path 1487529"
+                                                                        d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                                        transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </Link>
+                                                    </div>
+                        {/* <div>
                           <ConnectExperts />
-                        </div>
+                        </div> */}
+
 
                       </div>
+
                       <div className="md:w-6/12 w-full mt-[30px] md:mt-0 md:ml-auto">
                         <div
                           data-aos="fade-left"
@@ -178,7 +191,9 @@ const CaseStudy: React.FC = () => {
                         </div>
                       </div>
                     </div>
+
                   </div>
+
                 </SwiperSlide>
               ))}
             </Swiper>

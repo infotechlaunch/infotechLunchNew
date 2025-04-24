@@ -88,7 +88,7 @@ const Services: React.FC = () => {
                         </div>
 
                         {/* Right Section */}
-                        <div className="chalnges-right">
+                        <div className="chalnges-right z-1">
                             <div className="md_challenges_box space-y-7">
                                 {challengeData.map((challenge, index) => (
                                     <div key={challenge.id} id={challenge.id} className={`md_challenges_slide flex justify-end sticky mb-7`} style={{ top: `${8 + index * 0.25}rem` }}>

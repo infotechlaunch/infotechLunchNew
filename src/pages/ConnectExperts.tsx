@@ -89,10 +89,10 @@ const ConnectExperts: React.FC = () => {
 
             {isOpen && (
             <div ref={overlayRef} className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-                <div ref={popupBoxRef} className="bg-gradient-to-r from-red-500 to-blue-500 rounded-lg shadow-xl overflow-hidden w-full max-w-4xl">
+                <div ref={popupBoxRef} className="bg-gradient-to-r from-red-500 to-blue-500 rounded-lg shadow-xl overflow-hidden w-full max-w-3xl get-started-box">
                     <div className="bg-white m-1 rounded-lg overflow-hidden flex flex-col md:flex-row">
                         {/* Left side - Image */}
-                        <div className="md:w-1/2 bg-gray-100 flex items-center justify-center p-6">
+                        <div className="md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
                             <div className="relative w-full h-full min-h-64">
                             <img 
                                 src={getStartedImg}
@@ -103,7 +103,7 @@ const ConnectExperts: React.FC = () => {
                         </div>
                         
                         {/* Right side - Form */}
-                        <div className="md:w-1/2 p-8 relative">
+                        <div className="md:w-2/3 p-4 relative">
                             <button 
                                 onClick={onClose}
                                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
@@ -122,7 +122,7 @@ const ConnectExperts: React.FC = () => {
                             
                             <form onSubmit={handleSubmit} className="space-y-4">
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                {/* <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label> */}
                                 <input
                                     type="text"
                                     id="name"
@@ -136,7 +136,7 @@ const ConnectExperts: React.FC = () => {
                             </div>
                             
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                {/* <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label> */}
                                 <input
                                     type="email"
                                     id="email"
@@ -150,7 +150,7 @@ const ConnectExperts: React.FC = () => {
                             </div>
                             
                             <div>
-                                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                {/* <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone</label> */}
                                 <input
                                     type="tel"
                                     id="phone"
@@ -163,7 +163,7 @@ const ConnectExperts: React.FC = () => {
                             </div>
                             
                             <div>
-                                <label htmlFor="about" className="block text-sm font-medium text-gray-700 mb-1">Tell us about yourself</label>
+                                {/* <label htmlFor="about" className="block text-sm font-medium text-gray-700 mb-1">Tell us about yourself</label> */}
                                 <textarea
                                     id="about"
                                     name="about"

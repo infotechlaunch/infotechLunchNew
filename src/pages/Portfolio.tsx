@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
             <AOSProvider>
                 <HeaderNew />
                 <div className="overflow-hidden">
-                    <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-portfolio">
+                    <div className="lg:py-[4rem] py-[3rem] bg-gradient-blue-red">
                         <section>
                             <div className="lg:flex lg:flex-row md:items-center lg:space-x-20 lg:space-y-0 space-y-6 2xl:w-10/12 w-full md:w-10/12 lg:w-11/12 mx-auto">
                                 <div>
@@ -78,12 +78,12 @@ const Portfolio: React.FC = () => {
                         </section>
                     </div>
 
-                    <div className="py-8 bg-gradient-blue-red lg:py-20">
+                    <div className="py-8 bg-orange lg:py-20">
                         <section className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
-                            <div className="space-y-4 flex flex-col justify-center text-center mx-auto lg:w-4/6">
-                                <h2 className="text-[29px] lg:text-[35px] font-bold capitalize text-[#fff]">Our Excellent
+                            <div className="space-y-4 flex flex-col justify-center text-center mx-auto lg:w-4/6" data-aos="fade-up">
+                                <h2 className="text-[29px] lg:text-[35px] font-bold capitalize text-[#000]">Our Excellent
                                     Portfolio</h2>
-                                <p className="text-base  text-[#fff]">Driving growth and success through creative design
+                                <p className="text-base  text-[#000]">Driving growth and success through creative design
                                     and development. Showcasing our passion for design and creativity</p>
                             </div>
                             <div className="container grid gap-8 py-10 text-left lg:grid-cols-1 lg:gap-14">

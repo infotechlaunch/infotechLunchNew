@@ -254,9 +254,9 @@ const TalentSolutions: React.FC = () => {
     return (
         <>
             <section className="lg:py-16 py-10 bg-gradient-blue-red">
-                <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+                <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12" data-aos="fade-up">
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold leading-[3rem] text-[#fff]" data-aos="fade-up">
+                        <h2 className="text-4xl font-bold leading-[3rem] text-[#fff]" >
                             Talent Solutions Offerings
                         </h2>
                         <p className="text-orange text-lg font-semibold mt-2 mb-5 aos-init aos-animate">Industry Skill-sets and Roles</p>
