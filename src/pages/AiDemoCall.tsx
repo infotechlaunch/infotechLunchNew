@@ -5,20 +5,29 @@ import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
 import ReCAPTCHA from "react-google-recaptcha";
+import Axios from "axios";
 
 const AiDemoCall = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    companyName: '',
-    voiceHandler: '',
-    industry: '',
-    findUs: '',
-    whatsappNumber: '',
-    phoneNumber: '',
+
+  const recaptchaRef = useRef(null);
+  const [loading, setLoading]   = useState(false);
+  const [showThanks, setShowThanks] = useState(false);
+
+
+  const EMPTY_FORM = {
+    name: "",
+    email: "",
+    companyName: "",
+    voiceHandler: "",
+    industry: "",
+    findUs: "",
+    whatsappNumber: "",
+    phoneNumber: "",
     consent: false,
     captchaToken: ""
-  });
+  };
+
+  const [formData, setFormData] = useState(EMPTY_FORM);
 
   const handleChange = (e:any) => {
     const { name, value, type, checked } = e.target;
@@ -31,7 +40,7 @@ const AiDemoCall = () => {
   const handleCaptchaChange = (token:string | null) => {
     setFormData((prev) => ({
       ...prev,
-      consent: !!token,     // bool: user ticked “I’m not a robot”
+      consent: !!token,
       captchaToken: token || ""
     }));
   };
@@ -39,11 +48,91 @@ const AiDemoCall = () => {
   const handleSubmit = (e:any) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+
+    if (!formData.name) {
+      alert("Please enter name");
+      return;
+    }
+
+    if (!formData.email) {
+      alert("Please enter email");
+      return;
+    }
+
+    if (!formData.companyName) {
+      alert("Please enter company name");
+      return;
+    }
+
+    if (!formData.voiceHandler) {
+      alert("Please select voice facilIitator");
+      return;
+    }
+
+    if (!formData.industry) {
+      alert("Please select industry");
+      return;
+    }
+
+    if (!formData.findUs) {
+      alert("Please select find us");
+      return;
+    }
+
+    if (!formData.whatsappNumber) {
+      alert("Please enter whatsapp number");
+      return;
+    }
+
+    if (formData.whatsappNumber.length < 10) {
+      alert("Please enter between 10-12 digits only");
+      return;
+    }
+
+    if (formData.whatsappNumber.length > 12) {
+      alert("Please enter between 10-12 digits only");
+      return;
+    }
+
+    if (!formData.phoneNumber) {
+      alert("Please enter phone number");
+      return;
+    }
+
+    if (formData.phoneNumber.length < 10) {
+      alert("Please enter between 10-12 digits only");
+      return;
+    }
+
+    if (formData.phoneNumber.length > 12) {
+      alert("Please enter between 10-12 digits only");
+      return;
+    }
+
     if (!formData.captchaToken) {
       alert("Please verify you’re not a robot");
       return;
     }
-    // Handle form submission logic here
+
+    setLoading(true);
+    Axios.post(`http://127.0.0.1:8000/api/ai-demo-call`, formData)
+      .then(response => {
+        console.log('response=====>>>>>', response.data);
+        if(response.data.status === true) {
+          setShowThanks(true);
+          setFormData(EMPTY_FORM); 
+          setTimeout(() => {
+            setShowThanks(false);
+          }, 3000);
+        } else {
+          setShowThanks(false);
+        }
+      }).catch((error) => {
+        setShowThanks(false);
+        console.log('error occurs while submiting form =====>>>>>', error);
+      }).finally(() => {
+        setLoading(false);
+      });
   };
   
 
@@ -84,7 +173,8 @@ const AiDemoCall = () => {
     borderRadius: '999px',
     cursor: 'pointer',
     fontWeight: 'bold',
-    marginTop: '0.5rem'
+    marginTop: '0.5rem',
+    display: "flex"
   };
 
   const smallTextStyle = {
@@ -93,8 +183,6 @@ const AiDemoCall = () => {
     marginBottom: '1rem'
   };
 
-  const recaptchaRef = useRef(null);
-  // const [captchaToken, setCaptchaToken] = useState("");
 
   return (
     <>
@@ -111,6 +199,7 @@ const AiDemoCall = () => {
             flexDirection: 'column',
             alignItems: 'center'
           }}>
+
           <div style={formContainerStyle}>
             
             <div style={{
@@ -127,6 +216,29 @@ const AiDemoCall = () => {
                 Manage your call center, incoming calls, and texts seamlessly from one AI-powered dashboard with predictive call handling and more.
               </p>
             </div>
+
+            {showThanks && (
+              <div
+                className="
+                  fixed inset-0 z-50 flex items-center justify-center
+                  bg-black/40 backdrop-blur-sm
+                "
+              >
+                <div
+                  className="
+                    rounded-2xl bg-white px-6 py-8 text-center shadow-xl
+                    animate-fade-in
+                  "
+                >
+                  <h2 className="mb-2 text-xl font-semibold text-green-600">
+                    Thank you!
+                  </h2>
+                  <p className="text-gray-700">
+                    Your message has been sent successfully.
+                  </p>
+                </div>
+              </div>
+            )}
 
             <form onSubmit={handleSubmit}>
             <div>
@@ -185,7 +297,6 @@ const AiDemoCall = () => {
               style={{
                 ...inputStyle,
                 appearance: 'none',
-                // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
                 backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'right 1rem center',
@@ -211,7 +322,6 @@ const AiDemoCall = () => {
                 style={{
                   ...inputStyle,
                   appearance: 'none',
-                  // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
                   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'right 1rem center',
@@ -240,7 +350,6 @@ const AiDemoCall = () => {
                 style={{
                     ...inputStyle,
                     appearance: 'none',
-                    // backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'right 1rem center',
@@ -267,7 +376,7 @@ const AiDemoCall = () => {
                 </label>
                 <input
                 style={inputStyle}
-                type="tel"
+                type="number"
                 id="whatsappNumber"
                 name="whatsappNumber"
                 placeholder="Your WhatsApp number"
@@ -283,7 +392,7 @@ const AiDemoCall = () => {
                 </label>
                 <input
                 style={inputStyle}
-                type="tel"
+                type="number"
                 id="phoneNumber"
                 name="phoneNumber"
                 placeholder="Your phone number"
@@ -320,6 +429,24 @@ const AiDemoCall = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              {loading && (
+                <svg
+                  className="left-3 h-5 w-5 animate-spin mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12" cy="12" r="10"
+                    stroke="currentColor" strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                  />
+                </svg>
+              )}
               Guarantee Your Future →
             </motion.button>
             </form>
