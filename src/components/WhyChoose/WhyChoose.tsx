@@ -41,7 +41,7 @@ const WhyChoose: React.FC = () => {
                             <h2 className="xl:text-2xl text-xl mb-4 font-semibold">Outcome-Driven Excellence</h2>
                             <p className="text-base font-normal text-white">Our developers are committed to delivering top-tier results through innovative web and app solutions that drive measurable success.</p>
                             
-                            {/* <div className="mt-4">
+                            <div className="mt-4">
                                 <Link to="/contact-us" data-discover="true" data-aos="fade-left" data-aos-delay="100">
                                     <button className="btn btn-fix lazyloaded">Get
                                         in Touch<svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
@@ -51,12 +51,12 @@ const WhyChoose: React.FC = () => {
                                         </svg>
                                     </button>
                                 </Link>
-                            </div> */}
+                            </div>
 
                         </div>
-                        <div className="mt-7 z-10 relative">
+                        {/* <div className="mt-7 z-10 relative">
                             <ConnectExperts />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-span-3">
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
