@@ -193,6 +193,12 @@ transition: transform 0.2s ease;}
     margin-bottom: 30px;
     line-height: 1.6;
   }
+  .features-img {
+    transition-duration: .3s;
+}
+.features-img:hover{
+  transform: scale(1.1);
+}
  .feature-card-1 img.object-contain-1, .feature-card img.why-choose-icon{
     transition: all 300ms ease;
     -webkit-transition: all 300ms ease;

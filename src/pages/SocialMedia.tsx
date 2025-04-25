@@ -193,7 +193,7 @@ const SocialMedia: React.FC = () => {
                                 <div className="md:w-1/2 flex justify-center">
                                     <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
 
-                                        <img src={whoItForImg} alt="" style={{
+                                        <img src={whoItForImg} alt="" className="features-img" style={{
                                             height: "350px",
                                             width: "auto",
                                             objectFit: "cover"

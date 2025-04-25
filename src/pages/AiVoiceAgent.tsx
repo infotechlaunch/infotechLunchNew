@@ -239,8 +239,8 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
-                    <img src={voiceheroImg} alt="" style={{
+                    <div className="hero-image-1 overflow-hidden rounded-xl" data-aos="fade-left" style={{ zIndex: "0" }}>
+                    <img src={voiceheroImg} alt="" className="features-img" style={{
                                             height: "350px",
                                             width: "auto",
                                             objectFit: "cover"
@@ -592,13 +592,13 @@ const AiVoiceAgent: React.FC = () => {
                         
                         {/* Right panel content */}
                         <div className="flex-1" data-aos="fade-left">
-                        <div className="bg-white rounded-xl p-6 backdrop-blur-sm border border-gray-800">
+                        <div className="bg-black/60 rounded-xl p-6 backdrop-blur-sm border border-gray-800">
                             <div className="flex justify-end mb-4">
-                            <button className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
+                            <button className="bg-orange hover:bg-gray-700 text-black px-4 py-2 rounded-lg">
                                 Update Your AI Voice Agent
                             </button>
                             </div>
-                            <img src={updateVoiceAgentImg} alt="" />
+                            <img src={updateVoiceAgentImg} alt="" className="features-img" />
                             
                             {/* <div className="grid grid-cols-2 gap-4 mb-6">
                             <div className="relative rounded-lg overflow-hidden h-28 cursor-pointer group">
@@ -644,7 +644,7 @@ const AiVoiceAgent: React.FC = () => {
                             <div className="absolute -inset-1 bg-teal-500/20 blur-md rounded-lg -z-10"></div>
                             
                             <div className="flex justify-center mb-6">
-                            <button className="bg-gray-800 text-gray-300 px-6 py-2 rounded-md uppercase text-sm tracking-wider">
+                            <button className="bg-orange text-black px-6 py-2 rounded-md uppercase text-sm text-bold tracking-wider">
                                 Check Calls Made with a Contact
                             </button>
                             </div>
@@ -665,26 +665,26 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             
                             <div className="bg-black/80 border border-gray-800 rounded-md overflow-hidden">
-                            <table className="w-full text-left">
+                            <table className="w-full text-center">
                                 <thead>
                                 <tr className="border-b border-gray-800">
-                                    <th className="p-3 text-gray-400 font-medium">CustomerID</th>
-                                    <th className="p-3 text-gray-400 font-medium">Call Recording</th>
-                                    <th className="p-3 text-gray-400 font-medium">Booked?</th>
-                                    <th className="p-3 text-gray-400 font-medium">Total Calls</th>
+                                    <th className="p-3 text-black font-medium bg-orange">CustomerID</th>
+                                    <th className="p-3 text-black font-medium bg-blue-fade">Call Recording</th>
+                                    <th className="p-3 text-black font-medium bg-orange">Booked?</th>
+                                    <th className="p-3 text-black font-medium bg-blue-fade">Total Calls</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {callData.map((call) => (
                                     <tr key={call.id} className="border-b border-gray-800">
-                                    <td className="p-3">{call.id}</td>
-                                    <td className="p-3">
+                                    <td className="p-3 bg-orange">{call.id}</td>
+                                    <td className="p-3 bg-blue-fade">
                                         <button className="text-teal-500 hover:text-teal-400">
                                         Download
                                         </button>
                                     </td>
-                                    <td className="p-3">Yes</td>
-                                    <td className="p-3">{call.totalCalls}</td>
+                                    <td className="p-3 bg-orange">Yes</td>
+                                    <td className="p-3 text-black bg-blue-fade">{call.totalCalls}</td>
                                     </tr>
                                 ))}
                                 </tbody>
@@ -723,8 +723,8 @@ const AiVoiceAgent: React.FC = () => {
                     
                     <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Left Panel */}
-                        <div className="bg-black/40 border border-white-500 rounded-lg p-4" data-aos="fade-right">
-                            <img src={personalizedExpImg} alt="" />
+                        <div className="bg-black/40 border border-white-500 rounded-lg p-8" data-aos="fade-right">
+                            <img src={personalizedExpImg} alt=""  className="features-img" />
                         </div>
                         {/* <div className="bg-black/70 border border-gray-800 rounded-lg p-4">
                         <div className="flex justify-around mb-8">
@@ -788,8 +788,8 @@ const AiVoiceAgent: React.FC = () => {
                         </div> */}
                         
                         {/* Right Panel */}
-                        <div className="bg-black/40 border border-white-500 rounded-lg p-4" data-aos="fade-left">
-                            <img src={considerItDoneImg} alt="" />
+                        <div className="bg-black/40 border border-white-500 rounded-lg p-8" data-aos="fade-left">
+                            <img src={considerItDoneImg} alt=""  className="features-img" />
                         </div>
 
                         {/* <div className="bg-black/70 border border-gray-800 rounded-lg p-4">
