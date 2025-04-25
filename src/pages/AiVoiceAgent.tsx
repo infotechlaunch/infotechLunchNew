@@ -259,7 +259,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 2  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                    <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800" data-aos="fade-up">
                         {/* Top bar */}
                         <div className="bg-black p-2 flex items-center">
                         <div className="flex space-x-1">
@@ -893,32 +893,32 @@ const AiVoiceAgent: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" data-aos="fade-up">
                         {/* First Card: Update Manually */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
-                        <div className="flex items-center justify-between mb-6">
-                            <div className="flex space-x-4">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative feature-card-1">
+                        <div className="mb-6">
+                            <div className="flex justify-between">
                             <div className="flex flex-col items-center">
-                                <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
                                 </svg>
                                 </div>
-                                <span className="text-xs text-gray-500">Draw</span>
+                                <span className="text-xs text-white-500">Draw</span>
                             </div>
                             <div className="flex flex-col items-center">
-                                <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
                                 </svg>
                                 </div>
-                                <span className="text-xs text-gray-500">File</span>
+                                <span className="text-xs text-white-500">File</span>
                             </div>
                             <div className="flex flex-col items-center">
-                                <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                                 </svg>
                                 </div>
-                                <span className="text-xs text-gray-500">Topic</span>
+                                <span className="text-xs text-white-500">Topic</span>
                             </div>
                             </div>
                         </div>
@@ -941,7 +941,7 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Second Card: Live Test */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative feature-card-1">
                         <div className="flex flex-col space-y-3 mb-6">
                             <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center">
@@ -969,8 +969,8 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Third Card: Live Personalization */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
-                        <div className="flex justify-between mb-6 text-xs text-gray-500">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative  feature-card-1">
+                        <div className="flex justify-between mb-6 text-xs text-white-500">
                             <div>ENABLED</div>
                             <div>AI AGENT PICTURE</div>
                             <div>WELCOME MSG</div>
@@ -1026,31 +1026,31 @@ const AiVoiceAgent: React.FC = () => {
                         </div> */}
                         
                         {/* Fifth Card: Clone Your Own Voice */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative  feature-card-1">
                         <div className="flex justify-between mb-6">
                             <div className="flex flex-col items-center">
-                            <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div className="w-6 h-6 rounded bg-blue-700 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span className="text-xs text-gray-500">Live</span>
+                            <span className="text-xs text-white-500">Live</span>
                             </div>
                             <div className="flex flex-col items-center">
-                            <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div className="w-6 h-6 rounded bg-blue-700 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span className="text-xs text-gray-500">Text</span>
+                            <span className="text-xs text-white-500">Text</span>
                             </div>
                             <div className="flex flex-col items-center">
-                            <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span className="text-xs text-gray-500">File</span>
+                            <span className="text-xs text-white-500">File</span>
                             </div>
                         </div>
                         
