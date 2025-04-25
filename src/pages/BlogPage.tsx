@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import lunch from "../assets/Images/infotech-web-dev-laptop.png";
-import health from "../assets/Images/portfoli/5.png";
+// import health from "../assets/Images/portfoli/5.png";
 import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
 
 import Careem from "../assets/Images/portfoli/7.png";

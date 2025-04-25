@@ -166,7 +166,7 @@ const TalentSolutions: React.FC = () => {
                                 <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-6">
                                     {EdgeData.map((item, index) => (
                                         <div  key={index} className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                            <img src={item.imgSrc} alt={item.altText} className="mx-auto w-20 h-20 mb-4" />
+                                            <img src={item.imgSrc} alt={item.altText} className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                             <p>{item.title}</p>
                                         </div>
                                     ))}

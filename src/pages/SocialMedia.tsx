@@ -363,7 +363,7 @@ const SocialMedia: React.FC = () => {
 
                         </div>
                         <div className="">
-                            <script async
+                            {/* <script async
                                 src="https://js.stripe.com/v3/buy-button.js">
                             </script>
 
@@ -371,7 +371,7 @@ const SocialMedia: React.FC = () => {
                                 buy-button-id="buy_btn_1RDwIODWwMsgxWLEVxGvfizm"
                                 publishable-key="pk_live_51J3G3JDWwMsgxWLESOed3CwJjZvF2mCFetECHJ07MXwPBFR4NOumeEkKSD1LibyTzLoZ43kKpnseEe61W2wh2wTP00p6kf5A0g"
                             >
-                            </stripe-buy-button>
+                            </stripe-buy-button> */}
 
                         </div>
 
