@@ -27,6 +27,9 @@ import wrk05 from "../assets/Images/wrk05.png"
 import wrk06 from "../assets/Images/wrk06.png"
 import wrk07 from "../assets/Images/wrk07.png"
 import wrk08 from "../assets/Images/wrk08.png"
+import coreicon1 from "../assets/Images/icon/core-value/icon-1.png";
+import coreicon2 from "../assets/Images/icon/core-value/icon-2.png"
+import coreicon3 from "../assets/Images/icon/core-value/icon-3.png"
 
 const AboutUs: React.FC = () => {
     const workItems = [
@@ -42,18 +45,21 @@ const AboutUs: React.FC = () => {
     const values = [
         {
             number: "01",
+            image: coreicon1,
             title: "Ensure impactful innovations",
             description:
                 "An unwavering commitment to drive maximum customer satisfaction, infused with integrity and passion.",
         },
         {
             number: "02",
+            image: coreicon2,
             title: "Focus on self-development",
             description:
                 "Training and mentorship programs, interactive sessions and community meetups to drive personal growth.",
         },
         {
             number: "03",
+            image: coreicon3,
             title: "Integrate work-life balance",
             description:
                 "Latest infrastructure and flexible working hours along with many other privileges that inculcate healthy lifestyle choices.",
@@ -229,10 +235,13 @@ const AboutUs: React.FC = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                             {values.map((value, index) => (
-                                <div key={index} className="p-6 shadow-lg rounded-lg bg-gray-50">
-                                    <h4 className="text-[#f13c3c]/20 text-5xl font-extrabold mb-2">
+                                <div key={index} className="p-6 shadow-lg rounded-lg bg-gray-50 text-center feature-card-1">
+                                    <div className="flex justify-center mb-4">
+                                        <img alt={value.title} src={value.image} className="object-contain-1" />
+                                        </div>
+                                    {/* <h4 className="text-[#f13c3c]/20 text-5xl font-extrabold mb-2">
                                         {value.number}
-                                    </h4>
+                                    </h4> */}
                                     <h3 className="text-black text-lg font-semibold mb-2">
                                         {value.title}
                                     </h3>
