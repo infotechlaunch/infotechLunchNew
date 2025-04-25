@@ -10,6 +10,7 @@ import "./AiVoiceAgentStyle.css";
 import VoiceSelector from "../pages/VoiceSelector";
 import { Link } from "react-router-dom";
 import callUsageImg from "../assets/Images/call-usage1.png";
+import voiceheroImg from "../assets/Images/hero-img/aivoice-hero-img.jpg";
 import faqImg from "../assets/Images/faq-voice.png";
 import callSummaryImg from "../assets/Images/call-summary2.png";
 import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
@@ -74,25 +75,23 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
-                    <div className="hero-content text-center justify-center max-w-5xl text-white" data-aos="fade-up">
+                    <div className="hero-content justify-center max-w-7xl text-white">
+                    <div className="hero-text" data-aos="fade-right">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
-                            fontSize: "16px",
-                            marginBottom: "-20px"
-                            }}>
+                            fontSize: "16px",marginBottom: "10px", display: "table"}}>
                             One Call. Endless Possibilities for Business.
                         </p>
 
-                        <h1 className="text-5xl font-bold">
+                        <h1 className="text-3xl font-bold">
                             AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
                         </h1>
-                        <p className="text-lg">
+                        <p className="text-sm">
                             Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
                         </p>
 
                         <div
                             style={{
                                 display: "flex",
-                                justifyContent: "center",
                                 alignItems: "center",
                                 gap: "1rem",
                                 margin: "auto",
@@ -240,6 +239,14 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
+                    <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
+                    <img src={voiceheroImg} alt="" style={{
+                                            height: "350px",
+                                            width: "auto",
+                                            objectFit: "cover"
+                                        }} />
+                        </div>
+                        </div>
                 </section>
 
                 {/* <div style={{
