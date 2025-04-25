@@ -1328,10 +1328,10 @@ const AiVoiceAgent: React.FC = () => {
   
                 {/* <div className="bg-black text-white min-h-screen p-8"></div> */}
                 <div className="bg-gradient-blue-red text-black p-8">
-                    <div className="max-w-7xl mx-auto  border border-white-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+                    <div className="bg-orange max-w-5xl mx-auto  border border-black-800 rounded-lg p-8 items-center flex flex-col md:flex-row gap-8">
                         {/* Left column - Title */}
                         <div className="md:w-1/3" data-aos="fade-right">
-                        <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
+                        {/* <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1> */}
                         <img src={faqImg} alt="" />
                         </div>
 
