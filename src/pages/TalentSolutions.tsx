@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import ConnectExperts from "../pages/ConnectExperts";
 import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";
@@ -10,6 +11,7 @@ import AOSProvider from "../components/AOSProvider";
 // import Srishti from "../assets/Images/Srishti-Soni.png"
 // import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
 // import vani from "../assets/Images/Vani_Mahobia.png"
+
 import Edge1 from "../assets/Images/We-build-dedicated-delivery-info.svg"
 import Edge2 from "../assets/Images/We-thoroughly-vet-professionals-info.svg"
 import Edge3 from "../assets/Images/We-invest-in-significant-resources-info.svg"
@@ -95,7 +97,7 @@ const TalentSolutions: React.FC = () => {
                 <HeaderNew />
                 <div className="overflow-hidden">
                     <div className="bg-gradient-blue-red">
-                        <section className=" ">
+                        <section className="pt-0">
                             <div className="flex flex-col lg:flex-row  lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                                 <div className="w-full lg:py-16 py-10">
                                     <div className="space-y-4">
@@ -111,7 +113,7 @@ const TalentSolutions: React.FC = () => {
                                                 InfoTech Launch partners with more than 1100 small, mid-size, and Fortune 500 companies across various industries to understand their talent challenges and needs. Our team of dedicated recruiters can help you find the best talent to help ful fill your company’s business goals and objectives.</p>
 
                                         </div>
-                                        <div className="mt-6">
+                                        {/* <div className="mt-6">
                                             <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                                 <button className="btn btn-fix lazyloaded">Get Solution?
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
@@ -122,7 +124,8 @@ const TalentSolutions: React.FC = () => {
                                                     </svg>
                                                 </button>
                                             </Link>
-                                        </div>
+                                        </div> */}
+                                        <ConnectExperts />
                                     </div>
 
                                 </div>
