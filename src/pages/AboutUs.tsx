@@ -6,6 +6,7 @@ import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
 import vani from "../assets/Images/Vani_Mahobia.png"
 import Srishti from "../assets/Images/Srishti-Soni.png"
 import CaseStudy from "../components/CaseStudy/CaseStudy";
+import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.png"
 import WorkingProcess from "../components/WorkingProcess/WorkingProcess";
 import WhyChoose from "../components/WhyChoose/WhyChoose";
 import Partners from "../components/Partners/Partners";
@@ -88,13 +89,15 @@ const AboutUs: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full lg:flex justify-end items-end "></div>
+                           <div className="w-full lg:flex justify-end items-end " data-aos="fade-left">
+                                    <img alt="[object Object]" loading="lazy" width="754" height="382" decoding="async" data-nimg="1" src={heroimg} />
+                                </div>
                         </div>
                     </section>
                 </div>
                 <section className="who_sect lg:py-16 py-10">
                     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                        <div className="who_cnt">
+                        <div className="who_cnt items-center">
                             <h3 data-aos="fade-right" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">Who We Are?</h3>
                             <p data-aos="fade-left" className="text-sm md:text-lg font-normal">We are believers of change! A change driven by technology and innovation. We help
                                 businesses and individuals in adapting as well as adopting digital transformation. Our
@@ -102,14 +105,15 @@ const AboutUs: React.FC = () => {
                                 innovative technology solutions.</p>
 
                         </div>
-                        <div className="who_cnt" >
-                            <h3 data-aos="fade-right" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">What We Do Best</h3>
+                        <div className="who_cnt items-center" >
                             <p className="text-sm md:text-lg font-normal" data-aos="fade-left">
                                 We start by listening to the issues, requirements, challenges and objectives. The
                                 process continues with an effort to understand the business, market sector and
                                 competitors to develop information which is combined with our technical knowledge,
                                 expertise and research in order to provide the best solution at the lowest cost.
                             </p>
+                            <h3 data-aos="fade-right" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">What We Do Best</h3>
+                           
                         </div>
                     </div>
                 </section>

@@ -8,7 +8,9 @@ import facebook from "../../assets/Images/facebook-form-icon.svg";
 import insta from "../../assets/Images/insta-form-icon.svg";
 import twitt from "../../assets/Images/x-form-icon-img.svg";
 import linkedin from "../../assets/Images/linkedin-form-icon-img.svg";
-import india from "../../assets/Images/india-icon-img.svg";
+import raigarh from "../../assets/Images/icon/raigarh-city.png";
+import pune from "../../assets/Images/icon/pune-city.png";
+import kolkata from "../../assets/Images/icon/kolkata-city.png";
 import location from "../../assets/Images/location-icon-icon.svg";
 import usa from "../../assets/Images/canada-location-img.svg";
 
@@ -116,7 +118,7 @@ const ContactForm: React.FC = () => {
                         <div className="grid lg:grid-cols-2 lg:gap-14 gap-8 items-start mt-6">
                             <div
                                 className="bg-[#FFFFFF]/20 py-6 px-6 h-full rounded-xl xl:gap-8 gap-4 grid lg:grid-cols-3 grid-cols-1 items-center ">
-                                <div><img alt="" loading="lazy" width="270" height="236" src={india} /></div>
+                                <div><img alt="" loading="lazy" width="270" height="236" src={kolkata} /></div>
                                 <div className="space-y-5 col-span-2">
 
                                     <Link to="tel:8109731880"
@@ -142,10 +144,80 @@ const ContactForm: React.FC = () => {
                                     <Link target="_blank" to="#" className="flex items-start gap-2">
                                         <img alt="" loading="lazy" width="36" height="37" src={location} />
                                         <div>
+                                            <span className="text-white lg:text-base text-sm font-semibold">
+                                                Office  Location</span>
+                                            <p className="text-white lg:text-sm text-base">
+                                            174 A/1, Regent Colony, Tollygunge, Kolkata, West Bengal, 700040, India</p>
+                                        </div>
+                                    </Link> 
+                                </div>
+                            </div>
+                            <div
+                                className="bg-[#FFFFFF]/20 py-6 px-6 h-full rounded-xl xl:gap-8 gap-4 grid lg:grid-cols-3 grid-cols-1 items-center ">
+                                <div><img alt="" loading="lazy" width="270" height="236" src={pune} /></div>
+                                <div className="space-y-5 col-span-2">
+
+                                    <Link to="tel:8109731880"
+                                        className="flex items-start gap-2">
+                                        <img alt="" loading="lazy" width="36" height="37" src={call} />
+                                        <div>
+                                            <span className="text-white lg:text-base text-sm">Phone Number</span>
+                                            <p className="text-white lg:text-lg text-base font-semibold"> +91 81097 31880</p>
+                                        </div>
+                                    </Link>
+
+
+                                    {/* <Link target="_blank" to="#" className="flex items-start gap-2">
+                                        <img alt="" loading="lazy" width="36" height="37" src={location} />
+                                        <div>
                                             <span className="text-white lg:text-base text-sm">
                                                 Office  Location</span>
-                                            <p className="text-white lg:text-lg text-base font-semibold">
-                                            174 A/1, Regent Colony, Tollygunge, Kolkata, West Bengal, 700040, India</p>
+                                            <p className="text-white lg:text-lg text-base font-semibold"> A-20
+                                                Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar, Jaipur,
+                                                Rajasthan 302006</p>
+                                        </div>
+                                    </Link> */}
+                                    <Link target="_blank" to="#" className="flex items-start gap-2">
+                                        <img alt="" loading="lazy" width="36" height="37" src={location} />
+                                        <div>
+                                            <span className="text-white lg:text-base text-sm font-semibold">
+                                                Office  Location</span>
+                                            <p className="text-white lg:text-sm text-base">501, Tower No. 14, Blue Ridge Township, Hinjawadi Phase 1, Pune – 411057, Maharashtra</p>
+                                        </div>
+                                    </Link> 
+                                </div>
+                            </div>
+                            <div
+                                className="bg-[#FFFFFF]/20 py-6 px-6 h-full rounded-xl xl:gap-8 gap-4 grid lg:grid-cols-3 grid-cols-1 items-center ">
+                                <div><img alt="" loading="lazy" width="270" height="236" src={raigarh} /></div>
+                                <div className="space-y-5 col-span-2">
+
+                                    <Link to="tel:8109731880"
+                                        className="flex items-start gap-2">
+                                        <img alt="" loading="lazy" width="36" height="37" src={call} />
+                                        <div>
+                                            <span className="text-white lg:text-base text-sm">Phone Number</span>
+                                            <p className="text-white lg:text-lg text-base font-semibold"> +91 81097 31880</p>
+                                        </div>
+                                    </Link>
+
+
+                                    {/* <Link target="_blank" to="#" className="flex items-start gap-2">
+                                        <img alt="" loading="lazy" width="36" height="37" src={location} />
+                                        <div>
+                                            <span className="text-white lg:text-base text-sm">
+                                                Office  Location</span>
+                                            <p className="text-white lg:text-lg text-base font-semibold"> A-20
+                                                Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar, Jaipur,
+                                                Rajasthan 302006</p>
+                                        </div>
+                                    </Link> */}
+                                    <Link target="_blank" to="#" className="flex items-start gap-2">
+                                        <img alt="" loading="lazy" width="36" height="37" src={location} />
+                                        <div>
+                                            <span className="text-white lg:text-base text-sm font-semibold">
+                                                Office  Location</span>
+                                            <p className="text-white lg:text-sm text-base">02, Sparsh Plaza, Near Dhimarapur Chowk, Raigarh CG 496001</p>
                                         </div>
                                     </Link> 
                                 </div>
@@ -155,20 +227,20 @@ const ContactForm: React.FC = () => {
                                 <div><img alt="" loading="lazy" width="270" height="236" src={usa} /></div>
                                 <div className="space-y-5 col-span-2">
 
-                                    <Link to="tel:(704)966-9077"
+                                    <Link to="tel:+19802952870"
                                         className="flex items-start gap-2">
                                         <img alt="" loading="lazy" width="36" height="37" src={call} />
                                         <div>
                                             <span className="text-white lg:text-base text-sm">Phone Number</span>
-                                            <p className="text-white lg:text-lg text-base font-semibold"> (704) 966-9077</p>
+                                            <p className="text-white lg:text-lg text-base font-semibold"> +1 980 295 2870</p>
                                         </div>
                                     </Link>
                                     <Link target="_blank" to="#" className="flex items-start gap-2">
                                         <img alt="" loading="lazy" width="36" height="37" src={location} />
                                         <div>
-                                            <span className="text-white lg:text-base text-sm">
+                                            <span className="text-white lg:text-base text-sm  font-semibold">
                                                 Office  Location</span>
-                                            <p className="text-white lg:text-lg text-base font-semibold"> 
+                                            <p className="text-white lg:text-sm text-sm"> 
                                                 100 Waxhaw Pkwy, Waxhaw, NC, 28173 USA</p>
                                         </div>
                                     </Link>

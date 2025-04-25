@@ -1332,7 +1332,7 @@ const AiVoiceAgent: React.FC = () => {
                         {/* Left column - Title */}
                         <div className="md:w-1/3" data-aos="fade-right">
                         {/* <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1> */}
-                        <img src={faqImg} alt="" />
+                        <img src={faqImg} alt="" className="rounded-sm" />
                         </div>
 
                         {/* Right column - FAQ items */}
