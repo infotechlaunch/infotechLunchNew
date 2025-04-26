@@ -75,17 +75,17 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
-                    <div className="hero-content justify-center max-w-7xl text-white">
-                    <div className="hero-text" data-aos="fade-right">
+                    <div className="flex justify-center max-w-7xl text-white mobile-block">
+                    <div className="w-1/2 mobile-w-full" data-aos="fade-right">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
                             fontSize: "16px",marginBottom: "10px", display: "table"}}>
                             One Call. Endless Possibilities for Business.
                         </p>
 
-                        <h1 className="text-3xl font-bold">
+                        <h1 className="text-4xl font-bold mb-5 mt-5">
                             AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
                         </h1>
-                        <p className="text-sm">
+                        <p className="text-lg mb-5">
                             Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
                         </p>
 
@@ -95,6 +95,7 @@ const AiVoiceAgent: React.FC = () => {
                                 alignItems: "center",
                                 gap: "1rem",
                                 margin: "auto",
+                                marginBottom: "20px"
                             }}
                             >
                             {/* Button 1: Initiate Your Journey */}
@@ -239,7 +240,7 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="hero-image-1 overflow-hidden rounded-xl" data-aos="fade-left" style={{ zIndex: "0" }}>
+                    <div className="w-1/2 mobile-w-full overflow-hidden rounded-xl" data-aos="fade-left" style={{ zIndex: "0" }}>
                     <img src={voiceheroImg} alt="" className="features-img" style={{
                                             height: "350px",
                                             width: "auto",
