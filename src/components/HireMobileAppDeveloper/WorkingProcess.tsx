@@ -2,7 +2,7 @@ import React from "react";
 const WorkingProcess: React.FC = () => {
 
     return (
-        <section className="bg-white lg:py-16 py-10">
+        <section className="bg-orange lg:py-16 py-10">
         <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
            <div className="text-center">
               <h2 data-aos="fade-up" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">Process of Mobile App Development</h2>

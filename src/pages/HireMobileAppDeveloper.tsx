@@ -70,7 +70,7 @@ const HireMobileAppDeveloper: React.FC = () => {
                     <div className="w-full lg:flex justify-end items-end hidden"></div>
                 </div>
             </div>
-            <section className="lg:py-16 py-10 bg-[#fff]">
+            <section className="lg:py-16 py-10 bg-orange">
                 <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <div className="space-y-4 text-center">
                         <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">

@@ -4,6 +4,7 @@ import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
 import aiAgent from "../assets/Images/ai-agent1.png";
 import Services from "../components/Services/Services";
+import ConnectExperts from "../pages/ConnectExperts";
 
 
 
@@ -14,7 +15,7 @@ const AIAgentDevelopmentNew = () => {
                 <></>
             </AOSProvider>
             <HeaderNew />
-            <div className="relative w-full h-screen overflow-hidden bannerhome mt-4">
+            <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mt-4">
                 <div className="ai-consulting-img w-full h-full">
                     <img
                         src={aiAgent}
@@ -32,6 +33,7 @@ const AIAgentDevelopmentNew = () => {
                             and deliver real-time responses. Whether it’s virtual assistants, customer support, or workflow bots—
                             our agents work around the clock to streamline your business processes.
                         </p>
+                        <ConnectExperts />
 
                     </div>
                 </div>

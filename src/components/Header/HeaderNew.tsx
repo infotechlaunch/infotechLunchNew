@@ -53,7 +53,7 @@ const tabs = [
         description: "In-depth End-to-End Development Services",
         icon: iconsev05,
         links: [
-            { name: "AI Development", path: "/ai-development" },
+            { name: "Full stack Development", path: "/ai-development" },
         ],
     },
     {

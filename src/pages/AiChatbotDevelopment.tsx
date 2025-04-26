@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 import aiAgent from "../assets/Images/ai-chatbot-development1.jpg";
 import Services from "../components/Services/Services";
 
-
+import ConnectExperts from "../pages/ConnectExperts";
 
 const AdaptiveAiDevelopment = () => {
     return (
@@ -16,7 +16,7 @@ const AdaptiveAiDevelopment = () => {
                 <></>
             </AOSProvider>
             <HeaderNew />
-            <div className="relative w-full h-screen overflow-hidden bannerhome mt-4">
+            <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mt-4">
                 <div className="ai-consulting-img w-full h-full">
                     <img
                         src={aiAgent}
@@ -32,6 +32,7 @@ const AdaptiveAiDevelopment = () => {
                         <p className="text-lg md:text-xl text-white">
                             We build intelligent chatbots that engage users, answer questions, and provide seamless customer support 24/7. Powered by natural language processing and machine learning, our bots understand context, respond naturally, and improve with every interaction.
                         </p>
+                        <ConnectExperts />
 
                     </div>
                 </div>
