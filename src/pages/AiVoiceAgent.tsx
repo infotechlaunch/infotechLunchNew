@@ -269,9 +269,9 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         </div>
                         
-                        <div className="flex h-[550px]">
+                        <div className="flex h-[550px] mobile-block mobile-h-full">
                         {/* Left Sidebar */}
-                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col">
+                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col mobile-w-full">
                             <div className="mb-8">
                             <h1 className="text-2xl font-bold tracking-wider">InfoTech</h1>
                             </div>
@@ -363,7 +363,7 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             
                             {/* Bottom Actions */}
-                            <div className="flex-1 bg-black flex">
+                            <div className="flex-1 bg-black flex mobile-block">
                             <div className="flex-1 flex p-4">
                                 <div className="mr-4 flex-1">
                                 <div className="bg-gray-800 rounded p-3 h-full flex flex-col">
@@ -387,7 +387,7 @@ const AiVoiceAgent: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="w-64 bg-gray-800 border-l border-gray-700">
+                            <div className="w-64 bg-gray-800 border-l border-gray-700 mobile-w-full">
 
                             <img src={callSummaryImg} alt="" />
                             </div>
@@ -447,7 +447,7 @@ const AiVoiceAgent: React.FC = () => {
                             Our Process
                         </p>
 
-                        <h1 className="text-5xl font-bold">
+                        <h1 className="text-4xl font-bold">
                             InfoTechAI as Your Revolutionary Secret To Success
                         </h1>
                         <p className="text-lg">
@@ -575,7 +575,7 @@ const AiVoiceAgent: React.FC = () => {
   
                 {/* section 6  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="flex w-full max-w-6xl gap-8 items-center">
+                    <div className="flex mobile-block w-full max-w-6xl gap-8 items-center">
                         {/* Left panel content */}
                         <div className="flex-1"  data-aos="fade-right">
                             <p className="text-orange text-lg mb-3">AI’s Creative Brilliance Unleashed</p>
@@ -664,7 +664,7 @@ const AiVoiceAgent: React.FC = () => {
                             </button>
                             </div>
                             
-                            <div className="bg-black/80 border border-gray-800 rounded-md overflow-hidden">
+                            <div className="bg-black/80 border border-gray-800 rounded-md overflow-hidden table-responsive">
                             <table className="w-full text-center">
                                 <thead>
                                 <tr className="border-b border-gray-800">

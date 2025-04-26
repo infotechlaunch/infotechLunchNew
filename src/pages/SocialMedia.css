@@ -404,7 +404,9 @@ transition: transform 0.2s ease;}
   padding: 1rem;
   position: relative;
 }
-
+.table-responsive {
+  overflow-x: scroll;
+}
 .product-card {
   min-width: 200px;
   background: #fff;
@@ -565,4 +567,15 @@ transition: transform 0.2s ease;}
   }
 
 
+}
+
+@media screen and (max-width: 767px) {
+  body{overflow-x: hidden;}
+  .mobile-block{display: block !important;}
+  .mobile-h-full{height: auto !important;}
+ .mobile-w-full{width: 100% !important;}
+  .bg-rose-600.border.border-gray-700.rounded-full.p-3.mb-2,.bg-rose-600.rounded-full.p-3.mb-2 {
+    display: table;
+    margin: 0 auto;
+}
 }

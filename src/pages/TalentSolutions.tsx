@@ -34,12 +34,7 @@ const TalentSolutions: React.FC = () => {
             title: "Revenue",
             subtitle: "Generated on Our Solutions"
         },
-        {
-            number: "99",
-            unit: "%",
-            title: "Client Satisfaction",
-            subtitle: "Expertly Managed by Our Products"
-        },
+        
         {
             number: "250",
             unit: "+",
@@ -144,7 +139,7 @@ const TalentSolutions: React.FC = () => {
                                         on Your Hiring Needs</h2>
 
                                 </div>
-                                <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                                <div className="grid pt-8 grid-cols-1 md:grid-cols-3 gap-4 text-center">
                                     {statsData.map((stat, index) => (
                                         <div key={index} className="p-4 bg-white shadow-lg rounded-lg  feature-card-1">
                                             <div className="text-4xl font-bold flex justify-center items-center text-purple-400">
