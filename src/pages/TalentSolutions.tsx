@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import ConnectExperts from "../pages/ConnectExperts";
 import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";
@@ -10,6 +11,7 @@ import AOSProvider from "../components/AOSProvider";
 // import Srishti from "../assets/Images/Srishti-Soni.png"
 // import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
 // import vani from "../assets/Images/Vani_Mahobia.png"
+
 import Edge1 from "../assets/Images/We-build-dedicated-delivery-info.svg"
 import Edge2 from "../assets/Images/We-thoroughly-vet-professionals-info.svg"
 import Edge3 from "../assets/Images/We-invest-in-significant-resources-info.svg"
@@ -32,12 +34,7 @@ const TalentSolutions: React.FC = () => {
             title: "Revenue",
             subtitle: "Generated on Our Solutions"
         },
-        {
-            number: "99",
-            unit: "%",
-            title: "Client Satisfaction",
-            subtitle: "Expertly Managed by Our Products"
-        },
+        
         {
             number: "250",
             unit: "+",
@@ -95,7 +92,7 @@ const TalentSolutions: React.FC = () => {
                 <HeaderNew />
                 <div className="overflow-hidden">
                     <div className="bg-gradient-blue-red">
-                        <section className=" ">
+                        <section className="pt-0">
                             <div className="flex flex-col lg:flex-row  lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                                 <div className="w-full lg:py-16 py-10">
                                     <div className="space-y-4">
@@ -111,7 +108,7 @@ const TalentSolutions: React.FC = () => {
                                                 InfoTech Launch partners with more than 1100 small, mid-size, and Fortune 500 companies across various industries to understand their talent challenges and needs. Our team of dedicated recruiters can help you find the best talent to help ful fill your company’s business goals and objectives.</p>
 
                                         </div>
-                                        <div className="mt-6">
+                                        {/* <div className="mt-6">
                                             <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                                 <button className="btn btn-fix lazyloaded">Get Solution?
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
@@ -122,7 +119,8 @@ const TalentSolutions: React.FC = () => {
                                                     </svg>
                                                 </button>
                                             </Link>
-                                        </div>
+                                        </div> */}
+                                        <ConnectExperts />
                                     </div>
 
                                 </div>
@@ -141,7 +139,7 @@ const TalentSolutions: React.FC = () => {
                                         on Your Hiring Needs</h2>
 
                                 </div>
-                                <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                                <div className="grid pt-8 grid-cols-1 md:grid-cols-3 gap-4 text-center">
                                     {statsData.map((stat, index) => (
                                         <div key={index} className="p-4 bg-white shadow-lg rounded-lg  feature-card-1">
                                             <div className="text-4xl font-bold flex justify-center items-center text-purple-400">
@@ -166,7 +164,7 @@ const TalentSolutions: React.FC = () => {
                                 <div className="grid pt-8 grid-cols-1 md:grid-cols-4 gap-6">
                                     {EdgeData.map((item, index) => (
                                         <div  key={index} className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                            <img src={item.imgSrc} alt={item.altText} className="mx-auto w-20 h-20 mb-4" />
+                                            <img src={item.imgSrc} alt={item.altText} className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                             <p>{item.title}</p>
                                         </div>
                                     ))}

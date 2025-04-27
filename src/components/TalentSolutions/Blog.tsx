@@ -19,7 +19,7 @@ const blogPosts: BlogPost[] = [
         category: "Staffing",
         date: "4 Aug 2024",
         description:
-            "Project staffing ensures the right talent is deployed for specific projects, providing skilled professionals to meet deadlines and achieve business goals efficiently.",
+            "Project staffing ensures the right talent is deployed for specific projects, providing skilled professionals to meet deadlines & achieve business goals efficiently.",
         imageUrl: lunch,
        
     },
@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
         category: "Managed",
         date: "10 Sep 2024",
         description:
-            "Managed solutions provide end-to-end support, optimizing operations with expert oversight, technology, and strategic management for seamless business efficiency.",
+            "Managed solutions provide end-to-end support, optimizing operations with expert oversight, technology &  strategic management for seamless business efficiency.",
         imageUrl: health,
     },
     {
@@ -72,11 +72,11 @@ const Blog: React.FC = () => {
                                         style={{ color: "transparent" }}
                                     />
                                 </div>
-                                <div className="flex flex-col justify-between space-y-3">
+                                <div className="flex flex-col justify-between space-y-3 w-full h-full">
                                     <h3  data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                                         {post.title}
                                     </h3>
-                                    <p  data-aos="fade-up" className="text-base text-black line-clamp-3">{post.description}</p>
+                                    <p  data-aos="fade-up" className="text-sm text-black">{post.description}</p>
                                  
                                 </div>
                             </div>

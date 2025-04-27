@@ -58,20 +58,21 @@ const SocialMedia: React.FC = () => {
 
                 <section className="hero-container bg-gradient-blue-red">
                     <div className="hero-content">
-                        <div className="hero-text " data-aos="fade-right">
-                            <h1 className="text-gradient">AI-Powered Social Media Management</h1>
-                            <p className="text-white">
-                                Unlock next-level growth with our AI-driven social media tools. Schedule, create, manage, and analyze—
-                                all in one sleek platform.
-                            </p>
-                            {/* <button className="hero-button" onClick={onOpen}>Get Started</button> */}
+                        <div className="hero-text">
+                            <div className="sticky top-40 z-40">
+                                <h1 className="text-gradient" data-aos="fade-right">AI-Powered Social Media Management</h1>
+                                <p className="text-white" data-aos="fade-right">
+                                    Unlock next-level growth with our AI-driven social media tools. Schedule, create, manage, and analyze—
+                                    all in one sleek platform.
+                                </p>
+                                {/* <button className="hero-button" onClick={onOpen}>Get Started</button> */}
 
-                            {/* <button className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md"
+                                {/* <button className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md"
                         onClick={onOpen}
                         >
                             Get Started
                         </button> */}
-                            <div className="mt-6">
+                                {/* <div className="mt-6">
                                 <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                     <button className="btn btn-fix lazyloaded">Get Solution?
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
@@ -82,12 +83,13 @@ const SocialMedia: React.FC = () => {
                                         </svg>
                                     </button>
                                 </Link>
+                            </div> */}
+
+                                <ConnectExperts />
                             </div>
 
-
-
                         </div>
-                        <div className="hero-image" data-aos="fade-left">
+                        <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
                             <video
                                 className="z-0" style={{ borderRadius: "12px" }}
                                 autoPlay
@@ -126,31 +128,34 @@ const SocialMedia: React.FC = () => {
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
-                                <div className="md:w-1/2" data-aos="fade-left">
-                                    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                                <div className="md:w-1/2">
+                                <div className="sticky top-40 z-40">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6"  data-aos="fade-left">
                                         Smarter Social Starts Here
                                     </h2>
-                                    <p className="text-lg text-gray-700 mb-4">
+                                    <p className="text-lg text-gray-700 mb-4" data-aos="fade-left">
                                         Automate content, scheduling, and analytics with AI—save time, boost visibility, and focus on what matters most </p>
-                                    <p className="text-lg text-gray-700 mb-6">
+                                    <p className="text-lg text-gray-700 mb-6" data-aos="fade-left">
                                         Focus on strategy. Let automation take care of the rest.
                                     </p>
                                     {/* <button onClick={onOpen} className="bg-gradient-to-r from-red-500 to-blue-600 hover:from-red-600 hover:to-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
                                         Get Started
                                     </button> */}
 
-<div className="mt-6">
-                                <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
-                                    <button className="btn btn-fix lazyloaded">Get Solution?
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
-                                            height="11.738" viewBox="0 0 24.231 11.738">
-                                            <path id="Path_1487529" data-name="Path 1487529"
-                                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
-                                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
-                                        </svg>
-                                    </button>
-                                </Link>
-                            </div>
+                                    {/* <div className="mt-6">
+                                        <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
+                                            <button className="btn btn-fix lazyloaded">Get Solution?
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
+                                                    height="11.738" viewBox="0 0 24.231 11.738">
+                                                    <path id="Path_1487529" data-name="Path 1487529"
+                                                        d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                        transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                                </svg>
+                                            </button>
+                                        </Link>
+                                    </div> */}
+                                    <ConnectExperts />
+                                    </div>
 
                                 </div>
                             </div>
@@ -170,25 +175,25 @@ const SocialMedia: React.FC = () => {
                                         Get Started
                                     </button> */}
 
-<div className="mt-6">
-                                <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
-                                    <button className="btn btn-fix lazyloaded">Get Solution?
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
-                                            height="11.738" viewBox="0 0 24.231 11.738">
-                                            <path id="Path_1487529" data-name="Path 1487529"
-                                                d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
-                                                transform="translate(-521.511 -1346.214)" fill="#fff"></path>
-                                        </svg>
-                                    </button>
-                                </Link>
-                            </div>
+                                    <div className="mt-6">
+                                        <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
+                                            <button className="btn btn-fix lazyloaded">Get Solution?
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
+                                                    height="11.738" viewBox="0 0 24.231 11.738">
+                                                    <path id="Path_1487529" data-name="Path 1487529"
+                                                        d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
+                                                        transform="translate(-521.511 -1346.214)" fill="#fff"></path>
+                                                </svg>
+                                            </button>
+                                        </Link>
+                                    </div>
 
                                 </div>
 
                                 <div className="md:w-1/2 flex justify-center">
                                     <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-full w-64 h-64 md:w-72 md:h-72 flex items-center justify-center shadow-xl relative overflow-hidden">
 
-                                        <img src={whoItForImg} alt="" style={{
+                                        <img src={whoItForImg} alt="" className="features-img" style={{
                                             height: "350px",
                                             width: "auto",
                                             objectFit: "cover"
@@ -363,7 +368,7 @@ const SocialMedia: React.FC = () => {
 
                         </div>
                         <div className="">
-                            <script async
+                            {/* <script async
                                 src="https://js.stripe.com/v3/buy-button.js">
                             </script>
 

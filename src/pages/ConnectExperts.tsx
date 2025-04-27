@@ -199,7 +199,7 @@ const ConnectExperts: React.FC = () => {
                     )}
 
                         {/* Left side - Image */}
-                        <div className="md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
+                        <div className="md:w-1/2 bg-gray-100 flex items-center justify-center p-6">
                             <div className="relative w-full h-full min-h-64">
                             <img 
                                 src={getStartedImg}
@@ -210,7 +210,7 @@ const ConnectExperts: React.FC = () => {
                         </div>
                         
                         {/* Right side - Form */}
-                        <div className="md:w-2/3 p-4 relative">
+                        <div className="md:w-1/2 p-4 relative">
                             <button 
                                 onClick={onClose}
                                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"

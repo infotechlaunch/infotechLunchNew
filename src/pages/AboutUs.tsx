@@ -6,6 +6,7 @@ import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
 import vani from "../assets/Images/Vani_Mahobia.png"
 import Srishti from "../assets/Images/Srishti-Soni.png"
 import CaseStudy from "../components/CaseStudy/CaseStudy";
+import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.png"
 import WorkingProcess from "../components/WorkingProcess/WorkingProcess";
 import WhyChoose from "../components/WhyChoose/WhyChoose";
 import Partners from "../components/Partners/Partners";
@@ -27,6 +28,9 @@ import wrk05 from "../assets/Images/wrk05.png"
 import wrk06 from "../assets/Images/wrk06.png"
 import wrk07 from "../assets/Images/wrk07.png"
 import wrk08 from "../assets/Images/wrk08.png"
+import coreicon1 from "../assets/Images/icon/core-value/icon-1.png";
+import coreicon2 from "../assets/Images/icon/core-value/icon-2.png"
+import coreicon3 from "../assets/Images/icon/core-value/icon-3.png"
 
 const AboutUs: React.FC = () => {
     const workItems = [
@@ -42,18 +46,21 @@ const AboutUs: React.FC = () => {
     const values = [
         {
             number: "01",
+            image: coreicon1,
             title: "Ensure impactful innovations",
             description:
                 "An unwavering commitment to drive maximum customer satisfaction, infused with integrity and passion.",
         },
         {
             number: "02",
+            image: coreicon2,
             title: "Focus on self-development",
             description:
                 "Training and mentorship programs, interactive sessions and community meetups to drive personal growth.",
         },
         {
             number: "03",
+            image: coreicon3,
             title: "Integrate work-life balance",
             description:
                 "Latest infrastructure and flexible working hours along with many other privileges that inculcate healthy lifestyle choices.",
@@ -82,13 +89,15 @@ const AboutUs: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full lg:flex justify-end items-end "></div>
+                           <div className="w-full lg:flex justify-end items-end " data-aos="fade-left">
+                                    <img alt="[object Object]" loading="lazy" width="754" height="382" decoding="async" data-nimg="1" src={heroimg} />
+                                </div>
                         </div>
                     </section>
                 </div>
                 <section className="who_sect lg:py-16 py-10">
                     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                        <div className="who_cnt">
+                        <div className="who_cnt items-center">
                             <h3 data-aos="fade-right" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">Who We Are?</h3>
                             <p data-aos="fade-left" className="text-sm md:text-lg font-normal">We are believers of change! A change driven by technology and innovation. We help
                                 businesses and individuals in adapting as well as adopting digital transformation. Our
@@ -96,14 +105,15 @@ const AboutUs: React.FC = () => {
                                 innovative technology solutions.</p>
 
                         </div>
-                        <div className="who_cnt" >
-                            <h3 data-aos="fade-right" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">What We Do Best</h3>
+                        <div className="who_cnt items-center" >
                             <p className="text-sm md:text-lg font-normal" data-aos="fade-left">
                                 We start by listening to the issues, requirements, challenges and objectives. The
                                 process continues with an effort to understand the business, market sector and
                                 competitors to develop information which is combined with our technical knowledge,
                                 expertise and research in order to provide the best solution at the lowest cost.
                             </p>
+                            <h3 data-aos="fade-right" className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2">What We Do Best</h3>
+                           
                         </div>
                     </div>
                 </section>
@@ -229,10 +239,13 @@ const AboutUs: React.FC = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                             {values.map((value, index) => (
-                                <div key={index} className="p-6 shadow-lg rounded-lg bg-gray-50">
-                                    <h4 className="text-[#f13c3c]/20 text-5xl font-extrabold mb-2">
+                                <div key={index} className="p-6 shadow-lg rounded-lg bg-gray-50 text-center feature-card-1">
+                                    <div className="flex justify-center mb-4">
+                                        <img alt={value.title} src={value.image} className="object-contain-1" />
+                                        </div>
+                                    {/* <h4 className="text-[#f13c3c]/20 text-5xl font-extrabold mb-2">
                                         {value.number}
-                                    </h4>
+                                    </h4> */}
                                     <h3 className="text-black text-lg font-semibold mb-2">
                                         {value.title}
                                     </h3>

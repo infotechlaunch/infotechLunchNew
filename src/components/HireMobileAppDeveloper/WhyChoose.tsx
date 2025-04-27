@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 const WhyChoose: React.FC = () => {
 
     return (
-        <div className="w-full bg-gradient-to-b from-pink-100 to-blue-100 py-16">
+        <div className="w-full bg-gradient-blue-red py-16">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="lg:flex space-y-3 items-center justify-between gap-10">
                     <div>
-                        <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-right">Why is InfoTech Launch the Right Platform to Hire Mobile App Developers?</h2>
-                        <p className="text-base text-[#212121] font-normal mt-2 w-full" data-aos="fade-right">Hiring mobile application developers from Comfygen will bring immense leverage to your business. We work on diverse verticals and build robust mobile application development service providers that cater to market standards and needs.</p>
+                        <h2 className="xl:text-4xl text-3xl text-[#fff] font-bold" data-aos="fade-right">Why is InfoTech Launch the Right Platform to Hire Mobile App Developers?</h2>
+                        <p className="text-base text-[#fff] font-normal mt-2 w-full" data-aos="fade-right">Hiring mobile application developers from Comfygen will bring immense leverage to your business. We work on diverse verticals and build robust mobile application development service providers that cater to market standards and needs.</p>
                     </div>
                     <div>
                         <Link to="/contact-us" data-discover="true" data-aos="fade-left">

@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "../components/Footer/Footer";
 import { Link } from 'react-router-dom';
 import lunch from "../assets/Images/infotech-web-dev-laptop.png";
-import health from "../assets/Images/portfoli/5.png";
+import health from "../assets/Images/portfoli/11.png";
 import Careem from "../assets/Images/portfoli/7.png";
-import eCommerce from "../assets/Images/portfoli/ecom.png";
+import fitness from "../assets/Images/portfoli/10.png";
 import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
@@ -28,11 +28,11 @@ const projects = [
         link: "#",
     },
     {
-        title: "Fitness",
+        title: "Fitness App",
         description:
             "Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before.",
-        image: eCommerce,
-        alt: "Fitness",
+        image: fitness,
+        alt: "Fitness App",
         link: "#",
     },
 ];

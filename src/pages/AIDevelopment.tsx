@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import ConnectExperts from "../pages/ConnectExperts";
 import Services from "../components/AIDevelopment/Services";
 import HeaderNew from "../components/Header/HeaderNew";
 import WorkingProcess from "../components/AIDevelopment/WorkingProcess";
@@ -52,7 +53,7 @@ const AIDevelopment: React.FC = () => {
         <>
          <AOSProvider>
             <HeaderNew />
-            <div className="lg:bg-center relative bannerhome bg-ai bg-no-repeat bg-cover bg-left">
+            <div className="lg:bg-center relative bannerhome bg-gradient-blue-red">
                 <div
                     className="flex flex-col relative z-[3] lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <div className="w-full 2xl:py-20 xl:py-16 py-10">
@@ -79,7 +80,7 @@ const AIDevelopment: React.FC = () => {
                             <ul className="text-white grid md:grid-cols-1 gap-2 text-base font-normal"></ul>
                             <p className="w-full mx-auto text-sm font-light text-white lg:text-base"></p>
                         </div>
-                        <div className="md:py-6" data-aos="fade-right">
+                        {/* <div className="md:py-6" data-aos="fade-right">
                             <Link to="/contact-us" className="btn btn-fix lazyloaded">Talk With Expert
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
@@ -88,7 +89,8 @@ const AIDevelopment: React.FC = () => {
                                         transform="translate(-521.511 -1346.214)" fill="#fff"></path>
                                 </svg>
                             </Link>
-                        </div>
+                        </div> */}
+                         <ConnectExperts />
                     </div>
                     <div className="w-full lg:flex justify-end items-end hidden"></div>
                 </div>

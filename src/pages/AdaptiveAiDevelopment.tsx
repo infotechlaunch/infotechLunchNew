@@ -4,6 +4,7 @@ import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
 import aiAgent from "../assets/Images/adaptive-ai-development1.jpg";
 import Services from "../components/Services/Services";
+import ConnectExperts from "../pages/ConnectExperts";
 
 
 
@@ -14,7 +15,7 @@ const AdaptiveAiDevelopment = () => {
                 <></>
             </AOSProvider>
             <HeaderNew />
-            <div className="relative w-full h-screen overflow-hidden bannerhome mt-4">
+            <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mt-4">
                 <div className="ai-consulting-img w-full h-full">
                     <img
                         src={aiAgent}
@@ -27,10 +28,11 @@ const AdaptiveAiDevelopment = () => {
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                             Adaptive AI Development
                         </h1>
-                        <p className="text-lg md:text-xl text-white">
+                        <p className="text-lg md:text-xl text-white mb-3">
                             Our Adaptive AI solutions are designed to evolve with your business needs. By continuously learning from data and user behavior,
                             these systems offer smarter predictions, personalized experiences, and proactive decision-making to stay ahead in a dynamic world.                        </p>
-
+                           
+                            <ConnectExperts />
                     </div>
                 </div>
             </div>

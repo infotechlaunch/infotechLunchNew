@@ -7,7 +7,7 @@ import figma from "../../assets/Images/icon/figma-portfolio-icon.webp";
 import html from "../../assets/Images/icon/html-portfolio-icon.svg";
 
 import portfoli from "../../assets/Images/portfoli/8.png";
-import ecom from "../../assets/Images/portfoli/ecom.png";
+import ecom from "../../assets/Images/portfoli/10.png";
 
 
 const OurPortfolioHome: React.FC = () => {
@@ -36,7 +36,7 @@ const OurPortfolioHome: React.FC = () => {
                                         <p className="text-black py-3"></p>
                                         <ul className="list-disc list-inside space-y-2"></ul>
                                     </div>
-                                    <a href="/#">
+                                    <a href="/portfolio">
                                         <button data-aos="fade-up"
                                             className="text-[#f13c3c] hover:bg-[#f13c3c]  hover:text-[#fff] border border-[#f13c3c] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">Explore
                                             Now <svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -84,13 +84,13 @@ const OurPortfolioHome: React.FC = () => {
                             </div>
                             <div className="flex items-center">
                                 <div className="space-y-4">
-                                    <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">Fitness</h3>
+                                    <h3 data-aos="fade-up" className="xl:text-4xl md:text-2xl text-xl font-semibold">Fitness App</h3>
                                     <p data-aos="fade-up" className="text-black py-3">Introducing FitClub — an all-in-one e-commerce app for fitness enthusiasts. Shop gear, track progress, and get personalized health insights, all in one seamless experience.</p>
                                     <div>
                                         <p className="text-black py-3"></p>
                                         <ul className="list-disc list-inside space-y-2"></ul>
                                     </div>
-                                    <a href="/#">
+                                    <a href="/portfolio">
                                         <button data-aos="fade-up"
                                             className="text-[#f13c3c] hover:bg-[#f13c3c]  hover:text-[#fff] border border-[#f13c3c] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">Explore
                                             Now <svg stroke="currentColor" fill="currentColor" stroke-width="0"

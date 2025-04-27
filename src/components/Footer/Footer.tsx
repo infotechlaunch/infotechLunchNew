@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
             <div className="md-footer-links mb-5 lg:mb-0">
               <h3>Services</h3>
               <ul>
-                <li> <Link to="/ai-development">AI Development</Link> </li>
+                <li> <Link to="/full-stack-development">AI Development</Link> </li>
                 {/* <li> <Link to="/blockchain-development">Blockchain Development</Link> </li> */}
                 {/* <li> <Link to="/hire-mobile-app-developer">Mobile App Development</Link> </li> */}
                 {/* <li> <Link to="/doctor-appointment-app-development">Healthcare App Development</Link> </li> */}
@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="fixed z-40 lg:top-[350px]  bottom-4 right-0 lg:space-y-8 space-y-0 lg:space-x-0 space-x-4 lg:bg-transparent bg-slate-800 lg:p-0 p-3 rounded-lg lg:block hidden flex justify-center items-center">
         <div className="social">
-          <Link to="/" target="_blank" className="curser-pointer">
+          <Link to="https://wa.me/918109731880" target="_blank" className="curser-pointer">
             <div className="social-btn bg-white">
               <span>
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="text-[#03A84E]" height="38" width="38" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
               <p className="font-semibold text-lg text-black cursor-pointer">Skype</p>
             </div>
           </Link> */}
-          <Link to="/" target="_blank" className="curser-pointer">
+          <Link to="https://t.me/infotechlaunch" target="_blank" className="curser-pointer">
             <div className="social-btn bg-white">
               <span>
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" className="text-[#33A8DA]" height="38" width="38" xmlns="http://www.w3.org/2000/svg">
