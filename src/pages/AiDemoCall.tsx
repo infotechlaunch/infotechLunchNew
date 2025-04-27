@@ -115,7 +115,7 @@ const AiDemoCall = () => {
     }
 
     setLoading(true);
-    Axios.post(`http://127.0.0.1:8000/api/ai-demo-call`, formData)
+    Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)
       .then(response => {
         console.log('response=====>>>>>', response.data);
         if(response.data.status === true) {
@@ -416,7 +416,7 @@ const AiDemoCall = () => {
 
             <div style={checkboxContainerStyle}>
               <ReCAPTCHA
-                sitekey="6Leb8wErAAAAAK5cpMG6VAupj72TZTuCPSWmQe6c"
+                sitekey="6LesWyQrAAAAAGFv6DHeRXlsjyZhoJ9i_NoBfvmT"
                 ref={recaptchaRef}
                 onChange={handleCaptchaChange}   // token comes in here
                 theme="light"             // light or "dark"

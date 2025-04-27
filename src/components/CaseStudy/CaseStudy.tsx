@@ -27,7 +27,7 @@ import web4logo from "../../assets/Images/case-studies/artificial-and-inteligenc
 import web5 from "../../assets/Images/case-studies/e-commerce1.jpeg";
 import web5logo from "../../assets/Images/case-studies/e-commerce1-logo.png";
 
-import ConnectExperts from "../../pages/ConnectExperts";
+// import ConnectExperts from "../../pages/ConnectExperts";
 
 
 

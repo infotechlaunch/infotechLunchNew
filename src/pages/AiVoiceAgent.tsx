@@ -18,6 +18,7 @@ import personalizedExpImg from "../assets/Images/personalizedExperience.png";
 import processicon1 from "../assets/Images/icon/process/Strategy.png";
 import processicon2 from "../assets/Images/icon/process/Acceleration.png";
 import processicon3 from "../assets/Images/icon/process/intilaization.png";
+import head_image_animation from "../assets/videos/head_image_animation.mp4";
 
 
 
@@ -53,9 +54,6 @@ const AiVoiceAgent: React.FC = () => {
     // const [progressPercentage, setProgressPercentage] = useState(90);
     const [message, setMessage] = useState('');
 
-
-
-
     const callData = [
         { id: 1, recording: true, booked: true, totalCalls: 4 },
         { id: 2, recording: true, booked: true, totalCalls: 2 },
@@ -73,7 +71,7 @@ const AiVoiceAgent: React.FC = () => {
                 <HeaderNew />
 
                 {/* section 1  */}
-                <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
+                {/* <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
                     <div className="hero-content text-center justify-center max-w-5xl text-white" data-aos="fade-up">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
                             fontSize: "16px",
@@ -98,10 +96,7 @@ const AiVoiceAgent: React.FC = () => {
                                 margin: "auto",
                             }}
                             >
-                            {/* Button 1: Initiate Your Journey */}
                             <Link
-                                // href="./contact-us"
-                                // to="/contact-us"
                                 to="/ai-contact-us"
                                 className="framer-1N5PT framer-ibvdus framer-v-nj2zz1 framer-l3ha2z"
                                 data-highlight="true"
@@ -168,9 +163,7 @@ const AiVoiceAgent: React.FC = () => {
                                 </div>
                             </Link>
 
-                            {/* Button 2: Test The Future */}
                             <Link
-                                    // href="/ai-demo-call"
                                     to="/ai-demo-call"
                                     className="framer-1N5PT framer-ibvdus framer-v-bv2xb3 framer-l3ha2z"
                                     data-highlight="true"
@@ -188,7 +181,178 @@ const AiVoiceAgent: React.FC = () => {
                                     textDecoration: "none",
                                     padding: "0.75rem 1.25rem"
                                 }}
-                                // onClick={onOpen}
+                                >
+                                <div className="framer-1cl6w9d-container" style={{ opacity: 1 }}>
+                                <div style={{ display: "contents" }}>
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 256"
+                                    focusable="false"
+                                    style={{
+                                        userSelect: "none",
+                                        width: "16px",
+                                        height: "16px",
+                                        display: "inline-block",
+                                        fill: "#fff",
+                                        color: "#fff",
+                                        flexShrink: 0,
+                                    }}
+                                    >
+                                    <g color="black">
+                                        <path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z" />
+                                    </g>
+                                    </svg>
+                                </div>
+                                </div>
+                                <div
+                                className="framer-1ihxhf6"
+                                data-framer-name="Label"
+                                style={{
+                                    outline: "none",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "flex-start",
+                                    flexShrink: 0,
+                                    color: "#fff",
+                                    transform: "none",
+                                    opacity: 1,
+                                }}
+                                    >
+                                <p
+                                    style={{
+                                    fontWeight: 500,
+                                    lineHeight: "24px",
+                                    color: "#fff",
+                                    margin: 0,
+                                    }}
+                                >
+                                    Test The Future
+                                </p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </section> */}
+
+                <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
+                    <video
+                        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                        src={head_image_animation}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    />
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+                    <div className="hero-content relative z-20 text-center justify-center max-w-5xl text-white" data-aos="fade-up">
+                        <p className="text-white rounded-full px-6 py-2 flex items-center text-center" style={{
+                            fontSize: "16px",
+                            marginBottom: "-50px"
+                            }}>
+                            One Call. Endless Possibilities for Business.
+                        </p>
+
+                        <h1 className="text-5xl font-bold">
+                            AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
+                        </h1>
+                        <p className="text-lg">
+                            Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
+                        </p>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: "1rem",
+                                margin: "auto",
+                            }}
+                            >
+                            <Link
+                                to="/ai-contact-us"
+                                className="framer-1N5PT framer-ibvdus framer-v-nj2zz1 framer-l3ha2z"
+                                data-highlight="true"
+                                data-border="true"
+                                data-framer-name="md | no animation"
+                                tabIndex={0}
+                                style={{
+                                border: "1px solid rgba(255, 255, 255, 0.1)",
+                                backdropFilter: "blur(2px)",
+                                background:
+                                    "linear-gradient(192deg, rgba(241, 6, 6, 0.93) 0%, rgba(255, 255, 255, 0.03) 100%) rgba(255, 255, 255, 0.03)",
+                                borderRadius: "999px",
+                                opacity: 1,
+                                padding: "0.75rem 1.5rem",
+                                textDecoration: "none",
+                                }}
+                                >
+                                <div
+                                className="framer-17xbfdf"
+                                style={{
+                                    background:
+                                    "linear-gradient(225deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.05) 61.1128%)",
+                                    borderRadius: "999px",
+                                    opacity: 1,
+                                }}
+                                    >
+
+                                </div>
+                                <div
+                                className="framer-1vuzv05"
+                                style={{
+                                    background:
+                                    "linear-gradient(207deg, rgb(47, 41, 43) -70.344%, rgb(4, 1, 2) 100%)",
+                                    borderRadius: "999px",
+                                    opacity: 1,
+                                }}
+                                    >
+
+                                </div>
+                                <div
+                                className="framer-1ihxhf6"
+                                data-framer-name="Label"
+                                style={{
+                                    outline: "none",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "flex-start",
+                                    flexShrink: 0,
+                                    color: "black",
+                                    transform: "none",
+                                    opacity: 1,
+                                }}
+                                    >
+                                <p
+                                    style={{
+                                    fontWeight: 500,
+                                    lineHeight: "24px",
+                                    color: "#fff",
+                                    margin: 0,
+                                    }}
+                                    >
+                                    Initiate Your Journey
+                                </p>
+                                </div>
+                            </Link>
+
+                            <Link
+                                    to="/ai-demo-call"
+                                    className="framer-1N5PT framer-ibvdus framer-v-bv2xb3 framer-l3ha2z"
+                                    data-highlight="true"
+                                    data-framer-name="md | ghost"
+                                    tabIndex={0}
+                                    style={{
+                                    border: "1px solid rgba(255, 255, 255, 0.1)",
+                                    backdropFilter: "blur(2px)",
+                                    background: "linear-gradient(192deg, rgba(241, 6, 6, 0.93) 0%, rgba(255, 255, 255, 0.03) 100%) rgba(255, 255, 255, 0.03)",
+                                    borderRadius: "999px",
+                                    opacity: 1,
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: "0.5rem",
+                                    textDecoration: "none",
+                                    padding: "0.75rem 1.25rem"
+                                }}
                                 >
                                 <div className="framer-1cl6w9d-container" style={{ opacity: 1 }}>
                                 <div style={{ display: "contents" }}>

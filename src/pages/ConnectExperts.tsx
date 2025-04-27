@@ -1,15 +1,38 @@
 import React, {useState, useRef, useEffect}  from "react";
 // import { Link } from 'react-router-dom';
 import getStartedImg from "../assets/Images/aiSocialMedia/get-started.png";
+import ReCAPTCHA from "react-google-recaptcha";
+import Axios from "axios";
 
 
 
 const ConnectExperts: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const recaptchaRef = useRef(null);
+    const [loading, setLoading]   = useState(false);
+    const [showThanks, setShowThanks] = useState(false);
 
-    // const overlayRef = useRef(null);
-    // const popupBoxRef = useRef(null);
+
+    const EMPTY_FORM = {
+        name: '',
+        email: '',
+        phone: '',
+        about: '',
+        agreement: '',
+        captchaToken: ''
+    };
+    
+    const [formData, setFormData] = useState(EMPTY_FORM);
+
+    const handleCaptchaChange = (token:string | null) => {
+
+        setFormData((prev) => ({
+            ...prev,
+            consent: !!token,
+            captchaToken: token || ""
+        }));
+    };
 
     const overlayRef = useRef<HTMLDivElement>(null);
     const popupBoxRef = useRef<HTMLDivElement>(null);
@@ -22,34 +45,26 @@ const ConnectExperts: React.FC = () => {
 
     // Close on outside click
     useEffect(() => {
-    const handleClickOutside = (event:any) => {
-        if (
-        overlayRef.current &&
-        popupBoxRef.current &&
-        overlayRef.current.contains(event.target) &&
-        !popupBoxRef.current.contains(event.target)
-        ) {
-        onClose();
+        const handleClickOutside = (event:any) => {
+            if (
+            overlayRef.current &&
+            popupBoxRef.current &&
+            overlayRef.current.contains(event.target) &&
+            !popupBoxRef.current.contains(event.target)
+            ) {
+            onClose();
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
         }
-    };
 
-    if (isOpen) {
-        document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-    };
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
 
     }, [isOpen]);
-
-
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        about: ''
-    });
     
     const handleChange = (e: { target: { name: any; value: any; }; }) => {
         const { name, value } = e.target;
@@ -62,8 +77,76 @@ const ConnectExperts: React.FC = () => {
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
+
+        if(!formData.name) {
+            alert("Please enter name");
+            return;
+        }
+
+        if(!formData.email) {
+            alert("Please enter email");
+            return;
+        }
+
+        if(!formData.phone) {
+            alert("Please enter phone");
+            return;
+        }
+
+        if (formData.phone.length < 10) {
+            alert("Please enter between 10-12 digits only");
+            return;
+          }
+      
+          if (formData.phone.length > 12) {
+            alert("Please enter between 10-12 digits only");
+            return;
+          }
+
+        if(!formData.about) {
+            alert("Please enter about yourself");
+            return;
+        }
+
+        if(formData.agreement !== "yes") {
+            alert("Please accept agree to receive SMS");
+            return;
+        }
+
+        if (!formData.captchaToken) {
+            alert("Please verify you’re not a robot");
+            return;
+        }
+
+        setLoading(true);
+        Axios.post(`https://dishefs.com/infotech_admin/api/get-started`, formData)
+            .then(response => {
+                console.log('response=====>>>>>', response.data);
+                if(response.data.status === true) {
+                setShowThanks(true);
+                setFormData(EMPTY_FORM); 
+                setTimeout(() => {
+                    setShowThanks(false);
+                    setIsOpen(false);
+                }, 3000);
+                } else {
+                    setShowThanks(false);
+                }
+            }).catch((error) => {
+                setShowThanks(false);
+                console.log('error occurs while submiting form =====>>>>>', error);
+            }).finally(() => {
+                setLoading(false);
+            });
+
         // Add your form submission logic here
         // onClose();
+    };
+
+    const checkboxContainerStyle = {
+        display: 'flex',
+        alignItems: 'flex-start',
+        marginBottom: '1rem'
     };
 
     return (
@@ -91,6 +174,30 @@ const ConnectExperts: React.FC = () => {
             <div ref={overlayRef} className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                 <div ref={popupBoxRef} className="bg-gradient-to-r from-red-500 to-blue-500 rounded-lg shadow-xl overflow-hidden w-full max-w-3xl get-started-box">
                     <div className="bg-white m-1 rounded-lg overflow-hidden flex flex-col md:flex-row">
+                        
+                    {showThanks && (
+                        <div
+                            className="
+                            fixed inset-0 z-50 flex items-center justify-center
+                            bg-black/40 backdrop-blur-sm
+                            "
+                        >
+                            <div
+                            className="
+                                rounded-2xl bg-white px-6 py-8 text-center shadow-xl
+                                animate-fade-in
+                            "
+                            >
+                            <h2 className="mb-2 text-xl font-semibold text-green-600">
+                                Thank you!
+                            </h2>
+                            <p className="text-gray-700">
+                                Your message has been sent successfully.
+                            </p>
+                            </div>
+                        </div>
+                    )}
+
                         {/* Left side - Image */}
                         <div className="md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
                             <div className="relative w-full h-full min-h-64">
@@ -152,13 +259,14 @@ const ConnectExperts: React.FC = () => {
                             <div>
                                 {/* <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone</label> */}
                                 <input
-                                    type="tel"
+                                    type="number"
                                     id="phone"
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
                                     placeholder="Enter phone number"
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    required
                                 />
                             </div>
                             
@@ -171,22 +279,61 @@ const ConnectExperts: React.FC = () => {
                                     onChange={handleChange}
                                     placeholder="Tell us about yourself"
                                     className="w-full px-4 py-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    required
                                 >
 
                                 </textarea>
                             </div>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "8px", margin: "5px" }}>
-                                <input type="checkbox" id="about" />
-                                <label htmlFor="about" className="block text-sm font-medium text-gray-700">
+                                <input 
+                                    type="checkbox" 
+                                    name="agreement" 
+                                    id="agreement" 
+                                    checked={formData.agreement === 'yes'}
+                                    onChange={(e) => {
+                                        setFormData(prevData => ({
+                                            ...prevData,
+                                            agreement: e.target.checked ? 'yes' : 'no'
+                                        }));
+                                    }}
+                                />
+                                <label htmlFor="agreement" className="block text-sm font-medium text-gray-700">
                                     I Agree To Receive SMS & Connect On WhatsApp
                                 </label>
+                            </div>
+
+                            <div style={checkboxContainerStyle}>
+                                <ReCAPTCHA
+                                    sitekey="6LesWyQrAAAAAGFv6DHeRXlsjyZhoJ9i_NoBfvmT"
+                                    ref={recaptchaRef}
+                                    onChange={handleCaptchaChange}   // token comes in here
+                                    theme="light"             // light or "dark"
+                                />
                             </div>
                             
                             <button
                                 type="submit"
-                                className="w-full py-3 px-6 rounded-md text-white font-medium text-lg mt-6 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 hover:opacity-90 transition-opacity shadow-lg"
+                                className="w-full py-3 px-6 rounded-md text-white font-medium text-lg mt-6 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 hover:opacity-90 transition-opacity shadow-lg flex justify-center"
                             >
+                                {loading && (
+                                    <svg
+                                        className="left-3 h-5 w-5 animate-spin mr-2 mt-1"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                    <circle
+                                        className="opacity-25"
+                                        cx="12" cy="12" r="10"
+                                        stroke="currentColor" strokeWidth="4"
+                                    />
+                                    <path
+                                        className="opacity-75"
+                                        fill="currentColor"
+                                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                                    />
+                                    </svg>
+                                )}
                                 Submit
                             </button>
                             </form>

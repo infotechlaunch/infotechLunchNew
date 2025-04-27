@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import icon1 from "../../assets/Images/icon/why-choose/Optimum-Outcome-Focused.png";
 import icon2 from "../../assets/Images/icon/why-choose/Experienced-Techies.png";
 import icon3 from "../../assets/Images/icon/why-choose/Cutting-Edge-Technologies.png";
