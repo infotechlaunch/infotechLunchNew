@@ -73,7 +73,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
-                    <div className="flex justify-center max-w-7xl text-white mobile-block">
+                    <section className="flex justify-center max-w-7xl text-white mobile-block">
                     <div className="w-1/2 mobile-w-full" data-aos="fade-right">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
                             fontSize: "16px",marginBottom: "10px", display: "table"}}>
@@ -232,7 +232,8 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                </section> */}
+                    </section>
+                </section> 
 
                 <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
                     <video
@@ -410,7 +411,6 @@ const AiVoiceAgent: React.FC = () => {
                                             width: "auto",
                                             objectFit: "cover"
                                         }} />
-                        </div>
                         </div>
                 </section>
 

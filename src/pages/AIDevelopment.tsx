@@ -13,36 +13,45 @@ import Blog from "../components/Blog/Blog";
 import TawkChat from "./TawkChat";
 import GetStarted from "../components/GetStarted/GetStarted";
 import FAQ from "../components/Faq/Faq";
-import ai from '../assets/Images/ai.png';
+// import ai from '../assets/Images/ai.png';
+import heroImg from '../assets/Images/aiDevelopment/heroimg.png';
+import achieveimg1 from '../assets/Images/aiDevelopment/Successful_AI_Chatbot_Deployment.png';
+import achieveicon1 from '../assets/Images/aiDevelopment/icon1.png';
+import achieveimg2 from '../assets/Images/aiDevelopment/NLP_and_Conversational_AI_Experts.png';
+import achieveicon2 from '../assets/Images/aiDevelopment/icon2.png';
+import achieveimg3 from '../assets/Images/aiDevelopment/Industries_Revolutionized_with_AI_Chatbots.png';
+import achieveicon3 from '../assets/Images/aiDevelopment/icon3.png';
+import achieveimg4 from '../assets/Images/aiDevelopment/Accuracy_in_Intent_Recognition_Achieved.png';
+import achieveicon4 from '../assets/Images/aiDevelopment/icon4.png';
 import AOSProvider from "../components/AOSProvider";
 const achievements = [
     {
         id: 1,
         number: "70+",
         text: "Successful AI Chatbot Deployments",
-        icon: "https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-3136474/www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/06/0101d8f48c5f96dc43db26b76467b1b4.ai-achievement-icn_1.webp",
-        image: ai,
+        icon: achieveicon1,
+        image: achieveimg1,
     },
     {
         id: 2,
         number: "40+",
         text: "NLP and Conversational AI Experts",
-        icon: "https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-3136474/www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/06/618f66d287e47fd358ec5df6b768d6bf.ai-achievement-icn_2.webp",
-        image: ai,
+        icon: achieveicon2,
+        image: achieveimg2,
     },
     {
         id: 3,
         number: "15+",
         text: "Industries Revolutionized with AI Chatbots",
-        icon: "https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-3136474/www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/07/0fcb7dac7ae62aa95e3247afcc148a24.consulting-ai-achievement-icn_33.webp",
-        image: ai,
+        icon: achieveicon3,
+        image: achieveimg3,
     },
     {
         id: 4,
         number: "92%",
         text: "Accuracy in Intent Recognition Achieved",
-        icon: "https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-3136474/www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/06/ab4310884b11c5ee20a899b2a25f0b73.ai-achievement-icn_4.webp",
-        image: ai,
+        icon: achieveicon4,
+        image: achieveimg4,
     },
 ];
 const AIDevelopment: React.FC = () => {
@@ -92,7 +101,14 @@ const AIDevelopment: React.FC = () => {
                         </div> */}
                          <ConnectExperts />
                     </div>
-                    <div className="w-full lg:flex justify-end items-end hidden"></div>
+                    <div className="w-full lg:flex justify-end items-end hidden overflow-hidden rounded-bordered"  style={{ borderRadius: "12px" }}>
+                         <img src={heroImg} alt="" className="features-img" style={{
+                                                                    height: "350px",
+                                                                    width: "auto",
+                                                                    objectFit: "cover",
+                                                                    
+                                                                }} />
+                    </div>
                 </div>
             </div>
             <section className="lg:py-16 py-10 bg-[#fff]">

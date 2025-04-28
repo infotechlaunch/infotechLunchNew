@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Services01 from '../../assets/Images/content_first_img.jpg';
-import Services02 from '../../assets/Images/content_first_img.png';
-import Services03 from '../../assets/Images/content_first_img02.jpg';
-import Services04 from '../../assets/Images/content_first_img03.jpg';
+import Services01 from '../../assets/Images/aiDevelopment/Custom_AI_Chatbot_Development.png';
+import Services02 from '../../assets/Images/aiDevelopment/Conversation_UI_Design.png';
+import Services03 from '../../assets/Images/aiDevelopment/AI_Chatbot_Architecture_Design.png';
+import Services04 from '../../assets/Images/aiDevelopment/Comprehensive_Support_and_Maintenance.png';
+import Services05 from '../../assets/Images/aiDevelopment/NLP_Engine_Integration.png';
+import Services06 from '../../assets/Images/aiDevelopment/Seamless_Integrations.png';
 const challengeData = [
     {
         id: "card01",
@@ -44,7 +46,7 @@ const challengeData = [
     },
     {
         id: "card05",
-        img: Services04,
+        img: Services05,
         title: "NLP Engine Integration",
         desc: "Enhance your chatbot with advanced natural language processing capabilities for deeper understanding and personalized interactions.",
         icon: (
@@ -53,7 +55,7 @@ const challengeData = [
     },
     {
         id: "card06",
-        img: Services04,
+        img: Services06,
         title: "Seamless Integrations",
         desc: "Connect your chatbot with existing enterprise systems to unlock its full potential and streamline workflows.",
         icon: (
@@ -76,6 +78,9 @@ const Services: React.FC = () => {
                  
                         <div className="chalnges-left text-orange">
                             <div className="sticky top-32">
+                            <h3 className="text-gradient-red text-3xl font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
+                                    <span>Services</span>
+                                </h3>
                                 <h3 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-3" data-aos="fade-right">
                                     <span>Comprehensive AI Chatbot Development Services</span>
                                 </h3>
