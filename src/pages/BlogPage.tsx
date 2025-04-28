@@ -27,7 +27,7 @@ const blogPosts: BlogPost[] = [
         id: 1,
         title: "AI-Powered Parking Assistance App Development: Cost & Features",
         category: "Technology",
-        date: "4 Aug 2024",
+        date: "4 Feb 2025",
         description:
             "Based on studies, 30% of traffic congestion happens due to vehicles looking for parking spaces. AI-powered parking assistance apps improve operational efficiency and maximize space utilization.",
         imageUrl: lunch,
@@ -38,7 +38,7 @@ const blogPosts: BlogPost[] = [
         id: 3,
         title: "Future of AI in Web Development: Trends & Innovations",
         category: "AI",
-        date: "15 Oct 2024",
+        date: "14 March 2025",
         description:
             "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
         imageUrl: Careem,
@@ -48,7 +48,7 @@ const blogPosts: BlogPost[] = [
         id: 4,
         title: "Future of AI in Web Development: Trends & Innovations",
         category: "AI",
-        date: "15 Oct 2024",
+        date: "15 Feb 2025",
         description:
             "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
         imageUrl: Careem,
@@ -58,7 +58,7 @@ const blogPosts: BlogPost[] = [
         id: 5,
         title: "Project Staffing",
         category: "Staffing",
-        date: "4 Aug 2024",
+        date: "4 Jan 2025",
         description:
             "Project staffing ensures the right talent is deployed for specific projects, providing skilled professionals to meet deadlines and achieve business goals efficiently.",
          imageUrl: Project,
@@ -68,7 +68,7 @@ const blogPosts: BlogPost[] = [
         id: 6,
         title: "Managed Solutions",
         category: "Managed",
-        date: "10 Sep 2024",
+        date: "24 Jan 2025",
         description:
             "Managed solutions provide end-to-end support, optimizing operations with expert oversight, technology, and strategic management for seamless business efficiency.",
         imageUrl: Manage,
@@ -78,7 +78,7 @@ const blogPosts: BlogPost[] = [
         id: 7,
         title: "Direct Hire",
         category: "Direct Hire",
-        date: "15 Oct 2024",
+        date: "15 March 2025",
         description:
             "Direct hire services connect businesses with top talent for full-time roles, ensuring long-term success with expertly vetted professionals. This streamlined process saves time and resources while building strong, dedicated teams.",
         imageUrl: hire,
