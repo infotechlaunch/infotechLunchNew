@@ -113,10 +113,10 @@ const ConnectExperts: React.FC = () => {
             return;
         }
 
-        if (!formData.captchaToken) {
-            alert("Please verify you’re not a robot");
-            return;
-        }
+        // if (!formData.captchaToken) {
+        //     alert("Please verify you’re not a robot");
+        //     return;
+        // }
 
         setLoading(true);
         Axios.post(`https://dishefs.com/infotech_admin/api/get-started`, formData)
@@ -138,6 +138,47 @@ const ConnectExperts: React.FC = () => {
             }).finally(() => {
                 setLoading(false);
             });
+
+
+        const params = new URLSearchParams();
+
+        (Object.keys(formData) as (keyof typeof formData)[]).forEach(key => {
+            const value = formData[key];
+            if (typeof value === 'boolean') {
+                params.append(key, value ? 'true' : 'false');
+            } else {
+                params.append(key, value || '');
+            }
+        });
+
+        console.log('Sending data:', Object.fromEntries(params));
+
+        Axios.post('https://script.google.com/macros/s/AKfycbyAj4IRHnj7GosxqPG3q4v3dFro_O0rzrMD2ue3DjvFw8AMcDbfW2SEd7QUMo0706UxkQ/exec', 
+        params.toString(),
+        {
+            headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        })
+        .then(response => {
+            console.log('response =====>>>>>', response.data);
+            if (response.data.result === "success") {
+            setShowThanks(true);
+            setFormData(EMPTY_FORM);
+            setTimeout(() => {
+                setShowThanks(false);
+            }, 3000);
+            } else {
+            setShowThanks(false);
+            }
+        })
+        .catch(error => {
+            setShowThanks(false);
+            console.log('error occurs while submitting form =====>>>>>', error);
+        })
+        .finally(() => {
+            setLoading(false);
+        });
 
         // Add your form submission logic here
         // onClose();
@@ -237,7 +278,7 @@ const ConnectExperts: React.FC = () => {
                                     value={formData.name}
                                     placeholder="Enter name"
                                     onChange={handleChange}
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -251,7 +292,7 @@ const ConnectExperts: React.FC = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                     placeholder="Enter Email Id"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -265,7 +306,7 @@ const ConnectExperts: React.FC = () => {
                                     value={formData.phone}
                                     onChange={handleChange}
                                     placeholder="Enter phone number"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 />
                             </div>
@@ -278,7 +319,7 @@ const ConnectExperts: React.FC = () => {
                                     value={formData.about}
                                     onChange={handleChange}
                                     placeholder="Tell us about yourself"
-                                    className="w-full px-4 py-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full px-4 py-4 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     required
                                 >
 
@@ -299,7 +340,8 @@ const ConnectExperts: React.FC = () => {
                                     }}
                                 />
                                 <label htmlFor="agreement" className="block text-sm font-medium text-gray-700">
-                                    I Agree To Receive SMS & Connect On WhatsApp
+                                    {/* I Agree To Receive SMS & Connect On WhatsApp */}
+                                    I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from Flux Fortify.
                                 </label>
                             </div>
 

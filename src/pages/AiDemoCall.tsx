@@ -109,10 +109,10 @@ const AiDemoCall = () => {
       return;
     }
 
-    if (!formData.captchaToken) {
-      alert("Please verify you’re not a robot");
-      return;
-    }
+    // if (!formData.captchaToken) {
+    //   alert("Please verify you’re not a robot");
+    //   return;
+    // }
 
     setLoading(true);
     Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)
@@ -133,6 +133,76 @@ const AiDemoCall = () => {
       }).finally(() => {
         setLoading(false);
       });
+
+      
+      // Axios.post('https://dishefs.com/infotech_admin/api/excel-sheet', JSON.stringify(formData), {
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   }
+      // })
+      // .then(response => {
+      //   console.log('response 2222=====>>>>>', response.data);
+      //   if (response.data.result === "success") {
+      //     setShowThanks(true);
+      //     setFormData(EMPTY_FORM);
+      //     setTimeout(() => {
+      //       setShowThanks(false);
+      //     }, 3000);
+      //   } else {
+      //     setShowThanks(false);
+      //   }
+      // })
+      // .catch(error => {
+      //   setShowThanks(false);
+      //   console.log('error occurs while submitting form 222 =====>>>>>', error);
+      // })
+      // .finally(() => {
+      //   setLoading(false);
+      // });
+
+      // Instead of using JSON.stringify, use URLSearchParams or FormData
+
+    const params = new URLSearchParams();
+
+    (Object.keys(formData) as (keyof typeof formData)[]).forEach(key => {
+      const value = formData[key];
+      if (typeof value === 'boolean') {
+        params.append(key, value ? 'true' : 'false');
+      } else {
+        params.append(key, value || '');
+      }
+    });
+
+    console.log('Sending data:', Object.fromEntries(params));
+
+    Axios.post('https://script.google.com/macros/s/AKfycbxHGePL6cuC013KzD-tq2e9oMO1oOM48XrDWZLTbt17cJTRfERpj1Yhht9J18W5jc1r/exec', 
+      params.toString(),
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      })
+      .then(response => {
+        console.log('response =====>>>>>', response.data);
+        if (response.data.result === "success") {
+          setShowThanks(true);
+          setFormData(EMPTY_FORM);
+          setTimeout(() => {
+            setShowThanks(false);
+          }, 3000);
+        } else {
+          setShowThanks(false);
+        }
+      })
+      .catch(error => {
+        setShowThanks(false);
+        console.log('error occurs while submitting form =====>>>>>', error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+      
+      
   };
   
 

@@ -7,10 +7,10 @@ import AOSProvider from "../components/AOSProvider";
 // import getStartedImg from "../assets/Images/aiSocialMedia/get-started3.avif";
 import "./AiVoiceAgentStyle.css";
 // import ConnectExperts from "../pages/ConnectExperts";
-import VoiceSelector from "../pages/VoiceSelector";
+// import VoiceSelector from "../pages/VoiceSelector";
+import PlayAudio from "../pages/PlayAudio";
 import { Link } from "react-router-dom";
 import callUsageImg from "../assets/Images/call-usage1.png";
-import voiceheroImg from "../assets/Images/hero-img/aivoice-hero-img.jpg";
 import faqImg from "../assets/Images/faq-voice.png";
 import callSummaryImg from "../assets/Images/call-summary2.png";
 import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
@@ -60,10 +60,6 @@ const AiVoiceAgent: React.FC = () => {
         { id: 2, recording: true, booked: true, totalCalls: 2 },
     ];
 
-    // const callsData = [
-    //     { id: '42743', recording: '00:08:50', booked: 'YES', totalCalls: 4 }
-    // ];
-
 
 
     return (
@@ -73,7 +69,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
-                    <section className="flex justify-center max-w-7xl text-white mobile-block">
+                    <div className="flex justify-center max-w-7xl text-white mobile-block">
                     <div className="w-1/2 mobile-w-full" data-aos="fade-right">
                         <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
                             fontSize: "16px",marginBottom: "10px", display: "table"}}>
@@ -232,8 +228,7 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                    </section>
-                </section> 
+                </section> */}
 
                 <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
                     <video
@@ -412,19 +407,13 @@ const AiVoiceAgent: React.FC = () => {
                                             objectFit: "cover"
                                         }} />
                         </div>
+                        </div>
                 </section>
 
-                {/* <div style={{
-                        backgroundColor: "white",
-                        height: "50px",
-                        width: "100%"
-                    }}>
-
-                </div> */}
 
                 {/* section 2  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800" data-aos="fade-up">
+                    <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
                         {/* Top bar */}
                         <div className="bg-black p-2 flex items-center">
                         <div className="flex space-x-1">
@@ -434,9 +423,9 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         </div>
                         
-                        <div className="flex h-[550px] mobile-block mobile-h-full">
+                        <div className="flex h-[550px]">
                         {/* Left Sidebar */}
-                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col mobile-w-full">
+                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col">
                             <div className="mb-8">
                             <h1 className="text-2xl font-bold tracking-wider">InfoTech</h1>
                             </div>
@@ -460,51 +449,7 @@ const AiVoiceAgent: React.FC = () => {
                                     height: "auto",
                                     width: "100%"
                                 }}/>
-                            {/* <div className="mb-4">
-                                <h3 className="text-gray-500 text-xs uppercase mb-2">Usage</h3>
-                                <div className="mb-2">
-                                <div className="flex justify-between text-sm mb-1">
-                                    <span className="font-bold">Mike: Lead Qualifier</span>
-                                    <span className="text-gray-400">112 Calls/Per Day</span>
-                                </div>
-                                <div className="w-full bg-gray-700 rounded-full h-1">
-                                    <div className="bg-red-500 h-full rounded-full w-1/3"></div>
-                                </div>
-                                </div>
-                                
-                                <div className="mb-4">
-                                <div className="flex justify-between text-sm mb-1">
-                                    <span className="font-bold">Kara: Hospital Receptionist</span>
-                                    <span className="text-gray-400">353 Calls/Per Day</span>
-                                </div>
-                                <div className="w-full bg-gray-700 rounded-full h-1">
-                                    <div className="bg-red-500 h-full rounded-full w-2/3"></div>
-                                </div>
-                                </div>
-                            </div>
                             
-                            <button className="flex items-center text-sm mb-2 text-gray-400 w-full">
-                                <span className="h-4 w-4 bg-gray-600 rounded-full mr-2"></span>
-                                <span>Feedback</span>
-                            </button>
-                            
-                            <button className="flex items-center text-sm mb-2 text-gray-400 w-full">
-                                <span className="mr-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                </svg>
-                                </span>
-                                <span>Download iOS App</span>
-                            </button>
-                            
-                            <button className="flex items-center text-sm text-gray-400 w-full">
-                                <span className="mr-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                                </svg>
-                                </span>
-                                <span>Log out</span>
-                            </button> */}
                             </div>
                         </div>
                         
@@ -528,7 +473,7 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             
                             {/* Bottom Actions */}
-                            <div className="flex-1 bg-black flex mobile-block">
+                            <div className="flex-1 bg-black flex">
                             <div className="flex-1 flex p-4">
                                 <div className="mr-4 flex-1">
                                 <div className="bg-gray-800 rounded p-3 h-full flex flex-col">
@@ -552,30 +497,11 @@ const AiVoiceAgent: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="w-64 bg-gray-800 border-l border-gray-700 mobile-w-full">
+                            <div className="w-64 bg-gray-800 border-l border-gray-700">
 
                             <img src={callSummaryImg} alt="" />
                             </div>
                             
-                            {/* <div className="w-64 bg-gray-800 border-l border-gray-700">
-                                <div className="p-4 border-b border-gray-700 text-sm">
-                                <div>Call Summary: ID12452345</div>
-                                </div>
-                                
-                                <div className="p-4 text-xs">
-                                <p className="mb-2">
-                                    The user called about <span className="bg-red-900 px-1">an appointment</span> with the primary care department. The meeting was <span className="bg-green-900 px-1">rescheduled</span>. The user was overall satisfied about <span className="bg-blue-900 px-1">wait times</span>, but had one issue. Their feedback is rated as <span className="bg-purple-900 px-1">VERY GOOD</span> the rating trend has been consistent to today. QUICK call: 1 min and 48 seconds. Has had 5 previous calls in the past 30 minute long wait times, my reading was <span className="bg-red-900 px-1">incorrect</span>. 
-                                    Definitely always raising their North! Feedback was <span className="bg-green-900 px-1">positive</span>.
-                                </p>
-                                
-                                <div className="flex flex-wrap gap-1 mt-4">
-                                    <span className="bg-red-600 px-2 py-0.5 rounded-sm text-xxs">Action</span>
-                                    <span className="bg-green-600 px-2 py-0.5 rounded-sm text-xxs">Status</span>
-                                    <span className="bg-blue-600 px-2 py-0.5 rounded-sm text-xxs">Quote</span>
-                                    <span className="bg-purple-600 px-2 py-0.5 rounded-sm text-xxs">Type</span>
-                                </div>
-                                </div>
-                            </div> */}
                             </div>
                             
                             {/* Message Input */}
@@ -612,7 +538,7 @@ const AiVoiceAgent: React.FC = () => {
                             Our Process
                         </p>
 
-                        <h1 className="text-4xl font-bold">
+                        <h1 className="text-5xl font-bold">
                             InfoTechAI as Your Revolutionary Secret To Success
                         </h1>
                         <p className="text-lg">
@@ -633,7 +559,9 @@ const AiVoiceAgent: React.FC = () => {
                 </section>
 
                 {/* section 4  */}
-                <VoiceSelector />
+                {/* <VoiceSelector /> */}
+                <PlayAudio />
+                
                 
 
                 {/* section 5  */}
@@ -740,7 +668,7 @@ const AiVoiceAgent: React.FC = () => {
   
                 {/* section 6  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="flex mobile-block w-full max-w-6xl gap-8 items-center">
+                    <div className="flex w-full max-w-6xl gap-8 items-center">
                         {/* Left panel content */}
                         <div className="flex-1"  data-aos="fade-right">
                             <p className="text-orange text-lg mb-3">AI’s Creative Brilliance Unleashed</p>
@@ -757,44 +685,14 @@ const AiVoiceAgent: React.FC = () => {
                         
                         {/* Right panel content */}
                         <div className="flex-1" data-aos="fade-left">
-                        <div className="bg-black/60 rounded-xl p-6 backdrop-blur-sm border border-gray-800">
+                        <div className="bg-white rounded-xl p-6 backdrop-blur-sm border border-gray-800">
                             <div className="flex justify-end mb-4">
-                            <button className="bg-orange hover:bg-gray-700 text-black px-4 py-2 rounded-lg">
+                            <button className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">
                                 Update Your AI Voice Agent
                             </button>
                             </div>
-                            <img src={updateVoiceAgentImg} alt="" className="features-img" />
+                            <img src={updateVoiceAgentImg} alt="" />
                             
-                            {/* <div className="grid grid-cols-2 gap-4 mb-6">
-                            <div className="relative rounded-lg overflow-hidden h-28 cursor-pointer group">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-amber-700 to-amber-300 opacity-80"></div>
-                                <div className="absolute bottom-2 left-2 text-white font-medium">
-                                Professional Personality
-                                </div>
-                                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity"></div>
-                            </div>
-                            
-                            <div className="relative rounded-lg overflow-hidden h-28 cursor-pointer group">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-gray-700 to-amber-200 opacity-80"></div>
-                                <div className="absolute bottom-2 left-2 text-white font-medium">
-                                Bubbly Personality
-                                </div>
-                                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity"></div>
-                            </div>
-                            </div> */}
-                            
-                            {/* <div className="flex items-center gap-2">
-                            <input 
-                                type="text" 
-                                placeholder="Add a new personality..." 
-                                className="flex-1 bg-transparent border-0 border-b border-gray-700 focus:ring-0 focus:border-amber-500 text-white placeholder-gray-500 py-2"
-                                value={personality}
-                                onChange={(e) => setPersonality(e.target.value)}
-                            />
-                            <button className="bg-gray-800 border border-gray-700 hover:bg-gray-700 text-white px-4 py-2 rounded-full">
-                                Add Update
-                            </button>
-                            </div> */}
                         </div>
                         </div>
                     </div>
@@ -809,7 +707,7 @@ const AiVoiceAgent: React.FC = () => {
                             <div className="absolute -inset-1 bg-teal-500/20 blur-md rounded-lg -z-10"></div>
                             
                             <div className="flex justify-center mb-6">
-                            <button className="bg-orange text-black px-6 py-2 rounded-md uppercase text-sm text-bold tracking-wider">
+                            <button className="bg-gray-800 text-gray-300 px-6 py-2 rounded-md uppercase text-sm tracking-wider">
                                 Check Calls Made with a Contact
                             </button>
                             </div>
@@ -829,27 +727,27 @@ const AiVoiceAgent: React.FC = () => {
                             </button>
                             </div>
                             
-                            <div className="bg-black/80 border border-gray-800 rounded-md overflow-hidden table-responsive">
-                            <table className="w-full text-center">
+                            <div className="bg-black/80 border border-gray-800 rounded-md overflow-hidden">
+                            <table className="w-full text-left">
                                 <thead>
                                 <tr className="border-b border-gray-800">
-                                    <th className="p-3 text-black font-medium bg-orange">CustomerID</th>
-                                    <th className="p-3 text-black font-medium bg-blue-fade">Call Recording</th>
-                                    <th className="p-3 text-black font-medium bg-orange">Booked?</th>
-                                    <th className="p-3 text-black font-medium bg-blue-fade">Total Calls</th>
+                                    <th className="p-3 text-gray-400 font-medium">CustomerID</th>
+                                    <th className="p-3 text-gray-400 font-medium">Call Recording</th>
+                                    <th className="p-3 text-gray-400 font-medium">Booked?</th>
+                                    <th className="p-3 text-gray-400 font-medium">Total Calls</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {callData.map((call) => (
                                     <tr key={call.id} className="border-b border-gray-800">
-                                    <td className="p-3 bg-orange">{call.id}</td>
-                                    <td className="p-3 bg-blue-fade">
+                                    <td className="p-3">{call.id}</td>
+                                    <td className="p-3">
                                         <button className="text-teal-500 hover:text-teal-400">
                                         Download
                                         </button>
                                     </td>
-                                    <td className="p-3 bg-orange">Yes</td>
-                                    <td className="p-3 text-black bg-blue-fade">{call.totalCalls}</td>
+                                    <td className="p-3">Yes</td>
+                                    <td className="p-3">{call.totalCalls}</td>
                                     </tr>
                                 ))}
                                 </tbody>
@@ -888,112 +786,16 @@ const AiVoiceAgent: React.FC = () => {
                     
                     <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Left Panel */}
-                        <div className="bg-black/40 border border-white-500 rounded-lg p-8" data-aos="fade-right">
-                            <img src={personalizedExpImg} alt=""  className="features-img" />
+                        <div className="bg-black/40 border border-white-500 rounded-lg p-4" data-aos="fade-right">
+                            <img src={personalizedExpImg} alt="" />
                         </div>
-                        {/* <div className="bg-black/70 border border-gray-800 rounded-lg p-4">
-                        <div className="flex justify-around mb-8">
-                            <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 rounded-md bg-gray-800 flex items-center justify-center mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-                                </svg>
-                            </div>
-                            <span className="text-xs text-gray-400">Custom Memory</span>
-                            </div>
-                            
-                            <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 rounded-md bg-gray-800 flex items-center justify-center mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm2 2V5h1v1H5zM3 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zm2 2v-1h1v1H5zM13 3a1 1 0 00-1 1v3a1 1 0 001 1h3a1 1 0 001-1V4a1 1 0 00-1-1h-3zm1 2v1h1V5h-1zM13 12a1 1 0 00-1 1v3a1 1 0 001 1h3a1 1 0 001-1v-3a1 1 0 00-1-1h-3zm1 2v1h1v-1h-1z" clipRule="evenodd" />
-                                </svg>
-                            </div>
-                            <span className="text-xs text-gray-400">Weights</span>
-                            </div>
-                            
-                            <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 rounded-md bg-gray-800 flex items-center justify-center mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
-                                </svg>
-                            </div>
-                            <span className="text-xs text-gray-400">CRM Integration</span>
-                            </div>
-                        </div>
-                        
-                        <div className="mb-4">
-                            <table className="w-full text-sm">
-                            <thead>
-                                <tr className="text-gray-400 text-xs">
-                                <th className="pb-2 text-left">CustomerID</th>
-                                <th className="pb-2 text-left">Call Recording</th>
-                                <th className="pb-2 text-left">Booked?</th>
-                                <th className="pb-2 text-right">Total Calls</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {callsData.map((item) => (
-                                <tr key={item.id}>
-                                    <td className="py-2">{item.id}</td>
-                                    <td className="py-2">{item.recording}</td>
-                                    <td className="py-2">{item.booked}</td>
-                                    <td className="py-2 text-right">{item.totalCalls}</td>
-                                </tr>
-                                ))}
-                            </tbody>
-                            </table>
-                        </div>
-                        
-                        <div className="flex items-center justify-between">
-                            <span className="text-xs text-gray-400">Give my customers a personalised experience!</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        </div> */}
                         
                         {/* Right Panel */}
-                        <div className="bg-black/40 border border-white-500 rounded-lg p-8" data-aos="fade-left">
-                            <img src={considerItDoneImg} alt=""  className="features-img" />
+                        <div className="bg-black/40 border border-white-500 rounded-lg p-4" data-aos="fade-left">
+                            <img src={considerItDoneImg} alt="" />
                         </div>
 
-                        {/* <div className="bg-black/70 border border-gray-800 rounded-lg p-4">
-                        <div className="flex justify-around mb-8">
-                            <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
-                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
-                            </svg>
-                            </div>
-                            
-                            <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            </div>
-                            
-                            <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center relative">
-                            <div className="absolute w-1 h-16 bg-red-500 top-8"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                            </svg>
-                            </div>
-                            
-                            <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
-                            </svg>
-                            </div>
-                        </div>
                         
-                        <div className="flex items-center justify-between mt-16">
-                            <span className="text-xs text-gray-400">Consider it done!</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
-                            </svg>
-                        </div>
-                        </div> */}
                     </div>
                 </div>
 
@@ -1058,32 +860,32 @@ const AiVoiceAgent: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" data-aos="fade-up">
                         {/* First Card: Update Manually */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative feature-card-1">
-                        <div className="mb-6">
-                            <div className="flex justify-between">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
+                        <div className="flex items-center justify-between mb-6">
+                            <div className="flex space-x-4">
                             <div className="flex flex-col items-center">
-                                <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
                                 </svg>
                                 </div>
-                                <span className="text-xs text-white-500">Draw</span>
+                                <span className="text-xs text-gray-500">Draw</span>
                             </div>
                             <div className="flex flex-col items-center">
-                                <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
                                 </svg>
                                 </div>
-                                <span className="text-xs text-white-500">File</span>
+                                <span className="text-xs text-gray-500">File</span>
                             </div>
                             <div className="flex flex-col items-center">
-                                <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                                 </svg>
                                 </div>
-                                <span className="text-xs text-white-500">Topic</span>
+                                <span className="text-xs text-gray-500">Topic</span>
                             </div>
                             </div>
                         </div>
@@ -1106,7 +908,7 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Second Card: Live Test */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative feature-card-1">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
                         <div className="flex flex-col space-y-3 mb-6">
                             <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center">
@@ -1134,8 +936,8 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Third Card: Live Personalization */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative  feature-card-1">
-                        <div className="flex justify-between mb-6 text-xs text-white-500">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
+                        <div className="flex justify-between mb-6 text-xs text-gray-500">
                             <div>ENABLED</div>
                             <div>AI AGENT PICTURE</div>
                             <div>WELCOME MSG</div>
@@ -1161,61 +963,33 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         
                         {/* Fourth Card: Multiple Languages */}
-                        {/* <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
-                        <div className="flex items-center space-x-2 mb-6">
-                            <svg className="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.578a18.87 18.87 0 01-1.724 4.78c.29.354.596.696.914 1.026a1 1 0 11-1.44 1.389 16.86 16.86 0 01-.8-.8c-.753.802-1.612 1.419-2.476 1.819a1 1 0 11-.66-1.888c.645-.299 1.318-.784 1.963-1.387.473-.499.934-1.064 1.377-1.682a11.266 11.266 0 01-2.56-2.586A1 1 0 114.42 5.83c1.178 1.404 2.243 2.087 2.917 2.401a33.506 33.506 0 01-.516-1.795 1 1 0 01.796-1.188L7 5.178V4H6a1 1 0 110-2h1V1a1 1 0 011-1zM3.388 16.834a1 1 0 01.782-1.182l.058-.01a1 1 0 011.113.783 1 1 0 01-.783 1.182l-.058.01a1 1 0 01-1.112-.783z" clipRule="evenodd" />
-                            </svg>
-                            <span className="text-xs text-gray-400">We have over 30 languages</span>
-                            <svg className="w-4 h-4 text-gray-400 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                            </svg>
-                        </div>
-                        
-                        <div className="flex items-center justify-around mb-6">
-                            <div className="w-12 h-12 bg-gray-800 rounded-full overflow-hidden">
-                            <img src="/api/placeholder/48/48" alt="Avatar" className="w-full h-full object-cover" />
-                            </div>
-                            <div className="w-12 h-12 bg-gray-800 rounded-full overflow-hidden">
-                            <img src="/api/placeholder/48/48" alt="Avatar" className="w-full h-full object-cover" />
-                            </div>
-                            <div className="w-12 h-12 bg-gray-800 rounded-full overflow-hidden">
-                            <img src="/api/placeholder/48/48" alt="Avatar" className="w-full h-full object-cover" />
-                            </div>
-                        </div>
-                        
-                        <h3 className="text-lg font-medium mb-2">Various Languages and Accents</h3>
-                        <p className="text-sm text-gray-400">
-                            InfoTech supports all major languages, including English, French, Portuguese, Spanish, and more, with a variety of accent options.
-                        </p>
-                        </div> */}
                         
                         {/* Fifth Card: Clone Your Own Voice */}
-                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative  feature-card-1">
+                        <div className="bg-gray-900/80 border border-gray-800 rounded-lg p-4 relative">
                         <div className="flex justify-between mb-6">
                             <div className="flex flex-col items-center">
-                            <div className="w-6 h-6 rounded bg-blue-700 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span className="text-xs text-white-500">Live</span>
+                            <span className="text-xs text-gray-500">Live</span>
                             </div>
                             <div className="flex flex-col items-center">
-                            <div className="w-6 h-6 rounded bg-blue-700 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span className="text-xs text-white-500">Text</span>
+                            <span className="text-xs text-gray-500">Text</span>
                             </div>
                             <div className="flex flex-col items-center">
-                            <div className="w-6 h-6 rounded bg-blue-800 flex items-center justify-center mb-1">
-                                <svg className="w-3 h-3 text-white-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div className="w-6 h-6 rounded bg-gray-800 flex items-center justify-center mb-1">
+                                <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span className="text-xs text-white-500">File</span>
+                            <span className="text-xs text-gray-500">File</span>
                             </div>
                         </div>
                         
@@ -1493,11 +1267,11 @@ const AiVoiceAgent: React.FC = () => {
   
                 {/* <div className="bg-black text-white min-h-screen p-8"></div> */}
                 <div className="bg-gradient-blue-red text-black p-8">
-                    <div className="bg-orange max-w-5xl mx-auto  border border-black-800 rounded-lg p-8 items-center flex flex-col md:flex-row gap-8">
+                    <div className="max-w-7xl mx-auto  border border-white-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
                         {/* Left column - Title */}
                         <div className="md:w-1/3" data-aos="fade-right">
-                        {/* <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1> */}
-                        <img src={faqImg} alt="" className="rounded-sm" />
+                        <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
+                        <img src={faqImg} alt="" />
                         </div>
 
                         {/* Right column - FAQ items */}

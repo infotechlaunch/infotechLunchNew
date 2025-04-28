@@ -2,24 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const VoiceSelector = () => {
-  // Voice data with dummy audio text
-//   const voices = [
-//     { id: 1, name: 'Sophie Heart', gender: 'Female', accent: 'British Accent - English', avatar: '👩🏻', sample: "Hello, I'm Sophie with a British accent." },
-//     { id: 2, name: 'Puja Sancha', gender: 'Female', accent: 'Indian Accent - English', avatar: '👩🏽', sample: "Hello, I'm Puja with an Indian accent." },
-//     { id: 3, name: 'Anna Bogna', gender: 'Female', accent: 'Polish Accent - Polish', avatar: '👩🏼', sample: "Cześć, jestem Anna z polskim akcentem." },
-//     { id: 4, name: 'Maya Isabella', gender: 'Female', accent: 'Spanish Accent - Spanish', avatar: '👩🏽', sample: "Hola, soy Maya con acento español." },
-//     { id: 5, name: 'Victoria Bow', gender: 'Female', accent: 'American Accent - English', avatar: '👩🏻', sample: "Hi there, I'm Victoria with an American accent." },
-//     { id: 6, name: 'Louis Gabriel', gender: 'Male', accent: 'French Accent - French', avatar: '👨🏻', sample: "Bonjour, je suis Louis avec un accent français." },
-//     { id: 7, name: 'Johnathan Kart', gender: 'Male', accent: 'American Accent - English', avatar: '👨🏽', sample: "Hey, I'm Johnathan with an American accent." },
-//     { id: 8, name: 'Daren Joe', gender: 'Male', accent: 'British Accent - English', avatar: '👨🏻', sample: "Hello there, I'm Daren with a British accent." },
-//     { id: 9, name: 'Kaji Ali', gender: 'Male', accent: 'Indian Accent - English', avatar: '👨🏽', sample: "Hello, I'm Kaji with an Indian accent." },
-//     { id: 10, name: 'Louis Gabriel', gender: 'Male', accent: 'French Accent - French', avatar: '👨🏻', sample: "Bonjour, je m'appelle Louis avec un accent français." },
-//   ];
 
 const voices: Voice[] = [
     { id: 1, name: 'Isabella West', gender: 'Female', accent: 'British English', avatar: '👩🏻', sample: "Hello, This is Isabella from Infotech Launch. How can I help you today?" },
     { id: 2, name: 'Ananya Sharma', gender: 'Female', accent: 'Indian English', avatar: '👩🏽', sample: "Hello, This is Ananya from Infotech Launch. How can I help you today?" },
-    // { id: 2, name: 'Ananya Sharma', gender: 'Female', accent: 'Indian English', avatar: '👩🏽', sample: "Hello, I'm Ananya with an Indian accent." },
     { id: 3, name: 'Elzbieta Kowalski', gender: 'Female', accent: 'Polish', avatar: '👩🏼', sample: "Cześć, nazywam się Elzbieta z Infotech Launch. W czym mogę dziś pomóc?" },
     { id: 4, name: 'Lucia Fernandez', gender: 'Female', accent: 'Spanish', avatar: '👩🏽', sample: "Hola, soy Lucia de Infotech Launch. ¿En qué puedo ayudarle?" },
     { id: 5, name: 'Madeline Hayes', gender: 'Female', accent: 'American English', avatar: '👩🏻', sample: "Hello, This is Madeline from Infotech Launch. How can I help you today?" },
@@ -76,20 +62,6 @@ const voices: Voice[] = [
       // Try to match voice based on language
       const voices = window.speechSynthesis.getVoices();
       let voiceMatch;
-      
-      // if (voice.accent.includes('Spanish')) {
-      //   voiceMatch = voices.find(v => v.lang.includes('es'));
-      // } else if (voice.accent.includes('Polish')) {
-      //   voiceMatch = voices.find(v => v.lang.includes('pl'));
-      // } else if (voice.accent.includes('French')) {
-      //   voiceMatch = voices.find(v => v.lang.includes('fr'));
-      // } else if (voice.accent.includes('Indian')) {
-      //   voiceMatch = voices.find(v => v.lang.includes('en'));
-      // } else if (voice.accent.includes('British')) {
-      //   voiceMatch = voices.find(v => v.lang.includes('en-GB'));
-      // } else {
-      //   voiceMatch = voices.find(v => v.lang.includes('en-US'));
-      // }
 
       if (voice.accent.includes('Spanish')) {
         voiceMatch = voices.find(v => v.lang.includes('es'));
@@ -290,11 +262,6 @@ const voices: Voice[] = [
     padding: '1rem'
   };
 
-//   const headerContainerStyle = {
-//     textAlign: 'center',
-//     marginBottom: '2rem'
-//   };
-
   const badgeStyle = {
     display: 'inline-flex',
     alignItems: 'center',
@@ -349,41 +316,12 @@ const voices: Voice[] = [
         </motion.p>
       </div>
 
-      {/* <div style={gridContainerStyle}>
-        {voices.map((voice, index) => (
-          <motion.div
-            key={voice.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 * index }}
-          >
-            <VoiceCard voice={voice} />
-          </motion.div>
-        ))}
-      </div> */}
 
         <div style={gridContainerStyle}>
         {voices.map((voice, index) => {
             const isTopRow = index < 4;
 
             return (
-            // <motion.div
-            //     key={voice.id}
-            //     initial={{ opacity: 0, y: 20 }}
-            //     animate={{
-            //         opacity: 1,
-            //         y: [0, isTopRow ? -5 : 5, 0], // vertical subtle bounce
-            //         x: isTopRow ? [0, -10, 0] : [0, 10, 0], // left-right for top, right-left for bottom
-            //     }}
-            //     transition={{
-            //         delay: 0.1 * index,
-            //         repeat: Infinity,
-            //         duration: 3,
-            //         ease: 'easeInOut',
-            //     }}
-            // >
-            //     <VoiceCard voice={voice} />
-            // </motion.div>
 
             <motion.div
                 key={voice.id}
