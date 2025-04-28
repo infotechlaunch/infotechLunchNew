@@ -2,12 +2,12 @@ import React from "react";
 import './Services.scss';
 // import { Link } from "react-router-dom";
 import ConnectExperts from "../../pages/ConnectExperts";
-import Services01 from '../../assets/Images/services/Inconsistent-Lead-Generation.jpg';
-import Services02 from '../../assets/Images/services/Cloud-Security-Risks.jpg';
-import Services03 from '../../assets/Images/services/Outdated-User-Experience.jpg';
-import Services04 from '../../assets/Images/services/Scalability-Challenges.jpg';
-import Services05 from '../../assets/Images/services/Scalability-Challenges.jpg';
-import Services06 from '../../assets/Images/services/Scalability-Challenges.jpg';
+import Services01 from '../../assets/Images/aiDevelopment/AIOpportunityDiscovery.png';
+import Services02 from '../../assets/Images/aiDevelopment/PersonalizedAIStrategyBlueprint.png';
+import Services03 from '../../assets/Images/aiDevelopment/SmartAIIntegrationStrategy.png';
+import Services04 from '../../assets/Images/aiDevelopment/DataFoundationAssessment.png';
+import Services05 from '../../assets/Images/aiDevelopment/IndustryFocusedFeasibilityStudie.png';
+import Services06 from '../../assets/Images/aiDevelopment/AI_Compliance_and_Risk_Management.png';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 

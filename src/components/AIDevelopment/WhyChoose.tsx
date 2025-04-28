@@ -31,7 +31,7 @@ const WhyChoose: React.FC = () => {
                 </div>
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
                     <div className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  px-6 py-8 rounded-lg">
-                        <div className="relative z-[1]" data-aos="fade-up">
+                        <div className="feature-card-1 relative z-[1]" >
                         
                         <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold">Optimum Outcome Focused</h2>
                             <p className="text-base font-normal text-white">Our developers are focused to bring optimum outcomes
@@ -44,45 +44,45 @@ const WhyChoose: React.FC = () => {
                         </div>
                     </div>
                     <div className="col-span-3">
-                        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
-                            <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up">
-                                <div>
-                                <img src={whychooseicon1} alt="" className="why-choose-icon" />
+                        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4" data-aos="fade-left">
+                            <div className="feature-card-1 border  bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                                <div className="">
+                                <img src={whychooseicon1} alt="" className="why-choose-icon object-contain-1" />
                                 <h3 className="text-xl font-semibold mb-2">Tailored AI Solutions</h3>
                                     <p className="text-sm font-normal">We AI design and enterprise AI ML mobile app development solutions that align with your unique enterprise business needs, ensuring maximum impact and ROI.</p>
                                 </div>
                             </div>
-                            <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                <img src={whychooseicon2} alt="" className="why-choose-icon" />
+                                <img src={whychooseicon2} alt="" className="why-choose-icon object-contain-1" />
                                 <h3 className="text-xl font-semibold mb-2">Expert Team</h3>
                                     <p className="text-sm font-normal">Our team of top-notch AI development experts brings years of experience in machine learning, natural language processing, computer vision, and more, ensuring cutting-edge solutions.</p>
                                 </div>
                             </div>
-                            <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up">
+                            <div className="feature-card-1 feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                <img src={whychooseicon3} alt="" className="why-choose-icon" />
+                                <img src={whychooseicon3} alt="" className="why-choose-icon object-contain-1" />
                                 <h3 className="text-xl font-semibold mb-2">End-to-End Support</h3>
                                     <p className="text-sm font-normal">From ideation and development to deployment and ongoing maintenance, we provide comprehensive support at every stage of your AI journey.</p>
                                 </div>
                             </div>
-                            <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
                                 <div>
-                                <img src={whychooseicon4} alt="" className="why-choose-icon" />
+                                <img src={whychooseicon4} alt="" className="why-choose-icon object-contain-1" />
                                 <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
                                     <p className="text-sm font-normal">With a portfolio of successful projects across industries, we have the expertise to deliver AI solutions that work.</p>
                                 </div>
                             </div>
-                            <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                <img src={whychooseicon5} alt="" className="why-choose-icon" />
+                                <img src={whychooseicon5} alt="" className="why-choose-icon object-contain-1" />
                                 <h3 className="text-xl font-semibold mb-2">Innovative Technology</h3>
                                     <p className="text-sm font-normal">We leverage the latest AI tools and frameworks to build scalable, future-ready solutions that grow with your business.</p>
                                 </div>
                             </div>
-                            <div className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" data-aos="fade-up">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
                                 <div>
-                                <img src={whychooseicon6} alt="" className="why-choose-icon" />
+                                <img src={whychooseicon6} alt="" className="why-choose-icon object-contain-1" />
                                 <h3 className="text-xl font-semibold mb-2">Client-Centric Approach</h3>
                                     <p className="text-sm font-normal">Your success is our priority. We work closely with you to understand your goals and deliver solutions that exceed expectations.</p>
                                 </div>

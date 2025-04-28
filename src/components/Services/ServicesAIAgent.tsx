@@ -2,12 +2,12 @@ import React from "react";
 import './Services.scss';
 // import { Link } from "react-router-dom";
 import ConnectExperts from "../../pages/ConnectExperts";
-import Services01 from '../../assets/Images/services/Inconsistent-Lead-Generation.jpg';
-import Services02 from '../../assets/Images/services/Cloud-Security-Risks.jpg';
-import Services03 from '../../assets/Images/services/Outdated-User-Experience.jpg';
-import Services04 from '../../assets/Images/services/Scalability-Challenges.jpg';
-import Services05 from '../../assets/Images/services/Scalability-Challenges.jpg';
-import Services06 from '../../assets/Images/services/Scalability-Challenges.jpg';
+import Services01 from '../../assets/Images/aiDevelopment/AIAgentStrategyandConsulting.png';
+import Services02 from '../../assets/Images/aiDevelopment/CustomAIAgentDevelopment.png';
+import Services03 from '../../assets/Images/aiDevelopment/AIAgentIntegration.png';
+import Services04 from '../../assets/Images/aiDevelopment/AIAgentSupportandMaintenance.png';
+import Services05 from '../../assets/Images/aiDevelopment/AIAgentUserExperienceDesign.png';
+import Services06 from '../../assets/Images/aiDevelopment/AIAgentTrainingandOptimization.png';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 
@@ -119,7 +119,7 @@ const Services: React.FC = () => {
                                         <div className="md_challenges_right bg-white flex items-center justify-center max-w-xs w-full rounded-r-2xl p-4">
                                             <div className="md_challenges_col">
                                                 <div className="flex items-center mb-4">
-                                                    <div className="flex items-center justify-center text-[24px] bg-orange text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
+                                                    <div className="flex items-center justify-center text-[24px] bg-black text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
                                                     {challenge.icon}
                                                     </div>
                                                     <div className="text-lg font-semibold">{challenge.title}</div>

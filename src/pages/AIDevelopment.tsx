@@ -62,7 +62,7 @@ const AIDevelopment: React.FC = () => {
         <>
          <AOSProvider>
             <HeaderNew />
-            <div className="lg:bg-center relative bannerhome bg-gradient-blue-red">
+            <div className="lg:bg-center relative  bg-gradient-blue-red">
                 <div
                     className="flex flex-col relative z-[3] lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <div className="w-full 2xl:py-20 xl:py-16 py-10">
@@ -84,10 +84,7 @@ const AIDevelopment: React.FC = () => {
                                     reality. Explore our AI development solutions or get a free consultation today to see how we
                                     can transform your business with the power of artificial intelligence. */}
                                     </p>
-                                <p className="w-full mx-auto text-sm font-light text-white lg:text-base mt-2"></p>
                             </div>
-                            <ul className="text-white grid md:grid-cols-1 gap-2 text-base font-normal"></ul>
-                            <p className="w-full mx-auto text-sm font-light text-white lg:text-base"></p>
                         </div>
                         {/* <div className="md:py-6" data-aos="fade-right">
                             <Link to="/contact-us" className="btn btn-fix lazyloaded">Talk With Expert
@@ -102,16 +99,18 @@ const AIDevelopment: React.FC = () => {
                          <ConnectExperts />
                     </div>
                     <div className="w-full lg:flex justify-end items-end hidden overflow-hidden rounded-bordered"  style={{ borderRadius: "12px" }}>
-                         <img src={heroImg} alt="" className="features-img" style={{
+                         <div data-aos="fade-left" >
+                            <img src={heroImg} alt="" className="features-img" style={{
                                                                     height: "350px",
                                                                     width: "auto",
                                                                     objectFit: "cover",
                                                                     
                                                                 }} />
+                                                                </div>
                     </div>
                 </div>
             </div>
-            <section className="lg:py-16 py-10 bg-[#fff]">
+            <section className="lg:py-16 py-10 bg-orange">
                 <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <div className="space-y-4 text-center">
                         <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
