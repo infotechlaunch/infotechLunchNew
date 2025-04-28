@@ -109,10 +109,10 @@ const AiDemoCall = () => {
       return;
     }
 
-    // if (!formData.captchaToken) {
-    //   alert("Please verify you’re not a robot");
-    //   return;
-    // }
+    if (!formData.captchaToken) {
+      alert("Please verify you’re not a robot");
+      return;
+    }
 
     setLoading(true);
     Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)

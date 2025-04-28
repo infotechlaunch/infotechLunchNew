@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import "./SocialMedia.css";
+import ContactUsBtn from "../pages/ContactUsBtn";
 
 
 export default function PricingComparisonTable() {
@@ -150,42 +151,26 @@ export default function PricingComparisonTable() {
                     <td className="px-4 py-3 border-b text-center">
                       {item.itl.agency ? item.itl.agency : <XMark />}
                     </td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
-                      {item.itl.basic === true ? (
-                        <CheckMark />
-                      ) : item.itl.basic === false ? (
-                        <XMark />
-                      ) : (
-                        item.itl.basic
-                      )}
-                    </td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
-                      {item.itl.standard === true ? (
-                        <CheckMark />
-                      ) : item.itl.standard === false ? (
-                        <XMark />
-                      ) : (
-                        item.itl.standard
-                      )}
-                    </td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
-                      {item.itl.plus === true ? (
-                        <CheckMark />
-                      ) : item.itl.plus === false ? (
-                        <XMark />
-                      ) : (
-                        item.itl.plus
-                      )}
-                    </td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">
-                      {item.itl.enterprise === true ? (
-                        <CheckMark />
-                      ) : item.itl.enterprise === false ? (
-                        <XMark />
-                      ) : (
-                        item.itl.enterprise
-                      )}
-                    </td>
+                    {item.service === 'Total' ? (
+                      <td className="px-4 py-3 border-b text-center bg-blue-fade" colSpan={4}>
+                        Lowest Price Guaranteed - <ContactUsBtn />
+                      </td>
+                    ) : (
+                      <>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">
+                          {item.itl.basic === true ? <CheckMark /> : item.itl.basic === false ? <XMark /> : item.itl.basic}
+                        </td>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">
+                          {item.itl.standard === true ? <CheckMark /> : item.itl.standard === false ? <XMark /> : item.itl.standard}
+                        </td>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">
+                          {item.itl.plus === true ? <CheckMark /> : item.itl.plus === false ? <XMark /> : item.itl.plus}
+                        </td>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">
+                          {item.itl.enterprise === true ? <CheckMark /> : item.itl.enterprise === false ? <XMark /> : item.itl.enterprise}
+                        </td>
+                      </>
+                    )}
                   </tr>
                 ))}
               </tbody>
@@ -226,9 +211,15 @@ export default function PricingComparisonTable() {
                     <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.socialbee.plus}</td>
                     <td className="px-4 py-3 border-b text-center"><span className="text-red-500 font-bold text-xl">✗</span></td>
                     <td className="px-4 py-3 border-b text-center"><span className="text-red-500 font-bold text-xl">✗</span></td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.basic}</td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.standard}</td>
-                    <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.plus}</td>
+                    {item.service === "Total" ? (
+                      <td className="px-4 py-3 border-b text-center bg-blue-fade" colSpan={3}>Lowest Price Guaranteed - <ContactUsBtn /></td>
+                    ):(
+                      <>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.basic}</td>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.standard}</td>
+                        <td className="px-4 py-3 border-b text-center bg-blue-fade">{item.itl.plus}</td>
+                      </>
+                    )}
                   </tr>
                 ))}
               </tbody>
