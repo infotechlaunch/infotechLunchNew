@@ -6,7 +6,7 @@ import Axios from "axios";
 
 
 
-const ConnectExperts: React.FC = () => {
+const ContactUsBtn: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const recaptchaRef = useRef(null);
@@ -194,21 +194,12 @@ const ConnectExperts: React.FC = () => {
         <>
 
            
-                <button className="btn btn-fix" onClick={onOpen}>
-                Talk to an expert!
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24.231"
-                    height="11.738"
-                    viewBox="0 0 24.231 11.738"
-                >
-                    <path
-                    d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
-                    transform="translate(-521.511 -1346.214)"
-                    fill="#fff"
-                    />
-                </svg>
-                </button>
+            <span onClick={onOpen} style={{
+                cursor: "pointer",
+                color: "blue"
+            }}>
+                Contact us!
+            </span>
 
 
             {isOpen && (
@@ -389,4 +380,4 @@ const ConnectExperts: React.FC = () => {
     );
 };
 
-export default ConnectExperts;
+export default ContactUsBtn;
