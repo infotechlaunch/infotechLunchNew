@@ -20,6 +20,7 @@ import whychooseicon3 from '../assets/Images/aiDevelopment/why-choose-3.png';
 import whychooseicon4 from '../assets/Images/aiDevelopment/why-choose-4.png';
 import whychooseicon5 from '../assets/Images/aiDevelopment/why-choose-5.png';
 import whychooseicon6 from '../assets/Images/aiDevelopment/why-choose-6.png';
+import IndustriesHome from "../components/AIConsulting/Industries";
 import AOSProvider from "../components/AOSProvider";
 const achievements = [
   {
@@ -206,7 +207,7 @@ const AIConsulting: React.FC = () => {
           </div>
         </div>
       </div>
-
+<IndustriesHome/>
       <Footer />
     </>
   );
