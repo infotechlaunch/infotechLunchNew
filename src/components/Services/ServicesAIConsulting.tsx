@@ -2,12 +2,12 @@ import React from "react";
 import './Services.scss';
 // import { Link } from "react-router-dom";
 import ConnectExperts from "../../pages/ConnectExperts";
-import Services01 from '../../assets/Images/aiDevelopment/AIOpportunityDiscovery.png';
-import Services02 from '../../assets/Images/aiDevelopment/PersonalizedAIStrategyBlueprint.png';
-import Services03 from '../../assets/Images/aiDevelopment/SmartAIIntegrationStrategy.png';
-import Services04 from '../../assets/Images/aiDevelopment/DataFoundationAssessment.png';
-import Services05 from '../../assets/Images/aiDevelopment/IndustryFocusedFeasibilityStudie.png';
-import Services06 from '../../assets/Images/aiDevelopment/AI_Compliance_and_Risk_Management.png';
+import Services01 from '../../assets/Images/aiDevelopment/aiconsulting/AIOpportunityDiscovery.png';
+import Services02 from '../../assets/Images/aiDevelopment/aiconsulting/PersonalizedAIStrategyBlueprint.png';
+import Services03 from '../../assets/Images/aiDevelopment/aiconsulting/SmartAIIntegrationStrategy.png';
+import Services04 from '../../assets/Images/aiDevelopment/aiconsulting/DataFoundationAssessment.png';
+import Services05 from '../../assets/Images/aiDevelopment/aiconsulting/IndustryFocusedFeasibilityStudie.png';
+import Services06 from '../../assets/Images/aiDevelopment/aiconsulting/AI_Compliance_and_Risk_Management.png';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 
@@ -72,7 +72,7 @@ const Services: React.FC = () => {
 
     return (
 
-        <div className="challenges bg-gradient-blue-red py-12 sticky w-full lg:py-16 py-10">
+        <div className="challenges bg-black py-12 sticky w-full lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -84,16 +84,16 @@ const Services: React.FC = () => {
                                 </h3>
 
                                 <h2 className="text-lg md:text-4xl lg:text-4xl font-bold leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
-                                Accelerate Your Growth with Customized AI Consulting Solutions
-                                <br />
-                                <span className="text-base md:text-xl font-medium">
-                                   
-From evaluation to execution, we deliver customized AI consulting solutions that solve your unique challenges and drive transformational growth.
+                                    Accelerate Your Growth with Customized AI Consulting Solutions
+                                    <br />
+                                    <span className="text-base md:text-xl font-medium">
 
-                                </span>
+                                        From evaluation to execution, we deliver customized AI consulting solutions that solve your unique challenges and drive transformational growth.
+
+                                    </span>
                                 </h2>
 
-                               {/* <div className="mt-6">
+                                {/* <div className="mt-6">
                                     <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                         <button className="btn btn-fix lazyloaded">Get Solution?
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
@@ -106,11 +106,20 @@ From evaluation to execution, we deliver customized AI consulting solutions that
                                     </Link>
                                 </div> */}
                                 <ConnectExperts />
+                                <video
+                                    className="z-0"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                >
+                                    <source src="https://www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/07/MV.mp4?var=1838242011" type="video/mp4" />
+                                </video>
                             </div>
                         </div>
 
                         {/* Right Section */}
-                        <div className="chalnges-right" style={{zIndex:"-1"}}>
+                        <div className="chalnges-right" style={{ zIndex: "-1" }}>
                             <div className="md_challenges_box space-y-7">
                                 {challengeData.map((challenge, index) => (
                                     <div key={challenge.id} id={challenge.id} className={`md_challenges_slide flex justify-end sticky mb-7`} style={{ top: `${8 + index * 0.25}rem` }}>
@@ -121,7 +130,7 @@ From evaluation to execution, we deliver customized AI consulting solutions that
                                             <div className="md_challenges_col">
                                                 <div className="flex items-center mb-4">
                                                     <div className="flex items-center justify-center text-[24px] bg-black text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
-                                                    {challenge.icon}
+                                                        {challenge.icon}
                                                     </div>
                                                     <div className="text-lg font-semibold">{challenge.title}</div>
                                                 </div>
