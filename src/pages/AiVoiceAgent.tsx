@@ -69,18 +69,17 @@ const AiVoiceAgent: React.FC = () => {
                 <HeaderNew />
 
                 {/* section 1  */}
-                <section className="hero-container bg-gradient-blue-red flex items-center justify-center">
-                    <div className="flex justify-center max-w-7xl text-white mobile-block">
-                    <div className="w-1/2 mobile-w-full" data-aos="fade-right">
-                        <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center" style={{
-                            fontSize: "16px",marginBottom: "10px", display: "table"}}>
+                <section className="hero-container bg-gradient-blue-red">
+                    <div className="hero-content">
+                        <div className="hero-text" data-aos="fade-right">
+                        {/* <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center">
                             One Call. Endless Possibilities for Business.
-                        </p>
+                        </p> */}
 
-                        <h1 className="text-4xl font-bold mb-5 mt-5">
+                        <h1 className="text-4xl font-bold mb-5 mt-5 text-white">
                             AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
                         </h1>
-                        <p className="text-lg mb-5">
+                        <p className="text-lg mb-5 text-white">
                             Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
                         </p>
 
@@ -229,18 +228,21 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                    </div>
-                </section> 
-
-                <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
-                    <video
-                        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                    <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
+                    <video 
+                        className="z-0 w-full" style={{ borderRadius: "12px" }}
                         src={head_image_animation}
                         autoPlay
                         loop
                         muted
                         playsInline
                     />
+                    </div>
+                    </div>
+                </section> 
+
+                {/* <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
+                    
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
                     <div className="hero-content relative z-20 text-center justify-center max-w-5xl text-white" data-aos="fade-up">
                         <p className="text-white rounded-full px-6 py-2 flex items-center text-center" style={{
@@ -409,7 +411,7 @@ const AiVoiceAgent: React.FC = () => {
                                             objectFit: "cover"
                                         }} />
                         </div>
-                </section>
+                </section> */}
 
 
                 {/* section 2  */}
@@ -424,9 +426,9 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         </div>
                         
-                        <div className="flex h-[550px]">
+                        <div className="flex h-[550px] mobile-h-full mobile-block">
                         {/* Left Sidebar */}
-                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col">
+                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col mobile-w-full">
                             <div className="mb-8">
                             <h1 className="text-2xl font-bold tracking-wider">InfoTech</h1>
                             </div>
@@ -474,7 +476,7 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             
                             {/* Bottom Actions */}
-                            <div className="flex-1 bg-black flex">
+                            <div className="flex-1 bg-black flex mobile-block">
                             <div className="flex-1 flex p-4">
                                 <div className="mr-4 flex-1">
                                 <div className="bg-gray-800 rounded p-3 h-full flex flex-col">
@@ -491,14 +493,14 @@ const AiVoiceAgent: React.FC = () => {
                                 <div className="bg-gray-800 rounded p-3 h-full flex flex-col">
                                     <h3 className="text-sm mb-2">Activate Inbound Call Transfer</h3>
                                     <div className="flex items-end justify-between mt-auto">
-                                    <button className="bg-gray-700 text-xs rounded py-1 px-3 w-24">Transfer Now</button>
-                                    <span className="text-xs">↑</span>
+                                    <button className="bg-gray-700 text-xs rounded mt-auto py-1 px-3 flex items-center justify-center max-w-xs">Transfer Now <span className="text-xs">↑</span></button>
+                                    
                                     </div>
                                 </div>
                                 </div>
                             </div>
 
-                            <div className="w-64 bg-gray-800 border-l border-gray-700">
+                            <div className="w-64 bg-gray-800 border-l border-gray-700 mobile-w-full p-3">
 
                             <img src={callSummaryImg} alt="" />
                             </div>
@@ -669,7 +671,7 @@ const AiVoiceAgent: React.FC = () => {
   
                 {/* section 6  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="flex w-full max-w-6xl gap-8 items-center">
+                    <div className="flex w-full max-w-6xl gap-8 items-center mobile-block">
                         {/* Left panel content */}
                         <div className="flex-1"  data-aos="fade-right">
                             <p className="text-orange text-lg mb-3">AI’s Creative Brilliance Unleashed</p>
@@ -679,7 +681,7 @@ const AiVoiceAgent: React.FC = () => {
                             <p className="mb-3 text-gray-300">
                                 Enhance your Voice Intelligence by customizing its personality. Choose from thousands of pre-set personas tailored to your needs.
                             </p>
-                            <p className="text-sm text-white">
+                            <p className="text-sm text-white mb-3">
                                <b> Fun Fact:</b> Walmart uses voice-enabled AI assistants to streamline order placement, tracking, and customer support.
                             </p>
                         </div>
@@ -1271,7 +1273,7 @@ const AiVoiceAgent: React.FC = () => {
                     <div className="max-w-7xl mx-auto  border border-white-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
                         {/* Left column - Title */}
                         <div className="md:w-1/3" data-aos="fade-right">
-                        <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
+                        {/* <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1> */}
                         <img src={faqImg} alt="" />
                         </div>
 

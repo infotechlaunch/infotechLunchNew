@@ -570,6 +570,13 @@ transition: transform 0.2s ease;}
 }
 
 @media screen and (max-width: 767px) {
+  .hero-text h1{font-size: 2rem;}
+  .hero-text p{font-size: 0.9rem;}
+  .feature-card span{font-size: 0.8rem;}
+  .text-lg{font-size: 0.9rem !important;}
+  .text-5xl {
+    font-size: 2.5rem !important;
+}
   body{overflow-x: hidden;}
   .mobile-block{display: block !important;}
   .mobile-h-full{height: auto !important;}

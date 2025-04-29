@@ -8,6 +8,7 @@ import Partners from "../components/Partners/Partners";
 import OurPortfolioHome from "../components/OurPortfolioHome/OurPortfolioHome";
 import IndustriesHome from "../components/IndustriesHome/IndustriesHome";
 import Blog from "../components/Blog/Blog";
+import HireMobileAppHeroImg from "../assets/Images/hero-img/hirededicateddeveloper.webp";
 import TawkChat from "./TawkChat";
 import GetStarted from "../components/GetStarted/GetStarted";
 import FAQ from "../components/Faq/Faq";
@@ -20,7 +21,7 @@ const HireMobileAppDeveloper: React.FC = () => {
         <>
           <AOSProvider>
             <HeaderNew />
-            <div className="lg:bg-center relative bannerhome bg-ai2 bg-no-repeat bg-cover bg-left">
+            <div className="lg:bg-center relative bg-gradient-blue-red">
                 <div
                     className="flex flex-col relative z-[3] lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <div className="w-full 2xl:py-20 xl:py-16 py-10">
@@ -67,7 +68,12 @@ const HireMobileAppDeveloper: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="w-full lg:flex justify-end items-end hidden"></div>
+                    <div className="w-full lg:flex justify-end items-end overflow-hidden" style={{borderRadius:"12px"}} data-aos="fade-left">
+                        <div className="rounded-bordered">
+
+                         <img src={HireMobileAppHeroImg} alt="" className="features-img"  />
+                         </div>
+                    </div>
                 </div>
             </div>
             <section className="lg:py-16 py-10 bg-orange">

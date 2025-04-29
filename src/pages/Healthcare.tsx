@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
-import healthCareImg from "../assets/Images/health-care.jpeg";
+import healthCareImg from "../assets/Images/hero-img/healthcare.webp";
 
 
 
@@ -17,7 +17,7 @@ const Healthcare: React.FC = () => {
                 <div className="w-full bg-gradient-blue-red py-20 px-6">
   <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
     {/* Text Content */}
-    <div className="w-full lg:w-1/2 space-y-6">
+    <div className="w-full lg:w-1/2 space-y-6" data-aos="fade-right">
       <h1 className="text-4xl xl:text-5xl font-extrabold text-white leading-tight">
         Empowering Healthcare With <span className="text-orange">Next-Gen</span> Digital Solutions
       </h1>
@@ -49,7 +49,7 @@ const Healthcare: React.FC = () => {
     </div>
 
     {/* Image Section */}
-    <div className="w-full lg:w-1/2">
+    <div className="w-full lg:w-1/2" data-aos="fade-left">
       <img
         src={healthCareImg}
         alt="Healthcare Solutions"
