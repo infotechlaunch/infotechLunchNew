@@ -12,6 +12,9 @@ import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "./TawkChat";
 import Footer from "../components/Footer/Footer";
 import AOSProvider from "../components/AOSProvider";
+// import Axios from "axios";
+
+
 interface BlogPost {
     id: number;
     title: string;
@@ -21,6 +24,7 @@ interface BlogPost {
     imageUrl: string;
     link: string;
 }
+
 
 const blogPosts: BlogPost[] = [
     {
@@ -89,12 +93,23 @@ const blogPosts: BlogPost[] = [
 
 const BlogPage: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>("All");
+    // const [blogs, setBlogs] = useState([]);
 
     const tabs = ["All", "Mobile App", "AI Development"];
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
     };
+
+    // Axios.get(`http://127.0.0.1:8000/api/get-blogs`)
+    // .then((response) => {
+    //     console.log('response data status =======>>>>', response.data.status);
+    //     console.log('response data data =======>>>>', response.data.data);
+    //     if(response.data.status === true) {
+    //         setBlogs(response.data.data);
+    //     }
+    // });
+
     return (
         <>
             <AOSProvider>

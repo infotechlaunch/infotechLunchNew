@@ -175,7 +175,8 @@ const AiDemoCall = () => {
 
     console.log('Sending data:', Object.fromEntries(params));
 
-    Axios.post('https://script.google.com/macros/s/AKfycbxHGePL6cuC013KzD-tq2e9oMO1oOM48XrDWZLTbt17cJTRfERpj1Yhht9J18W5jc1r/exec', 
+    // Axios.post('https://script.google.com/macros/s/AKfycbxHGePL6cuC013KzD-tq2e9oMO1oOM48XrDWZLTbt17cJTRfERpj1Yhht9J18W5jc1r/exec', 
+    Axios.post('https://script.google.com/macros/s/AKfycbx_sIfqlsGNMMkrzqeuOb6YpZd_Abzp5Qgc78pxzdokuH-gzwRXaIGaB8ojWec-9mAk/exec', 
       params.toString(),
       {
         headers: {

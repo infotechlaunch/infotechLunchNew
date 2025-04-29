@@ -15,6 +15,7 @@ import ryan_american from "../assets/Audios/ryan_american.mp4";
 import susan_american from "../assets/Audios/susan_american.mp4";
 import echo_american from "../assets/Audios/echo_american.mp4";
 import shimmer_american from "../assets/Audios/shimmer_american.mp4";
+import briyan_american from "../assets/Audios/briyan_american.mp4";
 
 const PlayAudio = () => {
 
@@ -55,6 +56,7 @@ const PlayAudio = () => {
     { id: 12, name: 'Susan', gender: 'Female', accent: 'American English', avatar: '👩🏼‍🦰', audioFile: susan_american },
     { id: 13, name: 'Echo', gender: 'Male', accent: 'American English', avatar: '👨🏽‍🦳', audioFile: echo_american },
     { id: 14, name: 'Shimmer', gender: 'Female', accent: 'American English', avatar: '👨🏼‍🦰', audioFile: shimmer_american },
+    { id: 15, name: 'Briyan', gender: 'Male', accent: 'American English', avatar: '👩🏽', audioFile: briyan_american },
   ];
   
 

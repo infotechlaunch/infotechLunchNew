@@ -151,9 +151,10 @@ const ConnectExperts: React.FC = () => {
             }
         });
 
-        console.log('Sending data:', Object.fromEntries(params));
+        // console.log('Sending data:', Object.fromEntries(params));
 
-        Axios.post('https://script.google.com/macros/s/AKfycbyAj4IRHnj7GosxqPG3q4v3dFro_O0rzrMD2ue3DjvFw8AMcDbfW2SEd7QUMo0706UxkQ/exec', 
+        // Axios.post('https://script.google.com/macros/s/AKfycbyAj4IRHnj7GosxqPG3q4v3dFro_O0rzrMD2ue3DjvFw8AMcDbfW2SEd7QUMo0706UxkQ/exec', 
+        Axios.post('https://script.google.com/macros/s/AKfycbyvOFpFgeyIaPcC8K2aInGpn7_u8ZGhUiOgF9t5SwcFIwQcjQVz9oBI-v0IOKG3QcJk/exec', 
         params.toString(),
         {
             headers: {
@@ -341,7 +342,7 @@ const ConnectExperts: React.FC = () => {
                                 />
                                 <label htmlFor="agreement" className="block text-sm font-medium text-gray-700">
                                     {/* I Agree To Receive SMS & Connect On WhatsApp */}
-                                    I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from Flux Fortify.
+                                    I consent to receive SMS notifications, alerts, and occasional marketing messages from Infotech Launch.
                                 </label>
                             </div>
 
