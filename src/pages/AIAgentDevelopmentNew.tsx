@@ -5,6 +5,8 @@ import Footer from "../components/Footer/Footer";
 import AiAgentHeroImg from "../assets/Images/aiDevelopment/aiagent-hero-img.jpg";
 import Services from "../components/Services/ServicesAIAgent";
 import ConnectExperts from "../pages/ConnectExperts";
+import FAQ from "../components/Faq/FaqAIAgent";
+import GetStarted from "../components/GetStarted/GetStartedAIAgent";
 
 
 
@@ -23,9 +25,7 @@ const AIAgentDevelopmentNew = () => {
                             AI Agent Development
                         </h1>
                         <p className="text-lg md:text-xl text-white mb-5">
-                            We specialize in building intelligent AI agents that automate tasks, improve decision-making,
-                            and deliver real-time responses. Whether it’s virtual assistants, customer support, or workflow bots—
-                            our agents work around the clock to streamline your business processes.
+                        Infotech Launch builds intelligent AI agents to automate workflows, streamline operations, and enhance customer interactions — accelerating business transformation with next-generation AI solutions.
                         </p>
                         <ConnectExperts />
 
@@ -44,7 +44,8 @@ const AIAgentDevelopmentNew = () => {
           </div>
           </section>
             <Services />
-
+            <GetStarted />
+            <FAQ />
             <Footer />
         </>
     );

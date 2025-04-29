@@ -12,7 +12,7 @@ import IndustriesHome from "../components/IndustriesHome/IndustriesHome";
 import Blog from "../components/Blog/Blog";
 import TawkChat from "./TawkChat";
 import GetStarted from "../components/GetStarted/GetStarted";
-import FAQ from "../components/Faq/Faq";
+import FAQ from "../components/Faq/FaqAIAgent";
 // import ai from '../assets/Images/ai.png';
 import heroImg from '../assets/Images/aiDevelopment/heroimg.png';
 import achieveimg1 from '../assets/Images/aiDevelopment/Successful_AI_Chatbot_Deployment.png';
