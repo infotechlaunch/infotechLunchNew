@@ -8,16 +8,16 @@ import sports from "../../assets/Images/sports-industries-img.webp";
 import entertainment from "../../assets/Images/entertainment-industries-img.webp";
 import social from "../../assets/Images/social-media-app-industries-img.webp";
 import finance from "../../assets/Images/finance-industries-img.webp";
-import dating from "../../assets/Images/dating-industries-img.webp";
+// import dating from "../../assets/Images/dating-industries-img.webp";
 import restaurant from "../../assets/Images/restaurant-industries-img.webp";
 import ecommerce from "../../assets/Images/industries-ecommerce-img.webp";
 import healthcare from "../../assets/Images/industries-healthcare-img.webp";
-import blockchain from "../../assets/Images/industries-blockchain-img.webp";
+// import blockchain from "../../assets/Images/industries-blockchain-img.webp";
 import education from "../../assets/Images/industries-education-img.webp";
 import industrie from "../../assets/Images/industries-industries-img.webp";
 import transportat from "../../assets/Images/transportation-industries-img.webp";
 import construction from "../../assets/Images/construction-industries-img.webp";
-import game from "../../assets/Images/game-industries-img.webp";
+// import game from "../../assets/Images/game-industries-img.webp";
 
 
 const Industries = [

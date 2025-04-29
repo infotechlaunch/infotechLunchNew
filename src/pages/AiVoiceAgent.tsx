@@ -12,7 +12,7 @@ import PlayAudio from "../pages/PlayAudio";
 import { Link } from "react-router-dom";
 import callUsageImg from "../assets/Images/call-usage1.png";
 import faqImg from "../assets/Images/faq-voice.png";
-import voiceheroImg from "../assets/Images/call-summary2.png";
+// import voiceheroImg from "../assets/Images/call-summary2.png";
 import callSummaryImg from "../assets/Images/call-summary2.png";
 import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
 import considerItDoneImg from "../assets/Images/considerItDone.png";
