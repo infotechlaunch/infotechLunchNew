@@ -12,6 +12,7 @@ import PlayAudio from "../pages/PlayAudio";
 import { Link } from "react-router-dom";
 import callUsageImg from "../assets/Images/call-usage1.png";
 import faqImg from "../assets/Images/faq-voice.png";
+import voiceheroImg from "../assets/Images/call-summary2.png";
 import callSummaryImg from "../assets/Images/call-summary2.png";
 import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
 import considerItDoneImg from "../assets/Images/considerItDone.png";
@@ -68,16 +69,180 @@ const AiVoiceAgent: React.FC = () => {
                 <HeaderNew />
 
                 {/* section 1  */}
+                <section className="hero-container bg-gradient-blue-red">
+                    <div className="hero-content">
+                        <div className="hero-text" data-aos="fade-right">
+                        {/* <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center">
+                            One Call. Endless Possibilities for Business.
+                        </p> */}
 
-                <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
-                    <video
-                        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                        <h1 className="text-4xl font-bold mb-5 mt-5 text-white">
+                            AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
+                        </h1>
+                        <p className="text-lg mb-5 text-white">
+                            Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
+                        </p>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "1rem",
+                                margin: "auto",
+                                marginBottom: "20px"
+                            }}
+                            >
+                            <Link
+                                to="/ai-contact-us"
+                                className="framer-1N5PT framer-ibvdus framer-v-nj2zz1 framer-l3ha2z"
+                                data-highlight="true"
+                                data-border="true"
+                                data-framer-name="md | no animation"
+                                tabIndex={0}
+                                style={{
+                                border: "1px solid rgba(255, 255, 255, 0.1)",
+                                backdropFilter: "blur(2px)",
+                                background:
+                                    "linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%) rgba(255, 255, 255, 0.03)",
+                                borderRadius: "999px",
+                                opacity: 1,
+                                padding: "0.75rem 1.5rem",
+                                textDecoration: "none",
+                                }}
+                                >
+                                <div
+                                className="framer-17xbfdf"
+                                style={{
+                                    background:
+                                    "linear-gradient(225deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.05) 61.1128%)",
+                                    borderRadius: "999px",
+                                    opacity: 1,
+                                }}
+                                    >
+
+                                </div>
+                                <div
+                                className="framer-1vuzv05"
+                                style={{
+                                    background:
+                                    "linear-gradient(207deg, rgb(47, 41, 43) -70.344%, rgb(4, 1, 2) 100%)",
+                                    borderRadius: "999px",
+                                    opacity: 1,
+                                }}
+                                    >
+
+                                </div>
+                                <div
+                                className="framer-1ihxhf6"
+                                data-framer-name="Label"
+                                style={{
+                                    outline: "none",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "flex-start",
+                                    flexShrink: 0,
+                                    color: "black",
+                                    transform: "none",
+                                    opacity: 1,
+                                }}
+                                    >
+                                <p
+                                    style={{
+                                    fontWeight: 500,
+                                    lineHeight: "24px",
+                                    color: "#fff",
+                                    margin: 0,
+                                    }}
+                                    >
+                                    Initiate Your Journey
+                                </p>
+                                </div>
+                            </Link>
+
+                            <Link
+                                    to="/ai-demo-call"
+                                    className="framer-1N5PT framer-ibvdus framer-v-bv2xb3 framer-l3ha2z"
+                                    data-highlight="true"
+                                    data-framer-name="md | ghost"
+                                    tabIndex={0}
+                                    style={{
+                                    border: "1px solid rgba(255, 255, 255, 0.1)",
+                                    backdropFilter: "blur(2px)",
+                                    background: "linear-gradient(192deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%) rgba(255, 255, 255, 0.03)",
+                                    borderRadius: "999px",
+                                    opacity: 1,
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: "0.5rem",
+                                    textDecoration: "none",
+                                    padding: "0.75rem 1.25rem"
+                                }}
+                                >
+                                <div className="framer-1cl6w9d-container" style={{ opacity: 1 }}>
+                                <div style={{ display: "contents" }}>
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 256"
+                                    focusable="false"
+                                    style={{
+                                        userSelect: "none",
+                                        width: "16px",
+                                        height: "16px",
+                                        display: "inline-block",
+                                        fill: "#fff",
+                                        color: "#fff",
+                                        flexShrink: 0,
+                                    }}
+                                    >
+                                    <g color="black">
+                                        <path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z" />
+                                    </g>
+                                    </svg>
+                                </div>
+                                </div>
+                                <div
+                                className="framer-1ihxhf6"
+                                data-framer-name="Label"
+                                style={{
+                                    outline: "none",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "flex-start",
+                                    flexShrink: 0,
+                                    color: "#fff",
+                                    transform: "none",
+                                    opacity: 1,
+                                }}
+                                    >
+                                <p
+                                    style={{
+                                    fontWeight: 500,
+                                    lineHeight: "24px",
+                                    color: "#fff",
+                                    margin: 0,
+                                    }}
+                                >
+                                    Test The Future
+                                </p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
+                    <video 
+                        className="z-0 w-full" style={{ borderRadius: "12px" }}
                         src={head_image_animation}
                         autoPlay
                         loop
                         muted
                         playsInline
                     />
+                    </div>
+                    </div>
+                </section> 
+
+                {/* <section className="hero-container relative overflow-hidden bg-gradient-blue-red flex items-center justify-center min-h-screen">
+                    
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
                     <div className="hero-content relative z-20 text-center justify-center max-w-5xl text-white" data-aos="fade-up">
                         <p className="text-white rounded-full px-6 py-2 flex items-center text-center" style={{
@@ -239,7 +404,14 @@ const AiVoiceAgent: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                </section>
+                    <div className="w-1/2 mobile-w-full overflow-hidden rounded-xl" data-aos="fade-left" style={{ zIndex: "0" }}>
+                    <img src={voiceheroImg} alt="" className="features-img" style={{
+                                            height: "350px",
+                                            width: "auto",
+                                            objectFit: "cover"
+                                        }} />
+                        </div>
+                </section> */}
 
 
                 {/* section 2  */}
@@ -254,9 +426,9 @@ const AiVoiceAgent: React.FC = () => {
                         </div>
                         </div>
                         
-                        <div className="flex h-[550px]">
+                        <div className="flex h-[550px] mobile-h-full mobile-block">
                         {/* Left Sidebar */}
-                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col">
+                        <div className="w-64 bg-black p-4 border-r border-gray-800 flex flex-col mobile-w-full">
                             <div className="mb-8">
                             <h1 className="text-2xl font-bold tracking-wider">InfoTech</h1>
                             </div>
@@ -304,7 +476,7 @@ const AiVoiceAgent: React.FC = () => {
                             </div>
                             
                             {/* Bottom Actions */}
-                            <div className="flex-1 bg-black flex">
+                            <div className="flex-1 bg-black flex mobile-block">
                             <div className="flex-1 flex p-4">
                                 <div className="mr-4 flex-1">
                                 <div className="bg-gray-800 rounded p-3 h-full flex flex-col">
@@ -321,14 +493,14 @@ const AiVoiceAgent: React.FC = () => {
                                 <div className="bg-gray-800 rounded p-3 h-full flex flex-col">
                                     <h3 className="text-sm mb-2">Activate Inbound Call Transfer</h3>
                                     <div className="flex items-end justify-between mt-auto">
-                                    <button className="bg-gray-700 text-xs rounded py-1 px-3 w-24">Transfer Now</button>
-                                    <span className="text-xs">↑</span>
+                                    <button className="bg-gray-700 text-xs rounded mt-auto py-1 px-3 flex items-center justify-center max-w-xs">Transfer Now <span className="text-xs">↑</span></button>
+                                    
                                     </div>
                                 </div>
                                 </div>
                             </div>
 
-                            <div className="w-64 bg-gray-800 border-l border-gray-700">
+                            <div className="w-64 bg-gray-800 border-l border-gray-700 mobile-w-full p-3">
 
                             <img src={callSummaryImg} alt="" />
                             </div>
@@ -499,7 +671,7 @@ const AiVoiceAgent: React.FC = () => {
   
                 {/* section 6  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="flex w-full max-w-6xl gap-8 items-center">
+                    <div className="flex w-full max-w-6xl gap-8 items-center mobile-block">
                         {/* Left panel content */}
                         <div className="flex-1"  data-aos="fade-right">
                             <p className="text-orange text-lg mb-3">AI’s Creative Brilliance Unleashed</p>
@@ -509,7 +681,7 @@ const AiVoiceAgent: React.FC = () => {
                             <p className="mb-3 text-gray-300">
                                 Enhance your Voice Intelligence by customizing its personality. Choose from thousands of pre-set personas tailored to your needs.
                             </p>
-                            <p className="text-sm text-white">
+                            <p className="text-sm text-white mb-3">
                                <b> Fun Fact:</b> Walmart uses voice-enabled AI assistants to streamline order placement, tracking, and customer support.
                             </p>
                         </div>
@@ -1101,7 +1273,7 @@ const AiVoiceAgent: React.FC = () => {
                     <div className="max-w-7xl mx-auto  border border-white-800 rounded-lg p-8 flex flex-col md:flex-row gap-8">
                         {/* Left column - Title */}
                         <div className="md:w-1/3" data-aos="fade-right">
-                        <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>
+                        {/* <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1> */}
                         <img src={faqImg} alt="" />
                         </div>
 

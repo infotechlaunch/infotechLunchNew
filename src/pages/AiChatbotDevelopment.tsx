@@ -2,8 +2,8 @@
 import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
-import aiAgent from "../assets/Images/ai-chatbot-development1.jpg";
-import Services from "../components/Services/Services";
+import aiChatbotHeroImg from "../assets/Images/aiDevelopment/aichatdevelopment-hero-img.jpg";
+import Services from "../components/Services/ServicesAIChatbot";
 
 import ConnectExperts from "../pages/ConnectExperts";
 
@@ -16,27 +16,32 @@ const AdaptiveAiDevelopment = () => {
                 <></>
             </AOSProvider>
             <HeaderNew />
-            <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mt-4">
-                <div className="ai-consulting-img w-full h-full">
-                    <img
-                        src={aiAgent}
-                        alt="ai-consulting-img"
-                        className="w-full h-full object-cover opacity-50"
-                    />
-                </div>
-                <div className="absolute top-0 left-0 w-full h-full flex items-center pt-20 justify-start px-10 md:px-20">
-                    <div className="text-white max-w-xl xl:w-[58%] lg:w-[65%] w-full relative z-[2]">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            <section className="hero-container bg-gradient-blue-red">
+                    <div className="hero-content">
+                        <div className="hero-text">
+                            <div className="sticky top-40 z-40">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white" data-aos="fade-right">
                             AI Chatbot Development
                         </h1>
-                        <p className="text-lg md:text-xl text-white">
+                        <p className="text-lg md:text-xl text-white" data-aos="fade-right">
                             We build intelligent chatbots that engage users, answer questions, and provide seamless customer support 24/7. Powered by natural language processing and machine learning, our bots understand context, respond naturally, and improve with every interaction.
                         </p>
                         <ConnectExperts />
 
                     </div>
+                    </div>
+                    <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
+                        <div data-aos="fade-left">
+                        <img src={aiChatbotHeroImg} alt="" className="features-img" style={{
+                            height: "350px",
+                            width: "auto",
+                            objectFit: "cover",
+
+                        }} />
+                        </div> 
+                    </div>
                 </div>
-            </div>
+            </section>
 
             <Services />
 

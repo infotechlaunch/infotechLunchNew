@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
             <div className="md-footer-links mb-5 lg:mb-0">
               <h3>Services</h3>
               <ul>
-                <li> <Link to="/full-stack-development">AI Development</Link> </li>
+                <li> <Link to="/ai-consulting">AI Development</Link> </li>
                 {/* <li> <Link to="/blockchain-development">Blockchain Development</Link> </li> */}
                 {/* <li> <Link to="/hire-mobile-app-developer">Mobile App Development</Link> </li> */}
                 {/* <li> <Link to="/doctor-appointment-app-development">Healthcare App Development</Link> </li> */}
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
                 <li> <Link to="/case-study">Case Study</Link> </li>
                 {/* <li> <Link to="/">Industry Reports</Link> </li> */}
                 <li> <Link to="/ui-ux-design">UI/UX Design</Link> </li>
-                <li> <Link to="/growth-and-marketing">Growth & Marketing</Link>
+                <li> <Link to="/ai-social-media">Growth & Marketing</Link>
                 </li>
                 {/* <li> <Link to="/">Enterprise Software Development</Link> </li>
                 <li> <Link to="/">Video</Link> </li>

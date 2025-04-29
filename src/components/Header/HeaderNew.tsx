@@ -49,7 +49,7 @@ const tabs = [
 
     {
         id: "full-stack",
-        title: "Full Stack Development",
+        title: "Software Development",
         description: "In-depth End-to-End Development Services",
         icon: iconsev05,
         links: [
@@ -160,6 +160,13 @@ const aiDevelopment = [
         description: "Building chatbots that talk smart.",
         icon: iconsev04,
         path: "/ai-chatbot-development"
+    },
+    {
+        id: "development",
+        title: "AI Development",
+        description: "Building chatbots that talk smart.",
+        icon: iconsev04,
+        path: "/ai-development"
     },
 
 ];

@@ -15,6 +15,7 @@ import BrandedContent from "../assets/Images/aiSocialMedia/icons/Branded-Content
 import ConsistentEngagement from "../assets/Images/aiSocialMedia/icons/Consistent-Engagement.png";
 import MultiPlatformMagic from "../assets/Images/aiSocialMedia/icons/Multi-Platform-Magic.png";
 import RealTimeInsights from "../assets/Images/aiSocialMedia/icons/Real-Time-Insights.png";
+import FAQ from "../components/Faq/FaqAISocialMedia";
 // import SocialMediaImg from "../assets/Images/aiSocialMedia/social-media.png";
 // import automateWorkflowImg from "../assets/Images/aiSocialMedia/automate-workflow.png";
 // import youLoveImg from "../assets/Images/aiSocialMedia/you-love.png";
@@ -359,14 +360,14 @@ const SocialMedia: React.FC = () => {
                     </section>
 
                     <section className="callout-wrapper bg-gradient-blue-red flex flex-col md:flex-row justify-center items-stretch gap-4 p-6">
-                        <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                        {/* <div className="callout-card callout-highlight flex-1 bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
                             <div className="callout-icon text-4xl mb-4">👥</div>
                             <h2 className="callout-heading text-3xl font-semibold mb-2">Who It’s For</h2>
                             <p className="callout-description text-gray-700">
                                 Solo founders, marketing teams, local businesses, restaurants, and anyone ready to scale without burnout.
                             </p>
 
-                        </div>
+                        </div> */}
                         <div className="">
                             {/* <script async
                                 src="https://js.stripe.com/v3/buy-button.js">
@@ -457,6 +458,7 @@ const SocialMedia: React.FC = () => {
                 {/* Popup Section Start  */}
 
                 {/* <ContactForm /> */}
+                <FAQ />
                 <Footer />
             </AOSProvider>
         </>

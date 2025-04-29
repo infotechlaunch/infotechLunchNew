@@ -2,9 +2,11 @@
 import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
-import aiAgent from "../assets/Images/ai-agent1.png";
-import Services from "../components/Services/Services";
+import AiAgentHeroImg from "../assets/Images/aiDevelopment/aiagent-hero-img.jpg";
+import Services from "../components/Services/ServicesAIAgent";
 import ConnectExperts from "../pages/ConnectExperts";
+import FAQ from "../components/Faq/FaqAIAgent";
+import GetStarted from "../components/GetStarted/GetStartedAIAgent";
 
 
 
@@ -15,32 +17,35 @@ const AIAgentDevelopmentNew = () => {
                 <></>
             </AOSProvider>
             <HeaderNew />
-            <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mt-4">
-                <div className="ai-consulting-img w-full h-full">
-                    <img
-                        src={aiAgent}
-                        alt="ai-consulting-img"
-                        className="w-full h-full object-cover opacity-50"
-                    />
-                </div>
-                <div className="absolute top-0 left-0 w-full h-full flex items-center pt-20 justify-start px-10 md:px-20">
-                    <div className="text-white max-w-xl xl:w-[58%] lg:w-[65%] w-full relative z-[2]">
+            <section className="hero-container bg-gradient-blue-red">
+                <div className="hero-content">
+                    <div className="hero-text">
+                        <div className="sticky top-40 z-40">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                             AI Agent Development
                         </h1>
-                        <p className="text-lg md:text-xl text-white">
-                            We specialize in building intelligent AI agents that automate tasks, improve decision-making,
-                            and deliver real-time responses. Whether it’s virtual assistants, customer support, or workflow bots—
-                            our agents work around the clock to streamline your business processes.
+                        <p className="text-lg md:text-xl text-white mb-5">
+                        Infotech Launch builds intelligent AI agents to automate workflows, streamline operations, and enhance customer interactions — accelerating business transformation with next-generation AI solutions.
                         </p>
                         <ConnectExperts />
 
                     </div>
                 </div>
+                <div className="hero-image"  style={{ zIndex: "0" }}>
+                <div data-aos="fade-left">
+                <img src={AiAgentHeroImg} alt="" className="features-img" style={{
+              height: "350px",
+              width: "auto",
+              objectFit: "cover",
+
+            }} />
             </div>
-
+          </div>
+          </div>
+          </section>
             <Services />
-
+            <GetStarted />
+            <FAQ />
             <Footer />
         </>
     );
