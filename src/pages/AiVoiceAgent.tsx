@@ -73,7 +73,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red">
-                    <div className="flex gap-10">
+                    <div className="flex gap-10 mobile-block">
                         <div className="hero-text" data-aos="fade-right">
                         {/* <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center">
                             One Call. Endless Possibilities for Business.
@@ -247,7 +247,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 2  */}
                 <div className="bg-gradient-blue-red text-white flex items-center justify-center p-4">
-                    <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                    <div className="w-full max-w-6xl bg-gray-900 rounded-lg overflow-hidden border border-gray-800 framer-gtEOn">
                         {/* Top bar */}
                         <div className="bg-black p-2 flex items-center">
                         <div className="flex space-x-1">

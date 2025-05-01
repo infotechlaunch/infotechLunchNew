@@ -173,7 +173,16 @@ transition: transform 0.2s ease;}
     flex: 1;
     min-width: 300px;
   }
-  
+  .framer-gtEOn {
+    flex: none;
+    height: 620px;
+    max-width: 1216px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    will-change: var(--framer-will-change-effect-override, transform)
+}
+.framer-gtEOn{transform:perspective(1200px) rotateX(7.97419deg); will-change:transform; opacity:1}
   .hero-text h1 {
     font-size: 2.5rem;
    

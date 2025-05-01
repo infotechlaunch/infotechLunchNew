@@ -72,14 +72,14 @@ const Services: React.FC = () => {
 
     return (
 
-        <div className="challenges bg-gradient-blue-red py-12 sticky w-full lg:py-16 py-10">
+        <div className="challenges bg-orange py-12 sticky w-full lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Left Section */}
                         <div className="chalnges-left">
-                            <div className="sticky top-32 text-white">
-                                <h3 className="text-gradient-red text-3xl font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
+                            <div className="sticky top-32 ">
+                                <h3 className="text-danger text-3xl font-semibold mb-3" data-aos="fade-right" data-aos-delay="100">
                                     <span>Services</span>
                                 </h3>
 
