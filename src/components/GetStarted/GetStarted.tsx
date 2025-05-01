@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from 'react-router-dom';
-import technology from '../../assets/Images/future-of-technology.webp';
+import technology from '../../assets/Images/home/future-of-technology.webp';
 import ConnectExperts from "../../pages/ConnectExperts";
 
 

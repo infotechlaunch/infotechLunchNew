@@ -6,8 +6,8 @@ import tailwind from "../../assets/Images/icon/tailwind-portfolio-icon.svg";
 import figma from "../../assets/Images/icon/figma-portfolio-icon.webp";
 import html from "../../assets/Images/icon/html-portfolio-icon.svg";
 
-import portfoli from "../../assets/Images/portfoli/8.png";
-import ecom from "../../assets/Images/portfoli/10.png";
+import portfoli from "../../assets/Images/portfolio/8.webp";
+import ecom from "../../assets/Images/portfolio/10.webp";
 
 
 const OurPortfolioHome: React.FC = () => {

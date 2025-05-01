@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules"; // Import modules
 
-import travel from "../../assets/Images/travel-hospitality-industries-img.webp";
-import sports from "../../assets/Images/sports-industries-img.webp";
-import entertainment from "../../assets/Images/entertainment-industries-img.webp";
-import social from "../../assets/Images/social-media-app-industries-img.webp";
-import finance from "../../assets/Images/finance-industries-img.webp";
-import dating from "../../assets/Images/dating-industries-img.webp";
-import restaurant from "../../assets/Images/restaurant-industries-img.webp";
-import ecommerce from "../../assets/Images/industries-ecommerce-img.webp";
-import healthcare from "../../assets/Images/industries-healthcare-img.webp";
-import blockchain from "../../assets/Images/industries-blockchain-img.webp";
-import education from "../../assets/Images/industries-education-img.webp";
-import industrie from "../../assets/Images/industries-industries-img.webp";
-import transportat from "../../assets/Images/transportation-industries-img.webp";
-import construction from "../../assets/Images/construction-industries-img.webp";
-import game from "../../assets/Images/game-industries-img.webp";
+import travel from "../../assets/Images/home/Industries/travel-hospitality-industries-img.webp";
+import sports from "../../assets/Images/home/Industries/sports-industries-img.webp";
+import entertainment from "../../assets/Images/home/Industries/entertainment-industries-img.webp";
+import social from "../../assets/Images/home/Industries/social-media-app-industries-img.webp";
+import finance from "../../assets/Images/home/Industries/finance-industries-img.webp";
+import dating from "../../assets/Images/home/Industries/dating-industries-img.webp";
+import restaurant from "../../assets/Images/home/Industries/restaurant-industries-img.webp";
+import ecommerce from "../../assets/Images/home/Industries/industries-ecommerce-img.webp";
+import healthcare from "../../assets/Images/home/Industries/industries-healthcare-img.webp";
+import blockchain from "../../assets/Images/home/Industries/industries-blockchain-img.webp";
+import education from "../../assets/Images/home/Industries/industries-education-img.webp";
+import industrie from "../../assets/Images/home/Industries/industries-industries-img.webp";
+import transportat from "../../assets/Images/home/Industries/transportation-industries-img.webp";
+import construction from "../../assets/Images/home/Industries/construction-industries-img.webp";
+import game from "../../assets/Images/home/Industries/game-industries-img.webp";
 
 
 const Industries = [

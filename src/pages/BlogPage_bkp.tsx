@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import lunch from "../assets/Images/infotech-web-dev-laptop.png";
-// import health from "../assets/Images/portfoli/5.png";
+import lunch from "../assets/Images/portfolio/infotech-web-dev-laptop.webp";
+// import health from "../assets/Images/portfolio/5.webp";
 import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
 
-import Careem from "../assets/Images/portfoli/7.png";
+import Careem from "../assets/Images/portfolio/7.webp";
 import Project from "../assets/Images/Project.png";
 import Manage from "../assets/Images/ManagedSolutions.png";
 import hire from "../assets/Images/hire.png";

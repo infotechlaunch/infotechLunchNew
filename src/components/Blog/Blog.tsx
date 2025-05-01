@@ -1,9 +1,9 @@
 import React from "react";
-import lunch from "../../assets/Images/infotech-web-dev-laptop.png";
-// import health from "../../assets/Images/portfoli/5.png";
-import health from "../../assets/Images/portfoli/ecom.png";
-// import Careem from "../../assets/Images/portfoli/7.png";
-import Careem from "../../assets/Images/adaptive-ai-development.jpg";
+import lunch from "../../assets/Images/portfolio/infotech-web-dev-laptop.webp";
+// import health from "../../assets/Images/portfolio/5.webp";
+import health from "../../assets/Images/portfolio/ecom.webp";
+// import Careem from "../../assets/Images/portfolio/7.webp";
+import Careem from "../../assets/Images/portfolio/adaptive-ai-development.webp";
 import { Link } from 'react-router-dom';
 interface BlogPost {
     id: number;

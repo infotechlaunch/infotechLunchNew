@@ -1,10 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import { Link } from 'react-router-dom';
-import lunch from "../assets/Images/infotech-web-dev-laptop.png";
-import health from "../assets/Images/portfoli/11.png";
-import Careem from "../assets/Images/portfoli/7.png";
-import fitness from "../assets/Images/portfoli/10.png";
+import lunch from "../assets/Images/portfolio/infotech-web-dev-laptop.webp";
+import health from "../assets/Images/portfolio/11.webp";
+import Careem from "../assets/Images/portfolio/7.webp";
+import fitness from "../assets/Images/portfolio/10.webp";
 import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";

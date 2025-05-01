@@ -11,21 +11,21 @@ import { Link } from 'react-router-dom';
 // import logo4 from "../../assets/Images/cl05.png";
 // import logo5 from "../../assets/Images/cl06.png";
 
-// import web from "../../assets/Images/portfoli/1.png";
-import web from "../../assets/Images/case-studies/food-and-beverage.jpeg";
-import weblogo from "../../assets/Images/case-studies/food-and-beverage-logo.png";
-import web1 from "../../assets/Images/case-studies/travel-and-transport.jpeg";
-import web1logo from "../../assets/Images/case-studies/travel-and-transport-logo.jpg";
-// import web1 from "../../assets/Images/portfoli/3.png";
-import web2 from "../../assets/Images/case-studies/logistics-and-delivery.jpeg";
-import web2logo from "../../assets/Images/case-studies/logistics-and-delivery-logo.png";
-// import web2 from "../../assets/Images/portfoli/5.png";
-// import web3 from "../../assets/Images/portfoli/8.png";
-// import web4 from "../../assets/Images/portfoli/ecom.png";
-import web4 from "../../assets/Images/case-studies/artificial-and-inteligence.jpeg";
-import web4logo from "../../assets/Images/case-studies/artificial-and-inteligence-logo.png";
-import web5 from "../../assets/Images/case-studies/e-commerce1.jpeg";
-import web5logo from "../../assets/Images/case-studies/e-commerce1-logo.png";
+// import web from "../../assets/Images/portfolio/1.webp";
+import web from "../../assets/Images/case-studies/food-and-beverage.webp";
+import weblogo from "../../assets/Images/case-studies/food-and-beverage-logo.webp";
+import web1 from "../../assets/Images/case-studies/travel-and-transport.webp";
+import web1logo from "../../assets/Images/case-studies/travel-and-transport-logo.webp";
+// import web1 from "../../assets/Images/portfolio/3.webp";
+import web2 from "../../assets/Images/case-studies/logistics-and-delivery.webp";
+import web2logo from "../../assets/Images/case-studies/logistics-and-delivery-logo.webp";
+// import web2 from "../../assets/Images/portfolio/5.webp";
+// import web3 from "../../assets/Images/portfolio/8.webp";
+// import web4 from "../../assets/Images/portfolio/ecom.webp";
+import web4 from "../../assets/Images/case-studies/artificial-and-inteligence.webp";
+import web4logo from "../../assets/Images/case-studies/artificial-and-inteligence-logo.webp";
+import web5 from "../../assets/Images/case-studies/e-commerce1.webp";
+import web5logo from "../../assets/Images/case-studies/e-commerce1-logo.webp";
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 
