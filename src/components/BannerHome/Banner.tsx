@@ -12,8 +12,8 @@ const Banner: React.FC = () => {
 
 
   return (
-  
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red ">
+
+    <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mobile-h-full">
       {/* ✅ Background Video */}
       {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -25,23 +25,23 @@ const Banner: React.FC = () => {
         <source src={bannerVideo1} type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
-      
+
 
       {/* ✅ Content */}
       <div className="bg-gradient-blue-red w-full h-full flex items-center">
-        <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="w-1/2 relative z-[2]">
+        <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto mobile-block">
+          <div className="w-1/2 relative z-[2]  mobile-w-full">
             <div className="space-y-4">
               <h3
                 data-aos="fade-right"
                 className="text-white xl:text-4xl sm:text-2xl text-2xl font-bold xl:leading-[3rem] sm:leading-[2rem]"
               >
                 <span className="xl:text-4xl md:text-2xl text-2xl font-medium pb-3">
-                Turning 
+                  Turning
                 </span>
                 <br />
                 <b className="font-bold text-white">
-                Tech Challenges into Scalable AI-Powered Solutions
+                  Tech Challenges into Scalable AI-Powered Solutions
                 </b>
               </h3>
 
@@ -49,8 +49,8 @@ const Banner: React.FC = () => {
                 data-aos="fade-right"
                 className="w-full text-sm 2xl:text-lg lg:text-base font-normal text-white"
               >
-                From AI Agents to Social Marketing, Talent, and eCommerce 
-— We Turn Technology Into Revenue Up to $83K/Month.
+                From AI Agents to Social Marketing, Talent, and eCommerce
+                — We Turn Technology Into Revenue Up to $83K/Month.
 
               </p>
             </div>
@@ -86,17 +86,17 @@ const Banner: React.FC = () => {
                 </p>
               </div>
             </div>
-
+            <div className="mb-3">
             <ConnectExperts />
-
+            </div>
           </div>
 
-           <div className="w-1/2 "  style={{ zIndex: "0" }}>
-                                  <div  data-aos="fade-left" >
-          
-                                  <img src={bannerVideo1}  alt="Tech Challenge" style={{borderRadius:"20px"}} />
-                                  </div>
-                              </div>
+          <div className="w-1/2 mobile-w-full" style={{ zIndex: "0" }}>
+            <div data-aos="fade-left" >
+
+              <img src={bannerVideo1} alt="Tech Challenge" style={{ borderRadius: "20px" }} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
