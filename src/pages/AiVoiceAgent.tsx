@@ -10,16 +10,16 @@ import "./AiVoiceAgentStyle.css";
 // import VoiceSelector from "../pages/VoiceSelector";
 import PlayAudio from "../pages/PlayAudio";
 import { Link } from "react-router-dom";
-import callUsageImg from "../assets/Images/call-usage1.png";
-import faqImg from "../assets/Images/faq-voice.png";
+import callUsageImg from "../assets/Images/aiVoiceAgent/call-usage1.webp";
+import faqImg from "../assets/Images/aiVoiceAgent/faq-voice.png";
 // import voiceheroImg from "../assets/Images/call-summary2.png";
-import callSummaryImg from "../assets/Images/call-summary2.png";
-import updateVoiceAgentImg from "../assets/Images/update-voice-agent.png";
-import considerItDoneImg from "../assets/Images/considerItDone.png";
-import personalizedExpImg from "../assets/Images/personalizedExperience.png";
-import processicon1 from "../assets/Images/icon/process/Strategy.png";
-import processicon2 from "../assets/Images/icon/process/Acceleration.png";
-import processicon3 from "../assets/Images/icon/process/intilaization.png";
+import callSummaryImg from "../assets/Images/aiVoiceAgent/call-summary2.webp";
+import updateVoiceAgentImg from "../assets/Images/aiVoiceAgent/update-voice-agent.webp";
+import considerItDoneImg from "../assets/Images/aiVoiceAgent/considerItDone.webp";
+import personalizedExpImg from "../assets/Images/aiVoiceAgent/personalizedExperience.webp";
+import processicon1 from "../assets/Images/aiVoiceAgent/icons/process/Strategy.webp";
+import processicon2 from "../assets/Images/aiVoiceAgent/icons/process/Acceleration.webp";
+import processicon3 from "../assets/Images/aiVoiceAgent/icons/process/intilaization.webp";
 import head_image_animation from "../assets/videos/head_image_animation.mp4";
 
 
