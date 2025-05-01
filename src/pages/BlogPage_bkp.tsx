@@ -4,9 +4,9 @@ import lunch from "../assets/Images/portfolio/infotech-web-dev-laptop.webp";
 import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
 
 import Careem from "../assets/Images/portfolio/7.webp";
-import Project from "../assets/Images/Project.png";
-import Manage from "../assets/Images/ManagedSolutions.png";
-import hire from "../assets/Images/hire.png";
+import Project from "../assets/Images/blog/Project.png";
+import Manage from "../assets/Images/blog/ManagedSolutions.png";
+import hire from "../assets/Images/blog/hire.png";
 import { Link } from 'react-router-dom';
 import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "./TawkChat";

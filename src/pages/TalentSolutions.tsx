@@ -5,17 +5,17 @@ import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
-import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.png"
+import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.webp"
 import AOSProvider from "../components/AOSProvider";
 // import Ayush from "../assets/Images/ayush.png";
 // import Srishti from "../assets/Images/Srishti-Soni.png"
 // import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
 // import vani from "../assets/Images/Vani_Mahobia.png"
 
-import Edge1 from "../assets/Images/We-build-dedicated-delivery-info.svg"
-import Edge2 from "../assets/Images/We-thoroughly-vet-professionals-info.svg"
-import Edge3 from "../assets/Images/We-invest-in-significant-resources-info.svg"
-import Edge4 from "../assets/Images/With-a-growing-database-of-nearly-info.svg"
+import Edge1 from "../assets/Images/aiTalentSolution/icons/edge-icon-1.svg"
+import Edge2 from "../assets/Images/aiTalentSolution/icons/edge-icon-2.svg"
+import Edge3 from "../assets/Images/aiTalentSolution/icons/edge-icon-3.svg"
+import Edge4 from "../assets/Images/aiTalentSolution/icons/edge-icon-4.svg"
 import Blog from "../components/TalentSolutions/Blog";
 import TalentSection from "../components/TalentSolutions/TalentSection";
 const TalentSolutions: React.FC = () => {

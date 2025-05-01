@@ -6,7 +6,7 @@ import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
 import vani from "../assets/Images/Vani_Mahobia.png"
 import Srishti from "../assets/Images/Srishti-Soni.png"
 import CaseStudy from "../components/CaseStudy/CaseStudy";
-import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.png"
+import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.webp"
 import WorkingProcess from "../components/WorkingProcess/WorkingProcess";
 import WhyChoose from "../components/WhyChoose/WhyChoose";
 import Partners from "../components/Partners/Partners";

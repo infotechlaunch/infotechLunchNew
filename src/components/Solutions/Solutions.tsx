@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import './Solutions.scss';
-import app01 from "../../assets/Images/icon/solution/iOS_App.webp";
-import app02 from "../../assets/Images/icon/solution/Android_App.webp";
-import app03 from "../../assets/Images/icon/solution/Flutter_App.webp";
-import app04 from "../../assets/Images/icon/solution/React_Native_App.webp";
-import app05 from "../../assets/Images/icon/solution/PWA_App.webp";
-import app06 from "../../assets/Images/icon/solution/xamarin.png";
+import app01 from "../../assets/Images/home/icons/solution/iOS_App.webp";
+import app02 from "../../assets/Images/home/icons/solution/Android_App.webp";
+import app03 from "../../assets/Images/home/icons/solution/Flutter_App.webp";
+import app04 from "../../assets/Images/home/icons/solution/React_Native_App.webp";
+import app05 from "../../assets/Images/home/icons/solution/PWA_App.webp";
+import app06 from "../../assets/Images/home/icons/solution/xamarin.webp";
 
 // import Smart from "../../assets/Images/Smart.svg";
 // import Scalability from "../../assets/Images/Scalability.svg";
-import aivoice from "../../assets/Images/icon/solution/ai-voice.png";
-import Chatbot from "../../assets/Images/icon/solution/pngtree.png";
-import Machine from "../../assets/Images/icon/solution/Machine.png";
-import Generative from "../../assets/Images/icon/solution/Generative.png";
-import Consulting from "../../assets/Images/icon/solution/Consulting.png";
-import AIsoftware from "../../assets/Images/icon/solution/ai-software.png";
+import aivoice from "../../assets/Images/home/icons/solution/ai-voice.webp";
+import Chatbot from "../../assets/Images/home/icons/solution/pngtree.webp";
+import Machine from "../../assets/Images/home/icons/solution/Machine.webp";
+import Generative from "../../assets/Images/home/icons/solution/Generative.webp";
+import Consulting from "../../assets/Images/home/icons/solution/Consulting.webp";
+import AIsoftware from "../../assets/Images/home/icons/solution/ai-software.webp";
 
 const Solutions: React.FC = () => {
     useEffect(() => {

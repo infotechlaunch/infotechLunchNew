@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import icon1 from "../../assets/Images/icon/why-choose/Optimum-Outcome-Focused.png";
-import icon2 from "../../assets/Images/icon/why-choose/Experienced-Techies.png";
-import icon3 from "../../assets/Images/icon/why-choose/Cutting-Edge-Technologies.png";
-import icon4 from "../../assets/Images/icon/why-choose/Cost-Effective-Deadline-Oriented.png";
-import icon5 from "../../assets/Images/icon/why-choose/Transparency-with-Clients.png";
-import icon6 from "../../assets/Images/icon/why-choose/Modern-IT-Services.png";
+import icon1 from "../../assets/Images/home/icons/why-choose/Optimum-Outcome-Focused.webp";
+import icon2 from "../../assets/Images/home/icons/why-choose/Experienced-Techies.webp";
+import icon3 from "../../assets/Images/home/icons/why-choose/Cutting-Edge-Technologies.webp";
+import icon4 from "../../assets/Images/home/icons/why-choose/Cost-Effective-Deadline-Oriented.webp";
+import icon5 from "../../assets/Images/home/icons/why-choose/Transparency-with-Clients.webp";
+import icon6 from "../../assets/Images/home/icons/why-choose/Modern-IT-Services.webp";
 
 import ConnectExperts from "../../pages/ConnectExperts";
 

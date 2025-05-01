@@ -1,7 +1,7 @@
 import React from "react";
-import lunch from "../../assets/Images/Project.png";
-import health from "../../assets/Images/ManagedSolutions.png";
-import Careem from "../../assets/Images/hire.png";
+import lunch from "../../assets/Images/blog/Project.png";
+import health from "../../assets/Images/blog/ManagedSolutions.png";
+import Careem from "../../assets/Images/blog/hire.png";
 interface BlogPost {
     id: number;
     title: string;
