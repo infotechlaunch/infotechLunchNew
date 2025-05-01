@@ -163,7 +163,7 @@ const SocialMedia: React.FC = () => {
                             </div>
                         </section>
                         {/* Who It's For Section */}
-                        <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto bg-gradient-blue-red">
+                        <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                                 <div className="md:w-1/2" data-aos="fade-right">
                                     <h2 className="text-3xl md:text-4xl font-bold text-gradient-red mb-6">

@@ -116,6 +116,7 @@ export default function PricingComparisonTable() {
         </div>
 
         {/* {activeTab === 'monthly' && ( */}
+        <div className="container mx-auto">
           <div className="mt-4 overflow-x-auto bg-white shadow-lg">
             <table className="w-full text-black">
               <thead>
@@ -176,10 +177,8 @@ export default function PricingComparisonTable() {
               </tbody>
             </table>
           </div>
+         
         {/* )} */}
-
-       
-
         {/* {activeTab === 'onetime' && ( */}
           <div className="mt-4 overflow-x-auto bg-white  shadow-lg">
             <table className="w-full text-black">
@@ -275,6 +274,7 @@ export default function PricingComparisonTable() {
             Compare Plans <ArrowRight />
           </button>
         </div> */}
+         </div>
       </div>
     </div>
   );
