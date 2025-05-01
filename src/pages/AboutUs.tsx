@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
+import TawkChat from "./TawkChat";
+
 import Ruchi from "../assets/Images/about/team/Ruchi-Chourasia.png"
 import vani from "../assets/Images/about/team/Vani_Mahobia.png"
 import Srishti from "../assets/Images/about/team/Srishti-Soni.png"
@@ -268,6 +270,7 @@ const AboutUs: React.FC = () => {
                 <ContactForm />
                 {/*Testing */}
                 <Footer />
+                <TawkChat />
             </AOSProvider>
         </>
 

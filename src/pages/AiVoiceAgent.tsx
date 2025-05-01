@@ -4,6 +4,8 @@ import Footer from "../components/Footer/Footer";
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
 import UnlockBtn from "../pages/UnlockBtn";
+import TawkChat from "./TawkChat";
+
 // import SocialMediaMgmtImg from "../assets/Images/aiSocialMedia/New_AI PoweredSocialMediaMgmt2.png";
 // import getStartedImg from "../assets/Images/aiSocialMedia/get-started3.avif";
 import "./AiVoiceAgentStyle.css";
@@ -1248,6 +1250,7 @@ const AiVoiceAgent: React.FC = () => {
 
 
                 <Footer />
+                <TawkChat />
             </AOSProvider>
         </>
     );

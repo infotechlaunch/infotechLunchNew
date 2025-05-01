@@ -16,6 +16,7 @@ import ConsistentEngagement from "../assets/Images/aiSocialMedia/icons/Consisten
 import MultiPlatformMagic from "../assets/Images/aiSocialMedia/icons/Multi-Platform-Magic.webp";
 import RealTimeInsights from "../assets/Images/aiSocialMedia/icons/Real-Time-Insights.webp";
 import FAQ from "../components/Faq/FaqAISocialMedia";
+import TawkChat from "./TawkChat";
 // import SocialMediaImg from "../assets/Images/aiSocialMedia/social-media.png";
 // import automateWorkflowImg from "../assets/Images/aiSocialMedia/automate-workflow.png";
 // import youLoveImg from "../assets/Images/aiSocialMedia/you-love.png";
@@ -460,6 +461,7 @@ const SocialMedia: React.FC = () => {
                 {/* <ContactForm /> */}
                 <FAQ />
                 <Footer />
+                <TawkChat />
             </AOSProvider>
         </>
 

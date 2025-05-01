@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer";
 import aiAdaptiveHeroImg from "../assets/Images/aiDevelopment/aiadaptive-hero-img.jpg";
 import Services from "../components/Services/ServicesAIAdaptive";
 import ConnectExperts from "../pages/ConnectExperts";
+import TawkChat from "./TawkChat";
 
 
 
@@ -46,6 +47,7 @@ const AdaptiveAiDevelopment = () => {
                 <Services />
 
                 <Footer />
+                <TawkChat />
             </>
             );
 };
