@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 import aiAdaptiveHeroImg from "../assets/Images/aiDevelopment/aiAdaptive/HeroImg.jpg";
 import Services from "../components/Services/ServicesAIAdaptive";
 import ConnectExperts from "../pages/ConnectExperts";
-import TawkChat from "./TawkChat";
+// import TawkChat from "./TawkChat";
 import achieveimg1 from '../assets/Images/aiDevelopment/aiAdaptive/FeatureImg/AIResearchersandDevelopers.webp';
 import achieveicon1 from '../assets/Images/aiDevelopment/icon1.png';
 import achieveimg2 from '../assets/Images/aiDevelopment/aiAdaptive/FeatureImg/SuccessfulAIProjectsDelivered.webp';
@@ -26,7 +26,6 @@ import toolimg8 from '../assets/Images/aiDevelopment/aiAdaptive/tools/8.png';
 import toolimg9 from '../assets/Images/aiDevelopment/aiAdaptive/tools/9.png';
 import toolimg10 from '../assets/Images/aiDevelopment/aiAdaptive/tools/10.png';
 import toolimg11 from '../assets/Images/aiDevelopment/aiAdaptive/tools/11.png';
-
 import IndustriesAdaptiveAI from "../components/AdaptiveAI/Industries";
 const achievements = [
     {
@@ -233,9 +232,117 @@ const AdaptiveAiDevelopment: React.FC = () => {
                 </div>
             </section>
 
-                <Footer />
-            </>
-            );
+
+            <Services />
+            <IndustriesAdaptiveAI />
+
+            <section className="lg:py-16 py-10 bg-gradient-blue-red">
+                <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+
+                    <div className="space-y-4 ">
+                        <div className="space-y-4 text-center">
+                            <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold"> Cutting-Edge Tools & Technologies <br /> For Powerful adaptive AI Adaptive</h2>
+                            <p className="text-base text-white">Our AI developers leverage the latest and most efficient tech stack to streamline development, accelerate deployment, <br />and ensure seamless integration for your AI project.</p>
+
+                        </div>
+                        <div className="grid pt-8 grid-cols-1 md:grid-cols-5 gap-4 text-center">
+
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg1} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">Caffe 2</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg2} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">PyTorch</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg3} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">NVCAFF</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg4} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">Chainer</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg5} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">Theano</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg6} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">Mxnet</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg7} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">Kurento</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg8} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">3D rendering</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg9} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-base font-semibold">Deeplearning4j</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange  shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg10} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">AI</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                                <div className="w-1/3">
+                                    <img src={toolimg11} className="tool-icon" />
+                                </div>
+                                <div className="w-2/3">
+                                    <p className="text-xl font-semibold">Igniter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <Footer />
+        </>
+    );
 };
 
 export default AdaptiveAiDevelopment;
