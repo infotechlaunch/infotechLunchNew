@@ -11,7 +11,7 @@ import "./AiVoiceAgentStyle.css";
 import PlayAudio from "../pages/PlayAudio";
 import { Link } from "react-router-dom";
 import callUsageImg from "../assets/Images/aiVoiceAgent/call-usage1.webp";
-import faqImg from "../assets/Images/aiVoiceAgent/faq-voice.png";
+import faqImg from "../assets/Images/aiVoiceAgent/faq-voice.webp";
 // import voiceheroImg from "../assets/Images/call-summary2.png";
 import callSummaryImg from "../assets/Images/aiVoiceAgent/call-summary2.webp";
 import updateVoiceAgentImg from "../assets/Images/aiVoiceAgent/update-voice-agent.webp";
