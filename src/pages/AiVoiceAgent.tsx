@@ -70,7 +70,7 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red">
-                    <div className="hero-content">
+                    <div className="flex gap-10">
                         <div className="hero-text" data-aos="fade-right">
                         {/* <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center">
                             One Call. Endless Possibilities for Business.

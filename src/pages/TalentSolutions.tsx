@@ -17,6 +17,7 @@ import Edge2 from "../assets/Images/aiTalentSolution/icons/edge-icon-2.svg"
 import Edge3 from "../assets/Images/aiTalentSolution/icons/edge-icon-3.svg"
 import Edge4 from "../assets/Images/aiTalentSolution/icons/edge-icon-4.svg"
 import Blog from "../components/TalentSolutions/Blog";
+import FAQ from "../components/Faq/FaqAITalentSolution";
 import TalentSection from "../components/TalentSolutions/TalentSection";
 const TalentSolutions: React.FC = () => {
 
@@ -176,6 +177,7 @@ const TalentSolutions: React.FC = () => {
 
                 </div>
                 <Blog />
+                <FAQ />
                 <ContactForm />
                 <Footer />
                 <TawkChat />
