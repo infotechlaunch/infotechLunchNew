@@ -3,9 +3,9 @@ import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
-import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
-import vani from "../assets/Images/Vani_Mahobia.png"
-import Srishti from "../assets/Images/Srishti-Soni.png"
+import Ruchi from "../assets/Images/about/team/Ruchi-Chourasia.png"
+import vani from "../assets/Images/about/team/Vani_Mahobia.png"
+import Srishti from "../assets/Images/about/team/Srishti-Soni.png"
 import AOSProvider from "../components/AOSProvider";
 
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
+import heroimg from "../assets/Images/hero-img/blog-hero-img.webp";
 
 import { Link } from 'react-router-dom';
 import HeaderNew from "../components/Header/HeaderNew";

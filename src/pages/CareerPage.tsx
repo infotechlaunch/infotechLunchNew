@@ -4,7 +4,7 @@ import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "../pages/TawkChat";
 import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
-import heroimg2 from "../assets/Images/hero-img/career-hero-img.png"
+import heroimg2 from "../assets/Images/hero-img/career-hero-img.webp"
 import icon1 from "../assets/Images/icon/Courage-and-Audacity.png"
 import icon2 from "../assets/Images/icon/Curiosity.png"
 import icon3 from "../assets/Images/icon/Solidarity-and-Integrity.png"

@@ -6,7 +6,7 @@ import ContactForm from "../components/ContactUs/ContactForm";
 import client from "../assets/Images/client-testimonials-hero-img.webp";
 import AOSProvider from "../components/AOSProvider";
 import user from "../assets/Images/icon/default.png";
-import ayush from "../assets/Images/ayush.png";
+import ayush from "../assets/Images/about/team/ayush.png";
 
 const testimonials = [
     {

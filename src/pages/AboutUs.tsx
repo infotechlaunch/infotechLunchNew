@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
-import Ruchi from "../assets/Images/Ruchi-Chourasia.png"
-import vani from "../assets/Images/Vani_Mahobia.png"
-import Srishti from "../assets/Images/Srishti-Soni.png"
+import Ruchi from "../assets/Images/about/team/Ruchi-Chourasia.png"
+import vani from "../assets/Images/about/team/Vani_Mahobia.png"
+import Srishti from "../assets/Images/about/team/Srishti-Soni.png"
 import CaseStudy from "../components/CaseStudy/CaseStudy";
 import heroimg from "../assets/Images/aiTalentSolution/talent-hero-img.webp"
 import WorkingProcess from "../components/WorkingProcess/WorkingProcess";
@@ -16,21 +16,21 @@ import Blog from "../components/Blog/Blog";
 import GetStarted from "../components/GetStarted/GetStarted";
 import FAQ from "../components/Faq/Faq";
 import AOSProvider from "../components/AOSProvider";
-import Ayush from "../assets/Images/ayush.png";
+import Ayush from "../assets/Images/about/team/ayush.png";
 // import vivek from "../assets/Images/vivek.png";
-import bydef from "../assets/Images/bydef.png";
+import bydef from "../assets/Images/about/team/bydef.png";
 
-import wrk01 from "../assets/Images/wrk01.png"
-import wrk02 from "../assets/Images/wrk02.png"
-import wrk03 from "../assets/Images/wrk03.png"
-import wrk04 from "../assets/Images/wrk04.png"
-import wrk05 from "../assets/Images/wrk05.png"
-import wrk06 from "../assets/Images/wrk06.png"
-import wrk07 from "../assets/Images/wrk07.png"
-import wrk08 from "../assets/Images/wrk08.png"
-import coreicon1 from "../assets/Images/icon/core-value/icon-1.png";
-import coreicon2 from "../assets/Images/icon/core-value/icon-2.png"
-import coreicon3 from "../assets/Images/icon/core-value/icon-3.png"
+import wrk01 from "../assets/Images/about/icons/work/wrk01.png"
+import wrk02 from "../assets/Images/about/icons/work/wrk02.png"
+import wrk03 from "../assets/Images/about/icons/work/wrk03.png"
+import wrk04 from "../assets/Images/about/icons/work/wrk04.png"
+import wrk05 from "../assets/Images/about/icons/work/wrk05.png"
+import wrk06 from "../assets/Images/about/icons/work/wrk06.png"
+import wrk07 from "../assets/Images/about/icons/work/wrk07.png"
+import wrk08 from "../assets/Images/about/icons/work/wrk08.png"
+import coreicon1 from "../assets/Images/about/icons/core-value/icon-1.png";
+import coreicon2 from "../assets/Images/about/icons/core-value/icon-2.png"
+import coreicon3 from "../assets/Images/about/icons/core-value/icon-3.png"
 
 const AboutUs: React.FC = () => {
     const workItems = [

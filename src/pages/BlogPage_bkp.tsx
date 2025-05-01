@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import lunch from "../assets/Images/portfolio/infotech-web-dev-laptop.webp";
 // import health from "../assets/Images/portfolio/5.webp";
-import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
+import heroimg from "../assets/Images/hero-img/blog-hero-img.webp";
 
 import Careem from "../assets/Images/portfolio/7.webp";
 import Project from "../assets/Images/blog/Project.png";
