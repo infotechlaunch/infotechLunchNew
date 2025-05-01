@@ -57,7 +57,7 @@ function App() {
           <Route path="/ai-development" element={<AIDevelopment/>} />
           <Route path="/ai-agent-development" element={<AIAgentDevelopment/>} />
           <Route path="/blog" element={<BlogPage/>} />
-          <Route path="/BlogDeatils" element={<BlogDeatils/>} />
+          <Route path="/BlogDeatils/:id" element={<BlogDeatils/>} />
           <Route path="/Career-at-infotechlaunch" element={<CareerPage/>} />
           <Route path="/life-at-infotechlaunch" element={<LifeInInfoTechLaunch/>} />
           <Route path="/client-testimonial" element={<ClientTestimonials/>} />

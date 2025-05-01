@@ -1,25 +1,99 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import lunch from "../assets/Images/infotech-web-dev-laptop.png";
+// import health from "../assets/Images/portfoli/5.png";
 import heroimg from "../assets/Images/hero-img/blog-hero-img.png";
 
+import Careem from "../assets/Images/portfoli/7.png";
+import Project from "../assets/Images/Project.png";
+import Manage from "../assets/Images/ManagedSolutions.png";
+import hire from "../assets/Images/hire.png";
 import { Link } from 'react-router-dom';
 import HeaderNew from "../components/Header/HeaderNew";
 import TawkChat from "./TawkChat";
 import Footer from "../components/Footer/Footer";
 import AOSProvider from "../components/AOSProvider";
-import Axios from "axios";
+// import Axios from "axios";
 
 
-const formatDate = (dateString: string | number | Date) => {
-    return new Date(dateString).toLocaleDateString("en-GB", {
-        day: "2-digit",
-        month: "short",
-        year: "numeric"
-    });
-};
+interface BlogPost {
+    id: number;
+    title: string;
+    category: string;
+    date: string;
+    description: string;
+    imageUrl: string;
+    link: string;
+}
+
+
+const blogPosts: BlogPost[] = [
+    {
+        id: 1,
+        title: "AI-Powered Parking Assistance App Development: Cost & Features",
+        category: "Technology",
+        date: "4 Feb 2025",
+        description:
+            "Based on studies, 30% of traffic congestion happens due to vehicles looking for parking spaces. AI-powered parking assistance apps improve operational efficiency and maximize space utilization.",
+        imageUrl: lunch,
+        link: "/BlogDeatils",
+    },
+    
+    {
+        id: 3,
+        title: "Future of AI in Web Development: Trends & Innovations",
+        category: "AI",
+        date: "14 March 2025",
+        description:
+            "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
+        imageUrl: Careem,
+        link: "/BlogDeatils",
+    },
+    {
+        id: 4,
+        title: "Future of AI in Web Development: Trends & Innovations",
+        category: "AI",
+        date: "15 Feb 2025",
+        description:
+            "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
+        imageUrl: Careem,
+        link: "/BlogDeatils",
+    },
+    {
+        id: 5,
+        title: "Project Staffing",
+        category: "Staffing",
+        date: "4 Jan 2025",
+        description:
+            "Project staffing ensures the right talent is deployed for specific projects, providing skilled professionals to meet deadlines and achieve business goals efficiently.",
+         imageUrl: Project,
+        link: "/BlogDeatils",
+    },
+    {
+        id: 6,
+        title: "Managed Solutions",
+        category: "Managed",
+        date: "24 Jan 2025",
+        description:
+            "Managed solutions provide end-to-end support, optimizing operations with expert oversight, technology, and strategic management for seamless business efficiency.",
+        imageUrl: Manage,
+        link: "/BlogDeatils",
+    },
+    {
+        id: 7,
+        title: "Direct Hire",
+        category: "Direct Hire",
+        date: "15 March 2025",
+        description:
+            "Direct hire services connect businesses with top talent for full-time roles, ensuring long-term success with expertly vetted professionals. This streamlined process saves time and resources while building strong, dedicated teams.",
+        imageUrl: hire,
+        link: "/BlogDeatils",
+    },
+  
+];
 
 const BlogPage: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>("All");
-    const [blogs, setBlogs] = useState([]);
+    // const [blogs, setBlogs] = useState([]);
 
     const tabs = ["All", "Mobile App", "AI Development"];
 
@@ -27,18 +101,14 @@ const BlogPage: React.FC = () => {
         setActiveTab(tab);
     };
 
-    useEffect(() => {
-        Axios.get(`https://dishefs.com/infotech_admin/api/get-blogs`)
-        .then((response) => {
-            // console.log('response data status =======>>>>', response.data.status);
-            // console.log('response data data =======>>>>', response.data.data);
-            if(response.data.status === true) {
-                setBlogs(response.data.data);
-            }
-        });
-    }, []);
-
-    
+    // Axios.get(`http://127.0.0.1:8000/api/get-blogs`)
+    // .then((response) => {
+    //     console.log('response data status =======>>>>', response.data.status);
+    //     console.log('response data data =======>>>>', response.data.data);
+    //     if(response.data.status === true) {
+    //         setBlogs(response.data.data);
+    //     }
+    // });
 
     return (
         <>
@@ -173,12 +243,9 @@ const BlogPage: React.FC = () => {
                             {/* Tab Content */}
                             <div className="mt-4">
                                 {activeTab === "All" && <div className="tab-content">
-
                                     <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
-                                        {(blogs as { id: string; web_category: string; title: string; image: string; category: string; description: string; created_at: string; }[])
-                                        .filter((post) => post.web_category === "all")
-                                        .map((post) => (
-                                            <Link key={post.id} to={`/BlogDeatils/${post.id}`} className="block">
+                                        {blogPosts.map((post) => (
+                                            <Link key={post.id} to={post.link} className="block">
                                                 <div className="p-6 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
                                                     <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                                                         <img
@@ -188,7 +255,7 @@ const BlogPage: React.FC = () => {
                                                             height="720"
                                                             decoding="async"
                                                             className="rounded-xl"
-                                                            src={post.image}
+                                                            src={post.imageUrl}
                                                             style={{ color: "transparent" }}
                                                         />
                                                     </div>
@@ -200,7 +267,7 @@ const BlogPage: React.FC = () => {
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
                                                             </svg>{" "}
-                                                            {formatDate(post.created_at)}
+                                                            {post.date}
                                                         </button>
                                                     </div>
                                                     <div className="flex flex-col justify-between space-y-3">
@@ -224,10 +291,8 @@ const BlogPage: React.FC = () => {
                                 </div>}
                                 {activeTab === "Mobile App" && <div className="tab-content">
                                     <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
-                                    {(blogs as { id: string; web_category: string; title: string; image: string; category: string; description: string; created_at: string; }[])
-                                        .filter((post) => post.web_category === "mobile_app")
-                                        .map((post) => (
-                                            <Link key={post.id} to={`/BlogDeatils/${post.id}`} className="block">
+                                        {blogPosts.map((post) => (
+                                            <Link key={post.id} to={post.link} className="block">
                                                 <div className="p-6 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
                                                     <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                                                         <img
@@ -237,27 +302,27 @@ const BlogPage: React.FC = () => {
                                                             height="720"
                                                             decoding="async"
                                                             className="rounded-xl"
-                                                            src={post.image}
+                                                            src={post.imageUrl}
                                                             style={{ color: "transparent" }}
                                                         />
                                                     </div>
                                                     <div className="flex justify-between items-center">
-                                                        <button data-aos="fade-right" className="text-[#000] text-sm rounded-full border border-[#000] py-1.5 px-5">
+                                                        <button data-aos="fade-right" className="text-[#000] text-base rounded-full border border-[#000] py-1.5 px-5">
                                                             {post.category}
                                                         </button>
-                                                        <button data-aos="fade-left" className="text-[#000] text-sm flex items-center gap-2">
+                                                        <button data-aos="fade-left" className="text-[#000] text-base flex items-center gap-2">
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
                                                             </svg>{" "}
-                                                            {formatDate(post.created_at)}
+                                                            {post.date}
                                                         </button>
                                                     </div>
                                                     <div className="flex flex-col justify-between space-y-3">
-                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-xl">
+                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                                                             {post.title}
                                                         </h3>
-                                                        <p data-aos="fade-up" className="text-sm text-black line-clamp-3">{post.description}</p>
-                                                        <button data-aos="fade-up" className="text-sm text-blue-400 flex items-center group-hover:text-[#f13c3c]">
+                                                        <p data-aos="fade-up" className="text-base text-black line-clamp-3">{post.description}</p>
+                                                        <button className="text-lg text-[#000000] flex items-center group-hover:text-[#f13c3c]">
                                                             Learn More
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -272,10 +337,8 @@ const BlogPage: React.FC = () => {
                                 </div>}
                                 {activeTab === "AI Development" && <div className="tab-content">
                                     <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
-                                    {(blogs as { id: string; web_category: string; title: string; image: string; category: string; description: string; created_at: string; }[])
-                                        .filter((post) => post.web_category === "ai_development")
-                                        .map((post) => (
-                                            <Link key={post.id} to={`/BlogDeatils/${post.id}`} className="block">
+                                        {blogPosts.map((post) => (
+                                            <Link key={post.id} to={post.link} className="block">
                                                 <div className="p-6 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
                                                     <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                                                         <img
@@ -285,27 +348,73 @@ const BlogPage: React.FC = () => {
                                                             height="720"
                                                             decoding="async"
                                                             className="rounded-xl"
-                                                            src={post.image}
+                                                            src={post.imageUrl}
                                                             style={{ color: "transparent" }}
                                                         />
                                                     </div>
                                                     <div className="flex justify-between items-center">
-                                                        <button data-aos="fade-right" className="text-[#000] text-sm rounded-full border border-[#000] py-1.5 px-5">
+                                                        <button data-aos="fade-right" className="text-[#000] text-base rounded-full border border-[#000] py-1.5 px-5">
                                                             {post.category}
                                                         </button>
-                                                        <button data-aos="fade-left" className="text-[#000] text-sm flex items-center gap-2">
+                                                        <button data-aos="fade-left" className="text-[#000] text-base flex items-center gap-2">
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
                                                             </svg>{" "}
-                                                            {formatDate(post.created_at)}
+                                                            {post.date}
                                                         </button>
                                                     </div>
                                                     <div className="flex flex-col justify-between space-y-3">
-                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-xl">
+                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                                                             {post.title}
                                                         </h3>
-                                                        <p data-aos="fade-up" className="text-sm text-black line-clamp-3">{post.description}</p>
-                                                        <button data-aos="fade-up" className="text-sm text-blue-400 flex items-center group-hover:text-[#f13c3c]">
+                                                        <p data-aos="fade-up" className="text-base text-black line-clamp-3">{post.description}</p>
+                                                        <button className="text-lg text-[#000000] flex items-center group-hover:text-[#f13c3c]">
+                                                            Learn More
+                                                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>}
+                                {activeTab === "Blockchain" && <div className="tab-content">
+                                    <div className="grid gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
+                                        {blogPosts.map((post) => (
+                                            <Link key={post.id} to={post.link} className="block">
+                                                <div className="p-6 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+                                                    <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
+                                                        <img
+                                                            alt={post.title}
+                                                            loading="lazy"
+                                                            width="1280"
+                                                            height="720"
+                                                            decoding="async"
+                                                            className="rounded-xl"
+                                                            src={post.imageUrl}
+                                                            style={{ color: "transparent" }}
+                                                        />
+                                                    </div>
+                                                    <div className="flex justify-between items-center">
+                                                        <button data-aos="fade-right" className="text-[#000] text-base rounded-full border border-[#000] py-1.5 px-5">
+                                                            {post.category}
+                                                        </button>
+                                                        <button data-aos="fade-left" className="text-[#000] text-base flex items-center gap-2">
+                                                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+                                                            </svg>{" "}
+                                                            {post.date}
+                                                        </button>
+                                                    </div>
+                                                    <div className="flex flex-col justify-between space-y-3">
+                                                        <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
+                                                            {post.title}
+                                                        </h3>
+                                                        <p data-aos="fade-up" className="text-base text-black line-clamp-3">{post.description}</p>
+                                                        <button className="text-lg text-[#000000] flex items-center group-hover:text-[#f13c3c]">
                                                             Learn More
                                                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill="none" d="M0 0h24v24H0V0z"></path>

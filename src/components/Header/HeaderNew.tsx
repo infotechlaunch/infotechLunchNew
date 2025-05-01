@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from '../../assets/Images/logo.png';
 import iconsev from '../../assets/Images/icon/mobile-app-development-header-icon.svg';
 // import iconsev01 from '../../assets/Images/icon/ai-development-icon.svg';
@@ -172,6 +172,7 @@ const aiDevelopment = [
 ];
 
 const HeaderNew: React.FC = () => {
+    const location = useLocation();
     const [activeTab, setActiveTab] = useState(tabs[0].id);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -215,38 +216,61 @@ const HeaderNew: React.FC = () => {
 
                         <div className="xl:flex flex-col xl:w-auto w-full items-center text-white px-6 xl:block hidden">
                             <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
-                                <div>
+                                <div className={`${
+                                    location.pathname === "/"
+                                    ? "bg-blue-100 text-black border-[#f13c3c]"
+                                    : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/">
-                                        <span
-                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">Home</span>
+                                        <span>Home</span>
                                     </Link>
                                 </div>
 
                                 
 
-                                <div>
+                                <div className={`${
+                                        location.pathname === "/ai-voice-agent"
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/ai-voice-agent">
-                                        <span
-                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Voice Agent</span>
+                                        <span>AI Voice Agent</span>
                                     </Link>
                                 </div>
-                                <div>
+
+                                <div className={`${
+                                        location.pathname === "/ai-social-media"
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/ai-social-media">
-                                        <span
-                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Social Media</span>
+                                        <span>AI Social Media</span>
                                     </Link>
                                 </div>
-                                <div>
+
+                                <div className={`${
+                                        location.pathname === "/talent-solutions"
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/talent-solutions">
-                                        <span
-                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Talent Solutions</span>
+                                        <span>AI Talent Solutions</span>
                                     </Link>
                                 </div>
                                 
                                 <div>
                                 <div className="group">
-                                    <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"><span
-                                        className=" font-medium ">AI Development</span>
+                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                    <button className={`${
+                                            location.pathname === "/ai-consulting" || 
+                                            location.pathname === "/ai-agent-development-new" ||
+                                            location.pathname === "/adaptive-ai-development" ||
+                                            location.pathname === "/ai-chatbot-development" ||
+                                            location.pathname === "/ai-development"
+                                            ? "bg-blue-100 text-black border-[#f13c3c]"
+                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                        <span className=" font-medium ">AI Development</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                                             className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
@@ -255,7 +279,7 @@ const HeaderNew: React.FC = () => {
                                             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                                         </svg>
                                     </button>
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[8px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                                                 <div className="">
@@ -307,8 +331,15 @@ const HeaderNew: React.FC = () => {
                                 </div> */}
                                 
                                 <div className="group">
-                                    <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"><span
-                                        className=" font-medium ">Services</span>
+                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                    <button className={`${
+                                        location.pathname === "/ui-ux-design" ||
+                                        location.pathname === "/health-care" ||
+                                        location.pathname === "/hire-mobile-app-developer"
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                    <span className=" font-medium ">Services</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                                             className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
@@ -317,7 +348,7 @@ const HeaderNew: React.FC = () => {
                                             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                                         </svg>
                                     </button>
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[8px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                                                 <div className="">
@@ -375,7 +406,18 @@ const HeaderNew: React.FC = () => {
                                 </div>
 
                                 <div className="group">
-                                    <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80">
+                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                    <button className={`${
+                                        location.pathname === "/about-us" ||
+                                        location.pathname === "/portfolio" ||
+                                        location.pathname === "/contact-us" ||
+                                        location.pathname === "/client-testimonial" ||
+                                        location.pathname === "/Career-at-infotechlaunch" ||
+                                        location.pathname === "/blog" ||
+                                        location.pathname.startsWith("/BlogDeatils")
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                         <span className="font-medium">Company</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
@@ -386,7 +428,7 @@ const HeaderNew: React.FC = () => {
                                         </svg>
                                     </button>
 
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[8px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
 

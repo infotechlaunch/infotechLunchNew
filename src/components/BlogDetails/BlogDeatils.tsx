@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import HeaderNew from "../../components/Header/HeaderNew";
 import TawkChat from "./../../pages/TawkChat";
 import Footer from "../../components/Footer/Footer";
 import hero from "../../assets/Images/hero-img.webp"
+import Axios from "axios";
+
 const BlogDeatils: React.FC = () => {
+    interface Blog {
+        id: number;
+        title: string;
+        image: string;
+        full_content: string;
+        
+    }
+    const { id } = useParams();
+    const [blog, setBlog] = useState<Blog | null>(null);
+    
+    useEffect(() => {
+        Axios.get(`https://dishefs.com/infotech_admin/api/blog-details/${id}`)
+        .then((response) => {
+            // console.log('response data status =======>>>>', response.data.status);
+            // console.log('response data data =======>>>>', response.data.data);
+            if(response.data.status === true) {
+                setBlog(response.data.data);
+            }
+        });
+    }, []);
+
     return (
         <>
             <HeaderNew />
@@ -11,7 +35,8 @@ const BlogDeatils: React.FC = () => {
                 <div className="flex items-end justify-between  py-0  relative xl:container 2xl:px-0 md:px-6 px-4 w-full mx-auto flex lg:flex-row flex-col lg:gap-8 gap-0">
                     <div className="w-full space-y-4 lg:py-16 py-10 flex flex-col lg:items-start items-center lg:text-left text-center">
                         <h1 className="text-4xl font-semibold text-black leading-[3rem]">
-                            AI-Powered Parking Assistance App Development: Cost & Features
+                            {/* AI-Powered Parking Assistance App Development: Cost & Features */}
+                            {blog?.title}
                         </h1>
                         <div className="mt-2">
                             <button className="btn btn-fix lazyloaded">Explorer blog
@@ -23,7 +48,8 @@ const BlogDeatils: React.FC = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-end w-full">
-                        <img decoding="async" className="wp-image-5662" width="1002px" height="304px" src={hero} alt="hero section" />
+                        {/* <img decoding="async" className="wp-image-5662" width="1002px" height="304px" src={hero} alt="hero section" /> */}
+                        <img decoding="async" className="wp-image-5662" width="1002px" height="304px" src={blog?.image ? blog.image : hero} alt="hero section" />
                     </div>
 
                 </div>
@@ -32,7 +58,7 @@ const BlogDeatils: React.FC = () => {
             <div className="container mx-auto px-4 py-8">
             <div className="grid gap-4 mx-auto lg:grid-cols-2 md:grid-cols-2  grid-cols-1 xl:gap-14 cursor-pointer mt-8">
                 
-                <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+                {/* <div className="bg-gray-100 p-6 rounded-lg shadow-md">
 
                     <h3 className="text-xl font-semibold mb-4 text-gray-800">Table of Contents</h3>
                     <nav>
@@ -85,7 +111,9 @@ const BlogDeatils: React.FC = () => {
                         <li><span className="font-bold">Konstant Infosolutions</span> - Delivers end-to-end solutions for businesses.</li>
                         <li><span className="font-bold">Aladinn Digital Solutions</span> - Experienced developers team providing global solutions.</li>
                     </ul>
-                </div>
+                </div> */}
+
+                <div dangerouslySetInnerHTML={{ __html: blog?.full_content || "" }} />
             </div>
             </div>
             <Footer />
