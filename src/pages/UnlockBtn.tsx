@@ -6,7 +6,7 @@ import Axios from "axios";
 
 
 
-const ConnectExperts: React.FC = () => {
+const UnlockBtn: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const recaptchaRef = useRef(null);
@@ -96,9 +96,9 @@ const ConnectExperts: React.FC = () => {
     
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-
         const errors: typeof formErrors = { ...EMPTY_ERRORS };
         let hasError = false;
+
         console.log('Form submitted:', formData);
 
         if(!formData.name.trim()) {
@@ -149,7 +149,10 @@ const ConnectExperts: React.FC = () => {
         }
 
         if(formData.agreement !== "yes") {
-            errors.agreement = "Consent is required";
+            errors.agreement = "Consent us is required";
+            if (!hasError) {
+                document.getElementById("agreement")?.focus();
+            }
             hasError = true;
         }
 
@@ -196,9 +199,8 @@ const ConnectExperts: React.FC = () => {
             }
         });
 
-        // console.log('Sending data:', Object.fromEntries(params));
+        console.log('Sending data:', Object.fromEntries(params));
 
-        // Axios.post('https://script.google.com/macros/s/AKfycbyAj4IRHnj7GosxqPG3q4v3dFro_O0rzrMD2ue3DjvFw8AMcDbfW2SEd7QUMo0706UxkQ/exec', 
         Axios.post('https://script.google.com/macros/s/AKfycbyvOFpFgeyIaPcC8K2aInGpn7_u8ZGhUiOgF9t5SwcFIwQcjQVz9oBI-v0IOKG3QcJk/exec', 
         params.toString(),
         {
@@ -239,22 +241,9 @@ const ConnectExperts: React.FC = () => {
     return (
         <>
 
-           
-                <button className="btn btn-fix" onClick={onOpen}>
-                Talk to an expert!
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24.231"
-                    height="11.738"
-                    viewBox="0 0 24.231 11.738"
-                >
-                    <path
-                    d="M542.348,1353.029H522.873c-.142,0-.284.006-.426,0a.944.944,0,0,1-.019-1.888c.141-.01.284,0,.425,0h19.6c-.171-.184-.27-.3-.376-.4-.949-.946-1.9-1.887-2.846-2.839a.957.957,0,0,1-.066-1.391.936.936,0,0,1,1.388.044q2.423,2.392,4.829,4.8a.927.927,0,0,1,.014,1.456q-2.42,2.429-4.862,4.835a.927.927,0,0,1-1.354.039.951.951,0,0,1,.039-1.39q1.4-1.412,2.815-2.8a3.557,3.557,0,0,1,.415-.307Z"
-                    transform="translate(-521.511 -1346.214)"
-                    fill="#fff"
-                    />
-                </svg>
-                </button>
+            <span onClick={onOpen}>
+                Unlock
+            </span>
 
 
             {isOpen && (
@@ -393,7 +382,7 @@ const ConnectExperts: React.FC = () => {
                                 />
                                 <label htmlFor="agreement" className="block text-sm font-medium text-gray-700">
                                     {/* I Agree To Receive SMS & Connect On WhatsApp */}
-                                    I consent to receive SMS notifications, alerts, and occasional marketing messages from Infotech Launch.
+                                    I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from Flux Fortify.
                                 </label>
                             </div>
                             {formErrors.agreement && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.agreement}</div>}
@@ -443,4 +432,4 @@ const ConnectExperts: React.FC = () => {
     );
 };
 
-export default ConnectExperts;
+export default UnlockBtn;

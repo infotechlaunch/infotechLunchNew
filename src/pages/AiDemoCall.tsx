@@ -18,7 +18,6 @@ const AiDemoCall = () => {
     name: "",
     email: "",
     companyName: "",
-    voiceHandler: "",
     industry: "",
     findUs: "",
     whatsappNumber: "",
@@ -27,13 +26,31 @@ const AiDemoCall = () => {
     captchaToken: ""
   };
 
+  const EMPTY_ERRORS = {
+    name: "",
+    email: "",
+    companyName: "",
+    industry: "",
+    findUs: "",
+    whatsappNumber: "",
+    phoneNumber: "",
+    consent: "",
+    captchaToken: ""
+  };
+
   const [formData, setFormData] = useState(EMPTY_FORM);
+  const [formErrors, setFormErrors] = useState(EMPTY_ERRORS);
 
   const handleChange = (e:any) => {
     const { name, value, type, checked } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: type === 'checkbox' ? checked : value
+    }));
+
+    setFormErrors(prev => ({
+      ...prev,
+      [name]: ""
     }));
   };
 
@@ -43,81 +60,114 @@ const AiDemoCall = () => {
       consent: !!token,
       captchaToken: token || ""
     }));
+
+    setFormErrors(prev => ({
+      ...prev,
+      captchaToken: ""
+    }));
   };
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
+
+    const errors: typeof formErrors = { ...EMPTY_ERRORS };
+    let hasError = false;
     console.log('Form submitted:', formData);
 
-    if (!formData.name) {
-      alert("Please enter name");
-      return;
+    if (!formData.name.trim()) {
+      errors.name = "Name is required";
+      if (!hasError) {
+        document.getElementById("name")?.focus();
+      }
+      hasError = true;
     }
 
-    if (!formData.email) {
-      alert("Please enter email");
-      return;
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+      if (!hasError) {
+        document.getElementById("email")?.focus();
+      }
+      hasError = true;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Invalid email format";
+      if (!hasError) {
+        document.getElementById("email")?.focus();
+      }
+      hasError = true;
     }
 
-    if (!formData.companyName) {
-      alert("Please enter company name");
-      return;
-    }
-
-    if (!formData.voiceHandler) {
-      alert("Please select voice facilIitator");
-      return;
+    if (!formData.companyName.trim()) {
+      errors.companyName = "Company name is required";
+      if (!hasError) {
+        document.getElementById("companyName")?.focus();
+      }
+      hasError = true;
     }
 
     if (!formData.industry) {
-      alert("Please select industry");
-      return;
+      errors.industry = "Industry is required";
+      if (!hasError) {
+        document.getElementById("industry")?.focus();
+      }
+      hasError = true;
     }
 
     if (!formData.findUs) {
-      alert("Please select find us");
-      return;
+      errors.findUs = "Find us is required";
+      if (!hasError) {
+        document.getElementById("findUs")?.focus();
+      }
+      hasError = true;
     }
 
-    if (!formData.whatsappNumber) {
-      alert("Please enter whatsapp number");
-      return;
+    if (!formData.whatsappNumber.trim()) {
+      errors.whatsappNumber = "WhatsApp number is required";
+      if (!hasError) {
+        document.getElementById("whatsappNumber")?.focus();
+      }
+      hasError = true;
+    } else if (
+      formData.whatsappNumber.length < 10 ||
+      formData.whatsappNumber.length > 12
+    ) {
+      errors.whatsappNumber = "Please enter between 10-12 digits only";
+      if (!hasError) {
+        document.getElementById("whatsappNumber")?.focus();
+      }
+      hasError = true;
     }
 
-    if (formData.whatsappNumber.length < 10) {
-      alert("Please enter between 10-12 digits only");
-      return;
-    }
-
-    if (formData.whatsappNumber.length > 12) {
-      alert("Please enter between 10-12 digits only");
-      return;
-    }
-
-    if (!formData.phoneNumber) {
-      alert("Please enter phone number");
-      return;
-    }
-
-    if (formData.phoneNumber.length < 10) {
-      alert("Please enter between 10-12 digits only");
-      return;
-    }
-
-    if (formData.phoneNumber.length > 12) {
-      alert("Please enter between 10-12 digits only");
-      return;
+    if (!formData.phoneNumber.trim()) {
+      errors.phoneNumber = "Phone number is required";
+      if (!hasError) {
+        document.getElementById("phoneNumber")?.focus();
+      }
+      hasError = true;
+    } else if (
+      formData.phoneNumber.length < 10 ||
+      formData.phoneNumber.length > 12
+    ) {
+      errors.phoneNumber = "Please enter between 10-12 digits only";
+      if (!hasError) {
+        document.getElementById("phoneNumber")?.focus();
+      }
+      hasError = true;
     }
 
     if (!formData.captchaToken) {
-      alert("Please verify you’re not a robot");
+      errors.captchaToken = "Please confirm you're not a robot";
+      hasError = true;
+    }
+
+    if (hasError) {
+      setFormErrors(errors);
       return;
     }
 
     setLoading(true);
     Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)
       .then(response => {
-        console.log('response=====>>>>>', response.data);
+        // console.log('response=====>>>>>', response.data);
         if(response.data.status === true) {
           setShowThanks(true);
           setFormData(EMPTY_FORM); 
@@ -133,34 +183,6 @@ const AiDemoCall = () => {
       }).finally(() => {
         setLoading(false);
       });
-
-      
-      // Axios.post('https://dishefs.com/infotech_admin/api/excel-sheet', JSON.stringify(formData), {
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   }
-      // })
-      // .then(response => {
-      //   console.log('response 2222=====>>>>>', response.data);
-      //   if (response.data.result === "success") {
-      //     setShowThanks(true);
-      //     setFormData(EMPTY_FORM);
-      //     setTimeout(() => {
-      //       setShowThanks(false);
-      //     }, 3000);
-      //   } else {
-      //     setShowThanks(false);
-      //   }
-      // })
-      // .catch(error => {
-      //   setShowThanks(false);
-      //   console.log('error occurs while submitting form 222 =====>>>>>', error);
-      // })
-      // .finally(() => {
-      //   setLoading(false);
-      // });
-
-      // Instead of using JSON.stringify, use URLSearchParams or FormData
 
     const params = new URLSearchParams();
 
@@ -324,8 +346,8 @@ const AiDemoCall = () => {
                 placeholder="Your name"
                 value={formData.name}
                 onChange={handleChange}
-                required
               />
+              {formErrors.name && <div style={{ color: 'red' }}>{formErrors.name}</div>}
             </div>
 
             <div>
@@ -340,8 +362,8 @@ const AiDemoCall = () => {
                 placeholder="your@email.com"
                 value={formData.email}
                 onChange={handleChange}
-                required
               />
+              {formErrors.email && <div style={{ color: 'red' }}>{formErrors.email}</div>}
             </div>
 
             <div>
@@ -356,33 +378,8 @@ const AiDemoCall = () => {
                 placeholder="Company name"
                 value={formData.companyName}
                 onChange={handleChange}
-                required
               />
-            </div>
-
-            <div>
-              <label style={labelStyle} htmlFor="voiceHandler">
-              AI Voice FacilIitator? *
-              </label>
-              <select
-              style={{
-                ...inputStyle,
-                appearance: 'none',
-                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right 1rem center',
-                backgroundSize: '1em'
-              }}
-                id="voiceHandler"
-                name="voiceHandler"
-                value={formData.voiceHandler}
-                onChange={handleChange}
-                required
-                >
-                <option value="">Select an option</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
+              {formErrors.companyName && <div style={{ color: 'red' }}>{formErrors.companyName}</div>}
             </div>
 
             <div>
@@ -402,7 +399,6 @@ const AiDemoCall = () => {
                 name="industry"
                 value={formData.industry}
                 onChange={handleChange}
-                required
                 >
                 <option value="">Select industry</option>
                 <option value="technology">Technology</option>
@@ -411,6 +407,7 @@ const AiDemoCall = () => {
                 <option value="finance">Finance</option>
                 <option value="other">Other</option>
               </select>
+              {formErrors.industry && <div style={{ color: 'red' }}>{formErrors.industry}</div>}
             </div>
 
             <div>
@@ -430,7 +427,6 @@ const AiDemoCall = () => {
                 name="findUs"
                 value={formData.findUs}
                 onChange={handleChange}
-                required
                 >
                 <option value="">Select an option</option>
                 <option value="search-engine">Search Engine</option>
@@ -439,6 +435,7 @@ const AiDemoCall = () => {
                 <option value="advertisement">Advertisement</option>
                 <option value="other">Other</option>
                 </select>
+                {formErrors.findUs && <div style={{ color: 'red' }}>{formErrors.findUs}</div>}
             </div>
 
             <div>
@@ -447,14 +444,14 @@ const AiDemoCall = () => {
                 </label>
                 <input
                 style={inputStyle}
-                type="number"
-                id="whatsappNumber"
-                name="whatsappNumber"
-                placeholder="Your WhatsApp number"
-                value={formData.whatsappNumber}
-                onChange={handleChange}
-                required
+                  type="number"
+                  id="whatsappNumber"
+                  name="whatsappNumber"
+                  placeholder="Your WhatsApp number"
+                  value={formData.whatsappNumber}
+                  onChange={handleChange}
                 />
+                {formErrors.whatsappNumber && <div style={{ color: 'red' }}>{formErrors.whatsappNumber}</div>}
             </div>
 
             <div>
@@ -462,15 +459,15 @@ const AiDemoCall = () => {
                 Phone Number (Used For AI Demo Call) *
                 </label>
                 <input
-                style={inputStyle}
-                type="number"
-                id="phoneNumber"
-                name="phoneNumber"
-                placeholder="Your phone number"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                required
+                  style={inputStyle}
+                  type="number"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="Your phone number"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
                 />
+                {formErrors.phoneNumber && <div style={{ color: 'red' }}>{formErrors.phoneNumber}</div>}
             </div>
 
             <p style={smallTextStyle}>
@@ -493,6 +490,7 @@ const AiDemoCall = () => {
                 theme="light"             // light or "dark"
               />
             </div>
+            {formErrors.captchaToken && <div style={{ color: 'red' }}>{formErrors.captchaToken}</div>}
 
             <motion.button
               type="submit"

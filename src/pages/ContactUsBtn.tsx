@@ -22,8 +22,18 @@ const ContactUsBtn: React.FC = () => {
         agreement: '',
         captchaToken: ''
     };
+
+    const EMPTY_ERRORS = {
+        name: "",
+        email: "",
+        phone: "",
+        about: "",
+        agreement: "",
+        captchaToken: ""
+    };
     
     const [formData, setFormData] = useState(EMPTY_FORM);
+    const [formErrors, setFormErrors] = useState(EMPTY_ERRORS);
 
     const handleCaptchaChange = (token:string | null) => {
 
@@ -31,6 +41,11 @@ const ContactUsBtn: React.FC = () => {
             ...prev,
             consent: !!token,
             captchaToken: token || ""
+        }));
+
+        setFormErrors(prev => ({
+            ...prev,
+            captchaToken: ""
         }));
     };
 
@@ -72,49 +87,79 @@ const ContactUsBtn: React.FC = () => {
           ...prevData,
           [name]: value
         }));
+
+        setFormErrors(prev => ({
+            ...prev,
+            [name]: ""
+        }));
     };
     
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
+
+        const errors: typeof formErrors = { ...EMPTY_ERRORS };
+        let hasError = false;
         console.log('Form submitted:', formData);
 
-        if(!formData.name) {
-            alert("Please enter name");
-            return;
+        if(!formData.name.trim()) {
+            errors.name = "Name is required";
+            if (!hasError) {
+                document.getElementById("name")?.focus();
+            }
+            hasError = true;
         }
 
-        if(!formData.email) {
-            alert("Please enter email");
-            return;
+        if (!formData.email.trim()) {
+            errors.email = "Email is required";
+            if (!hasError) {
+              document.getElementById("email")?.focus();
+            }
+            hasError = true;
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            errors.email = "Invalid email format";
+            if (!hasError) {
+              document.getElementById("email")?.focus();
+            }
+            hasError = true;
         }
 
-        if(!formData.phone) {
-            alert("Please enter phone");
-            return;
+        if (!formData.phone.trim()) {
+            errors.phone = "Phone number is required";
+            if (!hasError) {
+              document.getElementById("phone")?.focus();
+            }
+            hasError = true;
+        } else if (
+            formData.phone.length < 10 ||
+            formData.phone.length > 12
+          ) {
+            errors.phone = "Please enter between 10-12 digits only";
+            if (!hasError) {
+              document.getElementById("phone")?.focus();
+            }
+            hasError = true;
         }
-
-        if (formData.phone.length < 10) {
-            alert("Please enter between 10-12 digits only");
-            return;
-          }
-      
-          if (formData.phone.length > 12) {
-            alert("Please enter between 10-12 digits only");
-            return;
-          }
 
         if(!formData.about) {
-            alert("Please enter about yourself");
-            return;
+            errors.about = "About us is required";
+            if (!hasError) {
+                document.getElementById("about")?.focus();
+            }
+            hasError = true;
         }
 
         if(formData.agreement !== "yes") {
-            alert("Please accept agree to receive SMS");
-            return;
+            errors.agreement = "Consent is required";
+            hasError = true;
         }
 
         if (!formData.captchaToken) {
-            alert("Please verify you’re not a robot");
+            errors.captchaToken = "Please confirm you're not a robot";
+            hasError = true;
+        }
+
+        if (hasError) {
+            setFormErrors(errors);
             return;
         }
 
@@ -153,7 +198,7 @@ const ContactUsBtn: React.FC = () => {
 
         console.log('Sending data:', Object.fromEntries(params));
 
-        Axios.post('https://script.google.com/macros/s/AKfycbyAj4IRHnj7GosxqPG3q4v3dFro_O0rzrMD2ue3DjvFw8AMcDbfW2SEd7QUMo0706UxkQ/exec', 
+        Axios.post('https://script.google.com/macros/s/AKfycbyvOFpFgeyIaPcC8K2aInGpn7_u8ZGhUiOgF9t5SwcFIwQcjQVz9oBI-v0IOKG3QcJk/exec', 
         params.toString(),
         {
             headers: {
@@ -194,10 +239,7 @@ const ContactUsBtn: React.FC = () => {
         <>
 
            
-            <span onClick={onOpen} style={{
-                cursor: "pointer",
-                color: "blue"
-            }}>
+            <span onClick={onOpen} className="cursor-pointer text-blue-600 bg-blue-300 hover:bg-blue-400 text-sm font-medium rounded px-4 py-1 transition">
                 Contact us!
             </span>
 
@@ -270,8 +312,8 @@ const ContactUsBtn: React.FC = () => {
                                     placeholder="Enter name"
                                     onChange={handleChange}
                                     className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    required
                                 />
+                                {formErrors.name && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.name}</div>}
                             </div>
                             
                             <div>
@@ -284,8 +326,8 @@ const ContactUsBtn: React.FC = () => {
                                     onChange={handleChange}
                                     placeholder="Enter Email Id"
                                     className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    required
                                 />
+                                {formErrors.email && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.email}</div>}
                             </div>
                             
                             <div>
@@ -298,8 +340,8 @@ const ContactUsBtn: React.FC = () => {
                                     onChange={handleChange}
                                     placeholder="Enter phone number"
                                     className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    required
                                 />
+                                {formErrors.phone && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.phone}</div>}
                             </div>
                             
                             <div>
@@ -311,10 +353,10 @@ const ContactUsBtn: React.FC = () => {
                                     onChange={handleChange}
                                     placeholder="Tell us about yourself"
                                     className="w-full px-4 py-4 text-black border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    required
                                 >
 
                                 </textarea>
+                                {formErrors.about && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.about}</div>}
                             </div>
 
                             <div style={{ display: "flex", alignItems: "center", gap: "8px", margin: "5px" }}>
@@ -324,9 +366,15 @@ const ContactUsBtn: React.FC = () => {
                                     id="agreement" 
                                     checked={formData.agreement === 'yes'}
                                     onChange={(e) => {
+                                        const isChecked = e.target.checked;
                                         setFormData(prevData => ({
                                             ...prevData,
-                                            agreement: e.target.checked ? 'yes' : 'no'
+                                            agreement: isChecked ? 'yes' : 'no'
+                                        }));
+
+                                        setFormErrors(prev => ({
+                                            ...prev,
+                                            agreement: ""
                                         }));
                                     }}
                                 />
@@ -335,6 +383,7 @@ const ContactUsBtn: React.FC = () => {
                                     I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from Flux Fortify.
                                 </label>
                             </div>
+                            {formErrors.agreement && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.agreement}</div>}
 
                             <div style={checkboxContainerStyle}>
                                 <ReCAPTCHA
@@ -344,6 +393,7 @@ const ContactUsBtn: React.FC = () => {
                                     theme="light"             // light or "dark"
                                 />
                             </div>
+                            {formErrors.captchaToken && <div style={{ color: 'red', textAlign: "left" }}>{formErrors.captchaToken}</div>}
                             
                             <button
                                 type="submit"

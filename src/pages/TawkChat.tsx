@@ -1,76 +1,51 @@
-import { useEffect } from "react";
+// JotformChatbot.jsx
+import { useEffect } from 'react';
 
-// Declare Tawk_API on the window object
 declare global {
   interface Window {
-    Tawk_API?: {
-      onLoad: (callback: () => void) => void;
-      sendMessage: (message: string) => void;
-      showWidget: () => void;
-      hideWidget: () => void;
+    AgentInitializer: {
+      init: (config: any) => void;
     };
   }
 }
 
 const TawkChat = () => {
   useEffect(() => {
-    console.log("Loading Tawk.to script...");
+    // Create the Jotform embed script
+    const jotformScript = document.createElement('script');
+    jotformScript.src = 'https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js';
+    jotformScript.async = true;
+    document.body.appendChild(jotformScript);
 
-    // Check if script is already loaded
-    if (document.getElementById("tawk-script")) {
-      console.log("Tawk.to script already loaded.");
-      return;
-    }
-
-    // Create Tawk.to script dynamically
-    const script = document.createElement("script");
-    script.id = "tawk-script";
-    script.src = "https://embed.tawk.to/67ce9476875b89190ded50ba/1ilvf7sr9";
-    script.async = true;
-    script.charset = "UTF-8";
-    script.setAttribute("crossorigin", "*");
-
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      console.log("Tawk.to script loaded.");
-
-      if (window.Tawk_API) {
-        window.Tawk_API.onLoad(() => {
-          console.log("Tawk.to API is ready.");
-          window.Tawk_API?.sendMessage("Hello! How can I assist you today?");
+    // Wait for the script to load and then initialize the chatbot
+    jotformScript.onload = () => {
+      if (window.AgentInitializer) {
+        window.AgentInitializer.init({
+          agentRenderURL: "https://agent.jotform.com/01966ab2c1c37ab48c0c8b0ead872667da7a",
+          rootId: "JotformAgent-01966ab2c1c37ab48c0c8b0ead872667da7a",
+          formID: "01966ab2c1c37ab48c0c8b0ead872667da7a",
+          queryParams: ["skipWelcome=1", "maximizable=1"],
+          domain: "https://www.jotform.com",
+          isDraggable: false,
+          background: "linear-gradient(180deg, #FF98BC 0%, #FF98BC 100%)",
+          buttonBackgroundColor: "#972D54",
+          buttonIconColor: "#FFF",
+          variant: false,
+          customizations: {
+            "greeting": "Yes",
+            "greetingMessage": "Hi! How can I assist you?",
+            "openByDefault": "No",
+            "pulse": "Yes",
+            "position": "right",
+            "autoOpenChatIn": "10000"
+          },
+          isVoice: false,
         });
-      } else {
-        console.log("Tawk_API not found.");
       }
-    };
-
-    return () => {
-      console.log("Tawk.to script cleanup...");
     };
   }, []);
 
-  // Function to send a custom message
-  // const sendMessage = () => {
-  //   if (window.Tawk_API) {
-  //     console.log("Sending message via Tawk.to API.");
-  //     window.Tawk_API.sendMessage("Thanks for reaching out! How can I assist?");
-  //   } else {
-  //     console.log("Tawk_API is not available.");
-  //   }
-  // };
-
-  return (
-    <></>
-    // <div>
-    //   <button 
-    //     onClick={sendMessage} 
-    //     className="px-4 py-2 bg-blue-500 text-white rounded-md mt-4"
-    //   >
-    //     Send Automated Reply
-    //   </button>
-    // </div>
-  );
+  return null; // This component does not render anything visibly
 };
 
 export default TawkChat;
