@@ -10,11 +10,11 @@ import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
 import SocialMediaMgmtImg from "../assets/Images/aiSocialMedia/Ai-social-media.mp4";
 import SmarterSocialVideo from "../assets/Images/aiSocialMedia/Smarter-Social.mp4";
-import SmartScheduling from "../assets/Images/aiSocialMedia/icons/Smart-Scheduling.png";
-import BrandedContent from "../assets/Images/aiSocialMedia/icons/Branded-Content.png";
-import ConsistentEngagement from "../assets/Images/aiSocialMedia/icons/Consistent-Engagement.png";
-import MultiPlatformMagic from "../assets/Images/aiSocialMedia/icons/Multi-Platform-Magic.png";
-import RealTimeInsights from "../assets/Images/aiSocialMedia/icons/Real-Time-Insights.png";
+import SmartScheduling from "../assets/Images/aiSocialMedia/icons/Smart-Scheduling.webp";
+import BrandedContent from "../assets/Images/aiSocialMedia/icons/Branded-Content.webp";
+import ConsistentEngagement from "../assets/Images/aiSocialMedia/icons/Consistent-Engagement.webp";
+import MultiPlatformMagic from "../assets/Images/aiSocialMedia/icons/Multi-Platform-Magic.webp";
+import RealTimeInsights from "../assets/Images/aiSocialMedia/icons/Real-Time-Insights.webp";
 import FAQ from "../components/Faq/FaqAISocialMedia";
 // import SocialMediaImg from "../assets/Images/aiSocialMedia/social-media.png";
 // import automateWorkflowImg from "../assets/Images/aiSocialMedia/automate-workflow.png";
@@ -22,11 +22,11 @@ import FAQ from "../components/Faq/FaqAISocialMedia";
 // import whoItsImg from "../assets/Images/aiSocialMedia/who-its.png";
 // import smarterSocialImg from "../assets/Images/aiSocialMedia/smarter-social.jpeg";
 // import whatappMarketingImg from "../assets/Images/aiSocialMedia/whatapp-marketing.jpeg";
-import whatappMarketingImg from "../assets/Images/aiSocialMedia/USE-FOR-WEBSITE- Whatsup.png";
-import reviewManagementImg from "../assets/Images/aiSocialMedia/review-management.png";
-import aiDrivenImg from "../assets/Images/aiSocialMedia/AI-Driven-Sw-Automation.png";
-import eComImg from "../assets/Images/aiSocialMedia/USE-FOR-WEBSITE_EComm-Solutions.png";
-import whoItForImg from "../assets/Images/aiSocialMedia/whoitforimage.png";
+import whatappMarketingImg from "../assets/Images/aiSocialMedia/product/Whatsup-group.webp";
+import reviewManagementImg from "../assets/Images/aiSocialMedia/product/review-management.webp";
+import aiDrivenImg from "../assets/Images/aiSocialMedia/product/AI-Driven-Sw-Automation.webp";
+import eComImg from "../assets/Images/aiSocialMedia/product/EComm-Solutions.webp";
+import whoItForImg from "../assets/Images/aiSocialMedia/whoitforimage.webp";
 // import whoItForImg from "../assets/Images/aiSocialMedia/who-it's-for.jpeg";
 import "./SocialMedia.css";
 
@@ -341,20 +341,20 @@ const SocialMedia: React.FC = () => {
 
                         <div className="workflow-features" data-aos="fade-up">
                             <div className="feature-card">
-                                <div className="feature-icon"> <img src={SmartScheduling} alt="Logo" /></div>
+                                <div className="feature-icon"> <img src={SmartScheduling} alt="Logo" className="why-choose-icon" /></div>
                                 Smart Scheduling<br /><span>Post at the perfect time, every time</span></div>
                             <div className="feature-card">
-                                <div className="feature-icon"> <img src={BrandedContent} alt="Logo" /></div>
+                                <div className="feature-icon"> <img src={BrandedContent} alt="Logo"  className="why-choose-icon" /></div>
                                 Branded Content, At Scale<br /><span>AI crafts posts in your voice</span></div>
-                            <div className="feature-card"> <div className="feature-icon"> <img src={ConsistentEngagement} alt="Logo" /></div>
+                            <div className="feature-card"> <div className="feature-icon"> <img src={ConsistentEngagement} alt="Logo" className="why-choose-icon" /></div>
                                 Consistent Engagement<br /><span>Auto-responses that never miss a moment</span></div>
                         </div>
                         <div className="workflow-features" data-aos="fade-up">
                             <div className="feature-card">
-                                <div className="feature-icon"> <img src={MultiPlatformMagic} alt="Logo" /></div>
+                                <div className="feature-icon"> <img src={MultiPlatformMagic} alt="Logo" className="why-choose-icon" /></div>
                                 Multi-Platform Magic<br /><span>Manage all your channels from one dashboard</span></div>
                             <div className="feature-card">
-                                <div className="feature-icon"> <img src={RealTimeInsights} alt="Logo" /></div>
+                                <div className="feature-icon"> <img src={RealTimeInsights} alt="Logo" className="why-choose-icon" /></div>
                                 Real-Time Insights<br /><span>See what’s working and optimize</span></div>
                         </div>
                     </section>
