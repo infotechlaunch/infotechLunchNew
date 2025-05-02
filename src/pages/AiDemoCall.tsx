@@ -280,7 +280,9 @@ const AiDemoCall = () => {
   return (
     <>
     
-        <AOSProvider>
+    <AOSProvider>
+        <></>
+      </AOSProvider>
         <HeaderNew />
 
         <div style={{
@@ -523,7 +525,6 @@ const AiDemoCall = () => {
         </div>
 
         <Footer />
-        </AOSProvider>
     </>
   );
 };
