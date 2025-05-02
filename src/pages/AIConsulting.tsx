@@ -21,6 +21,17 @@ import whychooseicon4 from '../assets/Images/aiDevelopment/why-choose-4.png';
 import whychooseicon5 from '../assets/Images/aiDevelopment/why-choose-5.png';
 import whychooseicon6 from '../assets/Images/aiDevelopment/why-choose-6.png';
 import IndustriesHome from "../components/AIConsulting/Industries";
+import toolimg1 from '../assets/Images/aiDevelopment/aiAdaptive/tools/1.png';
+import toolimg2 from '../assets/Images/aiDevelopment/aiAdaptive/tools/2.png';
+import toolimg3 from '../assets/Images/aiDevelopment/aiAdaptive/tools/3.png';
+import toolimg4 from '../assets/Images/aiDevelopment/aiAdaptive/tools/4.png';
+import toolimg5 from '../assets/Images/aiDevelopment/aiAdaptive/tools/5.png';
+import toolimg6 from '../assets/Images/aiDevelopment/aiAdaptive/tools/6.png';
+import toolimg7 from '../assets/Images/aiDevelopment/aiAdaptive/tools/7.png';
+import toolimg8 from '../assets/Images/aiDevelopment/aiAdaptive/tools/8.png';
+import toolimg9 from '../assets/Images/aiDevelopment/aiAdaptive/tools/9.png';
+import toolimg10 from '../assets/Images/aiDevelopment/aiAdaptive/tools/10.png';
+import toolimg11 from '../assets/Images/aiDevelopment/aiAdaptive/tools/11.png';
 import AOSProvider from "../components/AOSProvider";
 const achievements = [
   {
@@ -168,7 +179,7 @@ const AIConsulting: React.FC = () => {
                     <img src={whychooseicon2} alt="" className="why-choose-icon object-contain-1" />
                     <h3 className="text-xl font-semibold mb-2">Top 5% AI Talent</h3>
                     <p className="text-sm font-normal">Our team is made up of rigorously selected, seasoned AI experts who deliver responsible, high-quality solutions aligned with global standards and best practices.
-</p>
+                    </p>
                   </div>
                 </div>
                 <div className="feature-card-1 feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
@@ -176,7 +187,7 @@ const AIConsulting: React.FC = () => {
                     <img src={whychooseicon3} alt="" className="why-choose-icon object-contain-1" />
                     <h3 className="text-xl font-semibold mb-2">Rapid Prototyping & Proof of Concept</h3>
                     <p className="text-sm font-normal">Quickly turn ideas into reality. Our rapid prototyping approach delivers working AI models within weeks, helping you validate concepts and make informed decisions before committing to full deployment.
-</p>
+                    </p>
                   </div>
                 </div>
                 <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
@@ -184,7 +195,7 @@ const AIConsulting: React.FC = () => {
                     <img src={whychooseicon4} alt="" className="why-choose-icon object-contain-1" />
                     <h3 className="text-xl font-semibold mb-2">Cross-Industry Expertise</h3>
                     <p className="text-sm font-normal">With deep experience across finance, healthcare, retail, manufacturing, and beyond, we deliver innovative AI solutions tailored to diverse industry needs.
-</p>
+                    </p>
                   </div>
                 </div>
                 <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
@@ -207,7 +218,110 @@ const AIConsulting: React.FC = () => {
           </div>
         </div>
       </div>
-<IndustriesHome/>
+      <IndustriesHome />
+      <section className="lg:py-16 py-10 bg-gradient-blue-red">
+        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+
+          <div className="space-y-4 ">
+            <div className="space-y-4 text-center">
+              <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold">Best-in-Class AI Platform</h2>
+              <p className="text-base text-white">Powering success with cutting-edge AI technologies and intelligent solutions
+</p>
+            </div>
+            <div className="grid pt-8 grid-cols-1 md:grid-cols-5 gap-4 text-center">
+
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg1} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">Caffe 2</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg2} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">PyTorch</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg3} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">NVCAFF</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg4} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">Chainer</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg5} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">Theano</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg6} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">Mxnet</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg7} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">Kurento</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg8} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">3D rendering</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg9} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-base font-semibold">Deeplearning4j</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange  shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg10} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">AI</p>
+                </div>
+              </div>
+              <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                <div className="w-1/3">
+                  <img src={toolimg11} className="tool-icon" />
+                </div>
+                <div className="w-2/3">
+                  <p className="text-xl font-semibold">Igniter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );

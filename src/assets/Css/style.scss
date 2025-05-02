@@ -813,6 +813,15 @@ iframe {
     background-size: cover;
 }
 .tool-icon{border-radius: 50%;}
+.process_left span {
+    padding: 10px 20px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.min-h-120{min-height: 120px;}
 
 .whychoose::after {
     content: "";

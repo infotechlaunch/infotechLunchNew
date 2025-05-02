@@ -22,7 +22,7 @@
  
 }
 .get-started-box{margin-top:100px}
-.feature-card-1{
+.feature-card-1,.feature-card-2,.features-img-1,.features-img-2{
 transition: transform 0.2s ease;}
 .feature-card-1:hover {
   transform: translateY(-10px);
@@ -577,7 +577,13 @@ transition: transform 0.2s ease;}
 
 
 }
+.feature-card-1:hover img.feature-img-2{
+  transform: scale(1.1);
+}
 
+.feature-card-2:hover img.feature-img-2{
+  transform: scale(1.1);
+}
 @media screen and (max-width: 767px) {
   .hero-text h1{font-size: 2rem;}
   .hero-text p{font-size: 0.9rem;}

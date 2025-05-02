@@ -2,11 +2,12 @@ import React from "react";
 import './Services.scss';
 // import { Link } from "react-router-dom";
 import ConnectExperts from "../../pages/ConnectExperts";
-import Services01 from '../../assets/Images/services/Inconsistent-Lead-Generation.webp';
-import Services02 from '../../assets/Images/services/Cloud-Security-Risks.webp';
-import Services03 from '../../assets/Images/services/Outdated-User-Experience.webp';
-import Services04 from '../../assets/Images/services/Scalability-Challenges.webp';
-import Services05 from '../../assets/Images/services/Scalability-Challenges.webp';
+import Services01 from '../../assets/Images/aiDevelopment/aiChatbot/services/1.webp';
+import Services02 from '../../assets/Images/aiDevelopment/aiChatbot/services/2.webp';
+import Services03 from '../../assets/Images/aiDevelopment/aiChatbot/Services/3.webp';
+import Services04 from '../../assets/Images/aiDevelopment/aiChatbot/Services/4.webp';
+import Services05 from '../../assets/Images/aiDevelopment/aiChatbot/Services/5.webp';
+import Services06 from '../../assets/Images/aiDevelopment/aiChatbot/Services/6.webp';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 
@@ -14,8 +15,8 @@ const challengeData = [
     {
         id: "card01",
         img: Services01,
-        title: "Tailored AI Chatbot Development",
-        desc: "Design custom chatbots aligned with your brand and business objectives, delivering smooth user experiences and driving maximum engagement.",
+        title: "Custom AI Chatbot Development",
+        desc: "Create bespoke chatbots tailored to your brand and business needs for seamless user experiences and impactful engagement.",
         icon: (
             <span className="text-white fs-4 icon-Inconsistent-Lead-Generation2"></span>
         )
@@ -24,8 +25,8 @@ const challengeData = [
     {
         id: "card02",
         img: Services02,
-        title: "Conversational UI Design",
-        desc: "Create seamless, intuitive interfaces that encourage natural dialogue and provide effortless navigation for users.",
+        title: "Conversation UI Design",
+        desc: "Build intuitive, user-friendly interfaces that encourage natural conversations and effortless customer navigation.",
         icon: (
             <span className="text-white fs-4 icon-Cloud-Security-Concerns2"></span>
         )
@@ -34,7 +35,7 @@ const challengeData = [
         id: "card03",
         img: Services03,
         title: "AI Chatbot Architecture Design",
-        desc: "Receive expert advice in choosing the ideal chatbot architecture, combining pre-configured and machine learning models for optimal performance.",
+        desc: "Get expert guidance to select and design optimal chatbot architectures, blending machine learning models for superior performance.",
         icon: (
             <span className="text-white fs-4 icon-Outdated-User-Experience"></span>
         )
@@ -43,7 +44,7 @@ const challengeData = [
         id: "card04",
         img: Services04,
         title: "NLP Engine Integration",
-        desc: "Boost your chatbot with cutting-edge natural language processing features, enabling more accurate understanding and tailored interactions.",
+        desc: "Integrate advanced natural language processing (NLP) capabilities for deeper understanding and personalized, human-like interactions.",
         icon: (
             <span className="text-white fs-4 icon-Digital-Infrastructure-Scalability2"></span>
         )
@@ -51,18 +52,29 @@ const challengeData = [
     {
         id: "card05",
         img: Services05,
-        title: "Complete Support and Maintenance",
-        desc: "Guarantee peak chatbot performance with continuous support, proactive monitoring, and expert guidance to ensure maximum ROI",
+        title: "Seamless Integrations",
+        desc: "Connect your chatbot with existing enterprise systems to unlock its full potential and streamline workflows.",
         icon: (
             <span className="text-white fs-4 icon-Digital-Infrastructure-Scalability2"></span>
         )
-    }
+    },
+    {
+        id: "card06",
+        img: Services06,
+        title: "Comprehensive Support and Maintenance",
+        desc: "Ensure long-term chatbot performance with proactive support, real-time monitoring, regular updates, and expert optimization to maximize ROI.",
+        icon: (
+            <span className="text-white fs-4 icon-Digital-Infrastructure-Scalability2"></span>
+        )
+    },
+
+
 ];
 const Services: React.FC = () => {
 
     return (
 
-        <div className="challenges bg-gradient-blue-red py-12 sticky w-full lg:py-16 py-10">
+        <div className="challenges bg-black py-12 sticky w-full lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -74,13 +86,14 @@ const Services: React.FC = () => {
                                 </h3>
 
                                 <h2 className="text-lg md:text-4xl lg:text-4xl font-bold leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
-                                End-to-End AI Chatbot Development Solutions
-                                <br />
-                                <span className="text-base md:text-xl font-medium">
-                                Our AI chatbot development services are designed to transform customer interactions, optimize operations, and foster innovation across all areas of your business.  </span>
+                                    AI Chatbot Development Services
                                 </h2>
+                                <span className="text-base font-medium" style={{ lineHeight: "1.5rem", marginBottom: "20px", display: "block" }}>
 
-                               {/* <div className="mt-6">
+                                    At InfoTech Launch, we offer a full suite of AI chatbot development services designed to revolutionize customer interactions, streamline operations, and accelerate business innovation. Our solutions are built to deliver intelligent, human-like conversations that maximize user engagement and operational efficiency.
+                                </span>
+
+                                {/* <div className="mt-6">
                                     <Link to="/contact-us" data-aos="fade-right" data-aos-delay="100">
                                         <button className="btn btn-fix lazyloaded">Get Solution?
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24.231"
@@ -93,11 +106,20 @@ const Services: React.FC = () => {
                                     </Link>
                                 </div> */}
                                 <ConnectExperts />
+                                <video
+                                    className="z-0"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                >
+                                    <source src="https://www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/07/MV.mp4?var=1838242011" type="video/mp4" />
+                                </video>
                             </div>
                         </div>
 
                         {/* Right Section */}
-                        <div className="chalnges-right" style={{zIndex:"-1"}}>
+                        <div className="chalnges-right" style={{ zIndex: "-1" }}>
                             <div className="md_challenges_box space-y-7">
                                 {challengeData.map((challenge, index) => (
                                     <div key={challenge.id} id={challenge.id} className={`md_challenges_slide flex justify-end sticky mb-7`} style={{ top: `${8 + index * 0.25}rem` }}>
@@ -107,8 +129,8 @@ const Services: React.FC = () => {
                                         <div className="md_challenges_right bg-white flex items-center justify-center max-w-xs w-full rounded-r-2xl p-4">
                                             <div className="md_challenges_col">
                                                 <div className="flex items-center mb-4">
-                                                    <div className="flex items-center justify-center text-[24px] bg-orange text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
-                                                    {challenge.icon}
+                                                    <div className="flex items-center justify-center text-[24px] bg-black text-white p-2 flex-[0_0_40px] w-[40px] h-[40px] rounded-md mr-3">
+                                                        {challenge.icon}
                                                     </div>
                                                     <div className="text-lg font-semibold">{challenge.title}</div>
                                                 </div>

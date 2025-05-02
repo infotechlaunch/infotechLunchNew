@@ -76,7 +76,7 @@ const Blog: React.FC = () => {
                                     <h3  data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                                         {post.title}
                                     </h3>
-                                    <p  data-aos="fade-up" className="text-sm text-black">{post.description}</p>
+                                    <p  data-aos="fade-up" className="text-sm text-black min-h-120">{post.description}</p>
                                  
                                 </div>
                             </div>
