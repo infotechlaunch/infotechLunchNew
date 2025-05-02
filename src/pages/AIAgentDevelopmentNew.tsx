@@ -8,54 +8,67 @@ import Services from "../components/Services/ServicesAIAgent";
 import ConnectExperts from "../pages/ConnectExperts";
 import FAQ from "../components/Faq/FaqAIAgent";
 import GetStarted from "../components/GetStarted/GetStartedAIAgent";
+import WhyChoose from "../components/AIAgentDevelopment/WhyChoose";
+import toolimg1 from '../assets/Images/aiDevelopment/aiAdaptive/tools/1.png';
+import toolimg2 from '../assets/Images/aiDevelopment/aiAdaptive/tools/2.png';
+import toolimg3 from '../assets/Images/aiDevelopment/aiAdaptive/tools/3.png';
+import toolimg4 from '../assets/Images/aiDevelopment/aiAdaptive/tools/4.png';
+import toolimg5 from '../assets/Images/aiDevelopment/aiAdaptive/tools/5.png';
+import toolimg6 from '../assets/Images/aiDevelopment/aiAdaptive/tools/6.png';
+import toolimg7 from '../assets/Images/aiDevelopment/aiAdaptive/tools/7.png';
+import toolimg8 from '../assets/Images/aiDevelopment/aiAdaptive/tools/8.png';
+import toolimg9 from '../assets/Images/aiDevelopment/aiAdaptive/tools/9.png';
+import toolimg10 from '../assets/Images/aiDevelopment/aiAdaptive/tools/10.png';
+import toolimg11 from '../assets/Images/aiDevelopment/aiAdaptive/tools/11.png';
 import achieveimg1 from '../assets/Images/aiDevelopment/aiAgentDevelopment/achivement/AI_Agents_Deployed.webp';
 import achieveicon1 from '../assets/Images/aiDevelopment/icon1.png';
 import achieveimg2 from '../assets/Images/aiDevelopment/aiAgentDevelopment/achivement/enterprise_client.webp';
 import achieveicon2 from '../assets/Images/aiDevelopment/icon2.png';
-import achieveimg3 from '../assets/Images/aiDevelopment/aiAgentDevelopment/achivement/enterprise_client.webp';
+import achieveimg3 from '../assets/Images/aiDevelopment/aiAgentDevelopment/achivement/client_satisfaction rate.webp';
 import achieveicon3 from '../assets/Images/aiDevelopment/icon3.png';
-import achieveimg4 from '../assets/Images/aiDevelopment/aiAgentDevelopment/achivement/client_satisfaction rate.webp';
 import achieveicon4 from '../assets/Images/aiDevelopment/icon4.png';
-import WhyChoose from "../components/AIAgentDevelopment/WhyChoose";
-import toolimg1 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
-import toolimg2 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
-import toolimg3 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
-import toolimg4 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
-import toolimg5 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
-import toolimg6 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
-import ContactForm from "../components/ContactUs/ContactForm";
+import achieveimg4 from '../assets/Images/aiDevelopment/aiAgentDevelopment/achivement/reduction_ in_manual_task.webp';
+import processimg1 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/DiscoveryPlanning.png';
+import processimg2 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/Data-Architecture-&-Design.png';
+import processimg3 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/Intelligent-Development.png';
+import processimg4 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/Seamless-Integration.png';
+import processimg5 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/Strategic-Deployment.png';
+import processimg6 from '../assets/Images/aiDevelopment/aiAgentDevelopment/Process/Continuous-Evolution.png';
+
+// import ContactForm from "../components/ContactUs/ContactForm";
 const achievements = [
     {
-        id: 1,
-        number: "70+",
-        text: "AI Agents Deployed",
-        icon: achieveicon1,
-        image: achieveimg1,
+      id: 1,
+      number: "70+",
+      text: "AI Agents Deployed",
+      icon: achieveicon1,
+      image: achieveimg1,
     },
     {
-        id: 2,
-        number: "40+",
-        text: "enterprise client",
-        icon: achieveicon2,
-        image: achieveimg2,
+      id: 2,
+      number: "40+",
+      text: "enterprise client",
+      icon: achieveicon2,
+      image: achieveimg2,
     },
     {
-        id: 3,
-        number: "15+",
-        text: "client satisfaction rate ",
-        icon: achieveicon3,
-        image: achieveimg3,
+      id: 3,
+      number: "15+",
+      text: "client satisfaction rate",
+      icon: achieveicon3,
+      image: achieveimg3,
     },
     {
-        id: 4,
-        number: "92%",
-        text: "reduction in manual task",
-        icon: achieveicon4,
-        image: achieveimg4,
+      id: 4,
+      number: "92%",
+      text: "reduction in manual task",
+      icon: achieveicon4,
+      image: achieveimg4,
     },
-];
-const AIAgentDevelopmentNew: React.FC = () => {
+  ];
+  const AIAgentDevelopmentNew: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+  
 
     return (
         <>
@@ -88,6 +101,7 @@ const AIAgentDevelopmentNew: React.FC = () => {
                     </div>
                 </div>
             </section>
+
             <section className="bg-white py-16">
                 <div className="container mx-auto px-6">
                     <div className="achievement-wrapper">
@@ -112,6 +126,7 @@ const AIAgentDevelopmentNew: React.FC = () => {
                     </div>
                 </div>
             </section>
+
             <Services />
             <WhyChoose />
             <section className="w-full lg:py-16 py-10 bg-gradient-blue-red">
@@ -121,40 +136,40 @@ const AIAgentDevelopmentNew: React.FC = () => {
                             <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold">Our Agile AI Agent Development Process <br />Drives Superior Results</h2>
                             <p className="text-white text-base">From concept to deployment, we craft powerful AI agents with speed, precision, and innovation.
                             </p>
-                            
+
                         </div>
                         <div className="flex justify-center">
-                        <ConnectExperts />
+                            <ConnectExperts />
                         </div>
                         <div className="grid pt-8 grid-cols-1 md:grid-cols-3 gap-6">
 
                             <div className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                <img src={toolimg1} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                <img src={processimg1} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                 <h4 className="text-xl font-semibold">01. Discovery & Planning</h4>
                                 <p>Identify objectives, assess feasibility, and define success metrics for your custom AI agent solution.</p>
                             </div>
                             <div className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                <img src={toolimg2} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                <img src={processimg2} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                 <h4 className="text-xl font-semibold">02. Data Architecture & Design</h4>
                                 <p>Collect, prepare, and structure data with a scalable AI-ready architecture and integration framework.</p>
                             </div>
                             <div className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                <img src={toolimg3} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                <img src={processimg3} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                 <h4 className="text-xl font-semibold">03. Intelligent Development</h4>
                                 <p>Develop and train advanced AI models using machine learning algorithms and rigorous testing.</p>
                             </div>
                             <div className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                <img src={toolimg4} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                <img src={processimg4} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                 <h4 className="text-xl font-semibold">04. Seamless Integration</h4>
                                 <p>Integrate AI agents securely into your existing infrastructure with full performance validation.</p>
                             </div>
                             <div className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                <img src={toolimg5} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                <img src={processimg5} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                 <h4 className="text-xl font-semibold">05. Strategic Deployment</h4>
                                 <p>Deploy in phases, train your team, and enable real-time monitoring for ongoing success.</p>
                             </div>
                             <div className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
-                                <img src={toolimg6} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                <img src={processimg6} alt="dzcs" className="object-contain-1 mx-auto w-20 h-20 mb-4" />
                                 <h4 className="text-xl font-semibold">06. Continuous Evolution</h4>
                                 <p>Ensure AI performance through regular optimization, maintenance, and capability scaling.
                                 </p>
