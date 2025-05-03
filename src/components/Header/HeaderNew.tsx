@@ -600,6 +600,10 @@ const HeaderNew: React.FC = () => {
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                     <Link to="/ai-chatbot-development">AI Chatbot Development</Link>
                                                 </li>
+                                                <li
+                                                    className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                    <Link to="/ai-development">AI Development</Link>
+                                                </li>
 
                                             </div>
                                         </ul>
@@ -614,7 +618,7 @@ const HeaderNew: React.FC = () => {
                                                         d="M18 2C18.5523 2 19 2.44772 19 3V10H17V4H7V20H12V22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2H18ZM18 12C19.6569 12 21 13.3431 21 15V16H22V21C22 21.5523 21.5523 22 21 22H15C14.4477 22 14 21.5523 14 21V16H15V15C15 13.3431 16.3431 12 18 12ZM20 18H16V20H20V18ZM18 14C17.4919 14 17 14.45 17 15V16H19V15C19 14.4477 18.5523 14 18 14Z">
                                                     </path>
                                                 </svg>
-                                                <span>Development</span>
+                                                <span>Services</span>
                                             </div>
                                             <svg stroke="currentColor" fill="currentColor"
                                                 stroke-width="0" viewBox="0 0 24 24" className={`rotate-0 ${openSection === 'development' ? 'rotate-180' : ''}`}
@@ -637,7 +641,11 @@ const HeaderNew: React.FC = () => {
                                                         </svg>
                                                     </span>Mobile App Development
                                                 </p>
-                                                <div className="p-2 space-y-2 text-sm font-medium">
+                                                <div className="space-y-2 text-sm font-medium">
+                                                <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/ui-ux-design"> UI/UX</Link>
+                                                    </li>
                                                     
                                                 </div>
                                                 <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
@@ -645,9 +653,25 @@ const HeaderNew: React.FC = () => {
                                                     className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
-                                                </svg></span>Web Development
+                                                </svg></span>Healthcare App Development
                                                 </p>
                                                 <div className="space-y-2 text-sm font-medium">
+                                                <li className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/health-care"> Health Care</Link>
+                                                    </li>
+                                                </div>
+                                                <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                    stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                                    className="text-[#212121]" height="22" width="22"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                                </svg></span>Software Development</p>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/full-stack-development"> Full Stack Development</Link>
+                                                    </li>
                                                     
                                                 </div>
                                                 <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
@@ -655,7 +679,7 @@ const HeaderNew: React.FC = () => {
                                                     className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
-                                                </svg></span>Stack Development</p>
+                                                </svg></span>Hire Dedicated Developers</p>
                                                 <div className="space-y-2 text-sm font-medium">
                                                     
                                                     <li
