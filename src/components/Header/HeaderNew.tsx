@@ -161,12 +161,19 @@ const aiDevelopment = [
         icon: iconsev04,
         path: "/ai-chatbot-development"
     },
+    // {
+    //     id: "development",
+    //     title: "AI Development",
+    //     description: "Building chatbots that talk smart.",
+    //     icon: iconsev04,
+    //     path: "/ai-development"
+    // },
     {
-        id: "development",
-        title: "AI Development",
+        id: "healthcare",
+        title: "GenAI",
         description: "Building chatbots that talk smart.",
         icon: iconsev04,
-        path: "/ai-development"
+        path: "/ai-gen"
     },
 
 ];

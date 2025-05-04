@@ -16,6 +16,7 @@ import TalentSolutions from "./pages/TalentSolutions";
 import FoodBeverageeos from "./pages/FoodBeverageeos";
 // import AISocialMedia from "./pages/AISocialMedia";
 import AIConsulting from "./pages/AIConsulting";
+import AIGen from "./pages/AIGen";
 import AIAgentDevelopmentNew from "./pages/AIAgentDevelopmentNew";
 import AdaptiveAiDevelopment from "./pages/AdaptiveAiDevelopment";
 import AiChatbotDevelopment from "./pages/AiChatbotDevelopment";
@@ -66,6 +67,7 @@ function App() {
           <Route path="/food-beverageeos/" element={<FoodBeverageeos/>} />
           {/* <Route path="/ai-social-media/" element={<AISocialMedia/>} /> */}
           <Route path="/ai-consulting" element={<AIConsulting/>} />
+          <Route path="/ai-gen" element={<AIGen/>} />
           <Route path="/ai-agent-development-new" element={<AIAgentDevelopmentNew/>} />
           <Route path="/adaptive-ai-development" element={<AdaptiveAiDevelopment/>} />
           <Route path="/ai-chatbot-development" element={<AiChatbotDevelopment/>} />
