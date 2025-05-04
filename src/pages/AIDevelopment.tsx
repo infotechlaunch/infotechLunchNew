@@ -8,7 +8,7 @@ import WorkingProcess from "../components/AIDevelopment/WorkingProcess";
 import WhyChoose from "../components/AIDevelopment/WhyChoose";
 import Partners from "../components/Partners/Partners";
 import OurPortfolioHome from "../components/AIDevelopment/OurPortfolioHome";
-import Industries from "../components/AIDevelopment/industries";
+import Industries from "../components/AIDevelopment/Industries";
 import Blog from "../components/Blog/Blog";
 import TawkChat from "./TawkChat";
 import GetStarted from "../components/GetStarted/GetStarted";
