@@ -400,7 +400,7 @@ const ConnectExperts: React.FC = () => {
 
                             <div style={checkboxContainerStyle}>
                                 <ReCAPTCHA
-                                    sitekey="6LesWyQrAAAAAGFv6DHeRXlsjyZhoJ9i_NoBfvmT"
+                                    sitekey="6LdquS0rAAAAAOr9JV8Ar2rNxUx70q5pRzyGR6yH"
                                     ref={recaptchaRef}
                                     onChange={handleCaptchaChange}   // token comes in here
                                     theme="light"             // light or "dark"

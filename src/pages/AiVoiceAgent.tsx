@@ -32,28 +32,28 @@ import head_image_animation from "../assets/videos/head_image_animation.mp4";
 const AiVoiceAgent: React.FC = () => {
 
 
-    const [openItems, setOpenItems] = useState<Record<string, boolean>>({
-        'get-started': false,
-        'operational-facilitators': false,
-        'types-of-facilitators': false,
-        'hipaa-compliance': false,
-        'call-limits': false,
-        'data-security': false
-    });
+    // const [openItems, setOpenItems] = useState<Record<string, boolean>>({
+    //     'get-started': false,
+    //     'operational-facilitators': false,
+    //     'types-of-facilitators': false,
+    //     'hipaa-compliance': false,
+    //     'call-limits': false,
+    //     'data-security': false
+    // });
 
-    const toggleItem = (id: string) => {
-        setOpenItems(prev => ({
-            ...prev,
-            [id]: !prev[id]
-        }));
-    };
+    // const toggleItem = (id: string) => {
+    //     setOpenItems(prev => ({
+    //         ...prev,
+    //         [id]: !prev[id]
+    //     }));
+    // };
 
-    const closeItem = (id: string) => {
-        setOpenItems(prev => ({
-            ...prev,
-            [id]: false
-        }));
-    };
+    // const closeItem = (id: string) => {
+    //     setOpenItems(prev => ({
+    //         ...prev,
+    //         [id]: false
+    //     }));
+    // };
 
     // const [personality, setPersonality] = useState('');
     const [customerId, setCustomerId] = useState('42123');

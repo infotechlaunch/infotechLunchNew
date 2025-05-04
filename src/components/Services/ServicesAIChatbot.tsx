@@ -4,10 +4,10 @@ import './Services.scss';
 import ConnectExperts from "../../pages/ConnectExperts";
 import Services01 from '../../assets/Images/aiDevelopment/aiChatbot/services/1.webp';
 import Services02 from '../../assets/Images/aiDevelopment/aiChatbot/services/2.webp';
-import Services03 from '../../assets/Images/aiDevelopment/aiChatbot/Services/3.webp';
-import Services04 from '../../assets/Images/aiDevelopment/aiChatbot/Services/4.webp';
-import Services05 from '../../assets/Images/aiDevelopment/aiChatbot/Services/5.webp';
-import Services06 from '../../assets/Images/aiDevelopment/aiChatbot/Services/6.webp';
+import Services03 from '../../assets/Images/aiDevelopment/aiChatbot/services/3.webp';
+import Services04 from '../../assets/Images/aiDevelopment/aiChatbot/services/4.webp';
+import Services05 from '../../assets/Images/aiDevelopment/aiChatbot/services/5.webp';
+import Services06 from '../../assets/Images/aiDevelopment/aiChatbot/services/6.webp';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 

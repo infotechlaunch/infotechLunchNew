@@ -14,7 +14,7 @@ import ecommerce from "../../assets/Images/home/Industries/industries-ecommerce-
 import healthcare from "../../assets/Images/home/Industries/industries-healthcare-img.webp";
 // import blockchain from "../../assets/Images/industries-blockchain-img.webp";
 import education from "../../assets/Images/home/Industries/industries-education-img.webp";
-import industrie from "../../assets/Images/home/Industries/industries-industries-img.webp";
+// import industrie from "../../assets/Images/home/Industries/industries-industries-img.webp";
 import transportat from "../../assets/Images/home/Industries/transportation-industries-img.webp";
 import construction from "../../assets/Images/home/Industries/construction-industries-img.webp";
 import automotive from "../../assets/Images/home/Industries/automotive.png";
