@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
 
   return (
 
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-blue-red mobile-h-full">
+    <div className="relative overflow-hidden bg-gradient-blue-red mobile-h-full">
       {/* ✅ Background Video */}
       {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -28,7 +28,7 @@ const Banner: React.FC = () => {
 
 
       {/* ✅ Content */}
-      <div className="bg-gradient-blue-red w-full h-full flex items-center">
+      <div className="bg-gradient-blue-red flex items-center">
         <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-20 md:py-20 py-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto mobile-block">
           <div className="w-1/2 relative z-[2]  mobile-w-full">
             <div className="space-y-4">
@@ -45,14 +45,14 @@ const Banner: React.FC = () => {
                 </b>
               </h3>
 
-              <p
+              <h5
                 data-aos="fade-right"
-                className="w-full text-sm 2xl:text-lg lg:text-base font-normal text-white"
+                className="w-full text-xl 2xl:text-lg lg:text-base font-normal text-white"
               >
-                From AI Agents to Social Marketing, Talent, and eCommerce
-                — We Turn Technology Into Revenue Up to $83K/Month.
+                AI Growth Engine for 6-Figure Entrepreneurs <br/>
+                — Automate, Scale, and Earn Up to $83K/Month*
 
-              </p>
+              </h5>
             </div>
 
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 py-6">

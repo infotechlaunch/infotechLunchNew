@@ -35,15 +35,15 @@ const tabs = [
             { name: "UI/UX Design", path: "/ui-ux-design" },
         ],
     },
-    {
-        id: "healthcare",
-        title: "Healthcare App Development",
-        description: "Transforming Healthcare with Smart Apps",
-        icon: iconsev04,
-        links: [
-            { name: "Healthcare", path: "/health-care" },
-        ],
-    },
+    // {
+    //     id: "healthcare",
+    //     title: "Healthcare App Development",
+    //     description: "Transforming Healthcare with Smart Apps",
+    //     icon: iconsev04,
+    //     links: [
+    //         { name: "Healthcare", path: "/health-care" },
+    //     ],
+    // },
 
 
 
@@ -53,7 +53,7 @@ const tabs = [
         description: "In-depth End-to-End Development Services",
         icon: iconsev05,
         links: [
-            { name: "Full stack Development", path: "/ai-development" },
+            { name: "Full stack Development", path: "/software-development" },
         ],
     },
     {
@@ -137,7 +137,7 @@ const aiDevelopment = [
         icon: aiConsultingIcon,
         path: "/ai-consulting"
     },
- 
+
     {
         id: "blockchain",
         title: "AI Agent Development",
@@ -198,7 +198,7 @@ const HeaderNew: React.FC = () => {
             <div className='headerMain fixed top-0 w-full bg-white z-50'>
                 <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                     <nav className="flex items-center justify-between py-0 w-full mx-auto  md:px-0 relative  mx-auto">
-                        
+
                         <div>
                             <Link to="/" className="relative flex items-center flex-shrink-0 text-white">
                                 <span className="w-[70px] h-[70px] bg-[#297ea3] rounded-full mr-[15px] flex items-center justify-center">
@@ -223,20 +223,18 @@ const HeaderNew: React.FC = () => {
 
                         <div className="xl:flex flex-col xl:w-auto w-full items-center text-white px-6 xl:block hidden">
                             <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
-                                <div className={`${
-                                    location.pathname === "/"
-                                    ? "bg-blue-100 text-black border-[#f13c3c]"
-                                    : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                <div className={`${location.pathname === "/"
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/">
                                         <span>Home</span>
                                     </Link>
                                 </div>
 
-                                
 
-                                <div className={`${
-                                        location.pathname === "/ai-voice-agent"
+
+                                <div className={`${location.pathname === "/ai-voice-agent"
                                         ? "bg-blue-100 text-black border-[#f13c3c]"
                                         : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
@@ -245,8 +243,7 @@ const HeaderNew: React.FC = () => {
                                     </Link>
                                 </div>
 
-                                <div className={`${
-                                        location.pathname === "/ai-social-media"
+                                <div className={`${location.pathname === "/ai-social-media"
                                         ? "bg-blue-100 text-black border-[#f13c3c]"
                                         : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
@@ -255,8 +252,7 @@ const HeaderNew: React.FC = () => {
                                     </Link>
                                 </div>
 
-                                <div className={`${
-                                        location.pathname === "/talent-solutions"
+                                <div className={`${location.pathname === "/talent-solutions"
                                         ? "bg-blue-100 text-black border-[#f13c3c]"
                                         : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
@@ -264,89 +260,87 @@ const HeaderNew: React.FC = () => {
                                         <span>AI Talent Solutions</span>
                                     </Link>
                                 </div>
-                                
+
                                 <div>
-                                <div className="group">
-                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
-                                    <button className={`${
-                                            location.pathname === "/ai-consulting" || 
-                                            location.pathname === "/ai-agent-development-new" ||
-                                            location.pathname === "/adaptive-ai-development" ||
-                                            location.pathname === "/ai-chatbot-development" ||
-                                            location.pathname === "/ai-development"
-                                            ? "bg-blue-100 text-black border-[#f13c3c]"
-                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
-                                        <span className=" font-medium ">AI Development</span>
-                                        <svg stroke="currentColor"
-                                            fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                            className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                                        </svg>
-                                    </button>
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
-                                        <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
-                                            <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
-                                                <div className="">
-                                                    <ul className="tab_list">
-                                                        {aiDevelopment.map((tab) => (
-                                                            <li
-                                                                key={tab.id}
-                                                                onClick={() => setActiveTab(tab.id)}
-                                                                className={`flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer ${activeTab === tab.id ? "bg-[#f13c3c]/10" : "hover:bg-[#f13c3c]/10"
-                                                                    }`}
-                                                            >
-                                                                <Link to={tab.path}>
-                                                                <div>
-                                                                    <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
-                                                                    <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span>
-                                                                </div>
-                                                                </Link>
-                                                            </li>
-                                                        ))}
+                                    <div className="group">
+                                        {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                        <button className={`${location.pathname === "/ai-consulting" ||
+                                                location.pathname === "/ai-agent-development-new" ||
+                                                location.pathname === "/adaptive-ai-development" ||
+                                                location.pathname === "/ai-chatbot-development" ||
+                                                location.pathname === "/ai-development"
+                                                ? "bg-blue-100 text-black border-[#f13c3c]"
+                                                : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                            } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                            <span className=" font-medium ">AI Development</span>
+                                            <svg stroke="currentColor"
+                                                fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                            </svg>
+                                        </button>
+                                        <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                            <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
+                                                <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+                                                    <div className="">
+                                                        <ul className="tab_list">
+                                                            {aiDevelopment.map((tab) => (
+                                                                <li
+                                                                    key={tab.id}
+                                                                    onClick={() => setActiveTab(tab.id)}
+                                                                    className={`flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer ${activeTab === tab.id ? "bg-[#f13c3c]/10" : "hover:bg-[#f13c3c]/10"
+                                                                        }`}
+                                                                >
+                                                                    <Link to={tab.path}>
+                                                                        <div>
+                                                                            <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
+                                                                            <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span>
+                                                                        </div>
+                                                                    </Link>
+                                                                </li>
+                                                            ))}
 
-                                                    </ul>
-                                                </div>
-                                                <div className="space-y-10">
-                                                    
-                                                </div>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="space-y-10">
 
-                                                <div>
-                                                    <Link to="/contact-us" className="relative">
-                                                        <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
-                                                        <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
-                                                            <button className="flex items-center gap-2 bg-[#f13c3c] py-3 px-6 font-semibold rounded-full text-base text-white">Connect
-                                                                to expert
-                                                            </button>
-                                                        </span>
-                                                    </Link>
+                                                    </div>
+
+                                                    <div>
+                                                        <Link to="/contact-us" className="relative">
+                                                            <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
+                                                            <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
+                                                                <button className="flex items-center gap-2 bg-[#f13c3c] py-3 px-6 font-semibold rounded-full text-base text-white">Connect
+                                                                    to expert
+                                                                </button>
+                                                            </span>
+                                                        </Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
                                 </div>
-                                
+
                                 {/* <div>
                                     <Link to="/ai-social-media/">
                                         <span
                                             className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Social Media </span>
                                     </Link>
                                 </div> */}
-                                
+
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
-                                    <button className={`${
-                                        location.pathname === "/ui-ux-design" ||
-                                        location.pathname === "/health-care" ||
-                                        location.pathname === "/hire-mobile-app-developer"
-                                        ? "bg-blue-100 text-black border-[#f13c3c]"
-                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                    } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
-                                    <span className=" font-medium ">Services</span>
+                                    <button className={`${location.pathname === "/ui-ux-design" ||
+                                            location.pathname === "/health-care" ||
+                                            location.pathname === "/hire-mobile-app-developer"
+                                            ? "bg-blue-100 text-black border-[#f13c3c]"
+                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                        <span className=" font-medium ">Services</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                                             className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
@@ -414,17 +408,16 @@ const HeaderNew: React.FC = () => {
 
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
-                                    <button className={`${
-                                        location.pathname === "/about-us" ||
-                                        location.pathname === "/portfolio" ||
-                                        location.pathname === "/contact-us" ||
-                                        location.pathname === "/client-testimonial" ||
-                                        location.pathname === "/Career-at-infotechlaunch" ||
-                                        location.pathname === "/blog" ||
-                                        location.pathname.startsWith("/BlogDeatils")
-                                        ? "bg-blue-100 text-black border-[#f13c3c]"
-                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                    } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                    <button className={`${location.pathname === "/about-us" ||
+                                            location.pathname === "/portfolio" ||
+                                            location.pathname === "/contact-us" ||
+                                            location.pathname === "/client-testimonial" ||
+                                            location.pathname === "/Career-at-infotechlaunch" ||
+                                            location.pathname === "/blog" ||
+                                            location.pathname.startsWith("/BlogDeatils")
+                                            ? "bg-blue-100 text-black border-[#f13c3c]"
+                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                         <span className="font-medium">Company</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
@@ -471,7 +464,7 @@ const HeaderNew: React.FC = () => {
 
                             </div>
                         </div>
-                        
+
                         <div id="slideover-container" className={`fixed inset-0 w-full h-full ${isOpen ? "visible" : "invisible"}`}>
                             <span
                                 id="slideover-bg"
@@ -507,7 +500,7 @@ const HeaderNew: React.FC = () => {
                                         </Link>
                                     </div>
 
-                                        {/* <div>
+                                    {/* <div>
                                             <Link to="/ai-development">
                                                 <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
                                                 <svg stroke="currentColor" fill="currentColor"
@@ -520,19 +513,19 @@ const HeaderNew: React.FC = () => {
                                                     <span>AI Development</span></div>
                                             </Link>
                                         </div> */}
-                                        <div>
-                                            <Link to="/ai-voice-agent">
-                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M96 96l0 160c0 53 43 96 96 96s96-43 96-96l-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0c0-53-43-96-96-96S96 43 96 96zM320 240l0 16c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24z"/>
-                                                    </svg>
-                                                    <span>AI Voice Agent</span>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div>
-                                            <Link to="/ai-social-media">
-                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                    <div>
+                                        <Link to="/ai-voice-agent">
+                                            <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M96 96l0 160c0 53 43 96 96 96s96-43 96-96l-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0 0-32-80 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l80 0c0-53-43-96-96-96S96 43 96 96zM320 240l0 16c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24z" />
+                                                </svg>
+                                                <span>AI Voice Agent</span>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link to="/ai-social-media">
+                                            <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
                                                 <svg stroke="currentColor" fill="currentColor"
                                                     stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -540,13 +533,13 @@ const HeaderNew: React.FC = () => {
                                                         d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
                                                     </path>
                                                 </svg>
-                                                    <span>AI Social Media</span></div>
-                                            </Link>
-                                        </div>
+                                                <span>AI Social Media</span></div>
+                                        </Link>
+                                    </div>
 
-                                        <div>
-                                            <Link to="/talent-solutions">
-                                                <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
+                                    <div>
+                                        <Link to="/talent-solutions">
+                                            <div className="flex justify-start p-3 px-6 space-x-2 hover:bg-white/10">
                                                 <svg stroke="currentColor" fill="currentColor"
                                                     stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -554,15 +547,15 @@ const HeaderNew: React.FC = () => {
                                                         d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
                                                     </path>
                                                 </svg>
-                                                    <span>AI Talent Solutions</span></div>
-                                            </Link>
-                                        </div>
-                                        
-                                        
+                                                <span>AI Talent Solutions</span></div>
+                                        </Link>
+                                    </div>
 
-                                        
 
-                                        <div className="flex justify-between p-3 items-center px-6 bg-transparent" onClick={() => toggleSection('aiDevelopment')}>
+
+
+
+                                    <div className="flex justify-between p-3 items-center px-6 bg-transparent" onClick={() => toggleSection('aiDevelopment')}>
                                         <div className="flex items-center space-x-2 ">
                                             <svg stroke="currentColor" fill="currentColor"
                                                 stroke-width="0" viewBox="0 0 640 512" className="text-[#212121]" height="22" width="22"
@@ -639,7 +632,7 @@ const HeaderNew: React.FC = () => {
                                             maxHeight: openSection === 'development' ? 'none' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease-in-out',
                                         }}>
                                             <ul className="grid grid-cols-1 gap-2 p-4">
-                                                <p className="flex items-center text-base font-medium text-[#212121]">
+                                                {/* <p className="flex items-center text-base font-medium text-[#212121]">
                                                     <span className="pr-1">
                                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                                                             className="text-[#212121]" height="22" width="22"
@@ -647,59 +640,59 @@ const HeaderNew: React.FC = () => {
                                                             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
                                                         </svg>
                                                     </span>Mobile App Development
-                                                </p>
+                                                </p> */}
                                                 <div className="space-y-2 text-sm font-medium">
-                                                <li
+                                                    <li
                                                         className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/ui-ux-design"> UI/UX</Link>
+                                                        <Link to="/ui-ux-design"> Mobile App Development</Link>
                                                     </li>
-                                                    
+
                                                 </div>
-                                                <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                {/* <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
                                                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                                                     className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
                                                 </svg></span>Healthcare App Development
-                                                </p>
-                                                <div className="space-y-2 text-sm font-medium">
-                                                <li className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                </p> */}
+                                                {/* <div className="space-y-2 text-sm font-medium">
+                                                    <li className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/health-care"> Health Care</Link>
                                                     </li>
-                                                </div>
-                                                <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                </div> */}
+                                                {/* <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
                                                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                                                     className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
-                                                </svg></span>Software Development</p>
+                                                </svg></span>Software Development</p> */}
                                                 <div className="space-y-2 text-sm font-medium">
-                                                    
+
                                                     <li
                                                         className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/full-stack-development"> Full Stack Development</Link>
+                                                        <Link to="/software-development"> Software Development</Link>
                                                     </li>
-                                                    
+
                                                 </div>
-                                                <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                {/* <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
                                                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                                                     className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
-                                                </svg></span>Hire Dedicated Developers</p>
+                                                </svg></span>Hire Dedicated Developers</p> */}
                                                 <div className="space-y-2 text-sm font-medium">
-                                                    
+
                                                     <li
                                                         className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
                                                         <Link to="/hire-mobile-app-developer"> Hire Mobile App Developer</Link>
                                                     </li>
-                                                    
+
                                                 </div>
                                             </ul>
                                         </div>
                                     </div>
-                                    
-                                  
+
+
                                     <div>
                                         <div className="flex justify-between p-3 items-center px-6 bg-transparent " onClick={() => toggleSection('OurCompany')}>
                                             <p className="flex items-center space-x-2 "><svg stroke="currentColor" fill="none" stroke-width="2"
@@ -723,12 +716,12 @@ const HeaderNew: React.FC = () => {
                                                 maxHeight: openSection === 'OurCompany' ? 'none' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease-in-out',
                                             }}>
                                             <ul className="grid grid-cols-1 gap-2 p-4">
-                                                <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
+                                                {/* <p className="flex items-center text-base font-medium text-[#212121]"><span className="pr-1"><svg
                                                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                                                     className="text-[#212121]" height="22" width="22"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
-                                                </svg></span>Our Company</p>
+                                                </svg></span>Our Company</p> */}
                                                 <div className="p-3 space-y-2 text-sm font-medium ">
                                                     <li
                                                         className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">

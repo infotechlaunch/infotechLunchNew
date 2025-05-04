@@ -18,6 +18,7 @@ import FoodBeverageeos from "./pages/FoodBeverageeos";
 import AIConsulting from "./pages/AIConsulting";
 import AIGen from "./pages/AIGen";
 import AIAgentDevelopmentNew from "./pages/AIAgentDevelopmentNew";
+import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import AdaptiveAiDevelopment from "./pages/AdaptiveAiDevelopment";
 import AiChatbotDevelopment from "./pages/AiChatbotDevelopment";
 import Healthcare from "./pages/Healthcare";
@@ -65,6 +66,7 @@ function App() {
           <Route path="/hire-mobile-app-developer" element={<HireMobileAppDeveloper/>} />
           <Route path="/talent-solutions" element={<TalentSolutions/>} />
           <Route path="/food-beverageeos/" element={<FoodBeverageeos/>} />
+          <Route path="/software-development/" element={<SoftwareDevelopment/>} />
           {/* <Route path="/ai-social-media/" element={<AISocialMedia/>} /> */}
           <Route path="/ai-consulting" element={<AIConsulting/>} />
           <Route path="/ai-gen" element={<AIGen/>} />

@@ -100,8 +100,8 @@ const ClientTestimonials: React.FC = () => {
                         <div className="space-y-4 ">
                             <div className="space-y-4 text-center">
                                 <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#212121] font-bold"> Hear it from Our clients</h2>
-                                <p data-aos="fade-right" data-aos-delay="100" className="text-lg text-black text-center">Explore expert opinions, industry trends, and
-                                    500+ Reviews Of Delighted Clients with <b> 4.5 Star</b> Rating</p>
+                                {/* <p data-aos="fade-right" data-aos-delay="100" className="text-lg text-black text-center">Explore expert opinions, industry trends, and
+                                    500+ Reviews Of Delighted Clients with <b> 4.5 Star</b> Rating</p> */}
                             </div>
 
 

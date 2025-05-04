@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import whychooseicon1 from '../../assets/Images/services/hireadeveloper/whychooseus/icon1.png';
+import whychooseicon2 from '../../assets/Images/services/hireadeveloper/whychooseus/icon2.png';
+import whychooseicon3 from '../../assets/Images/services/hireadeveloper/whychooseus/icon3.png';
+import whychooseicon4 from '../../assets/Images/services/hireadeveloper/whychooseus/icon4.png';
+import whychooseicon5 from '../../assets/Images/services/hireadeveloper/whychooseus/icon5.png';
+import whychooseicon6 from '../../assets/Images/services/hireadeveloper/whychooseus/icon6.png';
 const WhyChoose: React.FC = () => {
 
     return (
@@ -24,7 +30,7 @@ const WhyChoose: React.FC = () => {
 
                 </div>
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
-                    <div className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  px-6 py-8 rounded-lg">
+                    <div className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose whychoose1 px-6 py-8 rounded-lg">
                         <div className="relative z-[1]">
                             <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold" data-aos="fade-up">Optimum Outcome Focused</h2>
                             <p data-aos="fade-up" className="text-base font-normal text-white">Our developers are focused to bring optimum outcomes
@@ -44,47 +50,53 @@ const WhyChoose: React.FC = () => {
                     </div>
                     <div className="col-span-3">
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
-                            <div data-aos="fade-right" className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <h3 data-aos="fade-right"className="text-xl font-semibold">Save your Money</h3>
+                                <img src={whychooseicon1} alt="" className="why-choose-icon object-contain-1" />
+                                <h3 data-aos="fade-right"className="text-xl font-semibold">Save your Money</h3>
                                     <p className="text-sm font-normal">No doubt that you have to pay for a mobile app development project, but
                                         we promise to build your applications at the lowest cost possible with highest quality assured.</p>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <h3 className="text-xl font-semibold">Communication is our Key</h3>
+                                <img src={whychooseicon2} alt="" className="why-choose-icon object-contain-1" />
+                                 <h3 className="text-xl font-semibold">Communication is our Key</h3>
                                     <p className="text-sm font-normal">Yes, quality matters a lot. At the same time, communication matters the
                                         most as well. Our mobile application developers are very skilled, as well as they are great at
                                         communication though who keeps interacting with the clients to inform them about the mobile app
                                         development process.</p>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <h3 className="text-xl font-semibold">Non-Disclosure Agreement Signing</h3>
+                                <img src={whychooseicon3} alt="" className="why-choose-icon object-contain-1" />
+                                <h3 className="text-xl font-semibold">Non-Disclosure Agreement Signing</h3>
                                     <p className="text-sm font-normal">If you work with Comfygen, we sign a Non-Disclosure Agreement claiming
                                         that your app details, codes, and all other related information is secured in our database.</p>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <h3 className="text-xl font-semibold">Experienced and Certified App Developers</h3>
+                                <img src={whychooseicon4} alt="" className="why-choose-icon object-contain-1" />
+                                <h3 className="text-xl font-semibold">Experienced and Certified App Developers</h3>
                                     <p className="text-sm font-normal">Mobile App Developers working in Comfygen are experienced with 9+ years,
                                         and they have handled many projects in various domains. We have a proficient team of mobile
                                         application developers to handle your complex enterprise level projects.</p>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <h3 className="text-xl font-semibold">Works with Latest Technologies</h3>
+                                <img src={whychooseicon5} alt="" className="why-choose-icon object-contain-1" />
+                                <h3 className="text-xl font-semibold">Works with Latest Technologies</h3>
                                     <p className="text-sm font-normal">The app developers working here use the latest technologies along with
                                         the core tech-stacks, which helps to make the applications futuristic.</p>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <h3 className="text-xl font-semibold">We are Transparent</h3>
+                                <img src={whychooseicon6} alt="" className="why-choose-icon object-contain-1" />
+                                <h3 className="text-xl font-semibold">We are Transparent</h3>
                                     <p className="text-sm font-normal">We believe in keeping transparency with clients, where our mobile app
                                         development company processes documents, NDAs, communications, filings, and everything to ensure
                                         clients that everything is processing under their surveillance.</p>
