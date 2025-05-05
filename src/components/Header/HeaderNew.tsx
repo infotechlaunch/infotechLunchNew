@@ -61,6 +61,90 @@ const tabs = [
     },
 ];
 
+const industries = [
+    {
+        id: "food-delivery",
+        title: "Food Delivery",
+        // description: "Who We Are and What We Do",
+        // icon: iconsev07,
+        path: "/food-delivery",
+
+    },
+    {
+        id: "dating-app",
+        title: "Dating App",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/dating-app",
+
+    },
+    {
+        id: "real-state",
+        title: "Real State",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/real-state",
+
+    },
+    {
+        id: "home-services",
+        title: "Home Services",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/home-services",
+
+    },
+    {
+        id: "fitness",
+        title: "Fitness",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/fitness",
+
+    },
+    {
+        id: "taxi-app",
+        title: "Taxi App",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/taxi-app",
+
+    },
+    {
+        id: "ecommerce-delivery",
+        title: "Ecommerce Delivery",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/e-commerce",
+
+    },
+    {
+        id: "health-care",
+        title: "Health Care",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/health-care",
+
+    },
+    {
+        id: "pickup-delivery",
+        title: "Pickup and Delivery",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/pickup-delivery",
+
+    },
+    {
+        id: "education",
+        title: "Education",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/education",
+
+    }   
+
+];
+
 const companies = [
     {
         id: "about-us",
@@ -317,6 +401,59 @@ const HeaderNew: React.FC = () => {
                                         </div>
                                     </div>
 
+                                </div>
+
+                                <div className="group">
+                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                    <button className={`${location.pathname === "/food-beverageeos" ||
+                                        location.pathname === "/health-care" ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
+                                        <span className=" font-medium ">Industries</span>
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                            className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                        </svg>
+                                    </button>
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                        <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
+                                            <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+                                                <div className="col-span-2">
+                                                    <ul className="tab_list grid grid-cols-2 2xl:gap-[10px] gap-[20px]">
+                                                        {industries.map((tab) => (
+                                                            <li
+                                                                key={tab.id}
+                                                                onClick={() => setActiveTab(tab.id)}
+                                                                className={`flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer ${activeTab === tab.id ? "bg-[#f13c3c]/10" : "hover:bg-[#f13c3c]/10"
+                                                                    }`}
+                                                            >
+                                                                <Link to={tab.path} className="flex">
+                                                                {/* <img alt={tab.title} loading="lazy" width="40" height="40" src={tab.icon} /> */}
+                                                                <div>
+                                                                    <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
+                                                                    {/* <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span> */}
+                                                                </div>
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <Link to="/contact-us" className="relative">
+                                                        <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
+                                                        <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
+                                                            <button className="flex items-center gap-2 bg-[#f13c3c] py-3 px-6 font-semibold rounded-full text-base text-white">Connect
+                                                                to expert
+                                                            </button>
+                                                        </span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {/* <div>
