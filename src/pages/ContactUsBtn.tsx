@@ -9,7 +9,8 @@ import Axios from "axios";
 const ContactUsBtn: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const recaptchaRef = useRef(null);
+    // const recaptchaRef = useRef(null);
+    const recaptchaRef = useRef<ReCAPTCHA | null>(null);
     const [loading, setLoading]   = useState(false);
     const [showThanks, setShowThanks] = useState(false);
 
@@ -164,7 +165,8 @@ const ContactUsBtn: React.FC = () => {
         }
 
         setLoading(true);
-        Axios.post(`https://dishefs.com/infotech_admin/api/get-started`, formData)
+        // Axios.post(`https://dishefs.com/infotech_admin/api/get-started`, formData)
+        Axios.post(`https://infotechlaunch.com/infotech-admin/public/api/get-started`, formData)
             .then(response => {
                 console.log('response=====>>>>>', response.data);
                 if(response.data.status === true) {
@@ -220,6 +222,9 @@ const ContactUsBtn: React.FC = () => {
         .catch(error => {
             setShowThanks(false);
             console.log('error occurs while submitting form =====>>>>>', error);
+            setTimeout(() => {
+                recaptchaRef.current?.reset();
+            }, 3000);
         })
         .finally(() => {
             setLoading(false);
@@ -388,6 +393,7 @@ const ContactUsBtn: React.FC = () => {
                             <div style={checkboxContainerStyle}>
                                 <ReCAPTCHA
                                     sitekey="6LdquS0rAAAAAOr9JV8Ar2rNxUx70q5pRzyGR6yH"
+                                    // sitekey="6Leb8wErAAAAAK5cpMG6VAupj72TZTuCPSWmQe6c"
                                     ref={recaptchaRef}
                                     onChange={handleCaptchaChange}   // token comes in here
                                     theme="light"             // light or "dark"

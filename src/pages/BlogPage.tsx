@@ -28,10 +28,11 @@ const BlogPage: React.FC = () => {
     };
 
     useEffect(() => {
-        Axios.get(`https://dishefs.com/infotech_admin/api/get-blogs`)
+        // Axios.get(`https://dishefs.com/infotech_admin/api/get-blogs`)
+        Axios.get(`https://infotechlaunch.com/infotech-admin/public/api/get-blogs`)
         .then((response) => {
             // console.log('response data status =======>>>>', response.data.status);
-            // console.log('response data data =======>>>>', response.data.data);
+            console.log('response data data =======>>>>', response.data.data);
             if(response.data.status === true) {
                 setBlogs(response.data.data);
             }

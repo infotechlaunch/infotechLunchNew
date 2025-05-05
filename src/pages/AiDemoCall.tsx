@@ -9,7 +9,8 @@ import Axios from "axios";
 
 const AiDemoCall = () => {
 
-  const recaptchaRef = useRef(null);
+  // const recaptchaRef = useRef(null);
+  const recaptchaRef = useRef<ReCAPTCHA | null>(null);
   const [loading, setLoading]   = useState(false);
   const [showThanks, setShowThanks] = useState(false);
 
@@ -165,7 +166,8 @@ const AiDemoCall = () => {
     }
 
     setLoading(true);
-    Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)
+    // Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)
+    Axios.post(`https://infotechlaunch.com/infotech-admin/public/api/ai-demo-call`, formData)
       .then(response => {
         // console.log('response=====>>>>>', response.data);
         if(response.data.status === true) {
@@ -174,6 +176,7 @@ const AiDemoCall = () => {
           setTimeout(() => {
             setShowThanks(false);
           }, 3000);
+          
         } else {
           setShowThanks(false);
         }
@@ -219,7 +222,10 @@ const AiDemoCall = () => {
       })
       .catch(error => {
         setShowThanks(false);
-        console.log('error occurs while submitting form =====>>>>>', error);
+        console.log('error 2 occurs while submitting form =====>>>>>', error);
+        setTimeout(() => {
+          recaptchaRef.current?.reset();
+        }, 3000);
       })
       .finally(() => {
         setLoading(false);
@@ -486,6 +492,7 @@ const AiDemoCall = () => {
 
             <div style={checkboxContainerStyle}>
               <ReCAPTCHA
+                // sitekey="6Leb8wErAAAAAK5cpMG6VAupj72TZTuCPSWmQe6c"
                 sitekey="6LdquS0rAAAAAOr9JV8Ar2rNxUx70q5pRzyGR6yH"
                 ref={recaptchaRef}
                 onChange={handleCaptchaChange}   // token comes in here

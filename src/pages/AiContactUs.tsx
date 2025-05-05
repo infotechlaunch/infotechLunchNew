@@ -156,10 +156,10 @@ const AiContactUs = () => {
           hasError = true;
         }
 
-        if (!formData.captchaToken) {
-          errors.captchaToken = "Please confirm you're not a robot";
-          hasError = true;
-        }
+        // if (!formData.captchaToken) {
+        //   errors.captchaToken = "Please confirm you're not a robot";
+        //   hasError = true;
+        // }
     
         if (hasError) {
           setFormErrors(errors);
@@ -167,7 +167,7 @@ const AiContactUs = () => {
         }
     
         setLoading(true);
-        // Axios.post(`https://dishefs.com/infotech_admin/api/ai-demo-call`, formData)
+        // Axios.post(`https://infotechlaunch.com/infotech-admin/public/api/ai-demo-call`, formData)
         //   .then(response => {
         //     // console.log('response=====>>>>>', response.data);
         //     if(response.data.status === true) {
@@ -176,6 +176,7 @@ const AiContactUs = () => {
         //       setTimeout(() => {
         //         setShowThanks(false);
         //       }, 3000);
+              
         //     } else {
         //       setShowThanks(false);
         //     }
@@ -250,7 +251,7 @@ const AiContactUs = () => {
         <AOSProvider>
         <HeaderNew />
         
-        <div className="bg-gradient-blue-red text-white min-h-screen flex items-center justify-center p-8">
+        <div className="bg-gradient-blue-red text-white flex items-center justify-center p-8">
             <div className="container mx-auto flex flex-col lg:flex-row gap-8 lg:gap-16">
                 {/* Left Section - Headline */}
                 <div className="flex-1">
@@ -548,7 +549,7 @@ const AiContactUs = () => {
                     <input 
                         name="website_link"
                         id="website_link"
-                        type="url" 
+                        type="text" 
                         className="bg-gray-900 border border-gray-800 text-white text-sm rounded block w-full p-2.5"
                         value={formData.website_link}
                         onChange={handleChange}
@@ -556,16 +557,13 @@ const AiContactUs = () => {
                     {formErrors.website_link && <div style={{ color: 'red' }}>{formErrors.website_link}</div>}
                 </div>
                 
-                {/* Qualification warning */}
-                <div className="text-sm text-gray-300">
-                    Submit button not showing? It means the form requirements haven’t been met. Please check your responses and try again.
-                    <p className="text-xs text-gray-400">Only 3 Slots Remaining.</p>
-                </div>
+               
                 
                 {/* reCAPTCHA */}
 
                 <div style={checkboxContainerStyle}>
                   <ReCAPTCHA
+                    // sitekey="6Leb8wErAAAAAK5cpMG6VAupj72TZTuCPSWmQe6c"
                     sitekey="6LdquS0rAAAAAOr9JV8Ar2rNxUx70q5pRzyGR6yH"
                     ref={recaptchaRef}
                     onChange={handleCaptchaChange}   // token comes in here
@@ -597,7 +595,7 @@ const AiContactUs = () => {
                         />
                       </svg>
                     )}
-                    Start Your Journey
+                    Initiate your Journey
                     <svg className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
