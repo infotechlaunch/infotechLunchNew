@@ -110,9 +110,9 @@ const Footer: React.FC = () => {
               <h3>Legal</h3>
               <ul>
               <li> <Link to="/terms-and-conditions">Terms & Conditons</Link> </li>
-                <li> <Link to="/">Privacy Notice</Link> </li>
-                <li> <Link to="/">Cookie Policy</Link> </li>
-                <li> <Link to="/">Disclaimer</Link> </li>
+                <li> <Link to="/privacy-policy">Privacy Notice</Link> </li>
+                <li> <Link to="/cookie-policy">Cookie Policy</Link> </li>
+                <li> <Link to="/copyright">Copyright</Link> </li>
               </ul>
             </div>
 

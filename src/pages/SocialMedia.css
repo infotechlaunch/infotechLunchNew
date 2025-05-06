@@ -11,6 +11,17 @@
     background: #ffaf46;
     color: #000;
 }
+ul.list-point-1 {
+  margin-left: 45px;
+}
+ul.list-point-1  li b{font-weight: 600;}
+.list-point-1 li {
+  list-style: disc;
+  font-size: 15px;
+  margin-top: 10px;
+}
+ul.list-point-1 li ul{margin-left: 30px;}
+ul.list-point-1 li ul li{list-style: circle;}
 .rounded-box-white{  position: relative;  transition: transform 0.3s ease;}
 .icon-rounded-1 {
   border-radius: 50%;

@@ -39,6 +39,9 @@ import AiVoiceAgent from "./pages/AiVoiceAgent";
 import AiDemoCall from "./pages/AiDemoCall";
 import AiContactUs from "./pages/AiContactUs";
 import TermsandConditions from "./pages/TermsandConditions";
+import CookiePolicy from "./pages/CookiePolicy";
+import Copyright from "./pages/Copyright";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import PlayAudio from "./pages/PlayAudio";
 
 
@@ -100,6 +103,9 @@ function App() {
           <Route path="/ai-contact-us" element={<AiContactUs/>} />
           <Route path="/play-audio" element={<PlayAudio/>} />
           <Route path="/terms-and-conditions" element={<TermsandConditions/>} />
+          <Route path="/cookie-policy" element={<CookiePolicy/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/copyright" element={<Copyright/>} />
           
           
           
