@@ -2,19 +2,68 @@ import React from "react";
 import Footer from "../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import HeaderNew from "../components/Header/HeaderNew";
-import WorkingProcess from "../components/HireMobileAppDeveloper/WorkingProcess";
-import WhyChoose from "../components/HireMobileAppDeveloper/WhyChoose";
-import Partners from "../components/Partners/Partners";
-import OurPortfolioHome from "../components/OurPortfolioHome/OurPortfolioHome";
-import IndustriesHome from "../components/IndustriesHome/IndustriesHome";
-import Blog from "../components/Blog/Blog";
+import Services from "../components/Services/ServicesSoftwareDevelopment";
+import WhyChoose from "../components/SoftwareDevelopment/WhyChoose";
+import Industries from "../components/SoftwareDevelopment/Industries";
 import HireMobileAppHeroImg from "../assets/Images/hero-img/hirededicateddeveloper.webp";
 import TawkChat from "./TawkChat";
-import GetStarted from "../components/GetStarted/GetStarted";
-import FAQ from "../components/Faq/Faq";
-import HireDeveloper from "../components/HireMobileAppDeveloper/HireDeveloper";
+import Edge1 from "../assets/Images/services/softwaredevelopment/end-to-end/1.png"
+import Edge2 from "../assets/Images/services/softwaredevelopment/end-to-end/2.png"
+import Edge3 from "../assets/Images/services/softwaredevelopment/end-to-end/3.png"
+import Edge4 from "../assets/Images/services/softwaredevelopment/end-to-end/4.png"
+import Edge5 from "../assets/Images/services/softwaredevelopment/end-to-end/5.png"
+import Edge6 from "../assets/Images/services/softwaredevelopment/end-to-end/6.png"
+import Edge7 from "../assets/Images/services/softwaredevelopment/end-to-end/7.png"
+import Edge8 from "../assets/Images/services/softwaredevelopment/end-to-end/8.png"
+import Edge9 from "../assets/Images/services/softwaredevelopment/end-to-end/9.png"
 import AOSProvider from "../components/AOSProvider";
-
+const EdgeData = [
+        {
+            imgSrc: Edge1,
+            altText: "We build dedicated delivery teams",
+            title: "Our expert software consultants assess your requirements and offer insightful recommendations to create customized solutions that drive growth, enhance efficiency, and boost profitability."
+        },
+        {
+            imgSrc: Edge2,
+            altText: "We thoroughly vet professionals",
+            title: "We provide personalized software solutions tailored to your specific needs, leveraging agile methodologies for quicker delivery, enhanced scalability, and smooth integration."
+        },
+        {
+            imgSrc: Edge3,
+            altText: "We invest in significant resources",
+            title: "We develop ERP, CRM, and other enterprise solutions customized to enhance operations, boost productivity, improve customer service, and drive business growth."
+        },
+        {
+            imgSrc: Edge4,
+            altText: "Growing database of candidates",
+            title: "We assist in creating competitive software products from concept to launch, utilizing established strategies for design, testing, and ongoing maintenance."
+        },
+        {
+            imgSrc: Edge5,
+            altText: "Growing database of candidates",
+            title: "We support infrastructure upgrades and third-party service integrations, ensuring optimal functionality, compliance, and alignment with your vision."
+        },
+        {
+            imgSrc: Edge6,
+            altText: "Growing database of candidates",
+            title: "Our iterative approach ensures rapid delivery and adaptability to change, focusing on continuous feedback and user-centric results."
+        },
+        {
+            imgSrc: Edge7,
+            altText: "Growing database of candidates",
+            title: "We develop strong APIs that link apps and data, enhancing capabilities and interoperability with scalable, purpose-driven solutions."
+        },
+        {
+            imgSrc: Edge8,
+            altText: "Growing database of candidates",
+            title: "We design captivating user experiences that reflect your brand identity and improve satisfaction with mobile-first, user-centered designs."
+        },
+        {
+            imgSrc: Edge9,
+            altText: "Growing database of candidates",
+            title: "We modernize legacy systems with the latest technologies and provide 24/7 support to eliminate downtime."
+        }
+    ];
 const HireMobileAppDeveloper: React.FC = () => {
     return (
 
@@ -29,13 +78,13 @@ const HireMobileAppDeveloper: React.FC = () => {
                                 <div>
                                     <h1 data-aos="fade-right" className="text-white xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  ">
                                         Hire Expert Mobile App Developers — 15+ Years of Futuristic App Solutions</h1>
-                                        
+
                                     <p data-aos="fade-right" className="w-full mx-auto text-2xl font-bold text-white lg:text-base mt-2"></p>
                                     <p data-aos="fade-right" className="w-full mx-auto text-sm font-light text-white lg:text-base mt-2">
                                         Build Future-Ready Apps With India’s Top Mobile Developers
                                     </p>
-                                       </div>
-                                  </div>
+                                </div>
+                            </div>
                             <div className="md:py-6">
                                 <Link data-aos="fade-right" to="/contact-us" className="btn btn-fix lazyloaded">Schedule A Call Now!
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.231" height="11.738" viewBox="0 0 24.231 11.738">
@@ -59,10 +108,10 @@ const HireMobileAppDeveloper: React.FC = () => {
                     <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
                         <div className="space-y-4 text-center">
                             <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                                <h2 data-aos="fade-up" className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">Why Do Businesses Need Mobile Applications?</h2>
-                                <p data-aos="fade-up"> In the contemporary business landscape, mobile application development industry have become essential tools for companies to thrive and stay competitive. Here are six key reasons why businesses need mobile applications:</p>
+                                <h2 data-aos="fade-up" className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">How Our Tailored Software Development Solutions Can Benefit Your Business?
+                                </h2>
                             </div>
-                            <div className="grid py-10 text-left lg:grid-cols-3 md:grid-cols-2 2xl:gap-8 gap-4">
+                            <div className="grid py-10 text-left lg:grid-cols-3 md:grid-cols-3 2xl:gap-10 gap-10">
                                 <div data-aos="fade-up"
                                     className="bg-[#FAFAFA] p-6 border border-[#f13c3c]/10 group rounded-md space-y-4 hover:bg-[#f13c3c]/10 hover:border-[#f13c3c] cursor-pointer duration-200">
                                     <div data-aos="fade-up" className="relative rounded-md border border-[#f13c3c] w-fit text-[#f13c3c] bg-[#f13c3c]/10 p-2">
@@ -77,9 +126,12 @@ const HireMobileAppDeveloper: React.FC = () => {
                                         </svg>
                                     </div>
                                     <div className="space-y-2">
-                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Enhanced Customer Engagement</h3>
-                                        <p data-aos="fade-up" className="text-base text-[#212121]">Mobile apps enable businesses to engage customers directly with personalized messages, boosting loyalty, brand awareness, and continuous interaction.
-</p>
+                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Process Automation</h3>
+                                        <ul>
+                                            <li>✔ Simplify Business Workflows</li>
+                                            <li>✔ Remove Repetitive Manual Tasks</li>
+                                            <li>✔ Maximize Operational Efficiency</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div data-aos="fade-up"
@@ -95,100 +147,66 @@ const HireMobileAppDeveloper: React.FC = () => {
                                         </svg>
                                     </div>
                                     <div className="space-y-2">
-                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Increased Accessibility and Convenience</h3>
-                                        <p data-aos="fade-up" className="text-base text-[#212121]">Mobile apps provide 24/7 access, enabling users to interact anytime, boosting convenience, customer satisfaction, loyalty, and overall experience.
-</p>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up"
-                                    className="bg-[#FAFAFA] p-6 border border-[#f13c3c]/10 group rounded-md space-y-4 hover:bg-[#f13c3c]/10 hover:border-[#f13c3c] cursor-pointer duration-200">
-                                    <div data-aos="fade-up" className="relative rounded-md border border-[#f13c3c] w-fit text-[#f13c3c] bg-[#f13c3c]/10 p-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-globe w-12 h-12">
-                                            <path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
-                                            <path d="M5.75 15a8.015 8.015 0 1 0 9.25 -13"></path>
-                                            <path d="M11 17v4"></path>
-                                            <path d="M7 21h8"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Wider Market Reach</h3>
-                                        <p data-aos="fade-up" className="text-base text-[#212121]">Mobile apps help businesses reach wider audiences by targeting mobile users, expanding market reach, and unlocking new growth opportunities globally.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up"
-                                    className="bg-[#FAFAFA] p-6 border border-[#f13c3c]/10 group rounded-md space-y-4 hover:bg-[#f13c3c]/10 hover:border-[#f13c3c] cursor-pointer duration-200">
-                                    <div data-aos="fade-up" className="relative rounded-md border border-[#f13c3c] w-fit text-[#f13c3c] bg-[#f13c3c]/10 p-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-article w-12 h-12">
-                                            <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                                            <path d="M7 8h10"></path>
-                                            <path d="M7 12h10"></path>
-                                            <path d="M7 16h10"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Competitive Edge</h3>
-                                        <p data-aos="fade-up" className="text-base text-[#212121]">Mobile apps demonstrate innovation, giving businesses a competitive edge and attracting tech-savvy users who value convenience, functionality, and modern experiences.</p>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up"
-                                    className="bg-[#FAFAFA] p-6 border border-[#f13c3c]/10 group rounded-md space-y-4 hover:bg-[#f13c3c]/10 hover:border-[#f13c3c] cursor-pointer duration-200">
-                                    <div data-aos="fade-up" className="relative rounded-md border border-[#f13c3c] w-fit text-[#f13c3c] bg-[#f13c3c]/10 p-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-message-circle w-12 h-12">
-                                            <path
-                                                d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Data Collection and Analytics</h3>
-                                        <p data-aos="fade-up" className="text-base text-[#212121]">Mobile apps collect user data, enabling businesses to analyze trends, personalize offerings, enhance strategies, and boost customer satisfaction through insights.</p>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up"
-                                    className="bg-[#FAFAFA] p-6 border border-[#f13c3c]/10 group rounded-md space-y-4 hover:bg-[#f13c3c]/10 hover:border-[#f13c3c] cursor-pointer duration-200">
-                                    <div data-aos="fade-up" className="relative rounded-md border border-[#f13c3c] w-fit text-[#f13c3c] bg-[#f13c3c]/10 p-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            className="tabler-icon tabler-icon-shopping-cart-discount w-12 h-12">
-                                            <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
-                                            <path d="M12.5 17h-6.5v-14h-2"></path>
-                                            <path d="M6 5l14 1l-.859 6.011m-6.141 .989h-7"></path>
-                                            <path d="M16 21l5 -5"></path>
-                                            <path d="M21 21v.01"></path>
-                                            <path d="M16 16v.01"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Revenue Generation and Marketing Opportunities
+                                        <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Unlock Scalability
+
                                         </h3>
-                                        <p data-aos="fade-up" className="text-base text-[#212121]">Mobile apps collect user data, enabling businesses to analyze trends, personalize offerings, enhance strategies, and boost customer satisfaction through insights</p>
-                                    </div>
+                                        <ul>
+                                            <li>✔ Easily Grow to Support Millions of Users</li>
+                                            <li> ✔ Add Unlimited Features and Functionality</li>
+                                            <li>✔ Expand Seamlessly Without Limits</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div data-aos="fade-up"
+                                className="bg-[#FAFAFA] p-6 border border-[#f13c3c]/10 group rounded-md space-y-4 hover:bg-[#f13c3c]/10 hover:border-[#f13c3c] cursor-pointer duration-200">
+                                <div data-aos="fade-up" className="relative rounded-md border border-[#f13c3c] w-fit text-[#f13c3c] bg-[#f13c3c]/10 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" className="tabler-icon tabler-icon-globe w-12 h-12">
+                                        <path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                                        <path d="M5.75 15a8.015 8.015 0 1 0 9.25 -13"></path>
+                                        <path d="M11 17v4"></path>
+                                        <path d="M7 21h8"></path>
+                                    </svg>
+                                </div>
+                                <div className="space-y-2">
+                                    <h3 data-aos="fade-up" className="2xl:text-2xl text-xl text-[#212121] font-semibold">Reduce Costs</h3>
+                                    <ul>
+                                        <li>✔ Cut Recurring Monthly Tool Expenses</li>
+                                        <li>✔ Optimize Technology Infrastructure Spending</li>
+                                        <li>✔ Streamline Overall Operational Costs</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <HireDeveloper />
-                <WorkingProcess />
-
-                <WhyChoose />
-                <Partners />
-                <OurPortfolioHome />
-                <IndustriesHome />
-                <Blog />
-                <GetStarted />
-                <FAQ />
-                <Footer />
-                <TawkChat />
-            </AOSProvider>
+                </div>
+            </section>
+            <Services />
+            <WhyChoose />
+            <Industries />
+            <section className="w-full lg:py-16 py-10 bg-gradient-blue-red">
+                        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+                            <div className="space-y-4 ">
+                                <div className="space-y-4 text-center">
+                                    <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold">End-to-End Software Development Services,
+                                    Tailored To Your Business Needs</h2>
+                                </div>
+                                <div className="grid pt-8 grid-cols-1 md:grid-cols-3 gap-6">
+                                    {EdgeData.map((item, index) => (
+                                        <div  key={index} className="feature-card-1 border-2 p-8 space-y-2 bg-white border-[#f13c3c]/20 text-center rounded-[40px] aos-init aos-animate">
+                                            <img src={item.imgSrc} alt={item.altText} className="object-contain-1 mx-auto w-20 h-20 mb-4" />
+                                            <p>{item.title}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            <Footer />
+            <TawkChat />
+        </AOSProvider >
 
         </>
 

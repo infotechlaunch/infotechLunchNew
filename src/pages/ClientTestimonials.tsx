@@ -7,6 +7,11 @@ import client from "../assets/Images/client-testimonials-hero-img.webp";
 import AOSProvider from "../components/AOSProvider";
 import user from "../assets/Images/icon/default.png";
 import ayush from "../assets/Images/about/team/ayush.png";
+import testivideo1 from "../assets/Images/about/testimonials/sample-2.mp4";
+import testivideo2 from "../assets/Images/about/testimonials/sample-3.mp4";
+// import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules"; // Import modules
 
 const testimonials = [
     {
@@ -77,7 +82,7 @@ const ClientTestimonials: React.FC = () => {
                                             <h1 data-aos="fade-right"
                                                 className="text-[#fff] xl:text-4xl text-3xl font-extrabold xl:leading-[3rem] leading-[3rem]  lg:text-start text-center ">
                                                 Client Testimonials</h1>
-                                            
+
                                             <p data-aos="fade-right"
                                                 className="w-full mx-auto text-sm font-light text-[#fff] lg:text-base mt-2 lg:text-start text-center">
                                                 Empowering Innovators to Shape the Future of IT.</p>
@@ -111,7 +116,7 @@ const ClientTestimonials: React.FC = () => {
                                 {testimonials.map((testimonial) => (
                                     <div key={testimonial.id} className="flex flex-wrap bg-[#F3F4F6] p-6 rounded-lg md:space-x-6 relative">
                                         {/* Client Image & Play Button */}
-                                        <div className="relative w-full md:w-[40%] flex flex-col items-center">
+                                        {/* <div className="relative w-full md:w-[40%] flex flex-col items-center">
                                             <div className="w-full">
                                                 <img
                                                     src={testimonial.bgimage}
@@ -131,12 +136,12 @@ const ClientTestimonials: React.FC = () => {
 
                                             </button>
 
-                                        </div>
+                                        </div> */}
 
                                         {/* Testimonial Content */}
                                         <div className="flex-1 mt-5 md:mt-0">
                                             <p className="text-[#212121] text-sm font-medium text-start">{testimonial.review}</p>
-                                            <div className="flex justify-between items-center mt-3 md:mt-0">
+                                            <div className="flex justify-between items-center mt-4 md:mt-4">
                                                 <div className="flex items-center">
                                                     <img className="w-12 h-12 rounded-full" src={testimonial.image} alt={testimonial.name} />
                                                     <div className="ml-3">
@@ -145,7 +150,7 @@ const ClientTestimonials: React.FC = () => {
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className="flex space-x-1 text-yellow-500">
+                                                    <div className="flex space-x-1 text-yellow-500 mt-4">
                                                         {[...Array(5)].map((_, i) => (
                                                             <svg key={i} className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                                                                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -187,6 +192,76 @@ const ClientTestimonials: React.FC = () => {
                         </div>
                     </div>
                 </section>
+                <div className="bg-gradient-blue-red lg:py-16 py-10">
+                    <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 bg-white md:py-14 py-8 md:px-10 px-6 rounded-3xl">
+                        <div className="flex items-center justify-between">
+                            <div className="space-y-2">
+                                <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-up">Testimonials</h2>
+                            </div>
+
+                            {/* Swiper Navigation */}
+                            <div className="md:flex hidden items-center gap-4 px-4">
+                                <button title="Previous" type="button" aria-label="Previous" className="swiper-button-prev-custom group w-10 h-10 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border duration-200 bg-white rounded-full hover:bg-[#f13c3c] hover:border-[#f13c3c] cursor-pointer">
+                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="35" width="35">
+                                        <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                                    </svg>
+                                </button>
+                                <button title="Next" type="button" aria-label="Next" className="swiper-button-next-custom group w-10 h-10 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border duration-200 bg-white rounded-full hover:bg-[#f13c3c] hover:border-[#f13c3c] cursor-pointer">
+                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="35" width="35">
+                                        <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Swiper Slider */}
+                        <div className="slider-container testimonial-slider mt-6">
+                            <Swiper
+                                spaceBetween={20}
+                                slidesPerView={2}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-custom",
+                                    prevEl: ".swiper-button-prev-custom",
+                                }}
+                                pagination={false}
+                                modules={[Navigation, Pagination]}
+                                breakpoints={{
+                                    640: { slidesPerView: 1 },
+                                    768: { slidesPerView: 1 },
+                                    900: { slidesPerView: 2 },
+                                    1024: { slidesPerView: 2 },
+                                }}
+                            >
+
+                                <SwiperSlide>
+                                <iframe
+                                                width="100%"
+                                                height="320px"
+                                                src={testivideo1}
+                                                title="Testimonial Video"
+                                            ></iframe> 
+                                         </SwiperSlide>
+                                            <SwiperSlide>
+                                            <iframe
+                                                width="100%"
+                                                height="320px"
+                                                src={testivideo2}
+                                                title="Testimonial Video"
+                                            ></iframe> 
+                                    </SwiperSlide>
+                                    
+                                <SwiperSlide>
+                                <iframe
+                                                width="100%"
+                                                height="320px"
+                                                src={testivideo2}
+                                                title="Testimonial Video"
+                                            ></iframe> 
+                                    </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
 
 
 

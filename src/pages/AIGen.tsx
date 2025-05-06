@@ -2,7 +2,7 @@
 import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
-import aiChatbotHeroImg from "../assets/Images/aiDevelopment/aichatdevelopment-hero-img.jpg";
+import aiGenHeroImg from "../assets/Images/aiDevelopment/aiGen/genai-hero-image.png";
 import Services from "../components/Services/ServicesAIChatbot";
 // import CreationProcess from "../components/AIChatbot/Process";
 import Industries from "../components/AIChatbot/Industries";
@@ -36,18 +36,18 @@ const AdaptiveAiDevelopment = () => {
           <div className="hero-text">
             <div className="sticky top-40 z-40">
               <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white" data-aos="fade-right">
-              Top Generative AI Development Company 
+                Top Generative AI Development Company
               </h1>
               <h3 className="text-2xl  text-white mb-3 font-semibold">Empowering Innovation and Automation</h3>
               <p className="text-lg md:text-xl text-white" data-aos="fade-right">InfoTech Launch is a leading generative AI app development company helping businesses automate operations, personalize customer experiences, and unlock new creative possibilities through advanced AI technologies.
-  </p>
+              </p>
               <ConnectExperts />
 
             </div>
           </div>
           <div className="hero-image overflow-hidden" data-aos="fade-left" style={{ zIndex: "0" }}>
             <div>
-              <img src={aiChatbotHeroImg} alt="" className="feature-img" style={{
+              <img src={aiGenHeroImg} alt="" className="feature-img" style={{
                 height: "350px",
                 width: "auto",
                 objectFit: "cover",
