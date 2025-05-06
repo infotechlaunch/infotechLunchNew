@@ -261,7 +261,7 @@ const HeaderNew: React.FC = () => {
                                     </Link>
                                 </div>
 
-                                <div>
+                                {/* <div> */}
                                     <div className="group">
                                         {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                         <button className={`${location.pathname === "/ai-consulting" ||
@@ -281,7 +281,8 @@ const HeaderNew: React.FC = () => {
                                                 <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                                             </svg>
                                         </button>
-                                        <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                        {/* <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full"> */}
+                                        <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transition-all duration-200 ease-in-out origin-top w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                                             <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                                 <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                                                     <div className="">
@@ -323,7 +324,7 @@ const HeaderNew: React.FC = () => {
                                         </div>
                                     </div>
 
-                                </div>
+                                {/* </div> */}
 
                                 {/* <div>
                                     <Link to="/ai-social-media/">
@@ -349,7 +350,8 @@ const HeaderNew: React.FC = () => {
                                             <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
                                         </svg>
                                     </button>
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                    {/* <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full"> */}
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transition-all duration-200 ease-in-out origin-top w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
                                                 <div className="">
@@ -428,7 +430,9 @@ const HeaderNew: React.FC = () => {
                                         </svg>
                                     </button>
 
-                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full">
+                                    {/* <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transform hidden group-hover:block transition duration-200 ease-in-out origin-top w-full"> */}
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl capitalize text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap left-0 transition-all duration-200 ease-in-out origin-top w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+
                                         <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                                             <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
 
@@ -608,6 +612,7 @@ const HeaderNew: React.FC = () => {
                                             </div>
                                         </ul>
                                     </div>
+                                    
                                     <div>
                                         <div className="flex justify-between p-3 items-center px-6 bg-transparent " onClick={() => toggleSection('development')}>
                                             <div className="flex items-center space-x-2 ">
