@@ -67,7 +67,9 @@ const industries = [
         title: "Food Delivery",
         // description: "Who We Are and What We Do",
         // icon: iconsev07,
-        path: "/food-delivery",
+        // path: "/food-delivery",
+        path: "/food-beverageeos",
+        
 
     },
     {
@@ -304,7 +306,7 @@ const HeaderNew: React.FC = () => {
                                 <div className={`${location.pathname === "/"
                                     ? "bg-blue-100 text-black border-[#f13c3c]"
                                     : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-1 py-5`}>
                                     <Link to="/">
                                         <span>Home</span>
                                     </Link>
@@ -315,7 +317,7 @@ const HeaderNew: React.FC = () => {
                                 <div className={`${location.pathname === "/ai-voice-agent"
                                     ? "bg-blue-100 text-black border-[#f13c3c]"
                                     : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-1 py-5`}>
                                     <Link to="/ai-voice-agent">
                                         <span>AI Voice Agent</span>
                                     </Link>
@@ -324,7 +326,7 @@ const HeaderNew: React.FC = () => {
                                 <div className={`${location.pathname === "/ai-social-media"
                                     ? "bg-blue-100 text-black border-[#f13c3c]"
                                     : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-1 py-5`}>
                                     <Link to="/ai-social-media">
                                         <span>AI Social Media</span>
                                     </Link>
@@ -333,7 +335,7 @@ const HeaderNew: React.FC = () => {
                                 <div className={`${location.pathname === "/talent-solutions"
                                     ? "bg-blue-100 text-black border-[#f13c3c]"
                                     : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                    } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-1 py-5`}>
                                     <Link to="/talent-solutions">
                                         <span>AI Talent Solutions</span>
                                     </Link>
@@ -407,7 +409,18 @@ const HeaderNew: React.FC = () => {
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                     <button className={`${location.pathname === "/food-beverageeos" ||
-                                        location.pathname === "/health-care" ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        location.pathname === "/health-care" ||
+                                        location.pathname === "/real-state" ||
+                                        location.pathname === "/fitness" ||
+                                        location.pathname === "/e-commerce" ||
+                                        location.pathname === "/pickup-delivery" ||
+                                        location.pathname === "/dating-app" ||
+                                        location.pathname === "/home-services" ||
+                                        location.pathname === "/taxi-app" ||
+                                        location.pathname === "/health-care" ||
+                                        location.pathname === "/education"
+                                        
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
                                         : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                         } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
                                         <span className=" font-medium ">Industries</span>
@@ -467,7 +480,7 @@ const HeaderNew: React.FC = () => {
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                     <button className={`${location.pathname === "/ui-ux-design" ||
-                                        location.pathname === "/health-care" ||
+                                        location.pathname === "/software-development" ||
                                         location.pathname === "/hire-mobile-app-developer"
                                         ? "bg-blue-100 text-black border-[#f13c3c]"
                                         : "text-black/80 border-transparent hover:text-[#f13c3c]"
