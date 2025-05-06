@@ -31,9 +31,7 @@ const tabs = [
         title: "Mobile App Development",
         description: "Innovative Solutions for Every Platform",
         icon: iconsev, // Replace with actual path
-        links: [
-            { name: "UI/UX Design", path: "/ui-ux-design" },
-        ],
+        path: "/ui-ux-design",
     },
     // {
     //     id: "healthcare",
@@ -52,19 +50,99 @@ const tabs = [
         title: "Software Development",
         description: "In-depth End-to-End Development Services",
         icon: iconsev05,
-        links: [
-            { name: "Full stack Development", path: "/software-development" },
-        ],
+        path: "/software-development",
     },
     {
         id: "ideation",
         title: "Hire Dedicated Developers",
         description: "Skilled Developers for Your Projects",
         icon: iconsev06,
-        links: [
-            { name: "Hire Mobile App Developer", path: "/hire-mobile-app-developer" },
-        ],
+        path: "/hire-mobile-app-developer",
     },
+];
+
+const industries = [
+    {
+        id: "food-delivery",
+        title: "Food Delivery",
+        // description: "Who We Are and What We Do",
+        // icon: iconsev07,
+        path: "/food-delivery",
+
+    },
+    {
+        id: "dating-app",
+        title: "Dating App",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/dating-app",
+
+    },
+    {
+        id: "real-state",
+        title: "Real State",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/real-state",
+
+    },
+    {
+        id: "home-services",
+        title: "Home Services",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/home-services",
+
+    },
+    {
+        id: "fitness",
+        title: "Fitness",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/fitness",
+
+    },
+    {
+        id: "taxi-app",
+        title: "Taxi App",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/taxi-app",
+
+    },
+    {
+        id: "ecommerce-delivery",
+        title: "Ecommerce Delivery",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/e-commerce",
+
+    },
+    {
+        id: "health-care",
+        title: "Health Care",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/health-care",
+
+    },
+    {
+        id: "pickup-delivery",
+        title: "Pickup and Delivery",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/pickup-delivery",
+
+    },
+    {
+        id: "education",
+        title: "Education",
+        // description: "What Our Clients Say About Us",
+        // icon: iconsev07,
+        path: "/education",
+
+    }   
+
 ];
 
 const companies = [
@@ -224,8 +302,8 @@ const HeaderNew: React.FC = () => {
                         <div className="xl:flex flex-col xl:w-auto w-full items-center text-white px-6 xl:block hidden">
                             <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
                                 <div className={`${location.pathname === "/"
-                                        ? "bg-blue-100 text-black border-[#f13c3c]"
-                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    ? "bg-blue-100 text-black border-[#f13c3c]"
+                                    : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/">
                                         <span>Home</span>
@@ -235,8 +313,8 @@ const HeaderNew: React.FC = () => {
 
 
                                 <div className={`${location.pathname === "/ai-voice-agent"
-                                        ? "bg-blue-100 text-black border-[#f13c3c]"
-                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    ? "bg-blue-100 text-black border-[#f13c3c]"
+                                    : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/ai-voice-agent">
                                         <span>AI Voice Agent</span>
@@ -244,8 +322,8 @@ const HeaderNew: React.FC = () => {
                                 </div>
 
                                 <div className={`${location.pathname === "/ai-social-media"
-                                        ? "bg-blue-100 text-black border-[#f13c3c]"
-                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    ? "bg-blue-100 text-black border-[#f13c3c]"
+                                    : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/ai-social-media">
                                         <span>AI Social Media</span>
@@ -253,8 +331,8 @@ const HeaderNew: React.FC = () => {
                                 </div>
 
                                 <div className={`${location.pathname === "/talent-solutions"
-                                        ? "bg-blue-100 text-black border-[#f13c3c]"
-                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                    ? "bg-blue-100 text-black border-[#f13c3c]"
+                                    : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                     } relative block text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
                                     <Link to="/talent-solutions">
                                         <span>AI Talent Solutions</span>
@@ -265,13 +343,13 @@ const HeaderNew: React.FC = () => {
                                     <div className="group">
                                         {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                         <button className={`${location.pathname === "/ai-consulting" ||
-                                                location.pathname === "/ai-agent-development-new" ||
-                                                location.pathname === "/adaptive-ai-development" ||
-                                                location.pathname === "/ai-chatbot-development" ||
-                                                location.pathname === "/ai-development"
-                                                ? "bg-blue-100 text-black border-[#f13c3c]"
-                                                : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                            } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                            location.pathname === "/ai-agent-development-new" ||
+                                            location.pathname === "/adaptive-ai-development" ||
+                                            location.pathname === "/ai-chatbot-development" ||
+                                            location.pathname === "/ai-development"
+                                            ? "bg-blue-100 text-black border-[#f13c3c]"
+                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                            } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
                                             <span className=" font-medium ">AI Development</span>
                                             <svg stroke="currentColor"
                                                 fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -326,6 +404,59 @@ const HeaderNew: React.FC = () => {
 
                                 {/* </div> */}
 
+                                <div className="group">
+                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                    <button className={`${location.pathname === "/food-beverageeos" ||
+                                        location.pathname === "/health-care" ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
+                                        <span className=" font-medium ">Industries</span>
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                            className="hover:text-[#f13c3c] text-black/80" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                        </svg>
+                                    </button>
+                                    <div className="z-50 relative lg:pt-0 pt-2 mt-[0px] lg:bg-white rounded-2xl  capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                                        <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
+                                            <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+                                                <div className="col-span-2">
+                                                    <ul className="tab_list grid grid-cols-2 2xl:gap-[10px] gap-[20px]">
+                                                        {industries.map((tab) => (
+                                                            <li
+                                                                key={tab.id}
+                                                                onClick={() => setActiveTab(tab.id)}
+                                                                className={`flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer ${activeTab === tab.id ? "bg-[#f13c3c]/10" : "hover:bg-[#f13c3c]/10"
+                                                                    }`}
+                                                            >
+                                                                <Link to={tab.path} className="flex">
+                                                                {/* <img alt={tab.title} loading="lazy" width="40" height="40" src={tab.icon} /> */}
+                                                                <div>
+                                                                    <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
+                                                                    {/* <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span> */}
+                                                                </div>
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <Link to="/contact-us" className="relative">
+                                                        <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
+                                                        <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
+                                                            <button className="flex items-center gap-2 bg-[#f13c3c] py-3 px-6 font-semibold rounded-full text-base text-white">Connect
+                                                                to expert
+                                                            </button>
+                                                        </span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 {/* <div>
                                     <Link to="/ai-social-media/">
                                         <span
@@ -336,11 +467,11 @@ const HeaderNew: React.FC = () => {
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                     <button className={`${location.pathname === "/ui-ux-design" ||
-                                            location.pathname === "/health-care" ||
-                                            location.pathname === "/hire-mobile-app-developer"
-                                            ? "bg-blue-100 text-black border-[#f13c3c]"
-                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                        location.pathname === "/health-care" ||
+                                        location.pathname === "/hire-mobile-app-developer"
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
                                         <span className=" font-medium ">Services</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -363,36 +494,20 @@ const HeaderNew: React.FC = () => {
                                                                 className={`flex items-start gap-2 p-2 py-3 rounded-md cursor-pointer ${activeTab === tab.id ? "bg-[#f13c3c]/10" : "hover:bg-[#f13c3c]/10"
                                                                     }`}
                                                             >
+                                                                <Link to={tab.path} className="flex">
                                                                 <img alt={tab.title} loading="lazy" width="40" height="40" src={tab.icon} />
                                                                 <div>
                                                                     <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
                                                                     <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span>
                                                                 </div>
+                                                                </Link>
                                                             </li>
                                                         ))}
                                                     </ul>
                                                 </div>
                                                 <div className="space-y-10">
-                                                    <div className="tab_data">
-                                                        {tabs.map(
-                                                            (tab) =>
-                                                                activeTab === tab.id && (
-                                                                    <ul key={tab.id} className="text-sm font-medium space-y-2">
-                                                                        {tab.links.map((link, index) => (
-                                                                            <li key={index}>
-                                                                                <Link to={link.path} className="py-1.5 block text-black/80 hover:text-[#f13c3c] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
-                                                                                >
-                                                                                    {link.name}
-                                                                                </Link>
 
-                                                                            </li>
-                                                                        ))}
-                                                                    </ul>
-                                                                )
-                                                        )}
-                                                    </div>
                                                 </div>
-
                                                 <div>
                                                     <Link to="/contact-us" className="relative">
                                                         <img alt="" loading="lazy" width="452" height="475" className="w-full" src={bg} />
@@ -411,15 +526,15 @@ const HeaderNew: React.FC = () => {
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                     <button className={`${location.pathname === "/about-us" ||
-                                            location.pathname === "/portfolio" ||
-                                            location.pathname === "/contact-us" ||
-                                            location.pathname === "/client-testimonial" ||
-                                            location.pathname === "/Career-at-infotechlaunch" ||
-                                            location.pathname === "/blog" ||
-                                            location.pathname.startsWith("/BlogDeatils")
-                                            ? "bg-blue-100 text-black border-[#f13c3c]"
-                                            : "text-black/80 border-transparent hover:text-[#f13c3c]"
-                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-5`}>
+                                        location.pathname === "/portfolio" ||
+                                        location.pathname === "/contact-us" ||
+                                        location.pathname === "/client-testimonial" ||
+                                        location.pathname === "/Career-at-infotechlaunch" ||
+                                        location.pathname === "/blog" ||
+                                        location.pathname.startsWith("/BlogDeatils")
+                                        ? "bg-blue-100 text-black border-[#f13c3c]"
+                                        : "text-black/80 border-transparent hover:text-[#f13c3c]"
+                                        } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
                                         <span className="font-medium">Company</span>
                                         <svg stroke="currentColor"
                                             fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"

@@ -22,6 +22,13 @@ import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import AdaptiveAiDevelopment from "./pages/AdaptiveAiDevelopment";
 import AiChatbotDevelopment from "./pages/AiChatbotDevelopment";
 import Healthcare from "./pages/Healthcare";
+import PickupDelivery from "./pages/PickupDelivery";
+import DatingApp from "./pages/DatingApp";
+import Education from "./pages/Education";
+import Fitness from "./pages/Fitness";
+import HomeServices from "./pages/HomeServices";
+import RealState from "./pages/RealState";
+import TaxiApp from "./pages/TaxiApp";
 import ECommerce from "./pages/ECommerce";
 import CaseStudy from "./pages/CaseStudy";
 import GrowthMarketing from "./pages/GrowthMarketing";
@@ -31,6 +38,10 @@ import AiVoiceAgent from "./pages/AiVoiceAgent";
 // import VoiceSelector from "./pages/VoiceSelector";
 import AiDemoCall from "./pages/AiDemoCall";
 import AiContactUs from "./pages/AiContactUs";
+import TermsandConditions from "./pages/TermsandConditions";
+import CookiePolicy from "./pages/CookiePolicy";
+import Copyright from "./pages/Copyright";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import PlayAudio from "./pages/PlayAudio";
 
 
@@ -74,6 +85,13 @@ function App() {
           <Route path="/adaptive-ai-development" element={<AdaptiveAiDevelopment/>} />
           <Route path="/ai-chatbot-development" element={<AiChatbotDevelopment/>} />
           <Route path="/health-care" element={<Healthcare/>} />
+          <Route path="/pickup-delivery" element={<PickupDelivery/>} />
+          <Route path="/dating-app" element={<DatingApp/>} />
+          <Route path="/education" element={<Education/>} />
+          <Route path="/fitness" element={<Fitness/>} />
+          <Route path="/home-services" element={<HomeServices/>} />
+          <Route path="/real-state" element={<RealState/>} />
+          <Route path="/taxi-app" element={<TaxiApp/>} />
           <Route path="/e-commerce" element={<ECommerce/>} />
           <Route path="/case-study" element={<CaseStudy/>} />
           <Route path="/growth-and-marketing" element={<GrowthMarketing/>} />
@@ -84,6 +102,10 @@ function App() {
           <Route path="/ai-demo-call" element={<AiDemoCall/>} />
           <Route path="/ai-contact-us" element={<AiContactUs/>} />
           <Route path="/play-audio" element={<PlayAudio/>} />
+          <Route path="/terms-and-conditions" element={<TermsandConditions/>} />
+          <Route path="/cookie-policy" element={<CookiePolicy/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/copyright" element={<Copyright/>} />
           
           
           
