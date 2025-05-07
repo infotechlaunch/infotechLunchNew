@@ -14,7 +14,9 @@
 ul.list-point-1 {
   margin-left: 45px;
 }
-.testimonial-slider iframe{height: 300px;}
+.tab-case-study{width:100%}
+.case-icon{width:60px}
+/* .testimonial-slider iframe{height: 300px;} */
 ul.list-point-1  li b{font-weight: 600;}
 .list-point-1 li {
   list-style: disc;

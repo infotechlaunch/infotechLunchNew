@@ -116,7 +116,7 @@ const ClientTestimonials: React.FC = () => {
                                 {testimonials.map((testimonial) => (
                                     <div key={testimonial.id} className="flex flex-wrap bg-[#F3F4F6] p-6 rounded-lg md:space-x-6 relative">
                                         {/* Client Image & Play Button */}
-                                        {/* <div className="relative w-full md:w-[40%] flex flex-col items-center">
+                                        <div className="relative w-full md:w-[40%] flex flex-col items-center">
                                             <div className="w-full">
                                                 <img
                                                     src={testimonial.bgimage}
@@ -136,7 +136,7 @@ const ClientTestimonials: React.FC = () => {
 
                                             </button>
 
-                                        </div> */}
+                                        </div>
 
                                         {/* Testimonial Content */}
                                         <div className="flex-1 mt-5 md:mt-0">
@@ -166,7 +166,7 @@ const ClientTestimonials: React.FC = () => {
 
                                 {/* Video Modal */}
                                 {activeVideo && (
-                                    <div className="fixed inset-0 z-[9] flex items-center justify-center bg-black bg-opacity-80 p-4">
+                                    <div className="fixed inset-0 z-[9] flex items-center justify-center bg-black bg-opacity-80 p-4 testimonial-slider">
                                         <div className="bg-white p-4 rounded-lg shadow-lg w-[964px]  w-full relative">
                                             {/* Close Button */}
                                             <button
@@ -192,14 +192,12 @@ const ClientTestimonials: React.FC = () => {
                         </div>
                     </div>
                 </section>
-                <div className="bg-gradient-blue-red lg:py-16 py-10">
+                {/* <div className="bg-gradient-blue-red lg:py-16 py-10">
                     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 bg-white md:py-14 py-8 md:px-10 px-6 rounded-3xl">
                         <div className="flex items-center justify-between">
                             <div className="space-y-2">
                                 <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold" data-aos="fade-up">Testimonials</h2>
                             </div>
-
-                            {/* Swiper Navigation */}
                             <div className="md:flex hidden items-center gap-4 px-4">
                                 <button title="Previous" type="button" aria-label="Previous" className="swiper-button-prev-custom group w-10 h-10 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border duration-200 bg-white rounded-full hover:bg-[#f13c3c] hover:border-[#f13c3c] cursor-pointer">
                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="35" width="35">
@@ -214,7 +212,6 @@ const ClientTestimonials: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Swiper Slider */}
                         <div className="slider-container testimonial-slider mt-6">
                             <Swiper
                                 spaceBetween={20}
@@ -261,7 +258,7 @@ const ClientTestimonials: React.FC = () => {
                             </Swiper>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
 
