@@ -156,10 +156,10 @@ const AiContactUs = () => {
           hasError = true;
         }
 
-        // if (!formData.captchaToken) {
-        //   errors.captchaToken = "Please confirm you're not a robot";
-        //   hasError = true;
-        // }
+        if (!formData.captchaToken) {
+          errors.captchaToken = "Please confirm you're not a robot";
+          hasError = true;
+        }
     
         if (hasError) {
           setFormErrors(errors);
@@ -167,25 +167,26 @@ const AiContactUs = () => {
         }
     
         setLoading(true);
-        // Axios.post(`https://infotechlaunch.com/infotech-admin/public/api/ai-demo-call`, formData)
-        //   .then(response => {
-        //     // console.log('response=====>>>>>', response.data);
-        //     if(response.data.status === true) {
-        //       setShowThanks(true);
-        //       setFormData(EMPTY_FORM); 
-        //       setTimeout(() => {
-        //         setShowThanks(false);
-        //       }, 3000);
+        Axios.post(`https://infotechlaunch.com/infotech-admin/public/api/ai-contact-us`, formData)
+        // Axios.post(`http://127.0.0.1:8000/api/ai-contact-us`, formData)
+          .then(response => {
+            // console.log('response=====>>>>>', response.data);
+            if(response.data.status === true) {
+              setShowThanks(true);
+              setFormData(EMPTY_FORM); 
+              setTimeout(() => {
+                setShowThanks(false);
+              }, 3000);
               
-        //     } else {
-        //       setShowThanks(false);
-        //     }
-        //   }).catch((error) => {
-        //     setShowThanks(false);
-        //     console.log('error occurs while submiting form =====>>>>>', error);
-        //   }).finally(() => {
-        //     setLoading(false);
-        //   });
+            } else {
+              setShowThanks(false);
+            }
+          }).catch((error) => {
+            setShowThanks(false);
+            console.log('error occurs while submiting form =====>>>>>', error);
+          }).finally(() => {
+            setLoading(false);
+          });
     
         const params = new URLSearchParams();
     
