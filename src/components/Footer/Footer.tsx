@@ -86,8 +86,8 @@ const Footer: React.FC = () => {
               <ul>
                 <li> <Link to="/case-study">Case Study</Link> </li>
                 {/* <li> <Link to="/">Industry Reports</Link> </li> */}
-                <li> <Link to="/ui-ux-design">UI/UX Design</Link> </li>
-                <li> <Link to="/ai-social-media">Growth & Marketing</Link>
+                <li> <Link to="/mobile-development">UI/UX Design</Link> </li>
+                <li> <Link to="/growth-and-marketing">Growth & Marketing</Link>
                 </li>
                 {/* <li> <Link to="/">Enterprise Software Development</Link> </li>
                 <li> <Link to="/">Video</Link> </li>
