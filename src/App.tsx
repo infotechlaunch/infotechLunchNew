@@ -32,7 +32,7 @@ import TaxiApp from "./pages/TaxiApp";
 import ECommerce from "./pages/ECommerce";
 import CaseStudy from "./pages/CaseStudy";
 import GrowthMarketing from "./pages/GrowthMarketing";
-import UiUxDesign from "./pages/UiUxDesign";
+import MobileDevelopment from "./pages/MobileDevelopment";
 import SocialMedia from "./pages/SocialMedia";
 import AiVoiceAgent from "./pages/AiVoiceAgent";
 // import VoiceSelector from "./pages/VoiceSelector";
@@ -74,7 +74,7 @@ function App() {
           <Route path="/Career-at-infotechlaunch" element={<CareerPage/>} />
           <Route path="/life-at-infotechlaunch" element={<LifeInInfoTechLaunch/>} />
           <Route path="/client-testimonial" element={<ClientTestimonials/>} />
-          <Route path="/hire-mobile-app-developer" element={<HireMobileAppDeveloper/>} />
+          <Route path="/hire-a-developer" element={<HireMobileAppDeveloper/>} />
           <Route path="/talent-solutions" element={<TalentSolutions/>} />
           <Route path="/food-beverageeos/" element={<FoodBeverageeos/>} />
           <Route path="/software-development/" element={<SoftwareDevelopment/>} />
@@ -95,7 +95,7 @@ function App() {
           <Route path="/e-commerce" element={<ECommerce/>} />
           <Route path="/case-study" element={<CaseStudy/>} />
           <Route path="/growth-and-marketing" element={<GrowthMarketing/>} />
-          <Route path="/ui-ux-design" element={<UiUxDesign/>} />
+          <Route path="/mobile-development" element={<MobileDevelopment/>} />
           <Route path="/ai-social-media" element={<SocialMedia/>} />
           <Route path="/ai-voice-agent" element={<AiVoiceAgent/>} />
           {/* <Route path="/ai-voice-selector" element={<VoiceSelector/>} /> */}

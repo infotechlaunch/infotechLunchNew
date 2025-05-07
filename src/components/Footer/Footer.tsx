@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                 {/* <li> <Link to="/doctor-appointment-app-development">Healthcare App Development</Link> </li> */}
                 {/* <li> <Link to="/">Coin And Tokens Development</Link> </li> */}
                 {/* <li> <Link to="/">Full Stack Development</Link> </li> */}
-                <li> <Link to="/hire-mobile-app-developer">Hire Dedicated Developers</Link> </li>
+                <li> <Link to="/hire-a-developer">Hire Dedicated Developers</Link> </li>
               </ul>
             </div>
             <div className="md-footer-links mb-5 lg:mb-0">

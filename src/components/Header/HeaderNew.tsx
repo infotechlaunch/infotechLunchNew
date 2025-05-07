@@ -28,10 +28,10 @@ import bg from '../../assets/Images/mobile-app-development-services-img.webp';
 const tabs = [
     {
         id: "mobile-app",
-        title: "Mobile App Development",
+        title: "Mobile Development",
         description: "Innovative Solutions for Every Platform",
         icon: iconsev, // Replace with actual path
-        path: "/ui-ux-design",
+        path: "/mobile-development",
     },
     // {
     //     id: "healthcare",
@@ -57,7 +57,7 @@ const tabs = [
         title: "Hire Dedicated Developers",
         description: "Skilled Developers for Your Projects",
         icon: iconsev06,
-        path: "/hire-mobile-app-developer",
+        path: "/hire-a-developer",
     },
 ];
 
@@ -479,9 +479,9 @@ const HeaderNew: React.FC = () => {
 
                                 <div className="group">
                                     {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
-                                    <button className={`${location.pathname === "/ui-ux-design" ||
+                                    <button className={`${location.pathname === "/mobile-development" ||
                                         location.pathname === "/software-development" ||
-                                        location.pathname === "/hire-mobile-app-developer"
+                                        location.pathname === "/hire-a-developer"
                                         ? "bg-blue-100 text-black border-[#f13c3c]"
                                         : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                         } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
@@ -777,7 +777,7 @@ const HeaderNew: React.FC = () => {
                                                 <div className="space-y-2 text-sm font-medium">
                                                     <li
                                                         className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/ui-ux-design"> Mobile App Development</Link>
+                                                        <Link to="/mobile-development"> Mobile Development</Link>
                                                     </li>
 
                                                 </div>
@@ -817,7 +817,7 @@ const HeaderNew: React.FC = () => {
 
                                                     <li
                                                         className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                        <Link to="/hire-mobile-app-developer"> Hire Mobile App Developer</Link>
+                                                        <Link to="/hire-a-developer"> Hire Dedicated Developer</Link>
                                                     </li>
 
                                                 </div>
