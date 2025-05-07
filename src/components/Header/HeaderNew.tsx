@@ -740,6 +740,97 @@ const HeaderNew: React.FC = () => {
                                             </div>
                                         </ul>
                                     </div>
+                                    <div>
+                                        <div className="flex justify-between p-3 items-center px-6 bg-transparent " onClick={() => toggleSection('industries')}>
+                                            <div className="flex items-center space-x-2 ">
+                                                <svg stroke="currentColor" fill="currentColor"
+                                                    stroke-width="0" viewBox="0 0 24 24" className="text-[#212121]" height="22" width="22"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M18 2C18.5523 2 19 2.44772 19 3V10H17V4H7V20H12V22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2H18ZM18 12C19.6569 12 21 13.3431 21 15V16H22V21C22 21.5523 21.5523 22 21 22H15C14.4477 22 14 21.5523 14 21V16H15V15C15 13.3431 16.3431 12 18 12ZM20 18H16V20H20V18ZM18 14C17.4919 14 17 14.45 17 15V16H19V15C19 14.4477 18.5523 14 18 14Z">
+                                                    </path>
+                                                </svg>
+                                                <span>Industries</span>
+                                            </div>
+                                            <svg stroke="currentColor" fill="currentColor"
+                                                stroke-width="0" viewBox="0 0 24 24" className={`rotate-0 ${openSection === 'industries' ? 'rotate-180' : ''}`}
+                                                height="30" width="30"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                            </svg>
+                                        </div>
+                                        <div className="bg-transparent text-[#212121] font-normal pl-4 text-sm capitalize overflow-hidden transition-[max-height] duration-300 ease-in" style={{
+                                            maxHeight: openSection === 'industries' ? 'none' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease-in-out',
+                                        }}>
+                                            <ul className="grid grid-cols-1 gap-2 p-4">
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/food-delivery"> Food Delivery</Link>
+                                                    </li>
+                                                </div>                                               
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/dating-app"> Dating App</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/real-state"> Real State</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/home-services">Home Services</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/fitness">Fitness</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/taxi-app">Taxi App</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/e-commerce">E-commerce Delivery</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/health-care">HealthCare</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/pickup-delivery">Pickup and Delivery</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="space-y-2 text-sm font-medium">
+                                                    <li
+                                                        className="  py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
+                                                        <Link to="/education">Education</Link>
+                                                    </li>
+                                                </div>
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                     
                                     <div>
                                         <div className="flex justify-between p-3 items-center px-6 bg-transparent " onClick={() => toggleSection('development')}>
