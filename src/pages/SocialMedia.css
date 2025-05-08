@@ -14,16 +14,18 @@
 ul.list-point-1 {
   margin-left: 45px;
 }
+.min-h-180{min-height: 180px;}
 .tab-case-study{width:100%}
 .case-icon{width:60px}
 /* .testimonial-slider iframe{height: 300px;} */
 ul.list-point-1  li b{font-weight: 600;}
-.list-point-1 li {
+.list-point-1 li,ul.list-point-2 li {
   list-style: disc;
   font-size: 15px;
   margin-top: 10px;
 }
 ul.list-point-1 li ul{margin-left: 30px;}
+ul.list-point-2{margin-left: 20px;}
 ul.list-point-1 li ul li{list-style: circle;}
 .rounded-box-white{  position: relative;  transition: transform 0.3s ease;}
 .icon-rounded-1 {
