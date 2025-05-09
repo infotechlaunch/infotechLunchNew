@@ -175,28 +175,30 @@ const GrowthMarketing: React.FC = () => {
                 <WhyChoose />
                 <section className="bg-gradient-blue-red" >
                 <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                <div className=" bg-white rounded-lg p-4" data-aos="fade-up">
-                <div className="text-center mb-[40px] ">
-                            <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2 text-black" data-aos="fade-up">We Are a Trusted
-                            </h2> </div>
-                    <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+                <div className="bg-white rounded-lg p-6" data-aos="fade-up">
+               
+                    <div className="mx-auto lg:flex items-center block">
+                    <div className="bg-black text-center  border bg-white  border-[#5556D1]/20 mr-5 p-3">
+                            <h2 className="text-3xl lg:text-4xl font-semibold leading-[47px] mb-2 text-black" data-aos="fade-up">We Are a Trusted :
+                            </h2>
+                    </div>
                     <div className="grid xl:grid-cols-4 md:grid-cols-4 grid-cols-2 lg:gap-6 gap-4 text-center align-center">
-                        <div className="feature-card-1 border bg-white border-[#5556D1]/20 p-3 rounded-lg space-y-2">
+                        <div className="p-3 rounded-lg space-y-2">
                             <div>
                                 <div className="grid justify-center mb-4"><img src={beyondicon1}  /></div>
                                 </div>
                         </div>
-                        <div className="feature-card-1 space-y-2">
+                        <div className="space-y-2">
                             <div>
                                 <div className="grid justify-center mb-4"><img src={beyondicon2}  /></div>
                             </div>
                         </div>
-                        <div className="feature-card-1 space-y-2">
+                        <div className="space-y-2">
                             <div>
                                 <div className="grid justify-center mb-4"><img src={beyondicon3}  /></div>
                             </div>
                         </div>
-                        <div className="feature-card-1 space-y-2" >
+                        <div className="space-y-2" >
                             <div>
                                 <div className="grid justify-center mb-4"> <img src={beyondicon4}  /></div>
                                  </div>

@@ -406,8 +406,7 @@ const HeaderNew: React.FC = () => {
 
                                 {/* </div> */}
 
-                                <div className="group">
-                                    {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
+                                {/* <div className="group">
                                     <button className={`${location.pathname === "/food-beverageeos" ||
                                         location.pathname === "/health-care" ||
                                         location.pathname === "/real-state" ||
@@ -445,11 +444,9 @@ const HeaderNew: React.FC = () => {
                                                                     }`}
                                                             >
                                                                 <Link to={tab.path} className="flex">
-                                                                {/* <img alt={tab.title} loading="lazy" width="40" height="40" src={tab.icon} /> */}
                                                                 <div>
                                                                     <p className="2xl:text-lg xl:text-base font-medium text-[#212121]">{tab.title}</p>
-                                                                    {/* <span className="text-[#212121]/80 text-sm font-normal">{tab.description}</span> */}
-                                                                </div>
+                                                                   </div>
                                                                 </Link>
                                                             </li>
                                                         ))}
@@ -468,13 +465,6 @@ const HeaderNew: React.FC = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                {/* <div>
-                                    <Link to="/ai-social-media/">
-                                        <span
-                                            className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer px-2  py-9 hover:text-[#f13c3c] text-black/80 ">AI Social Media </span>
-                                    </Link>
                                 </div> */}
 
                                 <div className="group">
@@ -740,7 +730,7 @@ const HeaderNew: React.FC = () => {
                                             </div>
                                         </ul>
                                     </div>
-                                    <div>
+                                    {/* <div>
                                         <div className="flex justify-between p-3 items-center px-6 bg-transparent " onClick={() => toggleSection('industries')}>
                                             <div className="flex items-center space-x-2 ">
                                                 <svg stroke="currentColor" fill="currentColor"
@@ -829,7 +819,7 @@ const HeaderNew: React.FC = () => {
 
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     
                                     <div>
