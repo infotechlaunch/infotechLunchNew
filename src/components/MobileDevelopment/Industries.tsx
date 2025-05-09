@@ -2,44 +2,37 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation, Pagination } from "swiper/modules";
-
-import travel from "../../assets/Images/home/Industries/travel-hospitality-industries-img.webp";
-import sports from "../../assets/Images/home/Industries/sports-industries-img.webp";
-import entertainment from "../../assets/Images/home/Industries/entertainment-industries-img.webp";
-import social from "../../assets/Images/home/Industries/social-media-app-industries-img.webp";
-import finance from "../../assets/Images/home/Industries/finance-industries-img.webp";
-// import dating from "../../assets/Images/dating-industries-img.webp";
-import restaurant from "../../assets/Images/home/Industries/restaurant-industries-img.webp";
-import ecommerce from "../../assets/Images/home/Industries/industries-ecommerce-img.webp";
-import healthcare from "../../assets/Images/home/Industries/industries-healthcare-img.webp";
-// import blockchain from "../../assets/Images/industries-blockchain-img.webp";
-import education from "../../assets/Images/home/Industries/industries-education-img.webp";
-import transportat from "../../assets/Images/home/Industries/transportation-industries-img.webp";
-import construction from "../../assets/Images/home/Industries/construction-industries-img.webp";
-// import game from "../../assets/Images/game-industries-img.webp";
-import fitness from "../../assets/Images/home/Industries/Fitness.webp";
-import insurance from "../../assets/Images/home/Industries/insurance.webp";
-import agriculture from "../../assets/Images/home/Industries/agriculture.webp";
-import realstate from "../../assets/Images/home/Industries/real-state.webp";
-import automotive from "../../assets/Images/home/Industries/automotive.png";
+import laundry from "../../assets/Images/services/mobiledevelopment/industries/laundry.webp";
+import enterprise from "../../assets/Images/services/mobiledevelopment/industries/enterprise.webp";
+import social from "../../assets/Images/services/mobiledevelopment/industries/socialnetworking.webp";
+import banking from "../../assets/Images/services/mobiledevelopment/industries/banking.webp";
+import food from "../../assets/Images/services/mobiledevelopment/industries/food.webp";
+import ecommerce from "../../assets/Images/services/mobiledevelopment/industries/ecommerce.webp";
+import healthcare from "../../assets/Images/services/mobiledevelopment/industries/healthcare.webp";
+import blockchain from "../../assets/Images/services/mobiledevelopment/industries/blockchain.webp";
+import education from "../../assets/Images/services/mobiledevelopment/industries/education.webp";
+import realstate from "../../assets/Images/services/mobiledevelopment/industries//realstate.webp";
+import ondemand from "../../assets/Images/services/mobiledevelopment/industries/ondemand.webp";
+import IOT from "../../assets/Images/services/mobiledevelopment/industries/IOT.webp";
+import pickupdelivery from "../../assets/Images/services/mobiledevelopment/industries/pickanddelivery.webp";
+import manufacturing from "../../assets/Images/services/mobiledevelopment/industries/manufacturing.webp";
 
 const Industries = [
-    { title: "Healthcare", UrlLink: "/healthcare", img: healthcare },
-    { title: "Finance & Banking", UrlLink: "/finance", img: finance },
-    { title: "Retail & ECommerce", UrlLink: "/entertainment", img: ecommerce },
-    { title: "Manufacturing", UrlLink: "#", img: construction },
-    { title: "Autmotive", UrlLink: "#", img: automotive },
-    { title: "Logistics & Supply Chain", UrlLink: "#",  img: transportat },
-    { title: "Education", UrlLink: "/education", img: education },
-    { title: "Agriculture", UrlLink: "/E-Commerce", img: agriculture },
-    { title: "Real State", UrlLink: "/realstate", img: realstate },
-    { title: "Entertainment", UrlLink: "/entertainment",  img: entertainment },
-    { title: "Travel & Hospitality", UrlLink: "#",  img: travel },
-    { title: "Insurance", UrlLink: "/logistics", img: insurance },
-    { title: "Fitness", UrlLink: "/fitness",  img: fitness },
-    { title: "Social Networking", UrlLink: "/industries-social-media-app", img: social },
-    { title: "Food & Restaurant", UrlLink: "/industries-restaurant", img: restaurant },
-    { title: "Sports", UrlLink: "/sports", img: sports },
+    { title: "On Demand", UrlLink: "#", img: ondemand },
+    { title: "Ecommerce", UrlLink: "/E-Commerce", img: ecommerce },
+    { title: "Food", UrlLink: "/industries-restaurant", img: food },
+    { title: "Pickup & Delivery", UrlLink: "/pickup-delivery", img: pickupdelivery },
+    { title: "Blockchain", UrlLink: "#", img: blockchain },
+    { title: "IOT", UrlLink: "#",  img: IOT },
+    { title: "Transportation", UrlLink: "/education", img: education },
+    { title: "Healthcare", UrlLink: "/health-care", img: healthcare },
+    { title: "Banking", UrlLink: "#", img: banking },
+    { title: "Enterprise", UrlLink: "#",  img: enterprise },
+    { title: "Laundry", UrlLink: "#",  img: laundry },
+    { title: "Social Networking", UrlLink: "#", img: social },
+    { title: "Real Estate", UrlLink: "#",  img: realstate },
+    { title: "Manufacturing", UrlLink: "#", img: manufacturing },
+    { title: "Education", UrlLink: "/education", img: education }
 ];
 
 const IndustriesHome: React.FC = () => {
@@ -51,20 +44,6 @@ const IndustriesHome: React.FC = () => {
                         <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold"  data-aos="fade-up">Revolutionizing Industries with Top-Tier Mobile App Development Services
                         </h2>
                            </div>
-
-                    {/* Swiper Navigation */}
-                    {/* <div className="md:flex hidden items-center gap-4 px-4">
-                        <button title="Previous" type="button" aria-label="Previous" className="swiper-button-prev-custom group w-10 h-10 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border duration-200 bg-white rounded-full hover:bg-[#f13c3c] hover:border-[#f13c3c] cursor-pointer">
-                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="35" width="35">
-                                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
-                            </svg>
-                        </button>
-                        <button title="Next" type="button" aria-label="Next" className="swiper-button-next-custom group w-10 h-10 flex justify-center items-center hover:text-white text-[#212121] border-[#212121] border duration-200 bg-white rounded-full hover:bg-[#f13c3c] hover:border-[#f13c3c] cursor-pointer">
-                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="35" width="35">
-                                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
-                            </svg>
-                        </button>
-                    </div> */}
                 </div>
 
                 {/* Swiper Slider */}
@@ -88,8 +67,8 @@ const IndustriesHome: React.FC = () => {
                         {Industries.map((service) => (
                             
                                 <Link to={service.UrlLink} className="block">
-                                    <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[200px] hover:shadow-lg transition-shadow">
-                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full" src={service.img} />
+                                    <div className="border border-[#E8E8E8] rounded-lg p-3 space-y-4 min-h-[200px] hover:shadow-lg transition-shadow">
+                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full rounded-lg" src={service.img} />
                                         <div>
                                             <h3 data-aos="fade-up" className="text-[#212121] mb-2 text-lg font-semibold">{service.title}</h3>
                                         </div>

@@ -5,10 +5,10 @@ import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
 import uiUxDesignImg from "../assets/Images/ui-ux-design.jpg";
-import addser1 from "../assets/Images/services/softwaredevelopment/additional/1.png";
-import addser2 from "../assets/Images/services/softwaredevelopment/additional/2.png";
-import addser3 from "../assets/Images/services/softwaredevelopment/additional/3.png";
-import addser4 from "../assets/Images/services/softwaredevelopment/additional/4.png";
+import addser1 from "../assets/Images/services/softwaredevelopment/additional/1.webp";
+import addser2 from "../assets/Images/services/softwaredevelopment/additional/2.webp";
+import addser3 from "../assets/Images/services/softwaredevelopment/additional/3.webp";
+import addser4 from "../assets/Images/services/softwaredevelopment/additional/4.webp";
 import FAQ from "../components/MobileDevelopment/Faq";
 import WhyChoose from "../components/MobileDevelopment/services";
 import Solutions from "../components/MobileDevelopment/Solutions";
@@ -78,8 +78,8 @@ const UiUxDesign: React.FC = () => {
             </div>
             <div className="grid gap-4 mx-auto lg:grid-cols-4 md:grid-cols-2  grid-cols-1 xl:gap-10 cursor-pointer mt-8">
 
-              <div className="block">
-                <div className="p-4 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+              <div className="feature-card-1 block p-3 w-full h-full bg-[#fff] border border-[#000000]/10 rounded-xl">
+                <div className="space-y-4 overflow-hidden text-left transition duration-150 group">
                   <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                     <img
                       alt="ApI Devel"
@@ -92,19 +92,19 @@ const UiUxDesign: React.FC = () => {
                       style={{ color: "transparent" }}
                     />
                   </div>
-                  <div className="flex flex-col justify-between space-y-3 w-full h-full">
+                  <div className="flex flex-col justify-between space-y-3">
                     <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                       API Development & Integration
                     </h3>
-                    <p data-aos="fade-up" className="text-sm text-black min-h-120">
+                    <p data-aos="fade-up" className="text-sm text-black">
                       Whether it's a social networking API, payment gateway, or any third-party service, we have the expertise to integrate it seamlessly into your app — ensuring smooth functionality and enhanced user experience.
                     </p>
 
                   </div>
                 </div>
               </div>
-              <div className="block">
-                <div className="p-4 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+              <div className="feature-card-1  block p-3 w-full h-full bg-[#fff] border border-[#000000]/10 rounded-xl">
+                <div className="space-y-4 overflow-hidden text-left transition duration-150 group">
                   <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                     <img
                       alt={uiUxDesignImg}
@@ -121,15 +121,15 @@ const UiUxDesign: React.FC = () => {
                     <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                       App Analytics
                     </h3>
-                    <p data-aos="fade-up" className="text-sm text-black min-h-120">
+                    <p data-aos="fade-up" className="text-sm text-black">
                       We provide in-depth mobile app analytics to track performance and user behavior using advanced tools — helping you make data-driven decisions for app improvements and growth.
                     </p>
 
                   </div>
                 </div>
               </div>
-              <div className="block">
-                <div className="p-4 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+              <div className="feature-card-1  block p-3 w-full h-full bg-[#fff] border border-[#000000]/10 rounded-xl">
+                <div className="space-y-4 overflow-hidden text-left transition duration-150 group">
                   <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                     <img
                       alt={addser3}
@@ -146,15 +146,15 @@ const UiUxDesign: React.FC = () => {
                     <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                       Quality Assurance
                     </h3>
-                    <p data-aos="fade-up" className="text-sm text-black min-h-120">
+                    <p data-aos="fade-up" className="text-sm text-black">
                       Our certified quality assurance experts design test plans, create procedures, and run detailed scripts to identify and fix any software bugs — ensuring a flawless and reliable app experience.
                     </p>
 
                   </div>
                 </div>
               </div>
-              <div className="block">
-                <div className="p-4 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+              <div className="feature-card-1 block p-3 w-full h-full bg-[#fff] border border-[#000000]/10 rounded-xl">
+                <div className="space-y-4 overflow-hidden text-left transition duration-150   group">
                   <div className="object-cover w-full overflow-hidden" data-aos="fade-up">
                     <img
                       alt={addser4}
@@ -171,7 +171,7 @@ const UiUxDesign: React.FC = () => {
                     <h3 data-aos="fade-up" className="line-clamp-2 group-hover:text-[#f13c3c] font-semibold text-black text-xl md:text-2xl">
                       App Iterations
                     </h3>
-                    <p data-aos="fade-up" className="text-sm text-black min-h-120">
+                    <p data-aos="fade-up" className="text-sm text-black">
 
                       Whether it’s integrating third-party services or modifying custom features, we closely monitor every detail of your app project to ensure continuous improvements and deliver a flawless final product.
                     </p>

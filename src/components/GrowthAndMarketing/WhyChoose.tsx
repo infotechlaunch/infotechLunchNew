@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import whychooeicon1 from '../../assets/Images/GrowthandMarketing/whychooseus/1.png';
-import whychooeicon2 from '../../assets/Images/GrowthandMarketing/whychooseus/2.png';
-import whychooeicon3 from '../../assets/Images/GrowthandMarketing/whychooseus/3.png';
-import whychooeicon4 from '../../assets/Images/GrowthandMarketing/whychooseus/4.png';
+import whychooeicon1 from '../../assets/Images/GrowthandMarketing/whychooseus/1.webp';
+import whychooeicon2 from '../../assets/Images/GrowthandMarketing/whychooseus/2.webp';
+import whychooeicon3 from '../../assets/Images/GrowthandMarketing/whychooseus/3.webp';
+import whychooeicon4 from '../../assets/Images/GrowthandMarketing/whychooseus/4.webp';
 const WhyChoose: React.FC = () => {
 
     return (

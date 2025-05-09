@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import whychooseicon1 from '../../assets/Images/services/hireadeveloper/whychooseus/icon1.png';
-import whychooseicon2 from '../../assets/Images/services/hireadeveloper/whychooseus/icon2.png';
-import whychooseicon3 from '../../assets/Images/services/hireadeveloper/whychooseus/icon3.png';
-import whychooseicon4 from '../../assets/Images/services/hireadeveloper/whychooseus/icon4.png';
-import whychooseicon5 from '../../assets/Images/services/hireadeveloper/whychooseus/icon5.png';
-import whychooseicon6 from '../../assets/Images/services/hireadeveloper/whychooseus/icon6.png';
+import whychooseicon1 from '../../assets/Images/services/hireadeveloper/whychooseus/icon1.webp';
+import whychooseicon2 from '../../assets/Images/services/hireadeveloper/whychooseus/icon2.webp';
+import whychooseicon3 from '../../assets/Images/services/hireadeveloper/whychooseus/icon3.webp';
+import whychooseicon4 from '../../assets/Images/services/hireadeveloper/whychooseus/icon4.webp';
+import whychooseicon5 from '../../assets/Images/services/hireadeveloper/whychooseus/icon5.webp';
+import whychooseicon6 from '../../assets/Images/services/hireadeveloper/whychooseus/icon6.webp';
 const WhyChoose: React.FC = () => {
 
     return (

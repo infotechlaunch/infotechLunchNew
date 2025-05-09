@@ -4,18 +4,20 @@ import { Link } from 'react-router-dom';
 import ContactForm from "../components/ContactUs/ContactForm";
 import HeaderNew from "../components/Header/HeaderNew";
 import AOSProvider from "../components/AOSProvider";
-import growthAndMarketingImg from "../assets/Images/GrowthandMarketing/digital-marketing-services-image.png";
+import growthAndMarketingImg from "../assets/Images/GrowthandMarketing/digital-marketing-services-image.webp";
 import Ruchi from "../assets/Images/about/team/Ruchi-Chourasia.png"
 import vani from "../assets/Images/about/team/Vani_Mahobia.png"
 import Srishti from "../assets/Images/about/team/Srishti-Soni.png"
-import icon1 from "../assets/Images/GrowthandMarketing/achivements/1.png"
-import icon2 from "../assets/Images/GrowthandMarketing/achivements/2.png"
-import icon3 from "../assets/Images/GrowthandMarketing/achivements/3.png"
-import icon4 from "../assets/Images/GrowthandMarketing/achivements/4.png"
-import beyondicon1 from "../assets/Images/GrowthandMarketing/trusted/googlepartner.png"
-import beyondicon2 from "../assets/Images/GrowthandMarketing/trusted/bingadds.png"
-import beyondicon3 from "../assets/Images/GrowthandMarketing/trusted/hubspot.png"
-import beyondicon4 from "../assets/Images/GrowthandMarketing/trusted/mailcimp.png"
+import icon1 from "../assets/Images/GrowthandMarketing/achivements/1.webp"
+import icon2 from "../assets/Images/GrowthandMarketing/achivements/2.webp"
+import icon3 from "../assets/Images/GrowthandMarketing/achivements/3.webp"
+import icon4 from "../assets/Images/GrowthandMarketing/achivements/4.webp"
+
+import beyondicon1 from "../assets/Images/GrowthandMarketing/trusted/googlepartner.webp"
+import beyondicon2 from "../assets/Images/GrowthandMarketing/trusted/bingadds.webp"
+import beyondicon3 from "../assets/Images/GrowthandMarketing/trusted/hubspot.webp"
+import beyondicon4 from "../assets/Images/GrowthandMarketing/trusted/mailcimp.webp"
+
 import WhyChoose from "../components/GrowthAndMarketing/WhyChoose";
 import GetStarted from "../components/GrowthAndMarketing/GetStarted";
 import CaseStudy from "../components/GrowthAndMarketing/CaseStudy";

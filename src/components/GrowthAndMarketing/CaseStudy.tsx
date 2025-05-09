@@ -12,22 +12,23 @@ import { Link } from 'react-router-dom';
 // import logo5 from "../../assets/Images/cl06.png";
 
 // import web from "../../assets/Images/portfolio/1.webp";
-import web from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/1.png";
-import web1 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/2.png";
+import web from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/1.webp";
+import web1 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/2.webp";
 // import web1 from "../../assets/Images/portfolio/3.webp";
-import web2 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/3.png";
+import web2 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/3.webp";
 // import web2 from "../../assets/Images/portfolio/5.webp";
 // import web3 from "../../assets/Images/portfolio/8.webp";
 // import web4 from "../../assets/Images/portfolio/ecom.webp";
-import web4 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/5.png";
-import web5 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/5.png";
-import web6 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/6.png";
-import beyondicon1 from "../../assets/Images/GrowthandMarketing/beyondmarketing/1.png"
-import beyondicon2 from "../../assets/Images/GrowthandMarketing/beyondmarketing/2.png"
-import beyondicon3 from "../../assets/Images/GrowthandMarketing/beyondmarketing/3.png"
-import beyondicon4 from "../../assets/Images/GrowthandMarketing/beyondmarketing/4.png"
-import beyondicon5 from "../../assets/Images/GrowthandMarketing/beyondmarketing/5.png"
-import beyondicon6 from "../../assets/Images/GrowthandMarketing/beyondmarketing/6.png"
+import web4 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/5.webp";
+import web5 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/5.webp";
+import web6 from "../../assets/Images/GrowthandMarketing/beyondmarketing/images/6.webp";
+
+import beyondicon1 from "../../assets/Images/GrowthandMarketing/beyondmarketing/1.webp"
+import beyondicon2 from "../../assets/Images/GrowthandMarketing/beyondmarketing/2.webp"
+import beyondicon3 from "../../assets/Images/GrowthandMarketing/beyondmarketing/3.webp"
+import beyondicon4 from "../../assets/Images/GrowthandMarketing/beyondmarketing/4.webp"
+import beyondicon5 from "../../assets/Images/GrowthandMarketing/beyondmarketing/5.webp"
+import beyondicon6 from "../../assets/Images/GrowthandMarketing/beyondmarketing/6.webp"
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 

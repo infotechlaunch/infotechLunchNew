@@ -3,21 +3,20 @@ import { Link } from "react-router-dom";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation, Pagination } from "swiper/modules";
 
-import finance from "../../assets/Images/home/Industries/finance-industries-img.webp";
-// import dating from "../../assets/Images/dating-industries-img.webp";
-import ecommerce from "../../assets/Images/home/Industries/industries-ecommerce-img.webp";
-import healthcare from "../../assets/Images/home/Industries/industries-healthcare-img.webp";
-import transportat from "../../assets/Images/home/Industries/transportation-industries-img.webp";
-import aviation from "../../assets/Images/home/Industries/aviation.png";
-import telecom from "../../assets/Images/home/Industries/telecommunication.webp";
-import fitness from "../../assets/Images/home/Industries/Fitness.webp";
-import insurance from "../../assets/Images/home/Industries/insurance.webp";
-import realstate from "../../assets/Images/home/Industries/real-state.webp";
+import banking from "../../assets/Images/services/softwaredevelopment/industries/1.webp";
+import healthcare from "../../assets/Images/services/softwaredevelopment/industries/2.webp";
+import retail from "../../assets/Images/services/softwaredevelopment/industries/3.webp";
+import insurance from "../../assets/Images/services/softwaredevelopment/industries/4.webp";
+import aviation from "../../assets/Images/services/softwaredevelopment/industries/5.webp";
+import telecom from "../../assets/Images/services/softwaredevelopment/industries/6.webp";
+import transportat from "../../assets/Images/services/softwaredevelopment/industries/7.webp";
+import fitness from "../../assets/Images/services/softwaredevelopment/industries/8.webp";
+import realstate from "../../assets/Images/services/softwaredevelopment/industries/9.webp";
 
 const Industries = [
-    { title: "Banking", UrlLink: "/finance", img: finance },
+    { title: "Banking", UrlLink: "#", img: banking },
     { title: "Healthcare", UrlLink: "/healthcare", img: healthcare },    
-    { title: "Retail", UrlLink: "/entertainment", img: ecommerce },
+    { title: "Retail", UrlLink: "/entertainment", img: retail },
     { title: "Insurance", UrlLink: "/logistics", img: insurance },
     { title: "Aviation", UrlLink: "/aviation", img: aviation },
     { title: "Telecommunication", UrlLink: "/telecommunication", img: telecom },
@@ -74,7 +73,7 @@ const IndustriesHome: React.FC = () => {
                             
                                 <Link to={service.UrlLink} className="block">
                                     <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[200px] hover:shadow-lg transition-shadow">
-                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full" src={service.img} />
+                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full  rounded-lg " src={service.img} />
                                         <div>
                                             <h3 data-aos="fade-up" className="text-[#212121] mb-2 text-lg font-semibold">{service.title}</h3>
                                         </div>

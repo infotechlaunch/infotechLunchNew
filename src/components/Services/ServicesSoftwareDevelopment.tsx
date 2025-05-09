@@ -45,11 +45,11 @@ const Services: React.FC = () => {
                                             <div className="mb-4">
                                                 <div className="text-xl font-semibold">Business & Project Management Tools</div>
                                             </div>
-                                            <ul>
-                                                <li>✔ Efficient project tracking</li>
-                                                <li>✔ Streamlined task organization</li>
-                                                <li>✔ Accurate time management</li>
-                                                <li>✔ Optimized resource allocation</li>
+                                            <ul className="list-point-2">
+                                                <li>Efficient project tracking</li>
+                                                <li>Streamlined task organization</li>
+                                                <li>Accurate time management</li>
+                                                <li>Optimized resource allocation</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -63,11 +63,11 @@ const Services: React.FC = () => {
                                             <div className="mb-4">
                                                 <div className="text-xl font-semibold">Sales & Marketing Software Tools</div>
                                             </div>
-                                            <ul>
-                                                <li>✔ Automate marketing efforts</li>
-                                                <li>✔ Streamline sales processes</li>
-                                                <li>✔ Manage email campaigns</li>
-                                                <li>✔ Control social media effectively</li>
+                                            <ul className="list-point-2">
+                                                <li>Automate marketing efforts</li>
+                                                <li>Streamline sales processes</li>
+                                                <li>Manage email campaigns</li>
+                                                <li>Control social media effectively</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -82,10 +82,10 @@ const Services: React.FC = () => {
                                                 <div className="text-xl font-semibold">Customer Service Management Tools</div>
                                             </div>
                                             <ul>
-                                                <li>✔ Real-time support with chatbots/live chat</li>
-                                                <li> ✔ Efficient customer relationship tracking</li>
-                                                <li>  ✔ Organized ticket resolution</li>
-                                                <li>  ✔ Streamlined help desk operations</li>
+                                                <li>Real-time support with chatbots/live chat</li>
+                                                <li> Efficient customer relationship tracking</li>
+                                                <li>  Organized ticket resolution</li>
+                                                <li>  Streamlined help desk operations</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -100,11 +100,11 @@ const Services: React.FC = () => {
                                                 <div className="text-xl font-semibold">Business Analytics Solutions
                                                 </div>
                                             </div>
-                                            <ul>
-                                                <li>✔ Gain insights with BI tools</li>
-                                                <li>✔ Visualize data effectively</li>
-                                                <li>✔ Forecast trends using predictive analytics</li>
-                                                <li>✔ Discover patterns through data mining</li>
+                                            <ul className="list-point-2">
+                                                <li>Gain insights with BI tools</li>
+                                                <li>Visualize data effectively</li>
+                                                <li>Forecast trends using predictive analytics</li>
+                                                <li>Discover patterns through data mining</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -118,11 +118,11 @@ const Services: React.FC = () => {
                                             <div className="mb-4">
                                                 <div className="text-xl font-semibold">Talent & Productivity Management Tools</div>
                                             </div>
-                                            <ul>
-                                                <li> ✔ Streamlined HR operations</li>
-                                                <li>✔ Efficient applicant tracking</li>
-                                                <li>✔ Performance evaluation tools</li>
-                                                <li> ✔ Centralized learning and training platform</li>
+                                            <ul className="list-point-2">
+                                                <li> Streamlined HR operations</li>
+                                                <li>Efficient applicant tracking</li>
+                                                <li>Performance evaluation tools</li>
+                                                <li> Centralized learning and training platform</li>
                                             </ul>
                                         </div>
                                     </div>

@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import './Solutions.scss';
-import prcoessico1 from "../../assets/Images/services/mobiledevelopment/process/consultation/process-1.webp";
-import prcoessico2 from "../../assets/Images/services/mobiledevelopment/process/consultation/process-2.webp";
-import prcoessico3 from "../../assets/Images/services/mobiledevelopment/process/consultation/process-3.webp";
-import prcoessico4 from "../../assets/Images/services/mobiledevelopment/process/consultation/process-4.webp";
-import prcoessico5 from "../../assets/Images/services/mobiledevelopment/process/consultation/process-5.webp";
-import icon1 from "../../assets/Images/services/mobiledevelopment/process/consultation/RequirementAnalysis.png";
-import icon2 from "../../assets/Images/services/mobiledevelopment/process/consultation/MarketEvaluation.png";
-import icon3 from "../../assets/Images/services/mobiledevelopment/process/consultation/FeasibilityAnalysis.png";
-import icon4 from "../../assets/Images/services/mobiledevelopment/process/consultation/ProjectScopeAssessment.png";
+import prcoessico1 from "../../assets/Images/services/mobiledevelopment/process/process-1.webp";
+import prcoessico2 from "../../assets/Images/services/mobiledevelopment/process/process-2.webp";
+import prcoessico3 from "../../assets/Images/services/mobiledevelopment/process/process-3.webp";
+import prcoessico4 from "../../assets/Images/services/mobiledevelopment/process/process-4.webp";
+import prcoessico5 from "../../assets/Images/services/mobiledevelopment/process/process-5.webp";
 
-import icon9 from "../../assets/Images/services/mobiledevelopment/process/designing/Creatingdesignsketches.png";
-import icon10 from "../../assets/Images/services/mobiledevelopment/process/designing/Wireframecreation.png";
-import icon11 from "../../assets/Images/services/mobiledevelopment/process/designing/Mockupcreation.png";
-import icon12 from "../../assets/Images/services/mobiledevelopment/process/designing/PrototypingandDesigning.png";
+import icon1 from "../../assets/Images/services/mobiledevelopment/process/consultation/RequirementAnalysis.webp";
+import icon2 from "../../assets/Images/services/mobiledevelopment/process/consultation/MarketEvaluation.webp";
+import icon3 from "../../assets/Images/services/mobiledevelopment/process/consultation/FeasibilityAnalysis.webp";
+import icon4 from "../../assets/Images/services/mobiledevelopment/process/consultation/ProjectScopeAssessment.webp";
 
-import icon13 from "../../assets/Images/services/mobiledevelopment/process/development/100-custom-app-development.png";
-import icon14 from "../../assets/Images/services/mobiledevelopment/process/development/Complete-source-code-IP-rights.png";
-import icon15 from "../../assets/Images/services/mobiledevelopment/process/development/Robust-scalable-and-secure-solutions.png";
-import icon16 from "../../assets/Images/services/mobiledevelopment/process/development/Latest-technology-tools.png";
+import icon9 from "../../assets/Images/services/mobiledevelopment/process/designing/Creatingdesignsketches.webp";
+import icon10 from "../../assets/Images/services/mobiledevelopment/process/designing/Wireframecreation.webp";
+import icon11 from "../../assets/Images/services/mobiledevelopment/process/designing/Mockupcreation.webp";
+import icon12 from "../../assets/Images/services/mobiledevelopment/process/designing/PrototypingandDesigning.webp";
 
-import icon17 from "../../assets/Images/services/mobiledevelopment/process/deployment/App-and-playstore-deployment.png";
-import icon18 from "../../assets/Images/services/mobiledevelopment/process/deployment/App-play-store-optimization.png";
-import icon19 from "../../assets/Images/services/mobiledevelopment/process/deployment/Dedicated-customer-service-support.png";
-import icon20 from "../../assets/Images/services/mobiledevelopment/process/deployment/Software-license-management.png";
+import icon13 from "../../assets/Images/services/mobiledevelopment/process/development/100-custom-app-development.webp";
+import icon14 from "../../assets/Images/services/mobiledevelopment/process/development/Complete-source-code-IP-rights.webp";
+import icon15 from "../../assets/Images/services/mobiledevelopment/process/development/Robust-scalable-and-secure-solutions.webp";
+import icon16 from "../../assets/Images/services/mobiledevelopment/process/development/Latest-technology-tools.webp";
+
+import icon17 from "../../assets/Images/services/mobiledevelopment/process/deployment/App-and-playstore-deployment.webp";
+import icon18 from "../../assets/Images/services/mobiledevelopment/process/deployment/App-play-store-optimization.webp";
+import icon19 from "../../assets/Images/services/mobiledevelopment/process/deployment/Dedicated-customer-service-support.webp";
+import icon20 from "../../assets/Images/services/mobiledevelopment/process/deployment/Software-license-management.webp";
 
 const Solutions: React.FC = () => {
     useEffect(() => {
