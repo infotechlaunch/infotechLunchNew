@@ -15,7 +15,7 @@ const Services: React.FC = () => {
 
     return (
 
-        <div className="challenges bg-orange py-12 sticky w-full lg:py-16 py-10">
+        <div className="challenges bg-black py-12 sticky w-full lg:py-16 py-10">
             <div className="container mx-auto px-6">
                 <div className="w-full mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -26,7 +26,7 @@ const Services: React.FC = () => {
                                     <span>Services</span>
                                 </h3> */}
 
-                                <h2 className="text-lg md:text-4xl lg:text-4xl font-bold leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
+                                <h2 className="text-lg md:text-4xl lg:text-4xl font-bold leading-tight mb-4 text-white" data-aos="fade-right" data-aos-delay="100">
                                     Tailored Software Solutions for All Business Needs, Designed to Drive Your Success
                                 </h2>
                                 <ConnectExperts />

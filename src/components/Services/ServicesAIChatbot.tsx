@@ -106,7 +106,7 @@ const Services: React.FC = () => {
                                     </Link>
                                 </div> */}
                                 <ConnectExperts />
-                                <video
+                                {/* <video
                                     className="z-0"
                                     autoPlay
                                     loop
@@ -114,7 +114,7 @@ const Services: React.FC = () => {
                                     playsInline
                                 >
                                     <source src="https://www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/07/MV.mp4?var=1838242011" type="video/mp4" />
-                                </video>
+                                </video> */}
                             </div>
                         </div>
 

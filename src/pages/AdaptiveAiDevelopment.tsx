@@ -85,15 +85,10 @@ const AdaptiveAiDevelopment: React.FC = () => {
                             <ConnectExperts />
                         </div>
                     </div>
-                    <div className="hero-image" style={{ zIndex: "0" }}>
+                    <div className="hero-image overflow-hidden rounded-xl" style={{ zIndex: "0" }}>
                         <div data-aos="fade-left">
 
-                            <img src={aiAdaptiveHeroImg} alt="" className="features-img" style={{
-                                height: "350px",
-                                width: "auto",
-                                objectFit: "cover",
-
-                            }} />
+                            <img src={aiAdaptiveHeroImg} alt="" className="object-cover max-h-[500px] features-img" />
                         </div>
                     </div>
                 </div>

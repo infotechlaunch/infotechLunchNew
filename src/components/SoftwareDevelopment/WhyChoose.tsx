@@ -1,20 +1,15 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import whychooeicon1 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Autonomous_Decision_Making.png';
-import whychooeicon2 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Skills_Library_Integration.png';
-import whychooeicon3 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Multimodal_Interaction.png';
-import whychooeicon4 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Defined_Multiagent_Workflow.png';
-import whychooeicon5 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Customizable_Conversation_Patterns.png';
-import whychooeicon6 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Enhanced_LLM_Inference.png';
+
 const WhyChoose: React.FC = () => {
 
     return (
-        <div className="w-full bg-gradient-blue-red py-16">
+        <div className="w-full bg-black py-16">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="lg:flex space-y-3 items-center justify-between gap-10">
                     <div>
                         <h2 className="xl:text-4xl text-3xl text-[#fff] font-bold" data-aos="fade-up">Why are We the Most Trusted
-                        Custom Software Development Company?</h2>
+                            Custom Software Development Company?</h2>
                         <p className="pt-3 text-base text-white">We believe that mutual trust and transparency are the key to effective business relationships </p>
                     </div>
                     <div>
@@ -32,64 +27,63 @@ const WhyChoose: React.FC = () => {
                 </div>
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
                     <div data-aos="fade-up"
-                        className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  px-6 py-8 rounded-lg">
+                        className="lg:bg-center lg:flex hidden justify-end items-end  bg-purple-700 px-6 py-8 rounded-lg">
                         <div className="relative z-[1]">
-                            <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold">Fully Customized Solutions</h2>
-                            <p className="text-base font-normal text-white">We deeply understand your unique business needs and deliver tailored software designed to address your specific challenges.</p>
-                            <div className="mt-4"><a href="/contact-us"><button
-                                className="text-base border border-white font-medium text-white rounded-full px-8 py-2.5 text-center cursor-pointer transition duration-300 flex items-center hover:bg-white hover:text-black ">Get
-                                in Touch</button></a></div>
+                            <h2 className="xl:text-4xl text-3xl text-[#fff] font-semibold">10+</h2>
+                            <h3 className="text-xl text-white mb-6">Years Of Industry Experience</h3>
+                            <hr />
+                            <h2 className="xl:text-4xl text-3xl text-[#fff] font-semibold mt-6">5k+</h2>
+                            <h3 className="text-xl text-white mb-6">Businesses Empowered</h3>
+                            <hr />
+                            <h2 className="xl:text-4xl text-3xl text-[#fff] font-semibold mt-6">98.7%</h2>
+                            <h3 className="text-xl text-white mb-6">Success Rate Achieved</h3>
+                            <hr />
+                            <h2 className="xl:text-4xl text-3xl text-[#fff] font-semibold mt-6">650</h2>
+                            <h3 className="text-xl text-white"> Team Of Vetted Developers</h3>
                         </div>
                     </div>
                     <div className="col-span-3">
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
-                        <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                    <img src={whychooeicon1} className="object-contain-1" />
-                                    <h3 className="text-xl font-semibold">Fully Customized Solutions</h3>
-                                    <p className="text-sm font-normal">
-We deeply understand your unique business needs and deliver tailored software designed to address your specific challenges.
+                                    <h3 className="text-xl font-semibold mb-3">100% Customized Solution</h3>
+                                    <p className="text-base font-normal">We Understand Your Unique Business needs in-depth and Deliver tailored software solutions to solve your specific business challenges.
 </p>
-                                </div>
-                            </div>
-                             <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
-                                <div>
-                                    <img src={whychooeicon1} className="object-contain-1" />
-                                    <h3 className="text-xl font-semibold">Clear & Honest Pricing</h3>
-                                    <p className="text-sm font-normal">Detailed upfront costs ensure precise budgeting with no hidden charges.</p>
                                 </div>
                             </div>
                             <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                <img src={whychooeicon2} className="object-contain-1" />
-                                <h3 className="text-xl font-semibold">Design-Driven Development</h3>
-                                    <p className="text-sm font-normal">We focus on adaptability to deliver outstanding user experiences.
+                                    <h3 className="text-xl font-semibold mb-3">Transparent Pricing</h3>
+                                    <p className="text-base font-normal">Comprehensive upfront pricing enables accurate budgeting without hidden fees.
 </p>
                                 </div>
                             </div>
-                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                 <div>
-                                <img src={whychooeicon3} className="object-contain-1" />
-                                <h3 className="text-xl font-semibold">Rapid Development</h3>
-                                    <p className="text-sm font-normal"> Transparent communication ensures full visibility and keeps you informed throughout the project lifecycle.</p>
+                                    <h3 className="text-xl font-semibold mb-3">Design-Led Engineering</h3>
+                                    <p className="text-base font-normal">We Prioritize adaptability, ensuring exceptional user experience.</p>
                                 </div>
                             </div>
                             <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
                                 <div>
-                                <img src={whychooeicon4} className="object-contain-1" />
-                                 <h3 className="text-xl font-semibold">Quality Assurance</h3>
-                                    <p className="text-sm font-normal">We ensure top-notch performance, robust security, and smooth system integration.</p>
+                                    <h3 className="text-xl font-semibold mb-3">Quick Development</h3>
+                                    <p className="text-base font-normal"> Clear communication channels for transparency & complete visibility, keeping you updated on project status.</p>
                                 </div>
                             </div>
                             <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
                                 <div>
-                                <img src={whychooeicon5} className="object-contain-1" />
-                                <h3 className="text-xl font-semibold">24/7 Dedicated Support</h3>
-                                    <p className="text-sm font-normal">
-                                    A skilled product manager oversees your project and offers continuous, expert assistance around the clock.</p>
+                                    <h3 className="text-xl font-semibold mb-3">Quality Assurance</h3>
+                                    <p className="text-base font-normal">With us, you get optimal performance, security, and seamless integration.</p>
                                 </div>
                             </div>
-                            
+                            <div className="feature-card-1 border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2" >
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-3">24*7 Dedicated Support</h3>
+                                    <p className="text-base font-normal">
+                                    Expert product manager to oversee your project & provide ongoing assistance.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

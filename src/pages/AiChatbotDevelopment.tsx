@@ -45,14 +45,9 @@ const AdaptiveAiDevelopment = () => {
 
             </div>
           </div>
-          <div className="hero-image overflow-hidden" data-aos="fade-left" style={{ zIndex: "0" }}>
-            <div>
-              <img src={aiChatbotHeroImg} alt="" className="feature-img" style={{
-                height: "350px",
-                width: "auto",
-                objectFit: "cover",
-
-              }} />
+          <div className="hero-image overflow-hidden rounded-xl"  style={{ zIndex: "0" }}>
+            <div data-aos="fade-left">
+              <img src={aiChatbotHeroImg} alt=""  className="object-cover max-h-[500px] features-img" />
             </div>
           </div>
         </div>

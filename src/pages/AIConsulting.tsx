@@ -89,14 +89,9 @@ const AIConsulting: React.FC = () => {
               <ConnectExperts />
             </div>
           </div>
-          <div className="hero-image" data-aos="fade-left" style={{ zIndex: "0" }}>
+          <div className="hero-image overflow-hidden  rounded-xl" data-aos="fade-left" style={{ zIndex: "0" }}>
             <div data-aos="fade-left">
-              <img src={AiConsultingHeroImg} alt="" className="features-img" style={{
-                height: "350px",
-                width: "auto",
-                objectFit: "cover",
-
-              }} />
+              <img src={AiConsultingHeroImg} alt="" className="object-cover max-h-[500px] features-img" />
             </div>
           </div>
         </div>

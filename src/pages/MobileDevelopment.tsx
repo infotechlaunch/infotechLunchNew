@@ -56,11 +56,11 @@ const UiUxDesign: React.FC = () => {
             </div>
 
             {/* Right - Image */}
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 overflow-hidden">
               <img
                 src={uiUxDesignImg}
                 alt="UI/UX Design"
-                className="w-full rounded-xl shadow-xl object-cover max-h-[500px]"
+                className="w-full rounded-xl shadow-xl object-cover max-h-[500px] features-img"
               />
             </div>
           </div>
