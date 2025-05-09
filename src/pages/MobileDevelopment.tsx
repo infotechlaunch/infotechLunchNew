@@ -13,7 +13,12 @@ import FAQ from "../components/MobileDevelopment/Faq";
 import WhyChoose from "../components/MobileDevelopment/services";
 import Solutions from "../components/MobileDevelopment/Solutions";
 import Industries from "../components/MobileDevelopment/Industries";
-
+import toolimg1 from '../assets/Images/services/softwaredevelopment/apps/java.webp';
+import toolimg2 from '../assets/Images/services/softwaredevelopment/apps/javascript.webp';
+import toolimg3 from '../assets/Images/services/softwaredevelopment/apps/xml.svg';
+import toolimg4 from '../assets/Images/services/softwaredevelopment/apps/Kotlin.webp';
+import toolimg5 from '../assets/Images/services/softwaredevelopment/apps/Objective-C.webp';
+import toolimg6 from '../assets/Images/services/softwaredevelopment/apps/swift.webp';
 
 const UiUxDesign: React.FC = () => {
 
@@ -66,11 +71,77 @@ const UiUxDesign: React.FC = () => {
           </div>
         </div>
         <Industries />
+
+        <Solutions />
+        <section className="lg:py-16 py-10 bg-gradient-blue-red">
+          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+
+            <div className="space-y-4 ">
+              <div className="space-y-4 text-center">
+                <h2 data-aos="fade-up" className="xl:text-4xl text-3xl text-[#fff] font-bold">Building Tomorrow's Software,
+                  <br />Backed By Cutting-Edge Tech Stack</h2>
+              </div>
+              <div className="grid pt-8 grid-cols-2 md:grid-cols-5 gap-4 text-center">
+
+                <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                  <div className="w-1/3">
+                    <img src={toolimg1} className="tool-icon-1" />
+                  </div>
+                  <div className="w-2/3">
+                    <p className="text-xl font-semibold">Java</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                  <div className="w-1/3">
+                    <img src={toolimg2} className="tool-icon-1" />
+                  </div>
+                  <div className="w-2/3">
+                    <p className="text-xl font-semibold">Java Script</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                  <div className="w-1/3">
+                    <img src={toolimg3} className="tool-icon-1" />
+                  </div>
+                  <div className="w-2/3">
+                    <p className="text-xl font-semibold">XML</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                  <div className="w-1/3">
+                    <img src={toolimg4} className="tool-icon-1" />
+                  </div>
+                  <div className="w-2/3">
+                    <p className="text-xl font-semibold">Kotlin</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                  <div className="w-1/3">
+                    <img src={toolimg5} className="tool-icon-1" />
+                  </div>
+                  <div className="w-2/3">
+                    <p className="text-xl font-semibold">Objective C</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center p-4 bg-orange shadow-lg rounded-lg  feature-card-1">
+                  <div className="w-1/3">
+                    <img src={toolimg6} className="tool-icon-1" />
+                  </div>
+                  <div className="w-2/3">
+                    <p className="text-xl font-semibold">
+                      Swift</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
         <div className="w-full bg-purple-700 py-16">
           <section className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="flex items-center justify-center">
               <div className="space-y-3">
-                <h2 className="xl:text-4xl text-3xl text-[#fff] text-center font-bold" data-aos="fade-up">These Additional Development Services Make Us the #1 Mobile App Development Company
+                <h2 className="xl:text-4xl text-2xl text-[#fff] text-center font-bold" data-aos="fade-up">These Additional Development Services Make Us the #1 Mobile App Development Company
                 </h2>
                 <p className="text-base text-[#fff] font-normal text-center" data-aos="fade-up">
                   Our wide range of value-added services — from UI/UX design and app testing to maintenance, upgrades, and marketing support — sets us apart and ensures a complete solution for your mobile app success. </p>
@@ -183,7 +254,6 @@ const UiUxDesign: React.FC = () => {
 
           </section>
         </div>
-        <Solutions />
         <WhyChoose />
         <FAQ />
         <ContactForm />

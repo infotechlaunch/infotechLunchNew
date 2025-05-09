@@ -1,9 +1,9 @@
 import React from "react";
 // import { Link } from 'react-router-dom';
-import sericon1 from '../../assets/Images/services/mobiledevelopment/services/1.webp';
-import sericon2 from '../../assets/Images/services/mobiledevelopment/services/2.webp';
-import sericon3 from '../../assets/Images/services/mobiledevelopment/services/3.webp';
-import sericon4 from '../../assets/Images/services/mobiledevelopment/services/4.webp';
+import sericon1 from '../../assets/Images/services/mobiledevelopment/services/android.webp';
+import sericon2 from '../../assets/Images/services/mobiledevelopment/services/ios.webp';
+import sericon3 from '../../assets/Images/services/mobiledevelopment/services/hybrid.webp';
+import sericon4 from '../../assets/Images/services/mobiledevelopment/services/react.webp';
 const WhyChoose: React.FC = () => {
 
     return (
