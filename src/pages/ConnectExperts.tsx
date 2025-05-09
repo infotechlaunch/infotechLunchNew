@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect}  from "react";
 // import { Link } from 'react-router-dom';
-import getStartedImg from "../assets/Images/aiSocialMedia/get-started.png";
+import getStartedImg from "../assets/Images/aiSocialMedia/get-started.webp";
 import ReCAPTCHA from "react-google-recaptcha";
 import Axios from "axios";
 

@@ -76,9 +76,6 @@ const AiVoiceAgent: React.FC = () => {
                 <section className="hero-container bg-gradient-blue-red">
                     <div className="flex gap-10 mobile-block">
                         <div className="hero-text" data-aos="fade-right">
-                            {/* <p className="bg-rose-600 text-white rounded-full px-6 py-2 flex items-center text-center">
-                            One Call. Endless Possibilities for Business.
-                        </p> */}
 
                             <h1 className="text-4xl font-bold mb-5 mt-5 text-white">
                                 AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>

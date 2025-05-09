@@ -17,7 +17,8 @@ ul.list-point-1 {
 .min-h-180{min-height: 180px;}
 .tab-case-study{width:100%}
 .case-icon{width:60px}
-/* .testimonial-slider iframe{height: 300px;} */
+.video-area {position: relative; top:80px}
+.testimonial-slider iframe{height: 500px;width:800px; }
 ul.list-point-1  li b{font-weight: 600;}
 .list-point-1 li,ul.list-point-2 li {
   list-style: disc;

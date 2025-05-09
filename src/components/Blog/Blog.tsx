@@ -20,7 +20,7 @@ const blogPosts: BlogPost[] = [
         id: 1,
         title: "AI-Powered Parking Assistance App Development: Cost & Features",
         category: "Technology",
-        date: "4 Feb 2025",
+        date: "14 March 2025",
         description:
             "Based on studies, 30% of traffic congestion happens due to vehicles looking for parking spaces. AI-powered parking assistance apps improve operational efficiency and maximize space utilization.",
         imageUrl: lunch,
@@ -30,7 +30,7 @@ const blogPosts: BlogPost[] = [
         id: 2,
         title: "Seamless Shopping. Smarter Wellness.",
         category: "AI Voice Agent",
-        date: "14 March 2025",
+        date: "16 Feb 2025",
         description:
             "Shop premium fitness products, track progress, and get personalized health insights—all in one app. Achieve your wellness goals with ease and convenience.",
         imageUrl: health,
@@ -40,7 +40,7 @@ const blogPosts: BlogPost[] = [
         id: 3,
         title: "Future of AI in Web Development: Trends & Innovations",
         category: "AI",
-        date: "15 Feb 2025",
+        date: "04 Feb 2025",
         description:
             "AI is reshaping web development with automation, personalization, and advanced analytics. Explore the latest AI trends and how they impact the future of web development.",
         imageUrl: Careem,
