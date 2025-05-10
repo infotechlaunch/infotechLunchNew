@@ -2,36 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation, Pagination } from "swiper/modules"; // Import modules
-
-import travel from "../../assets/Images/home/Industries/travel-hospitality-industries-img.webp";
-import sports from "../../assets/Images/home/Industries/sports-industries-img.webp";
-import entertainment from "../../assets/Images/home/Industries/entertainment-industries-img.webp";
-import social from "../../assets/Images/home/Industries/social-media-app-industries-img.webp";
-import finance from "../../assets/Images/home/Industries/finance-industries-img.webp";
-// import dating from "../../assets/Images/dating-industries-img.webp";
-import restaurant from "../../assets/Images/home/Industries/restaurant-industries-img.webp";
-import ecommerce from "../../assets/Images/home/Industries/industries-ecommerce-img.webp";
-import healthcare from "../../assets/Images/home/Industries/industries-healthcare-img.webp";
-// import blockchain from "../../assets/Images/industries-blockchain-img.webp";
-import education from "../../assets/Images/home/Industries/industries-education-img.webp";
-// import industrie from "../../assets/Images/home/Industries/industries-industries-img.webp";
-import transportat from "../../assets/Images/home/Industries/transportation-industries-img.webp";
-import construction from "../../assets/Images/home/Industries/construction-industries-img.webp";
-import automotive from "../../assets/Images/home/Industries/automotive.png";
-import fitness from "../../assets/Images/home/Industries/Fitness.webp";
-import insurance from "../../assets/Images/home/Industries/insurance.webp";
-// import game from "../../assets/Images/game-industries-img.webp";
-import agriculture from "../../assets/Images/home/Industries/agriculture.webp";
-import realstate from "../../assets/Images/home/Industries/real-state.webp";
-
+import healthcare from "../../assets/Images/aiDevelopment/aiconsulting/industries/healthcare.webp";
+import finance from "../../assets/Images/aiDevelopment/aiconsulting/industries/finance-and-banking.webp";
+import ecommerce from "../../assets/Images/aiDevelopment/aiconsulting/industries/retail-and-ecommerce.webp";
+import manufaturing from "../../assets/Images/aiDevelopment/aiconsulting/industries/manufacturing.webp";
+import automotive from "../../assets/Images/aiDevelopment/aiconsulting/industries/automotive.webp";
+import logistics from "../../assets/Images/aiDevelopment/aiconsulting/industries/logistic-and-supplychain.webp";
+import education from "../../assets/Images/aiDevelopment/aiconsulting/industries/Education.webp";
+import agriculture from "../../assets/Images/aiDevelopment/aiconsulting/industries/Agriculture.webp";
+import realstate from "../../assets/Images/aiDevelopment/aiconsulting/industries/real-state.webp";
+import entertainment from "../../assets/Images/aiDevelopment/aiconsulting/industries/Entertainment.webp";
+import travel from "../../assets/Images/aiDevelopment/aiconsulting/industries/Travel-and-hospitality.webp";
+import insurance from "../../assets/Images/aiDevelopment/aiconsulting/industries/insurance.webp";
+import fitness from "../../assets/Images/aiDevelopment/aiconsulting/industries/fitness.webp";
+import social from "../../assets/Images/aiDevelopment/aiconsulting/industries/social-networking.webp";
+import restaurant from "../../assets/Images/aiDevelopment/aiconsulting/industries/food-and-restaurant.webp"
+import sports from "../../assets/Images/aiDevelopment/aiconsulting/industries/sports.webp";
 
 const Industries = [
     { title: "Healthcare", UrlLink: "/healthcare", img: healthcare },
     { title: "Finance & Banking", UrlLink: "/finance", img: finance },
     { title: "Retail & ECommerce", UrlLink: "/entertainment", img: ecommerce },
-    { title: "Manufacturing", UrlLink: "#", img: construction },
+    { title: "Manufacturing", UrlLink: "#", img: manufaturing },
     { title: "Autmotive", UrlLink: "#", img: automotive },
-    { title: "Logistics & Supply Chain", UrlLink: "#",  img: transportat },
+    { title: "Logistics & Supply Chain", UrlLink: "#",  img: logistics },
     { title: "Education", UrlLink: "/education", img: education },
     { title: "Agriculture", UrlLink: "/E-Commerce", img: agriculture },
     { title: "Real State", UrlLink: "/realstate", img: realstate },
@@ -64,7 +58,7 @@ const IndustriesHome: React.FC = () => {
                           
                                 <Link to={service.UrlLink} className="block">
                                     <div className="feature-card-2 border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[200px] hover:shadow-lg transition-shadow">
-                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full feature-img-2" src={service.img} />
+                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full feature-img-2 rounded-lg" src={service.img} />
                                         <div>
                                             <h3 data-aos="fade-up" className="text-[#212121] mb-2 text-lg font-semibold">{service.title}</h3>
                                         </div>

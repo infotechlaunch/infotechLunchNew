@@ -6,7 +6,7 @@ import { Navigation, Pagination } from "swiper/modules"; // Import modules
 import travel from "../../assets/Images/home/Industries/travel-hospitality-industries-img.webp";
 import sports from "../../assets/Images/home/Industries/sports-industries-img.webp";
 import entertainment from "../../assets/Images/home/Industries/entertainment-industries-img.webp";
-import social from "../../assets/Images/home/Industries/social-media-app-industries-img.webp";
+import social from "../../assets/Images/home/Industries/social-networking.webp";
 import finance from "../../assets/Images/home/Industries/finance-industries-img.webp";
 import dating from "../../assets/Images/home/Industries/dating-industries-img.webp";
 import restaurant from "../../assets/Images/home/Industries/restaurant-industries-img.webp";
@@ -87,7 +87,7 @@ const IndustriesHome: React.FC = () => {
                             <SwiperSlide key={index}>
                                 <Link to={service.UrlLink} className="block">
                                     <div className="border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[300px] hover:shadow-lg transition-shadow">
-                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full" src={service.img} />
+                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full rounded-xl" src={service.img} />
                                         <div>
                                             <h3 data-aos="fade-up" className="text-[#212121] mb-2 text-lg font-semibold">{service.title}</h3>
                                             <p data-aos="fade-up" className="text-sm">{service.sorttitle}</p>

@@ -220,18 +220,18 @@ const aiDevelopment = [
 
     {
         id: "blockchain",
-        title: "AI Agent Development",
+        title: "AI Agent",
         description: "Building smart agents for automated tasks.",
         icon: iconsev02,
-        path: "/ai-agent-development-new"
+        path: "/ai-agent"
     },
 
     {
         id: "crypto",
-        title: "Adaptive AI Development",
+        title: "AI Development",
         description: "Creating AI that learns and evolves.",
         icon: iconsev03,
-        path: "/adaptive-ai-development"
+        path: "/ai-development"
     },
 
     {
@@ -345,10 +345,10 @@ const HeaderNew: React.FC = () => {
                                     <div className="group">
                                         {/* <button className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-[#f13c3c] text-black/80"> */}
                                         <button className={`${location.pathname === "/ai-consulting" ||
-                                            location.pathname === "/ai-agent-development-new" ||
-                                            location.pathname === "/adaptive-ai-development" ||
+                                            location.pathname === "/ai-agent" ||
+                                            location.pathname === "/ai-development" ||
                                             location.pathname === "/ai-chatbot-development" ||
-                                            location.pathname === "/ai-development"
+                                            location.pathname === "/ai-gen"
                                             ? "bg-blue-100 text-black border-[#f13c3c]"
                                             : "text-black/80 border-transparent hover:text-[#f13c3c]"
                                             } inline-flex items-center text-sm leading-none transition duration-300 border-b-2 cursor-pointer px-2 py-8`}>
@@ -710,12 +710,12 @@ const HeaderNew: React.FC = () => {
                                                 </li>
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                    <Link to="/ai-agent-development">AI Agent Development</Link>
+                                                    <Link to="/ai-agent">AI Agent</Link>
                                                 </li>
 
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                    <Link to="/adaptive-ai-development">Adaptive AI Development</Link>
+                                                    <Link to="/ai-development">AI Development</Link>
                                                 </li>
 
                                                 <li
@@ -724,7 +724,7 @@ const HeaderNew: React.FC = () => {
                                                 </li>
                                                 <li
                                                     className=" py-1.5 text-[#212121] whitespace-nowrap transition duration-200 transform hover:translate-x-4 ">
-                                                    <Link to="/ai-development">AI Development</Link>
+                                                    <Link to="/ai-gen">Gen AI</Link>
                                                 </li>
 
                                             </div>

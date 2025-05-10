@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
-import aiAdaptiveHeroImg from "../assets/Images/aiDevelopment/aiAdaptive/HeroImg.jpg";
+import aiAdaptiveHeroImg from "../assets/Images/aiDevelopment/aiAdaptive/aiAdaptive-HeroImg.webp";
 import Services from "../components/Services/ServicesAIAdaptive";
 import ConnectExperts from "../pages/ConnectExperts";
 // import TawkChat from "./TawkChat";
@@ -15,17 +15,17 @@ import achieveimg3 from '../assets/Images/aiDevelopment/aiAdaptive/FeatureImg/Ye
 import achieveicon3 from '../assets/Images/aiDevelopment/icon3.png';
 import achieveimg4 from '../assets/Images/aiDevelopment/aiAdaptive/FeatureImg/IndustriesServedWithAISolution.webp';
 import achieveicon4 from '../assets/Images/aiDevelopment/icon4.png';
-import toolimg1 from '../assets/Images/aiDevelopment/aiAdaptive/tools/1.png';
-import toolimg2 from '../assets/Images/aiDevelopment/aiAdaptive/tools/2.png';
-import toolimg3 from '../assets/Images/aiDevelopment/aiAdaptive/tools/3.png';
-import toolimg4 from '../assets/Images/aiDevelopment/aiAdaptive/tools/4.png';
-import toolimg5 from '../assets/Images/aiDevelopment/aiAdaptive/tools/5.png';
-import toolimg6 from '../assets/Images/aiDevelopment/aiAdaptive/tools/6.png';
-import toolimg7 from '../assets/Images/aiDevelopment/aiAdaptive/tools/7.png';
-import toolimg8 from '../assets/Images/aiDevelopment/aiAdaptive/tools/8.png';
-import toolimg9 from '../assets/Images/aiDevelopment/aiAdaptive/tools/9.png';
-import toolimg10 from '../assets/Images/aiDevelopment/aiAdaptive/tools/10.png';
-import toolimg11 from '../assets/Images/aiDevelopment/aiAdaptive/tools/11.png';
+import toolimg1 from '../assets/Images/aiDevelopment/tools/1.png';
+import toolimg2 from '../assets/Images/aiDevelopment/tools/2.png';
+import toolimg3 from '../assets/Images/aiDevelopment/tools/3.png';
+import toolimg4 from '../assets/Images/aiDevelopment/tools/4.png';
+import toolimg5 from '../assets/Images/aiDevelopment/tools/5.png';
+import toolimg6 from '../assets/Images/aiDevelopment/tools/6.png';
+import toolimg7 from '../assets/Images/aiDevelopment/tools/7.png';
+import toolimg8 from '../assets/Images/aiDevelopment/tools/8.png';
+import toolimg9 from '../assets/Images/aiDevelopment/tools/9.png';
+import toolimg10 from '../assets/Images/aiDevelopment/tools/10.png';
+import toolimg11 from '../assets/Images/aiDevelopment/tools/11.png';
 import IndustriesAdaptiveAI from "../components/AdaptiveAI/Industries";
 const achievements = [
     {

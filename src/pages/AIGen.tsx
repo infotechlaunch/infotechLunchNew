@@ -1,28 +1,75 @@
 // import React from "react";
+import React, { useState } from "react";
 import AOSProvider from "../components/AOSProvider";
 import HeaderNew from "../components/Header/HeaderNew";
 import Footer from "../components/Footer/Footer";
-import aiGenHeroImg from "../assets/Images/aiDevelopment/aiGen/genai-hero-image.png";
+import aiGenHeroImg from "../assets/Images/aiDevelopment/aiGen/genai-hero-image.webp";
 import Services from "../components/Services/ServicesAIChatbot";
 // import CreationProcess from "../components/AIChatbot/Process";
 import Industries from "../components/AIChatbot/Industries";
 import ConnectExperts from "./ConnectExperts";
-import toolimg1 from '../assets/Images/aiDevelopment/aiAdaptive/tools/1.png';
-import toolimg2 from '../assets/Images/aiDevelopment/aiAdaptive/tools/2.png';
-import toolimg3 from '../assets/Images/aiDevelopment/aiAdaptive/tools/3.png';
-import toolimg4 from '../assets/Images/aiDevelopment/aiAdaptive/tools/4.png';
-import toolimg5 from '../assets/Images/aiDevelopment/aiAdaptive/tools/5.png';
-import toolimg6 from '../assets/Images/aiDevelopment/aiAdaptive/tools/6.png';
-import toolimg7 from '../assets/Images/aiDevelopment/aiAdaptive/tools/7.png';
-import toolimg8 from '../assets/Images/aiDevelopment/aiAdaptive/tools/8.png';
-import toolimg9 from '../assets/Images/aiDevelopment/aiAdaptive/tools/9.png';
-import toolimg10 from '../assets/Images/aiDevelopment/aiAdaptive/tools/10.png';
-import toolimg11 from '../assets/Images/aiDevelopment/aiAdaptive/tools/11.png';
+import toolimg1 from '../assets/Images/aiDevelopment/tools/1.png';
+import toolimg2 from '../assets/Images/aiDevelopment/tools/2.png';
+import toolimg3 from '../assets/Images/aiDevelopment/tools/3.png';
+import toolimg4 from '../assets/Images/aiDevelopment/tools/4.png';
+import toolimg5 from '../assets/Images/aiDevelopment/tools/5.png';
+import toolimg6 from '../assets/Images/aiDevelopment/tools/6.png';
+import toolimg7 from '../assets/Images/aiDevelopment/tools/7.png';
+import toolimg8 from '../assets/Images/aiDevelopment/tools/8.png';
+import toolimg9 from '../assets/Images/aiDevelopment/tools/9.png';
+import toolimg10 from '../assets/Images/aiDevelopment/tools/10.png';
+import toolimg11 from '../assets/Images/aiDevelopment/tools/11.png';
 import creationprocess from '../assets/Images/aiDevelopment/aiChatbot/Chatbot_Creation_Process.webp';
 import FAQ from "../components/Faq/FaqAIChatbot";
 import Solution from "../components/AIChatbot/solution";
 
-const AdaptiveAiDevelopment = () => {
+import achieveimg1 from '../assets/Images/aiDevelopment/aiGen/achievement/1.webp';
+import achieveicon1 from '../assets/Images/aiDevelopment/aiGen/achievement/icons/icon1.png';
+import achieveimg2 from '../assets/Images/aiDevelopment/aiGen/achievement/2.webp';
+import achieveicon2 from '../assets/Images/aiDevelopment/aiGen/achievement/icons/icon2.png';
+import achieveimg3 from '../assets/Images/aiDevelopment/aiGen/achievement/3.webp';
+import achieveicon3 from '../assets/Images/aiDevelopment/aiGen/achievement/icons/icon3.png';
+import achieveimg4 from '../assets/Images/aiDevelopment/aiGen/achievement/4.webp';
+import achieveicon4 from '../assets/Images/aiDevelopment/aiGen/achievement/icons/icon4.png';
+
+const achievements = [
+  {
+    id: 1,
+    number: "100+",
+    heading: "Generative AI Projects Delivered",
+    text: " Successfully launched innovative Gen AI applications across diverse business domains.",
+    icon: achieveicon1,
+    image: achieveimg1,
+  },
+  {
+    id: 2,
+    number: "40+",
+    heading: "AI Experts Specializing in Deep Learning, NLP, GANs, and RNNs",
+    text: "A team of top-tier specialists pushing the boundaries of AI technology.",
+    icon: achieveicon2,
+    image: achieveimg2,
+  },
+  {
+    id: 3,
+    number: "95%",
+    heading: "Client Satisfaction Rate",
+    text: "Proven success in delivering scalable, intelligent solutions that exceed client expectations.",
+    icon: achieveicon3,
+    image: achieveimg3,
+  },
+  {
+    id: 4,
+    number: "35+",
+    heading: "Industries Served with Custom Generative AI Solutions",
+    text: "Tailored AI development for sectors including healthcare, finance, retail, real estate, and more.",
+    icon: achieveicon4,
+    image: achieveimg4,
+  },
+];
+
+const AdaptiveAiDevelopment: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       {/* <AOSProvider /> */}
@@ -54,6 +101,37 @@ const AdaptiveAiDevelopment = () => {
 
               }} />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="text-center mt-6 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight mb-4">
+              Driving Business Growth with Next-Gen AI Solutions</h2>
+            <p className="text-xl font-semibold mb-6">InfoTech Launch leverages cutting-edge AI techniques to empower businesses, optimize operations, and deliver <br/ >transformative results across industries.
+            </p>
+          </div>
+          <div className="achievement-wrapper">
+            {achievements.map((item, index) => (
+              <div data-aos="fade-up"
+                key={item.id}
+                className={`achievement-wrapper__item ${index === activeIndex ? "is-active" : ""}`}
+                onMouseEnter={() => setActiveIndex(index)}
+              >
+                <div className="achievement-content">
+                  <div className="icn"> <img src={item.icon} alt="Icon" className="img-fluid lazyloaded" />
+                  </div>
+                  <div className="content">
+                    <h2>{item.number}</h2>
+                    <h4>{item.heading}</h4>
+                    <p>{item.text}</p>
+                  </div>
+                </div>
+                <div className="achievement-image"> <img alt="AI Experts" src={item.image} /> </div>
+
+              </div>
+            ))}
           </div>
         </div>
       </section>

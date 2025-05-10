@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import travel from "../../assets/Images/home/Industries/travel-hospitality-industries-img.webp";
 // import sports from "../../assets/Images/home/Industries/sports-industries-img.webp";
 import entertainment from "../../assets/Images/home/Industries/entertainment-industries-img.webp";
-// import social from "../../assets/Images/home/Industries/social-media-app-industries-img.webp";
 import finance from "../../assets/Images/home/Industries/finance-industries-img.webp";
 import realstate from "../../assets/Images/home/Industries/real-state.webp";
 // import dating from "../../assets/Images/dating-industries-img.webp";
@@ -59,7 +58,7 @@ const IndustriesHome: React.FC = () => {
                                 <Link to={service.UrlLink} className="block">
                                     <div className="feature-card-2 border border-[#E8E8E8] rounded-lg p-4 space-y-4 min-h-[200px] hover:shadow-lg transition-shadow">
                                     <div className="overflow-hidden rounded-xl">
-                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full feature-img-2" src={service.img} />
+                                        <img  data-aos="fade-up" alt={service.title} loading="lazy" className="w-full feature-img-2 rounded-xl" src={service.img} />
                                         </div>
                                         <div>
                                             <h3 data-aos="fade-up" className="text-[#212121] mb-2 text-lg font-semibold">{service.title}</h3>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import whychooeicon1 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Autonomous_Decision_Making.png';
-import whychooeicon2 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Skills_Library_Integration.png';
-import whychooeicon3 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Multimodal_Interaction.png';
-import whychooeicon4 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Defined_Multiagent_Workflow.png';
-import whychooeicon5 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Customizable_Conversation_Patterns.png';
-import whychooeicon6 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Enhanced_LLM_Inference.png';
+import whychooeicon1 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Autonomous_Decision_Making.webp';
+import whychooeicon2 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Skills_Library_Integration.webp';
+import whychooeicon3 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Multimodal_Interaction.webp';
+import whychooeicon4 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Defined_Multiagent_Workflow.webp';
+import whychooeicon5 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Customizable_Conversation_Patterns.webp';
+import whychooeicon6 from '../../assets/Images/aiDevelopment/aiAgentDevelopment/WhyChoose/Enhanced_LLM_Inference.webp';
 const WhyChoose: React.FC = () => {
 
     return (
@@ -32,7 +32,7 @@ const WhyChoose: React.FC = () => {
                 </div>
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 mt-10">
                     <div data-aos="fade-up"
-                        className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  px-6 py-8 rounded-lg">
+                        className="lg:bg-center lg:flex hidden justify-end items-end  bg-no-repeat bg-cover bg-left whychoose  whychoose1  px-6 py-8 rounded-lg">
                         <div className="relative z-[1]">
                             <h2 className="xl:text-2xl text-xl text-[#fff] font-semibold">Optimum Outcome Focused</h2>
                             <p className="text-base font-normal text-white">Our developers are focused to bring optimum outcomes

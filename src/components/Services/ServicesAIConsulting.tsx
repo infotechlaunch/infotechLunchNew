@@ -2,12 +2,13 @@ import React from "react";
 import './Services.scss';
 // import { Link } from "react-router-dom";
 import ConnectExperts from "../../pages/ConnectExperts";
-import Services01 from '../../assets/Images/aiDevelopment/aiconsulting/AIOpportunityDiscovery.png';
-import Services02 from '../../assets/Images/aiDevelopment/aiconsulting/PersonalizedAIStrategyBlueprint.png';
-import Services03 from '../../assets/Images/aiDevelopment/aiconsulting/SmartAIIntegrationStrategy.png';
-import Services04 from '../../assets/Images/aiDevelopment/aiconsulting/DataFoundationAssessment.png';
-import Services05 from '../../assets/Images/aiDevelopment/aiconsulting/IndustryFocusedFeasibilityStudie.png';
-import Services06 from '../../assets/Images/aiDevelopment/aiconsulting/AI_Compliance_and_Risk_Management.png';
+import Services01 from '../../assets/Images/aiDevelopment/aiconsulting/services/AIOpportunityDiscovery.webp';
+import Services02 from '../../assets/Images/aiDevelopment/aiconsulting/services/PersonalizedAIStrategyBlueprint.webp';
+import Services03 from '../../assets/Images/aiDevelopment/aiconsulting/services/SmartAIIntegrationStrategy.webp';
+import Services04 from '../../assets/Images/aiDevelopment/aiconsulting/services/DataFoundationAssessment.webp';
+import Services05 from '../../assets/Images/aiDevelopment/aiconsulting/services/IndustryFocusedFeasibilityStudie.webp';
+import Services06 from '../../assets/Images/aiDevelopment/aiconsulting/services/AI_Compliance_and_Risk_Management.webp';
+import accelerateyourgrowth from '../../assets/Images/aiDevelopment/aiconsulting/Accelerate-Your-Growth.png';
 
 // import ConnectExperts from "../../pages/ConnectExperts";
 
@@ -115,11 +116,13 @@ const Services: React.FC = () => {
                                 >
                                     <source src="https://www.code-brew.com/wp-content/themes/Avada-Child-Theme/media/2024/07/MV.mp4?var=1838242011" type="video/mp4" />
                                 </video> */}
+                                 <img src={accelerateyourgrowth} alt="" className="rounded-l-2xl object-cover w-full h-full" />
+                                       
                             </div>
                         </div>
 
                         {/* Right Section */}
-                        <div className="chalnges-right" style={{ zIndex: "-1" }}>
+                        <div className="chalnges-right" style={{ zIndex: "0" }}>
                             <div className="md_challenges_box space-y-7">
                                 {challengeData.map((challenge, index) => (
                                     <div key={challenge.id} id={challenge.id} className={`md_challenges_slide flex justify-end sticky mb-7`} style={{ top: `${8 + index * 0.25}rem` }}>

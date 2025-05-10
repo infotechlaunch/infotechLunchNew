@@ -100,8 +100,8 @@ const Blog: React.FC = () => {
                 </div>
                 <div className="grid gap-4 mx-auto lg:grid-cols-4 md:grid-cols-2  grid-cols-1 xl:gap-5 cursor-pointer mt-8">
                     {blogPosts.map((post) => (
-                        <div key={post.id}  className="block">
-                            <div className="feature-card-1 p-5 space-y-4 overflow-hidden text-left transition duration-150 bg-[#fff] border border-[#000000]/10 rounded-xl group">
+                        <div key={post.id}  className="block feature-card-1 w-full h-full bg-[#fff] border border-[#000000]/10 rounded-xl">
+                            <div className=" p-5 space-y-4 overflow-hidden text-left transition duration-150  group">
                                 <div className="object-cover w-full overflow-hidden rounded-xl">
                                     <img
                                         alt={post.title}

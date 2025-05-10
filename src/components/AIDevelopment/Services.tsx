@@ -117,7 +117,7 @@ const Services: React.FC = () => {
                                                     <div className="text-lg font-semibold">{challenge.title}</div>
                                                 </div>
                                                 <p className="text-sm">{challenge.desc}</p>
-                                                <a href="#" className="link-btn mt-4 text-black font-semibold inline-block transition hover:text-blue-500">
+                                                <a href="/contact-us" className="link-btn mt-4 text-black font-semibold inline-block transition hover:text-blue-500">
                                                     Contact Us
                                                     <span className="icon-right-arrow ml-2 bg-black text-white p-1 rounded-full inline-flex items-center justify-center w-5 h-5 transition hover:bg-blue-500">
                                                         <svg className="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#fff" d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"></path></svg>
