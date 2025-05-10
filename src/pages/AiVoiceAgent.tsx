@@ -74,11 +74,11 @@ const AiVoiceAgent: React.FC = () => {
 
                 {/* section 1  */}
                 <section className="hero-container bg-gradient-blue-red">
-                    <div className="flex gap-10 mobile-block">
+                    <div className="flex gap-10 mobile-block items-center">
                         <div className="hero-text" data-aos="fade-right">
 
                             <h1 className="text-4xl font-bold mb-5 mt-5 text-white">
-                                AI That Talks, Books, and Sells — <span className="text-red-500">While You Focus on Growth.</span>
+                                AI That Talks, Books, and Sells — While You Focus on Growth.
                             </h1>
                             <p className="text-lg mb-5 text-white">
                                 Custom-trained AI Voice Facilitators that never sleep. They answer, qualify, and schedule with precision — earning the trust of results-focused teams worldwide.
