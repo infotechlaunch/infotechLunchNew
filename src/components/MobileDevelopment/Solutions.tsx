@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import './Solutions.scss';
-import prcoessico1 from "../../assets/Images/services/mobiledevelopment/process/process-1.webp";
-import prcoessico2 from "../../assets/Images/services/mobiledevelopment/process/process-2.webp";
-import prcoessico3 from "../../assets/Images/services/mobiledevelopment/process/process-3.webp";
-import prcoessico4 from "../../assets/Images/services/mobiledevelopment/process/process-4.webp";
-import prcoessico5 from "../../assets/Images/services/mobiledevelopment/process/process-5.webp";
+import prcoessico1 from "../../assets/Images/services/mobiledevelopment/process/consultation.webp";
+import prcoessico2 from "../../assets/Images/services/mobiledevelopment/process/strategy.webp";
+import prcoessico3 from "../../assets/Images/services/mobiledevelopment/process/designing.webp";
+import prcoessico4 from "../../assets/Images/services/mobiledevelopment/process/development.webp";
+import prcoessico5 from "../../assets/Images/services/mobiledevelopment/process/deployment.webp";
 
 import icon1 from "../../assets/Images/services/mobiledevelopment/process/consultation/RequirementAnalysis.webp";
 import icon2 from "../../assets/Images/services/mobiledevelopment/process/consultation/MarketEvaluation.webp";
@@ -127,7 +127,7 @@ const Solutions: React.FC = () => {
                     </div>
                     <div className="Solutions_wrap">
                         <div className="md:flex gap-8">
-                            <div className="w-full md:w-[33%]">
+                            <div className="w-full md:w-[25%]">
                                 <div className="desk-block">
                                     <div className="solution-list flex flex-col space-y-3" id="services-list">
 
@@ -190,7 +190,7 @@ const Solutions: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full md:w-[66%]">
+                            <div className="w-full md:w-[75%]">
                                 <div id="solutions-wrapper">
 
                                     <section className="panel panel-solutions bg-white" id="solution1">
